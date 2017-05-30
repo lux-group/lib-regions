@@ -24,3 +24,29 @@ describe('getRegionNames()', function() {
     expect(regionModule.getRegionNames()).to.deep.equal(['Australia', 'Canada'])
   })
 })
+
+describe('getRegionByCode()', function() {
+  it('should return the info for the given region code', function() {
+    expect(regionModule.getRegionByCode('CA')).to.deep.equal({code: 'CA', name: 'Canada', currency_code: 'CAD'})
+  })
+})
+
+describe('getDefaultRegion()', function() {
+  it('should return the default region\'s info', function() {
+    expect(regionModule.getDefaultRegion()).to.deep.equal(
+      {code: 'AU', name: 'Australia', currency_code: 'AUD'}
+    )
+  })
+})
+
+describe('getDefaultRegionCode()', function() {
+  it('should return the default region\'s code', function() {
+    expect(regionModule.getDefaultRegionCode()).to.equal('AU')
+  })
+})
+
+describe('getDefaultRegionName()', function() {
+  it('should return the default region\'s name', function() {
+    expect(regionModule.getDefaultRegionName()).to.equal('Australia')
+  })
+})
