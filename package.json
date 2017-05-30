@@ -1,0 +1,16 @@
+{
+  "name": "lib-regions",
+  "version": "0.1.0",
+  "description": "Region information for Luxury Escapes",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "author": "Eddie McLean",
+  "repository": "https://github.com/brandsExclusive/lib-regions",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^4.0.0",
+    "jest": "^20.0.4"
+  }
+}
