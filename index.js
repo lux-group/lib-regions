@@ -1,5 +1,5 @@
-const regions = require('./region-data').regions
-const defaultRegionCode = require('./region-data').defaultRegionCode
+var regions = require('./region-data').regions
+var defaultRegionCode = require('./region-data').defaultRegionCode
 
 function getRegions() {
   return regions

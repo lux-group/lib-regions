@@ -1,8 +1,8 @@
-const expect = require('chai').expect
+var expect = require('chai').expect
 
 jest.mock('./region-data.js')
 
-const regionModule = require('./index')
+var regionModule = require('./index')
 
 describe('getRegions()', function() {
   it('should return the region info', function() {
