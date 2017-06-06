@@ -50,3 +50,9 @@ describe('getDefaultRegionName()', function() {
     expect(regionModule.getDefaultRegionName()).to.equal('Australia')
   })
 })
+
+describe('getZeroDecimalCurrencies()', function() {
+  it('should return an array with currencies', function() {
+    expect(regionModule.getZeroDecimalCurrencies()).to.be.an('array');
+  })
+})
