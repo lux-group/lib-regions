@@ -6,7 +6,8 @@ module.exports = {
       currency_code: 'AUD',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -15,7 +16,8 @@ module.exports = {
       currency_code: 'CAD',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -24,7 +26,8 @@ module.exports = {
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -33,7 +36,8 @@ module.exports = {
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -42,7 +46,8 @@ module.exports = {
       currency_code: 'HKD',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -51,6 +56,7 @@ module.exports = {
       currency_code: 'INR',
       payment_methods: [
         'le_credit',
+        'stripe'
       ]
     },
     {
@@ -59,7 +65,8 @@ module.exports = {
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -68,7 +75,8 @@ module.exports = {
       currency_code: 'ILS',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -77,7 +85,8 @@ module.exports = {
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -86,6 +95,7 @@ module.exports = {
       currency_code: 'KRW',
       payment_methods: [
         'le_credit',
+        'stripe'
       ]
     },
     {
@@ -94,7 +104,8 @@ module.exports = {
       currency_code: 'MYR',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -103,7 +114,8 @@ module.exports = {
       currency_code: 'NZD',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -112,6 +124,7 @@ module.exports = {
       currency_code: 'PHP',
       payment_methods: [
         'le_credit',
+        'stripe'
       ]
     },
     {
@@ -120,6 +133,7 @@ module.exports = {
       currency_code: 'SGD',
       payment_methods: [
         'le_credit',
+        'stripe'
       ]
     },
     {
@@ -128,6 +142,7 @@ module.exports = {
       currency_code: 'ZAR',
       payment_methods: [
         'le_credit',
+        'stripe'
       ]
     },
     {
@@ -136,7 +151,8 @@ module.exports = {
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -145,7 +161,8 @@ module.exports = {
       currency_code: 'GBP',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
     {
@@ -154,7 +171,8 @@ module.exports = {
       currency_code: 'USD',
       payment_methods: [
         'le_credit',
-        'paypal'
+        'paypal',
+        'stripe'
       ]
     },
   ],
