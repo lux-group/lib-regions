@@ -1,6 +1,6 @@
 {
   "name": "lib-regions",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Region information for Luxury Escapes",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,8 @@
   "devDependencies": {
     "chai": "^4.0.0",
     "jest": "^20.0.4"
+  },
+  "dependencies": {
+    "lodash.uniq": "^4.5.0"
   }
 }

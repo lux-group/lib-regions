@@ -1,3 +1,5 @@
+var uniq = require('lodash.uniq');
+
 var regions = require('./region-data').regions
 var defaultRegionCode = require('./region-data').defaultRegionCode
 
@@ -34,6 +36,10 @@ function getDefaultRegionName() {
   return regions.find(function(region) {return region.code === defaultRegionCode}).name
 }
 
+function getCurrencies() {
+  return uniq(regions.map(function(region) {return region.currency_code})).sort()
+}
+
 function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies
 }
@@ -46,5 +52,6 @@ module.exports = {
   getDefaultRegion: getDefaultRegion,
   getDefaultRegionCode: getDefaultRegionCode,
   getDefaultRegionName: getDefaultRegionName,
-  getZeroDecimalCurrencies: getZeroDecimalCurrencies
+  getCurrencies: getCurrencies,
+  getZeroDecimalCurrencies: getZeroDecimalCurrencies,
 }
