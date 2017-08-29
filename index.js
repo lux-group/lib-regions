@@ -44,6 +44,10 @@ function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies
 }
 
+function getRegionLang() {
+  return regions.map(function(region {return region.lang}))
+}
+
 module.exports = {
   getRegions: getRegions,
   getRegionCodes: getRegionCodes,
@@ -54,4 +58,5 @@ module.exports = {
   getDefaultRegionName: getDefaultRegionName,
   getCurrencies: getCurrencies,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
+  getRegionLang: getRegionLang,
 }
