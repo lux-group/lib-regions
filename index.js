@@ -45,7 +45,7 @@ function getZeroDecimalCurrencies() {
 }
 
 function getRegionLang() {
-  return regions.map(function(region {return region.lang}))
+  return regions.map(function(region) {return region.lang})
 }
 
 module.exports = {

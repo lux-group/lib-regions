@@ -3,7 +3,7 @@ module.exports = {
     {
       code: 'AU',
       name: 'Australia',
-      lang: 'en-au'
+      lang: 'en-au',
       currency_code: 'AUD',
       payment_methods: [
         'le_credit',
@@ -14,7 +14,7 @@ module.exports = {
     {
       code: 'CA',
       name: 'Canada',
-      lang: 'en-ca'
+      lang: 'en-ca',
       currency_code: 'CAD',
       payment_methods: [
         'le_credit',
@@ -25,7 +25,7 @@ module.exports = {
     {
       code: 'FR',
       name: 'France',
-      lang: 'en-fr'
+      lang: 'en-fr',
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
@@ -36,7 +36,7 @@ module.exports = {
     {
       code: 'DE',
       name: 'Germany',
-      lang: 'en-de'
+      lang: 'en-de',
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
@@ -47,7 +47,7 @@ module.exports = {
     {
       code: 'HK',
       name: 'Hong Kong',
-      lang: 'en-hk'
+      lang: 'en-hk',
       currency_code: 'HKD',
       payment_methods: [
         'le_credit',
@@ -58,7 +58,7 @@ module.exports = {
     {
       code: 'IN',
       name: 'India',
-      lang: 'en-in'
+      lang: 'en-in',
       currency_code: 'INR',
       payment_methods: [
         'le_credit',
@@ -68,7 +68,7 @@ module.exports = {
     {
       code: 'IE',
       name: 'Ireland',
-      lang: 'en-ie'
+      lang: 'en-ie',
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
@@ -79,7 +79,7 @@ module.exports = {
     {
       code: 'IL',
       name: 'Israel',
-      lang: 'en-il'
+      lang: 'en-il',
       currency_code: 'ILS',
       payment_methods: [
         'le_credit',
@@ -90,7 +90,7 @@ module.exports = {
     {
       code: 'IT',
       name: 'Italy',
-      lang: 'en-it'
+      lang: 'en-it',
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
@@ -101,7 +101,7 @@ module.exports = {
     {
       code: 'KR',
       name: 'Korea',
-      lang: 'en-kr'
+      lang: 'en-kr',
       currency_code: 'KRW',
       payment_methods: [
         'le_credit',
@@ -111,7 +111,7 @@ module.exports = {
     {
       code: 'MY',
       name: 'Malaysia',
-      lang: 'en-my'
+      lang: 'en-my',
       currency_code: 'MYR',
       payment_methods: [
         'le_credit',
@@ -122,7 +122,7 @@ module.exports = {
     {
       code: 'NZ',
       name: 'New Zealand',
-      lang: 'en-nz'
+      lang: 'en-nz',
       currency_code: 'NZD',
       payment_methods: [
         'le_credit',
@@ -133,7 +133,7 @@ module.exports = {
     {
       code: 'PH',
       name: 'Philippines',
-      lang: 'en-ph'
+      lang: 'en-ph',
       currency_code: 'PHP',
       payment_methods: [
         'le_credit',
@@ -143,7 +143,7 @@ module.exports = {
     {
       code: 'SG',
       name: 'Singapore',
-      lang: 'en-sg'
+      lang: 'en-sg',
       currency_code: 'SGD',
       payment_methods: [
         'le_credit',
@@ -153,7 +153,7 @@ module.exports = {
     {
       code: 'ZA',
       name: 'South Africa',
-      lang: 'en-za'
+      lang: 'en-za',
       currency_code: 'ZAR',
       payment_methods: [
         'le_credit',
@@ -163,7 +163,7 @@ module.exports = {
     {
       code: 'ES',
       name: 'Spain',
-      lang: 'en-es'
+      lang: 'en-es',
       currency_code: 'EUR',
       payment_methods: [
         'le_credit',
@@ -174,7 +174,7 @@ module.exports = {
     {
       code: 'GB',
       name: 'United Kingdom',
-      lang: 'en-gb'
+      lang: 'en-gb',
       currency_code: 'GBP',
       payment_methods: [
         'le_credit',
@@ -185,7 +185,7 @@ module.exports = {
     {
       code: 'US',
       name: 'United States',
-      lang: 'en-us'
+      lang: 'en-us',
       currency_code: 'USD',
       payment_methods: [
         'le_credit',
