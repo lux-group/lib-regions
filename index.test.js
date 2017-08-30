@@ -68,3 +68,12 @@ describe('getRegionLang()', function() {
     expect(regionModule.getRegionLang()).to.deep.equal(['en-AU', 'en-CA'])
   })
 })
+
+describe('getRegionNamesAndCode()', function() {
+  it('should return an array of region names and code', function() {
+    expect(regionModule.getRegionNamesAndCode()).to.deep.equal([
+      {name: 'Australia', code: 'AU'},
+      {name: 'Canada', code: 'CA'}
+    ])
+  })
+})

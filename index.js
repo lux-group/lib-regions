@@ -48,6 +48,15 @@ function getRegionLang() {
   return regions.map(function(region) {return region.lang})
 }
 
+function getRegionNamesAndCode() {
+  return regions.map(function(region) {
+    return {
+      name: region.name,
+      code: region.code
+    }
+  })
+}
+
 module.exports = {
   getRegions: getRegions,
   getRegionCodes: getRegionCodes,
@@ -59,4 +68,5 @@ module.exports = {
   getCurrencies: getCurrencies,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
+  getRegionNamesAndCode: getRegionNamesAndCode
 }
