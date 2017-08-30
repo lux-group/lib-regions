@@ -3,13 +3,13 @@ module.exports = {
     {
       code: 'AU',
       name: 'Australia',
-      lang: 'en-au',
+      lang: 'en-AU',
       currency_code: 'AUD',
     },
     {
       code: 'CA',
       name: 'Canada',
-      lang: 'en-ca',
+      lang: 'en-CA',
       currency_code: 'CAD',
     },
   ],
