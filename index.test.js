@@ -7,8 +7,8 @@ var regionModule = require('./index')
 describe('getRegions()', function() {
   it('should return the region info', function() {
     expect(regionModule.getRegions()).to.deep.equal([
-      {code: 'AU', name: 'Australia', currency_code: 'AUD'},
-      {code: 'CA', name: 'Canada', currency_code: 'CAD'}
+      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD'},
+      {code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD'}
     ])
   })
 })
@@ -27,14 +27,14 @@ describe('getRegionNames()', function() {
 
 describe('getRegionByCode()', function() {
   it('should return the info for the given region code', function() {
-    expect(regionModule.getRegionByCode('CA')).to.deep.equal({code: 'CA', name: 'Canada', currency_code: 'CAD'})
+    expect(regionModule.getRegionByCode('CA')).to.deep.equal({code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD'})
   })
 })
 
 describe('getDefaultRegion()', function() {
   it('should return the default region\'s info', function() {
     expect(regionModule.getDefaultRegion()).to.deep.equal(
-      {code: 'AU', name: 'Australia', currency_code: 'AUD'}
+      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD'}
     )
   })
 })
@@ -60,5 +60,11 @@ describe('getCurrencies()', function() {
 describe('getZeroDecimalCurrencies()', function() {
   it('should return an array of currencies', function() {
     expect(regionModule.getZeroDecimalCurrencies()).to.be.an('array');
+  })
+})
+
+describe('getRegionLang()', function() {
+  it('should return an array of region langs', function() {
+    expect(regionModule.getRegionLang()).to.deep.equal(['en-AU', 'en-CA'])
   })
 })
