@@ -1,14 +1,24 @@
 var expect = require('chai').expect
 
 jest.mock('./region-data.js')
+jest.mock('./currency-data.js')
 
 var regionModule = require('./index')
 
 describe('getRegions()', function() {
   it('should return the region info', function() {
     expect(regionModule.getRegions()).to.deep.equal([
-      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD'},
-      {code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD'}
+      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD', payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe',
+      ]},
+      {code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD', payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe',
+        'maple_syrup_eh',
+      ]}
     ])
   })
 })
@@ -27,14 +37,29 @@ describe('getRegionNames()', function() {
 
 describe('getRegionByCode()', function() {
   it('should return the info for the given region code', function() {
-    expect(regionModule.getRegionByCode('CA')).to.deep.equal({code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD'})
+    expect(regionModule.getRegionByCode('CA')).to.deep.equal({
+      code: 'CA',
+      name: 'Canada',
+      lang: 'en-CA',
+      currency_code: 'CAD',
+      payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe',
+        'maple_syrup_eh',
+      ],
+    })
   })
 })
 
 describe('getDefaultRegion()', function() {
   it('should return the default region\'s info', function() {
     expect(regionModule.getDefaultRegion()).to.deep.equal(
-      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD'}
+      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD', payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe'
+      ]}
     )
   })
 })
@@ -51,14 +76,24 @@ describe('getDefaultRegionName()', function() {
   })
 })
 
-describe('getCurrencies()', function() {
-  it('should return an array of currencies', function() {
-    expect(regionModule.getCurrencies()).to.deep.equal(['AUD', 'CAD'])
+describe('getCurrencyCodes()', function() {
+  it('should return an array of currency codes', function() {
+    expect(regionModule.getCurrencyCodes()).to.deep.equal(['AUD', 'CAD'])
+  })
+})
+
+describe('getPaymentMethodsByCurrencyCode()', function() {
+  it('should return an array of payment methods', function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode('AUD')).to.deep.equal([
+      'le_credit',
+      'paypal',
+      'stripe',
+    ])
   })
 })
 
 describe('getZeroDecimalCurrencies()', function() {
-  it('should return an array of currencies', function() {
+  it('should return an array of currency codes', function() {
     expect(regionModule.getZeroDecimalCurrencies()).to.be.an('array');
   })
 })
