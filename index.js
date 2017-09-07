@@ -1,6 +1,14 @@
 var uniq = require('lodash.uniq');
 
-var regions = require('./region-data').regions
+var currencies = require('./currency-data').currencies
+
+var regions = require('./region-data').regions.map(function (region) {
+  return Object.assign({},
+    region,
+    { payment_methods: currencies[region.currency_code].payment_methods }
+  )
+})
+
 var defaultRegionCode = require('./region-data').defaultRegionCode
 
 var zeroDecimalCurrencies = [

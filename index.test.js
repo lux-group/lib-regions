@@ -1,14 +1,23 @@
 var expect = require('chai').expect
 
 jest.mock('./region-data.js')
+jest.mock('./currency-data.js')
 
 var regionModule = require('./index')
 
 describe('getRegions()', function() {
   it('should return the region info', function() {
     expect(regionModule.getRegions()).to.deep.equal([
-      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD'},
-      {code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD'}
+      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD', payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe'
+      ]},
+      {code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD', payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe'
+      ]}
     ])
   })
 })
@@ -27,14 +36,28 @@ describe('getRegionNames()', function() {
 
 describe('getRegionByCode()', function() {
   it('should return the info for the given region code', function() {
-    expect(regionModule.getRegionByCode('CA')).to.deep.equal({code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD'})
+    expect(regionModule.getRegionByCode('CA')).to.deep.equal({
+      code: 'CA',
+      name: 'Canada',
+      lang: 'en-CA',
+      currency_code: 'CAD',
+      payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe'
+      ],
+    })
   })
 })
 
 describe('getDefaultRegion()', function() {
   it('should return the default region\'s info', function() {
     expect(regionModule.getDefaultRegion()).to.deep.equal(
-      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD'}
+      {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD', payment_methods: [
+        'le_credit',
+        'paypal',
+        'stripe'
+      ]}
     )
   })
 })
