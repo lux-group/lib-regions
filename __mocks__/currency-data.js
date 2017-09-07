@@ -4,14 +4,15 @@ module.exports = {
       payment_methods: [
         'le_credit',
         'paypal',
-        'stripe'
+        'stripe',
       ],
     },
     CAD: {
       payment_methods: [
         'le_credit',
         'paypal',
-        'stripe'
+        'stripe',
+        'maple_syrup_eh',
       ],
     },
   },

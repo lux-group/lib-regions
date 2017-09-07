@@ -11,12 +11,13 @@ describe('getRegions()', function() {
       {code: 'AU', name: 'Australia', lang: 'en-AU', currency_code: 'AUD', payment_methods: [
         'le_credit',
         'paypal',
-        'stripe'
+        'stripe',
       ]},
       {code: 'CA', name: 'Canada', lang: 'en-CA', currency_code: 'CAD', payment_methods: [
         'le_credit',
         'paypal',
-        'stripe'
+        'stripe',
+        'maple_syrup_eh',
       ]}
     ])
   })
@@ -44,7 +45,8 @@ describe('getRegionByCode()', function() {
       payment_methods: [
         'le_credit',
         'paypal',
-        'stripe'
+        'stripe',
+        'maple_syrup_eh',
       ],
     })
   })
@@ -74,14 +76,24 @@ describe('getDefaultRegionName()', function() {
   })
 })
 
-describe('getCurrencies()', function() {
-  it('should return an array of currencies', function() {
-    expect(regionModule.getCurrencies()).to.deep.equal(['AUD', 'CAD'])
+describe('getCurrencyCodes()', function() {
+  it('should return an array of currency codes', function() {
+    expect(regionModule.getCurrencyCodes()).to.deep.equal(['AUD', 'CAD'])
+  })
+})
+
+describe('getPaymentMethodsByCurrencyCode()', function() {
+  it('should return an array of payment methods', function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode('AUD')).to.deep.equal([
+      'le_credit',
+      'paypal',
+      'stripe',
+    ])
   })
 })
 
 describe('getZeroDecimalCurrencies()', function() {
-  it('should return an array of currencies', function() {
+  it('should return an array of currency codes', function() {
     expect(regionModule.getZeroDecimalCurrencies()).to.be.an('array');
   })
 })

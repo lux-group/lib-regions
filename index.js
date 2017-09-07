@@ -44,8 +44,17 @@ function getDefaultRegionName() {
   return regions.find(function(region) {return region.code === defaultRegionCode}).name
 }
 
+function getCurrencyCodes() {
+  return Object.keys(currencies)
+}
+
 function getCurrencies() {
-  return uniq(regions.map(function(region) {return region.currency_code})).sort()
+  console.warn('getCurrencies() is deprecated from lib-regions 0.1.10. Please use getCurrencyCodes() instead.')
+  return getCurrencyCodes()
+}
+
+function getPaymentMethodsByCurrencyCode(currencyCode) {
+  return currencies[currencyCode].payment_methods
 }
 
 function getZeroDecimalCurrencies() {
@@ -73,7 +82,9 @@ module.exports = {
   getDefaultRegion: getDefaultRegion,
   getDefaultRegionCode: getDefaultRegionCode,
   getDefaultRegionName: getDefaultRegionName,
+  getCurrencyCodes: getCurrencyCodes,
   getCurrencies: getCurrencies,
+  getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
   getRegionNamesAndCode: getRegionNamesAndCode
