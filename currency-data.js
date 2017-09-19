@@ -5,7 +5,7 @@ module.exports = {
         'le_credit',
         'paypal',
         'stripe',
-        'braintree'
+        'braintree',
       ],
     },
     CAD: {
@@ -60,7 +60,7 @@ module.exports = {
         'le_credit',
         'paypal',
         'stripe',
-        'braintree'
+        'braintree',
       ],
     },
     PHP: {
