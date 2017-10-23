@@ -25,8 +25,8 @@ module.exports = {
       currency_code: 'CAD',
       phone: {
         local: {
-          human_readable: '1 (650) 887 7712.',
-          number: '16508877712.',
+          human_readable: '1 (650) 887 7712',
+          number: '16508877712',
         },
         international: {
           human_readable: '+61 3 90200250',
