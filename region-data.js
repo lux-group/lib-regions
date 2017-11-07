@@ -4,6 +4,7 @@ module.exports = {
       code: 'AU',
       name: 'Australia',
       lang: 'en-AU',
+      phone_prefix: '61',
       currency_formatting_locale: 'en-AU',
       currency_code: 'AUD',
       phone: {
@@ -21,6 +22,7 @@ module.exports = {
       code: 'CA',
       name: 'Canada',
       lang: 'en-CA',
+      phone_prefix: '1',
       currency_formatting_locale: 'en-CA',
       currency_code: 'CAD',
       phone: {
@@ -38,6 +40,7 @@ module.exports = {
       code: 'FR',
       name: 'France',
       lang: 'en-FR',
+      phone_prefix: '33',
       currency_formatting_locale: 'fr-FR',
       currency_code: 'EUR',
       phone: {
@@ -55,6 +58,7 @@ module.exports = {
       code: 'DE',
       name: 'Germany',
       lang: 'en-DE',
+      phone_prefix: '49',
       currency_formatting_locale: 'de-DE',
       currency_code: 'EUR',
       phone: {
@@ -72,6 +76,7 @@ module.exports = {
       code: 'HK',
       name: 'Hong Kong',
       lang: 'en-HK',
+      phone_prefix: '852',
       currency_formatting_locale: 'en-HK',
       currency_code: 'HKD',
       phone: {
@@ -89,6 +94,7 @@ module.exports = {
       code: 'IN',
       name: 'India',
       lang: 'en-IN',
+      phone_prefix: '91',
       currency_formatting_locale: 'en-IN',
       currency_code: 'INR',
       phone: {
@@ -106,6 +112,7 @@ module.exports = {
       code: 'IE',
       name: 'Ireland',
       lang: 'en-IE',
+      phone_prefix: '353',
       currency_formatting_locale: 'en-IE',
       currency_code: 'EUR',
       phone: {
@@ -123,6 +130,7 @@ module.exports = {
       code: 'IL',
       name: 'Israel',
       lang: 'en-IL',
+      phone_prefix: '972',
       currency_formatting_locale: 'iw-IL',
       currency_code: 'ILS',
       phone: {
@@ -140,6 +148,7 @@ module.exports = {
       code: 'IT',
       name: 'Italy',
       lang: 'en-IT',
+      phone_prefix: '39',
       currency_formatting_locale: 'it-IT',
       currency_code: 'EUR',
       phone: {
@@ -157,6 +166,7 @@ module.exports = {
       code: 'KR',
       name: 'Korea',
       lang: 'en-KR',
+      phone_prefix: '82',
       currency_formatting_locale: 'ko-KR',
       currency_code: 'KRW',
       phone: {
@@ -174,6 +184,7 @@ module.exports = {
       code: 'MY',
       name: 'Malaysia',
       lang: 'en-MY',
+      phone_prefix: '60',
       currency_formatting_locale: 'ms-MY',
       currency_code: 'MYR',
       phone: {
@@ -191,6 +202,7 @@ module.exports = {
       code: 'NZ',
       name: 'New Zealand',
       lang: 'en-NZ',
+      phone_prefix: '64',
       currency_formatting_locale: 'en-NZ',
       currency_code: 'NZD',
       phone: {
@@ -208,6 +220,7 @@ module.exports = {
       code: 'PH',
       name: 'Philippines',
       lang: 'en-PH',
+      phone_prefix: '63',
       currency_formatting_locale: 'en-PH',
       currency_code: 'PHP',
       phone: {
@@ -225,6 +238,7 @@ module.exports = {
       code: 'SG',
       name: 'Singapore',
       lang: 'en-SG',
+      phone_prefix: '65',
       currency_formatting_locale: 'en-SG',
       currency_code: 'SGD',
       phone: {
@@ -242,6 +256,7 @@ module.exports = {
       code: 'ZA',
       name: 'South Africa',
       lang: 'en-ZA',
+      phone_prefix: '27',
       currency_formatting_locale: 'af-ZA',
       currency_code: 'ZAR',
       phone: {
@@ -259,6 +274,7 @@ module.exports = {
       code: 'ES',
       name: 'Spain',
       lang: 'en-ES',
+      phone_prefix: '34',
       currency_formatting_locale: 'es-ES',
       currency_code: 'EUR',
       phone: {
@@ -276,6 +292,7 @@ module.exports = {
       code: 'GB',
       name: 'United Kingdom',
       lang: 'en-GB',
+      phone_prefix: '44',
       currency_formatting_locale: 'en-GB',
       currency_code: 'GBP',
       phone: {
@@ -293,6 +310,7 @@ module.exports = {
       code: 'US',
       name: 'United States',
       lang: 'en-US',
+      phone_prefix: '1',
       currency_formatting_locale: 'en-US',
       currency_code: 'USD',
       phone: {
