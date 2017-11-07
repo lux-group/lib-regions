@@ -65,6 +65,10 @@ function getRegionLang() {
   return regions.map(function(region) {return region.lang})
 }
 
+function getRegionPhonePrefix() {
+  return regions.map(function(region) {return region.phone_prefix})
+}
+
 function getRegionNamesAndCode() {
   return regions.map(function(region) {
     return {
