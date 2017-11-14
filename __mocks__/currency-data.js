@@ -3,14 +3,14 @@ module.exports = {
     AUD: {
       payment_methods: [
         'le_credit',
-        'paypal',
+        'braintree',
         'stripe',
       ],
     },
     CAD: {
       payment_methods: [
         'le_credit',
-        'paypal',
+        'braintree',
         'stripe',
         'maple_syrup_eh',
       ],

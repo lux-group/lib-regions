@@ -3,7 +3,6 @@ module.exports = {
     AUD: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
         'braintree',
       ],
@@ -11,21 +10,18 @@ module.exports = {
     CAD: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
     EUR: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
     HKD: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
@@ -38,7 +34,6 @@ module.exports = {
     ILS: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
@@ -51,14 +46,12 @@ module.exports = {
     MYR: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
     NZD: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
         'braintree',
       ],
@@ -84,14 +77,12 @@ module.exports = {
     GBP: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
     USD: {
       payment_methods: [
         'le_credit',
-        'paypal',
         'stripe',
       ],
     },
