@@ -16,7 +16,7 @@ describe('getRegions()', function() {
         currency_code: 'AUD',
         payment_methods: [
           'le_credit',
-          'paypal',
+          'braintree',
           'stripe',
         ],
       },
@@ -28,7 +28,7 @@ describe('getRegions()', function() {
         currency_code: 'CAD',
         payment_methods: [
           'le_credit',
-          'paypal',
+          'braintree',
           'stripe',
           'maple_syrup_eh',
         ],
@@ -59,7 +59,7 @@ describe('getRegionByCode()', function() {
       currency_code: 'CAD',
       payment_methods: [
         'le_credit',
-        'paypal',
+        'braintree',
         'stripe',
         'maple_syrup_eh',
       ],
@@ -77,7 +77,7 @@ describe('getDefaultRegion()', function() {
       currency_code: 'AUD',
       payment_methods: [
         'le_credit',
-        'paypal',
+        'braintree',
         'stripe'
       ],
     })
@@ -106,7 +106,7 @@ describe('getPaymentMethodsByCurrencyCode()', function() {
   it('should return an array of payment methods', function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode('AUD')).to.deep.equal([
       'le_credit',
-      'paypal',
+      'braintree',
       'stripe',
     ])
   })
