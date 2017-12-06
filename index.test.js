@@ -67,6 +67,18 @@ describe('getRegionByCode()', function() {
   })
 })
 
+describe('getRegionNameByCode()', function () {
+  const {getRegionNameByCode} = regionModule
+
+  it('returns region name if region exists', function () {
+    expect(getRegionNameByCode('AU')).to.equal('Australia')
+  })
+
+  it('returns \'null\' code if region is absent', function () {
+    expect(getRegionNameByCode('XYZ')).to.equal(null)
+  })
+})
+
 describe('getDefaultRegion()', function() {
   it('should return the default region\'s info', function() {
     expect(regionModule.getDefaultRegion()).to.deep.equal({

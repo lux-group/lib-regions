@@ -36,6 +36,11 @@ function getDefaultRegion() {
   return getRegionByCode(defaultRegionCode)
 }
 
+function getRegionNameByCode(code) {
+  const region = getRegionByCode(code)
+  return region && region.name || null
+}
+
 function getDefaultRegionCode() {
   return defaultRegionCode
 }
@@ -79,17 +84,18 @@ function getRegionNamesAndCode() {
 }
 
 module.exports = {
-  getRegions: getRegions,
-  getRegionCodes: getRegionCodes,
-  getRegionNames: getRegionNames,
-  getRegionByCode: getRegionByCode,
-  getDefaultRegion: getDefaultRegion,
-  getDefaultRegionCode: getDefaultRegionCode,
-  getDefaultRegionName: getDefaultRegionName,
-  getCurrencyCodes: getCurrencyCodes,
-  getCurrencies: getCurrencies,
-  getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
-  getZeroDecimalCurrencies: getZeroDecimalCurrencies,
-  getRegionLang: getRegionLang,
-  getRegionNamesAndCode: getRegionNamesAndCode
+  getRegions,
+  getRegionCodes,
+  getRegionNames,
+  getRegionByCode,
+  getRegionNameByCode,
+  getDefaultRegion,
+  getDefaultRegionCode,
+  getDefaultRegionName,
+  getCurrencyCodes,
+  getCurrencies,
+  getPaymentMethodsByCurrencyCode,
+  getZeroDecimalCurrencies,
+  getRegionLang,
+  getRegionNamesAndCode
 }
