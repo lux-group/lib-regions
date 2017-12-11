@@ -117,8 +117,8 @@ module.exports = {
       currency_code: 'EUR',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -135,8 +135,8 @@ module.exports = {
       currency_code: 'ILS',
       phone: {
         local: {
-          human_readable: '1 801 227 262',
-          number: '1801227262',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -153,8 +153,8 @@ module.exports = {
       currency_code: 'EUR',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -171,8 +171,8 @@ module.exports = {
       currency_code: 'KRW',
       phone: {
         local: {
-          human_readable: '0808 220 277',
-          number: '0808220277',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -207,8 +207,8 @@ module.exports = {
       currency_code: 'NZD',
       phone: {
         local: {
-          human_readable: '0800 441 457',
-          number: '0800441457',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -261,8 +261,8 @@ module.exports = {
       currency_code: 'ZAR',
       phone: {
         local: {
-          human_readable: '0800 060 109',
-          number: '0800060109',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -279,8 +279,8 @@ module.exports = {
       currency_code: 'EUR',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '',
+          number: '',
         },
         international: {
           human_readable: '+61 2 8320 6845',
