@@ -13,8 +13,8 @@ module.exports = {
           number: '1300889900',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -27,12 +27,12 @@ module.exports = {
       currency_code: 'CAD',
       phone: {
         local: {
-          human_readable: '1 (650) 887 7712',
-          number: '16508877712',
+          human_readable: '778 300 0814',
+          number: '7783000814',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -45,12 +45,12 @@ module.exports = {
       currency_code: 'EUR',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '0805 08 42 02',
+          number: '0805084202',
         },
         international: {
-          human_readable: '+44 (203) 695 0392',
-          number: '+442036950392',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -63,12 +63,12 @@ module.exports = {
       currency_code: 'EUR',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '0211 38789806',
+          number: '021138789806',
         },
         international: {
-          human_readable: '+44 (203) 695 0392',
-          number: '+442036950392',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -81,12 +81,12 @@ module.exports = {
       currency_code: 'HKD',
       phone: {
         local: {
-          human_readable: '800 906 442',
-          number: '800906442',
+          human_readable: '5806 0444',
+          number: '58060444',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -103,8 +103,8 @@ module.exports = {
           number: '18001200336',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -121,8 +121,8 @@ module.exports = {
           number: '1300889900',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -139,8 +139,8 @@ module.exports = {
           number: '1801227262',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -157,8 +157,8 @@ module.exports = {
           number: '1300889900',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -175,8 +175,8 @@ module.exports = {
           number: '0808220277',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -189,12 +189,12 @@ module.exports = {
       currency_code: 'MYR',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '03 9212 7293',
+          number: '0392127293',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -211,8 +211,8 @@ module.exports = {
           number: '0800441457',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -229,8 +229,8 @@ module.exports = {
           number: '180013200074',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -247,8 +247,8 @@ module.exports = {
           number: '8004922237',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -265,8 +265,8 @@ module.exports = {
           number: '0800060109',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -283,8 +283,8 @@ module.exports = {
           number: '1300889900',
         },
         international: {
-          human_readable: '+44 (203) 695 0392',
-          number: '+442036950392',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -297,12 +297,12 @@ module.exports = {
       currency_code: 'GBP',
       phone: {
         local: {
-          human_readable: '8000 988 722',
-          number: '8000988722',
+          human_readable: '020 8068 2668',
+          number: '02080682668',
         },
         international: {
-          human_readable: '+44 (203) 695 0392',
-          number: '+442036950392',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
@@ -315,12 +315,12 @@ module.exports = {
       currency_code: 'USD',
       phone: {
         local: {
-          human_readable: '1800 768 6102',
-          number: '18007686102',
+          human_readable: '888 402 1238',
+          number: '8884021238',
         },
         international: {
-          human_readable: '+61 3 90200250',
-          number: '+61390200250',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
       },
     },
