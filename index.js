@@ -84,18 +84,18 @@ function getRegionNamesAndCode() {
 }
 
 module.exports = {
-  getRegions,
-  getRegionCodes,
-  getRegionNames,
-  getRegionByCode,
-  getRegionNameByCode,
-  getDefaultRegion,
-  getDefaultRegionCode,
-  getDefaultRegionName,
-  getCurrencyCodes,
-  getCurrencies,
-  getPaymentMethodsByCurrencyCode,
-  getZeroDecimalCurrencies,
-  getRegionLang,
-  getRegionNamesAndCode
+  getRegions: getRegions,
+  getRegionCodes: getRegionCodes,
+  getRegionNames: getRegionNames,
+  getRegionByCode: getRegionByCode,
+  getRegionNameByCode: getRegionNameByCode,
+  getDefaultRegion: getDefaultRegion,
+  getDefaultRegionCode: getDefaultRegionCode,
+  getDefaultRegionName: getDefaultRegionName,
+  getCurrencyCodes: getCurrencyCodes,
+  getCurrencies: getCurrencies,
+  getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
+  getZeroDecimalCurrencies: getZeroDecimalCurrencies,
+  getRegionLang: getRegionLang,
+  getRegionNamesAndCode: getRegionNamesAndCode
 }
