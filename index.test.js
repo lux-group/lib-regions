@@ -18,6 +18,7 @@ describe('getRegions()', function() {
           'le_credit',
           'braintree',
           'stripe',
+          'qantas'
         ],
       },
       {
@@ -90,7 +91,8 @@ describe('getDefaultRegion()', function() {
       payment_methods: [
         'le_credit',
         'braintree',
-        'stripe'
+        'stripe',
+        'qantas'
       ],
     })
   })
@@ -120,6 +122,7 @@ describe('getPaymentMethodsByCurrencyCode()', function() {
       'le_credit',
       'braintree',
       'stripe',
+      'qantas'
     ])
   })
 })
