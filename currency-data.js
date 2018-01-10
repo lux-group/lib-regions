@@ -5,6 +5,7 @@ module.exports = {
         'le_credit',
         'stripe',
         'braintree',
+        'qantas'
       ],
     },
     CAD: {
