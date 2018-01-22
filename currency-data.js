@@ -53,8 +53,7 @@ module.exports = {
     NZD: {
       payment_methods: [
         'le_credit',
-        'stripe',
-        'braintree',
+        'stripe'
       ],
     },
     PHP: {
