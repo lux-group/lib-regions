@@ -29,7 +29,7 @@ function getRegionNames() {
 }
 
 function getRegionByCode(regionCode) {
-  return regions.find(function(region) {return region.code === regionCode})
+  return regions.find(function(region) {return region.code.toLowerCase() === regionCode.toLowerCase()})
 }
 
 function getDefaultRegion() {
