@@ -1,3 +1,5 @@
+const DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
+
 module.exports = {
   regions: [
     {
@@ -17,6 +19,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'CA',
@@ -35,6 +38,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'CN',
@@ -53,6 +57,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'FR',
@@ -71,6 +76,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'DE',
@@ -89,6 +95,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'HK',
@@ -107,6 +114,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'IN',
@@ -125,6 +133,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: '6 Shenton Way, OUE Downtown 2, #33-00 Singapore 068809',
     },
     {
       code: 'ID',
@@ -143,6 +152,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'IE',
@@ -161,6 +171,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'IL',
@@ -179,6 +190,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'IT',
@@ -197,6 +209,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'JP',
@@ -215,6 +228,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'KR',
@@ -233,6 +247,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'MY',
@@ -251,6 +266,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'NZ',
@@ -269,6 +285,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'PH',
@@ -287,6 +304,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'SG',
@@ -305,6 +323,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'ZA',
@@ -323,6 +342,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'ES',
@@ -341,6 +361,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'TW',
@@ -359,6 +380,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'TH',
@@ -377,6 +399,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'GB',
@@ -395,6 +418,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'US',
@@ -413,6 +437,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
     {
       code: 'VN',
@@ -431,6 +456,7 @@ module.exports = {
           number: '+61283206845',
         },
       },
+      mailing_address: DEFAULT_MAILING_ADDRESS,
     },
   ],
 
