@@ -14,6 +14,12 @@ module.exports = {
         'stripe',
       ],
     },
+    CNY: {
+      payment_methods: [
+        'le_credit',
+        'stripe',
+      ],
+    },
     EUR: {
       payment_methods: [
         'le_credit',
@@ -32,7 +38,19 @@ module.exports = {
         'stripe',
       ],
     },
+    IDR: {
+      payment_methods: [
+        'le_credit',
+        'stripe',
+      ],
+    },
     ILS: {
+      payment_methods: [
+        'le_credit',
+        'stripe',
+      ],
+    },
+    JPY: {
       payment_methods: [
         'le_credit',
         'stripe',
@@ -69,6 +87,18 @@ module.exports = {
         'stripe',
       ],
     },
+    TWD: {
+      payment_methods: [
+        'le_credit',
+        'stripe',
+      ]
+    },
+    THB: {
+      payment_methods: [
+        'le_credit',
+        'stripe',
+      ]
+    },
     ZAR: {
       payment_methods: [
         'le_credit',
@@ -82,6 +112,12 @@ module.exports = {
       ],
     },
     USD: {
+      payment_methods: [
+        'le_credit',
+        'stripe',
+      ],
+    },
+    VND: {
       payment_methods: [
         'le_credit',
         'stripe',
