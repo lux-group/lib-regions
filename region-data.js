@@ -37,6 +37,24 @@ module.exports = {
       },
     },
     {
+      code: 'CN',
+      name: 'China',
+      lang: 'en-CN',
+      phone_prefix: '86',
+      currency_formatting_locale: 'zh-CN',
+      currency_code: 'CNY',
+      phone: {
+        local: {
+          human_readable: '1300 88 99 00',
+          number: '1300889900',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+    },
+    {
       code: 'FR',
       name: 'France',
       lang: 'en-FR',
@@ -109,6 +127,24 @@ module.exports = {
       },
     },
     {
+      code: 'ID',
+      name: 'Indonesia',
+      lang: 'en-ID',
+      phone_prefix: '62',
+      currency_formatting_locale: 'id-ID',
+      currency_code: 'IDR',
+      phone: {
+        local: {
+          human_readable: '1800 1200 336',
+          number: '18001200336',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+    },
+    {
       code: 'IE',
       name: 'Ireland',
       lang: 'en-IE',
@@ -151,6 +187,24 @@ module.exports = {
       phone_prefix: '39',
       currency_formatting_locale: 'it-IT',
       currency_code: 'EUR',
+      phone: {
+        local: {
+          human_readable: '1300 88 99 00',
+          number: '1300889900',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+    },
+    {
+      code: 'JP',
+      name: 'Japan',
+      lang: 'en-JP',
+      phone_prefix: '81',
+      currency_formatting_locale: 'ja-JP',
+      currency_code: 'JPY',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -289,6 +343,42 @@ module.exports = {
       },
     },
     {
+      code: 'TW',
+      name: 'Taiwan',
+      lang: 'en-TW',
+      phone_prefix: '886',
+      currency_formatting_locale: 'zh-TW',
+      currency_code: 'TWD',
+      phone: {
+        local: {
+          human_readable: '1300 88 99 00',
+          number: '1300889900',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+    },
+    {
+      code: 'TH',
+      name: 'Thailand',
+      lang: 'en-TH',
+      phone_prefix: '66',
+      currency_formatting_locale: 'th-TH',
+      currency_code: 'THB',
+      phone: {
+        local: {
+          human_readable: '1300 88 99 00',
+          number: '1300889900',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+    },
+    {
       code: 'GB',
       name: 'United Kingdom',
       lang: 'en-GB',
@@ -317,6 +407,24 @@ module.exports = {
         local: {
           human_readable: '888 402 1238',
           number: '8884021238',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+    },
+    {
+      code: 'VN',
+      name: 'Vietnam',
+      lang: 'en-VN',
+      phone_prefix: '84',
+      currency_formatting_locale: 'vi-VN',
+      currency_code: 'VND',
+      phone: {
+        local: {
+          human_readable: '1300 88 99 00',
+          number: '1300889900',
         },
         international: {
           human_readable: '+61 2 8320 6845',
