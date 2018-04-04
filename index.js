@@ -53,11 +53,6 @@ function getCurrencyCodes() {
   return Object.keys(currencies)
 }
 
-function getCurrencies() {
-  console.warn('getCurrencies() is deprecated from lib-regions 0.1.10. Please use getCurrencyCodes() instead.')
-  return getCurrencyCodes()
-}
-
 function getPaymentMethodsByCurrencyCode(currencyCode) {
   return currencies[currencyCode].payment_methods
 }
@@ -93,7 +88,6 @@ module.exports = {
   getDefaultRegionCode: getDefaultRegionCode,
   getDefaultRegionName: getDefaultRegionName,
   getCurrencyCodes: getCurrencyCodes,
-  getCurrencies: getCurrencies,
   getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
