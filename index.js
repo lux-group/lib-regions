@@ -29,6 +29,9 @@ function getRegionNames() {
 }
 
 function getRegionByCode(regionCode) {
+  if (!regionCode) {
+    return null
+  }
   return regions.find(function(region) {return region.code.toLowerCase() === regionCode.toLowerCase()})
 }
 
