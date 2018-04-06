@@ -1,13 +1,23 @@
-var uniq = require('lodash.uniq')
+var currencyData = require('./currency-data').currencies
+var regionData = require('./region-data').regions
 
-var currencies = require('./currency-data').currencies
+var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
+  acc[k] = regionData[k].map(function(region) {
+    return Object.assign({},
+      region,
+      { payment_methods: currencies(k)[region.currency_code].payment_methods }
+    )
+  })
+  return acc
+}, {})
 
-var regions = require('./region-data').regions.map(function (region) {
-  return Object.assign({},
-    region,
-    { payment_methods: currencies[region.currency_code].payment_methods },
-  )
-})
+function regions(brand) {
+  return brandRegions[brand || 'luxuryescapes']
+}
+
+function currencies(brand) {
+  return currencyData[brand || 'luxuryescapes']
+}
 
 var defaultRegionCode = require('./region-data').defaultRegionCode
 
@@ -16,31 +26,31 @@ var zeroDecimalCurrencies = [
   'PYG', 'RWF', 'VND', 'VUV', 'XAF', 'XOF', 'XPF'
 ]
 
-function getRegions() {
-  return regions
+function getRegions(brand) {
+  return regions(brand)
 }
 
-function getRegionCodes() {
-  return regions.map(function(region) {return region.code})
+function getRegionCodes(brand) {
+  return regions(brand).map(function(region) {return region.code})
 }
 
-function getRegionNames() {
-  return regions.map(function(region) {return region.name})
+function getRegionNames(brand) {
+  return regions(brand).map(function(region) {return region.name})
 }
 
-function getRegionByCode(regionCode) {
+function getRegionByCode(regionCode, brand) {
   if (!regionCode) {
     return null
   }
-  return regions.find(function(region) {return region.code.toLowerCase() === regionCode.toLowerCase()})
+  return regions(brand).find(function(region) {return region.code.toLowerCase() === regionCode.toLowerCase()})
 }
 
-function getDefaultRegion() {
-  return getRegionByCode(defaultRegionCode)
+function getDefaultRegion(brand) {
+  return getRegionByCode(defaultRegionCode, brand)
 }
 
-function getRegionNameByCode(code) {
-  const region = getRegionByCode(code)
+function getRegionNameByCode(code, brand) {
+  const region = getRegionByCode(code, brand)
   return region && region.name || null
 }
 
@@ -48,32 +58,32 @@ function getDefaultRegionCode() {
   return defaultRegionCode
 }
 
-function getDefaultRegionName() {
-  return regions.find(function(region) {return region.code === defaultRegionCode}).name
+function getDefaultRegionName(brand) {
+  return regions(brand).find(function(region) {return region.code === defaultRegionCode}).name
 }
 
-function getCurrencyCodes() {
-  return Object.keys(currencies)
+function getCurrencyCodes(brand) {
+  return Object.keys(currencies(brand))
 }
 
-function getPaymentMethodsByCurrencyCode(currencyCode) {
-  return currencies[currencyCode].payment_methods
+function getPaymentMethodsByCurrencyCode(currencyCode, brand) {
+  return currencies(brand)[currencyCode].payment_methods
 }
 
 function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies
 }
 
-function getRegionLang() {
-  return regions.map(function(region) {return region.lang})
+function getRegionLang(brand) {
+  return regions(brand).map(function(region) {return region.lang})
 }
 
-function getRegionPhonePrefix() {
-  return regions.map(function(region) {return region.phone_prefix})
+function getRegionPhonePrefix(brand) {
+  return regions(brand).map(function(region) {return region.phone_prefix})
 }
 
-function getRegionNamesAndCode() {
-  return regions.map(function(region) {
+function getRegionNamesAndCode(brand) {
+  return regions(brand).map(function(region) {
     return {
       name: region.name,
       code: region.code
