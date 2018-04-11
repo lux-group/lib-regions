@@ -1,7 +1,5 @@
 var uniq = require('lodash.uniq')
 
-var flagsIds = require('./flag-data').flagsIds
-
 var currencies = require('./currency-data').currencies
 
 var regions = require('./region-data').regions.map(function (region) {
@@ -83,16 +81,6 @@ function getRegionNamesAndCode() {
   })
 }
 
-function getRegionFlagIdByCode(regionCode) {
-  if (!regionCode) {
-    return null
-  }
-  return {
-    id: flagsIds[regionCode]
-  }
-}
-
-
 module.exports = {
   getRegions: getRegions,
   getRegionCodes: getRegionCodes,
@@ -106,6 +94,5 @@ module.exports = {
   getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
-  getRegionNamesAndCode: getRegionNamesAndCode,
-  getRegionFlagIdByCode: getRegionFlagIdByCode
+  getRegionNamesAndCode: getRegionNamesAndCode
 }

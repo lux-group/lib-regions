@@ -9,6 +9,7 @@ module.exports = {
       phone_prefix: '61',
       currency_formatting_locale: 'en-AU',
       currency_code: 'AUD',
+      flag_id: 'au_iuox02',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -28,6 +29,7 @@ module.exports = {
       phone_prefix: '1',
       currency_formatting_locale: 'en-CA',
       currency_code: 'CAD',
+      flag_id: 'ca_nacvxi',
       phone: {
         local: {
           human_readable: '778 300 0814',
@@ -47,6 +49,7 @@ module.exports = {
       phone_prefix: '86',
       currency_formatting_locale: 'zh-CN',
       currency_code: 'CNY',
+      flag_id: 'cn_nnripn',
       phone: {
         local: {
           human_readable: '800 597 138',
@@ -66,6 +69,7 @@ module.exports = {
       phone_prefix: '33',
       currency_formatting_locale: 'fr-FR',
       currency_code: 'EUR',
+      flag_id: 'fr_ch1vgi',
       phone: {
         local: {
           human_readable: '0805 08 42 02',
@@ -85,6 +89,7 @@ module.exports = {
       phone_prefix: '49',
       currency_formatting_locale: 'de-DE',
       currency_code: 'EUR',
+      flag_id: 'de_wj4y6k',
       phone: {
         local: {
           human_readable: '0211 38789806',
@@ -104,6 +109,7 @@ module.exports = {
       phone_prefix: '852',
       currency_formatting_locale: 'en-HK',
       currency_code: 'HKD',
+      flag_id: 'hk_wjyavc',
       phone: {
         local: {
           human_readable: '5806 0444',
@@ -123,6 +129,7 @@ module.exports = {
       phone_prefix: '91',
       currency_formatting_locale: 'en-IN',
       currency_code: 'INR',
+      flag_id: 'in_opf3wm',
       phone: {
         local: {
           human_readable: '1800 1200 336',
@@ -142,6 +149,7 @@ module.exports = {
       phone_prefix: '62',
       currency_formatting_locale: 'id-ID',
       currency_code: 'IDR',
+      flag_id: 'id_yveumv',
       phone: {
         local: {
           human_readable: '007 803 321 8413',
@@ -161,6 +169,7 @@ module.exports = {
       phone_prefix: '353',
       currency_formatting_locale: 'en-IE',
       currency_code: 'EUR',
+      flag_id: 'ie_kqc7pg',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -180,6 +189,7 @@ module.exports = {
       phone_prefix: '972',
       currency_formatting_locale: 'iw-IL',
       currency_code: 'ILS',
+      flag_id: 'il_x5duyz',
       phone: {
         local: {
           human_readable: '1 801 227 262',
@@ -199,6 +209,7 @@ module.exports = {
       phone_prefix: '39',
       currency_formatting_locale: 'it-IT',
       currency_code: 'EUR',
+      flag_id: 'it_yex5ap',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -218,6 +229,7 @@ module.exports = {
       phone_prefix: '81',
       currency_formatting_locale: 'ja-JP',
       currency_code: 'JPY',
+      flag_id: 'jp_m6elxg',
       phone: {
         local: {
           human_readable: '+61 2 8320 6845',
@@ -237,6 +249,7 @@ module.exports = {
       phone_prefix: '82',
       currency_formatting_locale: 'ko-KR',
       currency_code: 'KRW',
+      flag_id: 'kr_mrnua8',
       phone: {
         local: {
           human_readable: '0808 220 277',
@@ -256,6 +269,7 @@ module.exports = {
       phone_prefix: '60',
       currency_formatting_locale: 'ms-MY',
       currency_code: 'MYR',
+      flag_id: 'my_zzejgo',
       phone: {
         local: {
           human_readable: '03 9212 7293',
@@ -275,6 +289,7 @@ module.exports = {
       phone_prefix: '64',
       currency_formatting_locale: 'en-NZ',
       currency_code: 'NZD',
+      flag_id: 'nz_o98shy',
       phone: {
         local: {
           human_readable: '0800 441 457',
@@ -294,6 +309,7 @@ module.exports = {
       phone_prefix: '63',
       currency_formatting_locale: 'en-PH',
       currency_code: 'PHP',
+      flag_id: 'ph_cmq6es',
       phone: {
         local: {
           human_readable: '1800 1320 0074',
@@ -313,6 +329,7 @@ module.exports = {
       phone_prefix: '65',
       currency_formatting_locale: 'en-SG',
       currency_code: 'SGD',
+      flag_id: 'sg_qrenqc',
       phone: {
         local: {
           human_readable: '800 492 2237',
@@ -332,6 +349,7 @@ module.exports = {
       phone_prefix: '27',
       currency_formatting_locale: 'af-ZA',
       currency_code: 'ZAR',
+      flag_id: 'za_rhuusv',
       phone: {
         local: {
           human_readable: '0800 060 109',
@@ -351,6 +369,7 @@ module.exports = {
       phone_prefix: '34',
       currency_formatting_locale: 'es-ES',
       currency_code: 'EUR',
+      flag_id: 'es_wxszqg',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -370,6 +389,7 @@ module.exports = {
       phone_prefix: '886',
       currency_formatting_locale: 'zh-TW',
       currency_code: 'TWD',
+      flag_id: 'tw_a9lqx6',
       phone: {
         local: {
           human_readable: '+61 2 8320 6845',
@@ -389,6 +409,7 @@ module.exports = {
       phone_prefix: '66',
       currency_formatting_locale: 'th-TH',
       currency_code: 'THB',
+      flag_id: 'th_isrxzq',
       phone: {
         local: {
           human_readable: '02 026 0685',
@@ -408,6 +429,7 @@ module.exports = {
       phone_prefix: '44',
       currency_formatting_locale: 'en-GB',
       currency_code: 'GBP',
+      flag_id: 'gb_ta8bez',
       phone: {
         local: {
           human_readable: '020 8068 2668',
@@ -427,6 +449,7 @@ module.exports = {
       phone_prefix: '1',
       currency_formatting_locale: 'en-US',
       currency_code: 'USD',
+      flag_id: 'us_fapjn8',
       phone: {
         local: {
           human_readable: '888 402 1238',
@@ -446,6 +469,7 @@ module.exports = {
       phone_prefix: '84',
       currency_formatting_locale: 'vi-VN',
       currency_code: 'VND',
+      flag_id: 'vn_mixye2',
       phone: {
         local: {
           human_readable: '+61 2 8320 6845',

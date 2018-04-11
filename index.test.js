@@ -2,7 +2,6 @@ var expect = require('chai').expect
 
 jest.mock('./region-data.js')
 jest.mock('./currency-data.js')
-jest.mock('./flag-data.js')
 
 var regionModule = require('./index')
 
@@ -16,6 +15,7 @@ describe('getRegions()', function() {
         phone_prefix: '61',
         currency_formatting_locale: 'en-AU',
         currency_code: 'AUD',
+        flag_id: 'au_iuox02',
         phone: {
           local: {
             human_readable: '1300 88 99 00',
@@ -36,6 +36,7 @@ describe('getRegions()', function() {
         phone_prefix: '1',
         currency_formatting_locale: 'en-CA',
         currency_code: 'CAD',
+        flag_id: 'ca_nacvxi',
         phone: {
           local: {
             human_readable: '778 300 0814',
@@ -74,6 +75,7 @@ describe('getRegionByCode()', function() {
       phone_prefix: '1',
       currency_formatting_locale: 'en-CA',
       currency_code: 'CAD',
+      flag_id: 'ca_nacvxi',
       phone: {
         local: {
           human_readable: '778 300 0814',
@@ -111,6 +113,7 @@ describe('getDefaultRegion()', function() {
       phone_prefix: '61',
       currency_formatting_locale: 'en-AU',
       currency_code: 'AUD',
+      flag_id: 'au_iuox02',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -165,14 +168,6 @@ describe('getZeroDecimalCurrencies()', function() {
 describe('getRegionLang()', function() {
   it('should return an array of region langs', function() {
     expect(regionModule.getRegionLang()).to.deep.equal(['en-AU', 'en-CA'])
-  })
-})
-
-describe('getRegionFlagIdByCode()', function() {
-  it('should return an object with the flag id', function() {
-    expect(regionModule.getRegionFlagIdByCode('AU')).to.deep.equal(
-      {id: "au_iuox02"}
-    )
   })
 })
 
