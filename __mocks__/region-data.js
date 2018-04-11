@@ -9,6 +9,7 @@ module.exports = {
       phone_prefix: '61',
       currency_formatting_locale: 'en-AU',
       currency_code: 'AUD',
+      flag_id: 'au_iuox02',
       phone: {
         local: {
           human_readable: '1300 88 99 00',
@@ -28,6 +29,7 @@ module.exports = {
       phone_prefix: '1',
       currency_formatting_locale: 'en-CA',
       currency_code: 'CAD',
+      flag_id: 'ca_nacvxi',
       phone: {
         local: {
           human_readable: '778 300 0814',

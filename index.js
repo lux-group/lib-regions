@@ -1,7 +1,5 @@
 var uniq = require('lodash.uniq')
 
-var flagsIds = require('./flag-data').flagsIds
-
 var currencies = require('./currency-data').currencies
 
 var regions = require('./region-data').regions.map(function (region) {
@@ -83,20 +81,6 @@ function getRegionNamesAndCode() {
   })
 }
 
-function getRegionFlagUrlsByCode(regionCode, cloudName) {
-  if (!regionCode || !cloudName) {
-    return null
-  }
-  const CLOUDINARY_BASE_URL = `https://res.cloudinary.com/${cloudName}/image/upload`
-  const flagId = flagsIds[regionCode]
-  return {
-    svg: `${CLOUDINARY_BASE_URL}/${flagId}.svg`,
-    pngX2: `${CLOUDINARY_BASE_URL}/dpr_2.0/${flagId}.png`,
-    pngX3: `${CLOUDINARY_BASE_URL}/dpr_3.0/${flagId}.png`
-  }
-}
-
-
 module.exports = {
   getRegions: getRegions,
   getRegionCodes: getRegionCodes,
@@ -110,6 +94,5 @@ module.exports = {
   getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
-  getRegionNamesAndCode: getRegionNamesAndCode,
-  getRegionFlagUrlsByCode: getRegionFlagUrlsByCode
+  getRegionNamesAndCode: getRegionNamesAndCode
 }
