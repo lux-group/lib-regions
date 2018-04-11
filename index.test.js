@@ -168,9 +168,9 @@ describe('getRegionLang()', function() {
   })
 })
 
-describe('getRegionFlagUrlsByCode()', function() {
+describe('getRegionFlagIdByCode()', function() {
   it('should return an object with the flag id', function() {
-    expect(regionModule.getRegionFlagUrlsByCode('AU')).to.deep.equal(
+    expect(regionModule.getRegionFlagIdByCode('AU')).to.deep.equal(
       {id: "au_iuox02"}
     )
   })

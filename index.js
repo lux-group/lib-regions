@@ -83,7 +83,7 @@ function getRegionNamesAndCode() {
   })
 }
 
-function getRegionFlagUrlsByCode(regionCode) {
+function getRegionFlagIdByCode(regionCode) {
   if (!regionCode) {
     return null
   }
@@ -107,5 +107,5 @@ module.exports = {
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
   getRegionNamesAndCode: getRegionNamesAndCode,
-  getRegionFlagUrlsByCode: getRegionFlagUrlsByCode
+  getRegionFlagIdByCode: getRegionFlagIdByCode
 }
