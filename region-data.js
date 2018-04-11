@@ -49,8 +49,8 @@ module.exports = {
       currency_code: 'CNY',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '800 597 138',
+          number: '800597138',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -144,8 +144,8 @@ module.exports = {
       currency_code: 'IDR',
       phone: {
         local: {
-          human_readable: '1800 1200 336',
-          number: '18001200336',
+          human_readable: '007 803 321 8413',
+          number: '0078033218413',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -220,8 +220,8 @@ module.exports = {
       currency_code: 'JPY',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -372,8 +372,8 @@ module.exports = {
       currency_code: 'TWD',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -391,8 +391,8 @@ module.exports = {
       currency_code: 'THB',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '02 026 0685',
+          number: '020260685',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -448,8 +448,8 @@ module.exports = {
       currency_code: 'VND',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
         international: {
           human_readable: '+61 2 8320 6845',
