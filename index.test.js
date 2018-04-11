@@ -2,6 +2,7 @@ var expect = require('chai').expect
 
 jest.mock('./region-data.js')
 jest.mock('./currency-data.js')
+jest.mock('./flag-data.js')
 
 var regionModule = require('./index')
 
@@ -12,28 +13,42 @@ describe('getRegions()', function() {
         code: 'AU',
         name: 'Australia',
         lang: 'en-AU',
+        phone_prefix: '61',
         currency_formatting_locale: 'en-AU',
         currency_code: 'AUD',
-        payment_methods: [
-          'le_credit',
-          'braintree',
-          'stripe',
-          'qantas'
-        ],
+        phone: {
+          local: {
+            human_readable: '1300 88 99 00',
+            number: '1300889900',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
+        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ]
       },
       {
         code: 'CA',
         name: 'Canada',
         lang: 'en-CA',
+        phone_prefix: '1',
         currency_formatting_locale: 'en-CA',
         currency_code: 'CAD',
-        payment_methods: [
-          'le_credit',
-          'braintree',
-          'stripe',
-          'maple_syrup_eh',
-        ],
-      },
+        phone: {
+          local: {
+            human_readable: '778 300 0814',
+            number: '7783000814',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
+        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ]
+      }
     ])
   })
 })
@@ -56,14 +71,21 @@ describe('getRegionByCode()', function() {
       code: 'CA',
       name: 'Canada',
       lang: 'en-CA',
+      phone_prefix: '1',
       currency_formatting_locale: 'en-CA',
       currency_code: 'CAD',
-      payment_methods: [
-        'le_credit',
-        'braintree',
-        'stripe',
-        'maple_syrup_eh',
-      ],
+      phone: {
+        local: {
+          human_readable: '778 300 0814',
+          number: '7783000814',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+      mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
+      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ]
     })
   })
 })
@@ -86,14 +108,21 @@ describe('getDefaultRegion()', function() {
       code: 'AU',
       name: 'Australia',
       lang: 'en-AU',
+      phone_prefix: '61',
       currency_formatting_locale: 'en-AU',
       currency_code: 'AUD',
-      payment_methods: [
-        'le_credit',
-        'braintree',
-        'stripe',
-        'qantas'
-      ],
+      phone: {
+        local: {
+          human_readable: '1300 88 99 00',
+          number: '1300889900',
+        },
+        international: {
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
+        },
+      },
+      mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
+      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ]
     })
   })
 })
@@ -136,6 +165,18 @@ describe('getZeroDecimalCurrencies()', function() {
 describe('getRegionLang()', function() {
   it('should return an array of region langs', function() {
     expect(regionModule.getRegionLang()).to.deep.equal(['en-AU', 'en-CA'])
+  })
+})
+
+describe('getRegionFlagUrlsByCode()', function() {
+  it('should return an object with the flag urls', function() {
+    expect(regionModule.getRegionFlagUrlsByCode('AU', 'cloudName')).to.deep.equal(
+      {
+        svg: 'https://res.cloudinary.com/cloudName/image/upload/au_iuox02.svg',
+        pngX2: 'https://res.cloudinary.com/cloudName/image/upload/dpr_2.0/au_iuox02.png',
+        pngX3: 'https://res.cloudinary.com/cloudName/image/upload/dpr_3.0/au_iuox02.png'
+      }
+    )
   })
 })
 

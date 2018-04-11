@@ -1,0 +1,28 @@
+module.exports = {
+  flagsIds: {
+    AU: 'au_iuox02',
+    CA: 'ca_nacvxi',
+    CN: 'cn_nnripn',
+    FR: 'fr_ch1vgi',
+    DE: 'de_wj4y6k',
+    HK: 'hk_wjyavc',
+    IN: 'in_opf3wm',
+    ID: 'id_yveumv',
+    IE: 'ie_kqc7pg',
+    IL: 'il_x5duyz',
+    IT: 'it_yex5ap',
+    JP: 'jp_m6elxg',
+    KR: 'kr_mrnua8',
+    MY: 'my_zzejgo',
+    NZ: 'nz_o98shy',
+    PH: 'ph_cmq6es',
+    SG: 'sg_qrenqc',
+    ZA: 'za_rhuusv',
+    ES: 'es_wxszqg',
+    TW: 'tw_a9lqx6',
+    TH: 'th_isrxzq',
+    GB: 'gb_ta8bez',
+    US: 'us_fapjn8',
+    VN: 'vn_mixye2',
+  }
+}
