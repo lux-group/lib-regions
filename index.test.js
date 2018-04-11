@@ -169,13 +169,9 @@ describe('getRegionLang()', function() {
 })
 
 describe('getRegionFlagUrlsByCode()', function() {
-  it('should return an object with the flag urls', function() {
-    expect(regionModule.getRegionFlagUrlsByCode('AU', 'cloudName')).to.deep.equal(
-      {
-        svg: 'https://res.cloudinary.com/cloudName/image/upload/au_iuox02.svg',
-        pngX2: 'https://res.cloudinary.com/cloudName/image/upload/dpr_2.0/au_iuox02.png',
-        pngX3: 'https://res.cloudinary.com/cloudName/image/upload/dpr_3.0/au_iuox02.png'
-      }
+  it('should return an object with the flag id', function() {
+    expect(regionModule.getRegionFlagUrlsByCode('AU')).to.deep.equal(
+      {id: "au_iuox02"}
     )
   })
 })

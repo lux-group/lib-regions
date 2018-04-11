@@ -83,16 +83,12 @@ function getRegionNamesAndCode() {
   })
 }
 
-function getRegionFlagUrlsByCode(regionCode, cloudName) {
-  if (!regionCode || !cloudName) {
+function getRegionFlagUrlsByCode(regionCode) {
+  if (!regionCode) {
     return null
   }
-  const CLOUDINARY_BASE_URL = `https://res.cloudinary.com/${cloudName}/image/upload`
-  const flagId = flagsIds[regionCode]
   return {
-    svg: `${CLOUDINARY_BASE_URL}/${flagId}.svg`,
-    pngX2: `${CLOUDINARY_BASE_URL}/dpr_2.0/${flagId}.png`,
-    pngX3: `${CLOUDINARY_BASE_URL}/dpr_3.0/${flagId}.png`
+    id: flagsIds[regionCode]
   }
 }
 
