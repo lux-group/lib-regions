@@ -492,6 +492,17 @@ module.exports = {
         phone_prefix: '61',
         currency_formatting_locale: 'en-AU',
         currency_code: 'AUD',
+        phone: {
+          local: {
+            human_readable: '1300 72 66 67',
+            number: '1300726667',
+          },
+          international: {
+            human_readable: '+61 2 8311 3542',
+            number: '+61283113542',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
       }
     ],
   },
