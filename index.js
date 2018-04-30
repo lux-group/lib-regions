@@ -91,6 +91,13 @@ function getRegionNamesAndCode(brand) {
   })
 }
 
+function isRegionAllowed(brand, country_code) {
+  var code = country_code || 'AU'
+  return regions(brand).some(function(region) {
+    return region.code === code
+  })
+}
+
 module.exports = {
   getRegions: getRegions,
   getRegionCodes: getRegionCodes,
@@ -104,5 +111,6 @@ module.exports = {
   getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
-  getRegionNamesAndCode: getRegionNamesAndCode
+  getRegionNamesAndCode: getRegionNamesAndCode,
+  isRegionAllowed
 }
