@@ -264,6 +264,26 @@ module.exports = {
         mailing_address: DEFAULT_MAILING_ADDRESS,
       },
       {
+        code: 'MO',
+        name: 'Macau',
+        lang: 'en-MO',
+        phone_prefix: '853',
+        currency_formatting_locale: 'en-MO',
+        currency_code: 'MOP',
+        flag_id: 'mo_k6c6by',
+        phone: {
+          local: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      },
+      {
         code: 'MY',
         name: 'Malaysia',
         lang: 'en-MY',
@@ -315,6 +335,46 @@ module.exports = {
           local: {
             human_readable: '1800 1320 0074',
             number: '180013200074',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      },
+      {
+        code: 'QA',
+        name: 'Qatar',
+        lang: 'en-QA',
+        phone_prefix: '974',
+        currency_formatting_locale: 'en-QA',
+        currency_code: 'QAR',
+        flag_id: 'qa_zt7eo8',
+        phone: {
+          local: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      },
+      {
+        code: 'SA',
+        name: 'Saudi Arabia',
+        lang: 'en-SA',
+        phone_prefix: '966',
+        currency_formatting_locale: 'en-SA',
+        currency_code: 'SAR',
+        flag_id: 'sa_evxi8g',
+        phone: {
+          local: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
           },
           international: {
             human_readable: '+61 2 8320 6845',
@@ -415,6 +475,26 @@ module.exports = {
           local: {
             human_readable: '02 026 0685',
             number: '020260685',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      },
+      {
+        code: 'AE',
+        name: 'United Arab Emirates',
+        lang: 'en-AE',
+        phone_prefix: '971',
+        currency_formatting_locale: 'en-AE',
+        currency_code: 'AED',
+        flag_id: 'ae_grfjya',
+        phone: {
+          local: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
           },
           international: {
             human_readable: '+61 2 8320 6845',
