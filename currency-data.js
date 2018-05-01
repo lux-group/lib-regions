@@ -71,6 +71,12 @@ module.exports = {
           'stripe',
         ],
       },
+      MOP: {
+        payment_methods: [
+          'le_credit',
+          'stripe',
+        ],
+      },
       MYR: {
         payment_methods: [
           'le_credit',
@@ -85,6 +91,18 @@ module.exports = {
         ],
       },
       PHP: {
+        payment_methods: [
+          'le_credit',
+          'stripe',
+        ],
+      },
+      QAR: {
+        payment_methods: [
+          'le_credit',
+          'stripe',
+        ],
+      },
+      SAR: {
         payment_methods: [
           'le_credit',
           'stripe',
@@ -109,6 +127,12 @@ module.exports = {
         ]
       },
       ZAR: {
+        payment_methods: [
+          'le_credit',
+          'stripe',
+        ],
+      },
+      AED: {
         payment_methods: [
           'le_credit',
           'stripe',
