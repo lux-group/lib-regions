@@ -364,6 +364,26 @@ module.exports = {
         mailing_address: DEFAULT_MAILING_ADDRESS,
       },
       {
+        code: 'RU',
+        name: 'Russia',
+        lang: 'en-RU',
+        phone_prefix: '7',
+        currency_formatting_locale: 'en-RU',
+        currency_code: 'RUB',
+        flag_id: 'ru_szpk5m',
+        phone: {
+          local: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      },
+      {
         code: 'SA',
         name: 'Saudi Arabia',
         lang: 'en-SA',

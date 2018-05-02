@@ -102,6 +102,12 @@ module.exports = {
           'stripe',
         ],
       },
+      RUB: {
+        payment_methods: [
+          'le_credit',
+          'stripe',
+        ],
+      },
       SAR: {
         payment_methods: [
           'le_credit',
