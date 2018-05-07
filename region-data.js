@@ -594,8 +594,8 @@ module.exports = {
         currency_code: 'AUD',
         phone: {
           local: {
-            human_readable: '1300 72 66 67',
-            number: '1300726667',
+            human_readable: '1300 72 66 76',
+            number: '1300726676',
           },
           international: {
             human_readable: '+61 2 8311 3542',
