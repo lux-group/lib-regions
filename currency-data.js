@@ -1,5 +1,13 @@
 module.exports = {
   currencies: {
+    scooponexperience: {
+      AUD: {
+        payment_methods: [
+          'stripe',
+          'braintree'
+        ]
+      }
+    },
     scoopontravel: {
       AUD: {
         payment_methods: [
