@@ -276,7 +276,10 @@ describe('isRegionAllowed()', function() {
   it('should return true if brand has region', function() {
     expect(regionModule.isRegionAllowed('luxuryescapes', 'CA')).to.equal(true)
   })
-  it('should return true if brand has region', function() {
+  it('should return false if brand has not region', function() {
     expect(regionModule.isRegionAllowed('scoopontravel', 'NZ')).to.equal(false)
+  })
+  it('should return true if other brand has region', function() {
+    expect(regionModule.isRegionAllowed('scooponexperience', 'AU')).to.equal(true)
   })
 });
