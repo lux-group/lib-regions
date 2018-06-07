@@ -598,8 +598,8 @@ module.exports = {
             number: '1300726676',
           },
           international: {
-            human_readable: '+61 2 8311 3542',
-            number: '+61283113542',
+            human_readable: '1300 72 66 76',
+            number: '1300726676',
           },
         },
         mailing_address: DEFAULT_MAILING_ADDRESS,
@@ -619,8 +619,8 @@ module.exports = {
             number: '1300726676',
           },
           international: {
-            human_readable: '+61 2 8311 3542',
-            number: '+61283113542',
+            human_readable: '1300 72 66 76',
+            number: '1300726676',
           },
         },
         mailing_address: DEFAULT_MAILING_ADDRESS,
