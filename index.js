@@ -112,5 +112,5 @@ module.exports = {
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
   getRegionNamesAndCode: getRegionNamesAndCode,
-  isRegionAllowed
+  isRegionAllowed: isRegionAllowed,
 }
