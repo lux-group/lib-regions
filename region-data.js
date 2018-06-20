@@ -1,4 +1,5 @@
 const DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
+const SINGAPORE_MAILING_ADDRESS = '168 Robinson Road, #12-01 Capital Tower, Singapore 068912'
 
 module.exports = {
   regions: {
@@ -121,7 +122,7 @@ module.exports = {
             number: '+61283206845',
           },
         },
-        mailing_address: DEFAULT_MAILING_ADDRESS,
+        mailing_address: SINGAPORE_MAILING_ADDRESS,
       },
       {
         code: 'IN',
@@ -141,7 +142,7 @@ module.exports = {
             number: '+61283206845',
           },
         },
-        mailing_address: '6 Shenton Way, OUE Downtown 2, #33-00 Singapore 068809',
+        mailing_address: SINGAPORE_MAILING_ADDRESS,
       },
       {
         code: 'ID',
@@ -421,7 +422,7 @@ module.exports = {
             number: '+61283206845',
           },
         },
-        mailing_address: DEFAULT_MAILING_ADDRESS,
+        mailing_address: SINGAPORE_MAILING_ADDRESS,
       },
       {
         code: 'ZA',
