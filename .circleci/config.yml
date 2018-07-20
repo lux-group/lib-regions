@@ -29,6 +29,6 @@ experimental:
 
 workflows:
   version: 2
-  build-deploy:
+  test:
     jobs:
       - build
