@@ -1,5 +1,13 @@
 module.exports = {
   currencies: {
+    cudotravel: {
+      AUD: {
+        payment_methods: [
+          'stripe',
+          'braintree'
+        ]
+      }
+    },
     scooponexperience: {
       AUD: {
         payment_methods: [
