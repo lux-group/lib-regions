@@ -1,5 +1,21 @@
 module.exports = {
   currencies: {
+    treatmetravel: {
+      NZD: {
+        payment_methods: [
+          'stripe',
+          'braintree',
+        ],
+      },
+    },
+    dealstravel: {
+      AUD: {
+        payment_methods: [
+          'stripe',
+          'braintree'
+        ]
+      }
+    },
     cudotravel: {
       AUD: {
         payment_methods: [

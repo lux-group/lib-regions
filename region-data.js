@@ -648,6 +648,49 @@ module.exports = {
         mailing_address: DEFAULT_MAILING_ADDRESS,
       }
     ],
+    treatmetravel: [
+      {
+        code: 'NZ',
+        name: 'New Zealand',
+        lang: 'en-NZ',
+        phone_prefix: '64',
+        currency_formatting_locale: 'en-NZ',
+        currency_code: 'NZD',
+        flag_id: 'nz_o98shy',
+        phone: {
+          local: {
+            human_readable: '0800 441 457',
+            number: '0800441457',
+          },
+          international: {
+            human_readable: '+61 2 8320 6845',
+            number: '+61283206845',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      }
+    ],
+    dealstravel: [
+      {
+        code: 'AU',
+        name: 'Australia',
+        lang: 'en-AU',
+        phone_prefix: '61',
+        currency_formatting_locale: 'en-AU',
+        currency_code: 'AUD',
+        phone: {
+          local: {
+            human_readable: '1300 72 66 76',
+            number: '1300726676',
+          },
+          international: {
+            human_readable: '+61 2 8311 3542',
+            number: '+61283113542',
+          },
+        },
+        mailing_address: DEFAULT_MAILING_ADDRESS,
+      }
+    ],
   },
 
   defaultRegionCode: 'AU',
