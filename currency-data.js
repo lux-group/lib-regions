@@ -24,6 +24,30 @@ module.exports = {
         ]
       }
     },
+    cudo: {
+      AUD: {
+        payment_methods: [
+          'stripe',
+          'braintree'
+        ]
+      }
+    },
+    deals: {
+      AUD: {
+        payment_methods: [
+          'stripe',
+          'braintree'
+        ]
+      }
+    },
+    treatme: {
+      NZD: {
+        payment_methods: [
+          'stripe',
+          'braintree'
+        ]
+      }
+    },
     scooponexperience: {
       AUD: {
         payment_methods: [
