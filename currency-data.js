@@ -1,13 +1,5 @@
 module.exports = {
   currencies: {
-    treatme: {
-      NZD: {
-        payment_methods: [
-          'stripe',
-          'braintree',
-        ],
-      },
-    },
     treatmetravel: {
       NZD: {
         payment_methods: [
@@ -16,23 +8,7 @@ module.exports = {
         ],
       },
     },
-    deals: {
-      AUD: {
-        payment_methods: [
-          'stripe',
-          'braintree'
-        ]
-      }
-    },
     dealstravel: {
-      AUD: {
-        payment_methods: [
-          'stripe',
-          'braintree'
-        ]
-      }
-    },
-    cudo: {
       AUD: {
         payment_methods: [
           'stripe',
