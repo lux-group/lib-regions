@@ -201,6 +201,10 @@ describe('getDefaultRegionCode()', function() {
   it('should return the default region\'s code default brand to luxuryescapes', function() {
     expect(regionModule.getDefaultRegionCode()).to.equal('AU')
   })
+
+  it('should return the default region for the brand', function() {
+    expect(regionModule.getDefaultRegionCode('treatmetravel')).to.equal('NZ')
+  })
 })
 
 describe('getDefaultRegionName()', function() {
