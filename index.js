@@ -1,5 +1,5 @@
 var currencyData = require('./currency-data').currencies
-var regionData = require('./region-data').regions
+var regionData = require('./region-data')
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
@@ -18,8 +18,6 @@ function regions(brand) {
 function currencies(brand) {
   return currencyData[brand || 'luxuryescapes']
 }
-
-var defaultRegionCode = require('./region-data').defaultRegionCode
 
 var zeroDecimalCurrencies = [
   'BIF', 'CLP', 'DJF', 'GNF', 'JPY', 'KMF', 'KRW', 'MGA',
@@ -46,7 +44,7 @@ function getRegionByCode(regionCode, brand) {
 }
 
 function getDefaultRegion(brand) {
-  return getRegionByCode(defaultRegionCode, brand)
+  return regions(brand)[0]
 }
 
 function getRegionNameByCode(code, brand) {
@@ -54,12 +52,12 @@ function getRegionNameByCode(code, brand) {
   return region && region.name || null
 }
 
-function getDefaultRegionCode() {
-  return defaultRegionCode
+function getDefaultRegionCode(brand) {
+  return regions(brand)[0].code
 }
 
 function getDefaultRegionName(brand) {
-  return regions(brand).find(function(region) {return region.code === defaultRegionCode}).name
+  return regions(brand)[0].name
 }
 
 function getCurrencyCodes(brand) {
