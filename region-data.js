@@ -113,8 +113,8 @@ module.exports = {
       flag_id: 'hk_wjyavc',
       phone: {
         local: {
-          human_readable: '5806 0444',
-          number: '58060444',
+          human_readable: '3018 8509',
+          number: '30188509',
         },
         international: {
           human_readable: '+61 2 8320 6845',
@@ -453,8 +453,8 @@ module.exports = {
       flag_id: 'es_wxszqg',
       phone: {
         local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
+          human_readable: '911 230 742',
+          number: '+34911230742',
         },
         international: {
           human_readable: '+61 2 8320 6845',
