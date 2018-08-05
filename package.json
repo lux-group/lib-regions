@@ -4,7 +4,8 @@
   "description": "Region information for Luxury Escapes",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watch"
   },
   "author": "Eddie McLean",
   "repository": "https://github.com/brandsExclusive/lib-regions",
