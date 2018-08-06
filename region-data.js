@@ -454,7 +454,7 @@ module.exports = {
       phone: {
         local: {
           human_readable: '911 230 742',
-          number: '+34911230742',
+          number: '911230742',
         },
         international: {
           human_readable: '+61 2 8320 6845',
