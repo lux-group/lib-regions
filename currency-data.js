@@ -143,7 +143,6 @@ module.exports = {
         payment_methods: [
           'le_credit',
           'stripe',
-          'braintree',
         ],
       },
       PHP: {
