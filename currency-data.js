@@ -4,7 +4,6 @@ module.exports = {
       NZD: {
         payment_methods: [
           'stripe',
-          'braintree',
         ],
       },
     },
@@ -44,7 +43,6 @@ module.exports = {
       NZD: {
         payment_methods: [
           'stripe',
-          'braintree'
         ]
       }
     },
