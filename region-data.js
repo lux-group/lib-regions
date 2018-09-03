@@ -636,12 +636,12 @@ module.exports = {
       currency_code: 'AUD',
       phone: {
         local: {
-          human_readable: '1300 72 66 76',
-          number: '1300726676',
+          human_readable: '02 9051 1816',
+          number: '0290511816',
         },
         international: {
-          human_readable: '+61 2 8311 3542',
-          number: '+61283113542',
+          human_readable: '+61 2 9051 1816',
+          number: '+61290511816',
         },
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
@@ -658,12 +658,12 @@ module.exports = {
       flag_id: 'nz_o98shy',
       phone: {
         local: {
-          human_readable: '0800 441 457',
-          number: '0800441457',
+          human_readable: '09 222 4643',
+          number: '092224643',
         },
         international: {
-          human_readable: '+61 2 8320 6845',
-          number: '+61283206845',
+          human_readable: '+64 9 222 4643',
+          number: '+6492224643',
         },
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
@@ -679,12 +679,12 @@ module.exports = {
       currency_code: 'AUD',
       phone: {
         local: {
-          human_readable: '1300 72 66 76',
-          number: '1300726676',
+          human_readable: '02 9051 1817',
+          number: '0290511817',
         },
         international: {
-          human_readable: '+61 2 8311 3542',
-          number: '+61283113542',
+          human_readable: '+61 2 9051 1817',
+          number: '+61290511817',
         },
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
