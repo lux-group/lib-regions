@@ -14,5 +14,7 @@
     "chai": "^4.0.0",
     "jest": "^20.0.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "airport-codes": "^1.0.2"
+  }
 }
