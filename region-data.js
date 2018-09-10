@@ -636,8 +636,8 @@ module.exports = {
       currency_code: 'AUD',
       phone: {
         local: {
-          human_readable: '02 9051 1816',
-          number: '0290511816',
+          human_readable: '1300 892 711',
+          number: '1300892711',
         },
         international: {
           human_readable: '+61 2 9051 1816',
@@ -679,8 +679,8 @@ module.exports = {
       currency_code: 'AUD',
       phone: {
         local: {
-          human_readable: '02 9051 1817',
-          number: '0290511817',
+          human_readable: '1300 869 711',
+          number: '1300869711',
         },
         international: {
           human_readable: '+61 2 9051 1817',
