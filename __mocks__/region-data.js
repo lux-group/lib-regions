@@ -1,4 +1,4 @@
-const DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
+var DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
 
 module.exports = {
   luxuryescapes: [
