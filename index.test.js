@@ -137,18 +137,16 @@ describe('getRegionByCode()', function() {
 })
 
 describe('getRegionNameByCode()', function () {
-  const {getRegionNameByCode} = regionModule
-
   it('returns region name if region exists', function () {
-    expect(getRegionNameByCode('AU', 'scoopontravel')).to.equal('Australia')
+    expect(regionModule.getRegionNameByCode('AU', 'scoopontravel')).to.equal('Australia')
   })
 
   it('returns \'null\' code if region is absent for brand', function () {
-    expect(getRegionNameByCode('CA', 'scoopontravel')).to.equal(null)
+    expect(regionModule.getRegionNameByCode('CA', 'scoopontravel')).to.equal(null)
   })
 
   it('returns region name if region exists default brand to luxuryescapes', function () {
-    expect(getRegionNameByCode('AU')).to.equal('Australia')
+    expect(regionModule.getRegionNameByCode('AU')).to.equal('Australia')
   })
 })
 

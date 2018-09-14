@@ -1,9 +1,6 @@
 var currencyData = require('./currency-data').currencies
 var regionData = require('./region-data')
-var {
-  getFlightRegions,
-  getFlightMainPort
-} = require('./lib/flights')
+var flights = require('./lib/flights')
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
@@ -52,7 +49,7 @@ function getDefaultRegion(brand) {
 }
 
 function getRegionNameByCode(code, brand) {
-  const region = getRegionByCode(code, brand)
+  var region = getRegionByCode(code, brand)
   return region && region.name || null
 }
 
@@ -116,6 +113,6 @@ module.exports = {
   getRegionNamesAndCode: getRegionNamesAndCode,
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,
-  getFlightMainPort: getFlightMainPort,
-  getFlightRegions: getFlightRegions
+  getFlightMainPort: flights.getFlightMainPort,
+  getFlightRegions: flights.getFlightRegions
 }

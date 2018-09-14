@@ -1,5 +1,5 @@
-const DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
-const SINGAPORE_MAILING_ADDRESS = '168 Robinson Road, #12-01 Capital Tower, Singapore 068912'
+var DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
+var SINGAPORE_MAILING_ADDRESS = '168 Robinson Road, #12-01 Capital Tower, Singapore 068912'
 
 module.exports = {
   luxuryescapes: [
