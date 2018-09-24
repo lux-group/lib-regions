@@ -734,12 +734,12 @@ module.exports = {
       currency_code: 'AUD',
       phone: {
         local: {
-          human_readable: '1300 72 66 76',
-          number: '1300726676',
+          human_readable: '1300 892 711',
+          number: '1300892711',
         },
         international: {
-          human_readable: '+61 2 8311 3542',
-          number: '+61283113542',
+          human_readable: '+61 2 9051 1816',
+          number: '+61290511816',
         },
         default: 'international',
       },
@@ -756,12 +756,12 @@ module.exports = {
       currency_code: 'AUD',
       phone: {
         local: {
-          human_readable: '1300 72 66 76',
-          number: '1300726676',
+          human_readable: '1300 869 711',
+          number: '1300869711',
         },
         international: {
-          human_readable: '+61 2 8311 3542',
-          number: '+61283113542',
+          human_readable: '+61 2 9051 1817',
+          number: '+61290511817',
         },
         default: 'international',
       },
@@ -778,12 +778,12 @@ module.exports = {
       currency_code: 'NZD',
       phone: {
         local: {
-          human_readable: '0800 873 288',
-          number: '0800873288',
+          human_readable: '09 222 4643',
+          number: '092224643',
         },
         international: {
-          human_readable: '+61 2 8320 6845',
-          number: '+61283206845',
+          human_readable: '+64 9 222 4643',
+          number: '+6492224643',
         },
         default: 'international',
       },
