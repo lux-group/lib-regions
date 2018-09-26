@@ -2,17 +2,33 @@
   "name": "lib-regions",
   "version": "3.1.1",
   "description": "Region information for Luxury Escapes",
-  "main": "index.js",
+  "main": "lib/lib-regions.min.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest",
-    "test:watch": "./node_modules/.bin/jest --watch"
+    "test": "jest",
+    "test:watch": "./node_modules/.bin/jest --watch",
+    "build": "webpack --env dev && webpack --env build && yarn run test",
+    "dev": "webpack --progress --colors --watch --env dev"
   },
   "author": "Eddie McLean",
   "repository": "https://github.com/brandsExclusive/lib-regions",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-eslint": "^9.0.0",
     "chai": "^4.0.0",
-    "jest": "^20.0.4"
-  },
-  "dependencies": {}
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "jest": "^23.6.0",
+    "jsdom": "11.11.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^4.0.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "yargs": "^10.0.3"
+  }
 }

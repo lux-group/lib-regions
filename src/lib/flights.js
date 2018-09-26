@@ -9,7 +9,7 @@ var regionMainPorts = {
 function getFlightMainPort(region) {
   const mainPort = regionMainPorts[region]
 
-  if(!mainPort) {
+  if (!mainPort) {
     throw new Error(`${region} is not configured with a main port`)
   }
 
