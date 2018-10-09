@@ -11,7 +11,7 @@ module.exports = {
       AUD: {
         payment_methods: [
           'stripe',
-          'braintree'
+          'braintree',
         ]
       }
     },
@@ -19,7 +19,7 @@ module.exports = {
       AUD: {
         payment_methods: [
           'stripe',
-          'braintree'
+          'braintree',
         ]
       }
     },
@@ -27,7 +27,7 @@ module.exports = {
       AUD: {
         payment_methods: [
           'stripe',
-          'braintree'
+          'braintree',
         ]
       }
     },
@@ -35,7 +35,7 @@ module.exports = {
       AUD: {
         payment_methods: [
           'stripe',
-          'braintree'
+          'braintree',
         ]
       }
     },
@@ -50,7 +50,7 @@ module.exports = {
       AUD: {
         payment_methods: [
           'stripe',
-          'braintree'
+          'braintree',
         ]
       }
     },
@@ -58,7 +58,7 @@ module.exports = {
       AUD: {
         payment_methods: [
           'stripe',
-          'braintree'
+          'braintree',
         ]
       }
     },
@@ -68,7 +68,8 @@ module.exports = {
           'le_credit',
           'stripe',
           'braintree',
-          'qantas'
+          'qantas',
+          'latitude',
         ],
       },
       CAD: {
