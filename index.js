@@ -1,6 +1,7 @@
 var currencyData = require('./currency-data').currencies
 var regionData = require('./region-data')
 var flights = require('./lib/flights')
+var regionMapper = require('./lib/regionMapper')
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
@@ -114,5 +115,6 @@ module.exports = {
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,
   getFlightMainPort: flights.getFlightMainPort,
-  getFlightRegions: flights.getFlightRegions
+  getFlightRegions: flights.getFlightRegions,
+  regionFromPostcode: regionMapper.regionFromPostcode
 }
