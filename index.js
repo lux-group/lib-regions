@@ -116,5 +116,5 @@ module.exports = {
   getRegionPhonePrefix: getRegionPhonePrefix,
   getFlightMainPort: flights.getFlightMainPort,
   getFlightRegions: flights.getFlightRegions,
-  regionFromPostcode: postCodeMapper.regionFromPostcode
+  marketingRegionFromPostcode: postCodeMapper.marketingRegionFromPostcode
 }

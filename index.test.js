@@ -285,10 +285,10 @@ describe('isRegionAllowed()', function() {
 
 describe('eachRegionStatusFromPostcode', function() {
   it('works', function() {
-    expect(regionModule.regionFromPostcode(2000)).to.eql('sydney')
-    expect(regionModule.regionFromPostcode(3000)).to.eql('melbourne')
-    expect(regionModule.regionFromPostcode(null)).to.eql('sydney')
-    expect(regionModule.regionFromPostcode('')).to.eql('sydney')
+    expect(regionModule.marketingRegionFromPostcode(2000)).to.eql('sydney')
+    expect(regionModule.marketingRegionFromPostcode(3000)).to.eql('melbourne')
+    expect(regionModule.marketingRegionFromPostcode(null)).to.eql('sydney')
+    expect(regionModule.marketingRegionFromPostcode('')).to.eql('sydney')
   })
 })
 
