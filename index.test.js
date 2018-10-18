@@ -282,3 +282,13 @@ describe('isRegionAllowed()', function() {
     expect(regionModule.isRegionAllowed('scoopontravel', 'NZ')).to.equal(false)
   })
 });
+
+describe('eachRegionStatusFromPostcode', function() {
+  it('works', function() {
+    expect(regionModule.marketingRegionFromPostcode(2000)).to.eql('sydney')
+    expect(regionModule.marketingRegionFromPostcode(3000)).to.eql('melbourne')
+    expect(regionModule.marketingRegionFromPostcode(null)).to.eql('sydney')
+    expect(regionModule.marketingRegionFromPostcode('')).to.eql('sydney')
+  })
+})
+
