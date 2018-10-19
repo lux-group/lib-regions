@@ -289,6 +289,9 @@ describe('eachRegionStatusFromPostcode', function() {
     expect(regionModule.marketingRegionFromPostcode(3000)).to.eql('melbourne')
     expect(regionModule.marketingRegionFromPostcode(null)).to.eql('sydney')
     expect(regionModule.marketingRegionFromPostcode('')).to.eql('sydney')
+    expect(regionModule.marketingRegionFromPostcode('', 'NZ')).to.eql('auckland')
+    expect(regionModule.marketingRegionFromPostcode('0211', 'NZ')).to.eql('auckland')
+    expect(regionModule.marketingRegionFromPostcode('5542', 'NZ')).to.eql('wellington')
   })
 })
 

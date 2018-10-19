@@ -4,7 +4,7 @@
   "description": "Region information for Luxury Escapes",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jest && ./node_modules/.bin/eslint ./",
+    "test": "./node_modules/.bin/jest && ./node_modules/.bin/eslint ./ --env es6",
     "test:watch": "./node_modules/.bin/jest --watch"
   },
   "author": "Eddie McLean",
