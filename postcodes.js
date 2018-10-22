@@ -1,1 +1,1 @@
-module.exports = require('./lib/postcodeMapper')
+module.exports = require('./lib/postCodeMapper')
