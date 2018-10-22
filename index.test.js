@@ -4,7 +4,7 @@ jest.mock('./region-data.js')
 jest.mock('./currency-data.js')
 
 var regionModule = require('./index')
-var postcodeModule = require('./lib/postcodeMapper')
+const postcodes = require('lib-regions/postcodes')
 
 describe('getRegions()', function() {
   it('should return the region', function() {
@@ -286,13 +286,13 @@ describe('isRegionAllowed()', function() {
 
 describe('eachRegionStatusFromPostcode', function() {
   it('works', function() {
-    expect(postcodeModule.marketingRegionFromPostcode(2000)).to.eql('sydney')
-    expect(postcodeModule.marketingRegionFromPostcode(3000)).to.eql('melbourne')
-    expect(postcodeModule.marketingRegionFromPostcode(null)).to.eql('sydney')
-    expect(postcodeModule.marketingRegionFromPostcode('')).to.eql('sydney')
-    expect(postcodeModule.marketingRegionFromPostcode('', 'NZ')).to.eql('auckland')
-    expect(postcodeModule.marketingRegionFromPostcode('0211', 'NZ')).to.eql('auckland')
-    expect(postcodeModule.marketingRegionFromPostcode('5542', 'NZ')).to.eql('wellington')
+    expect(postcodes.marketingRegionFromPostcode(2000)).to.eql('sydney')
+    expect(postcodes.marketingRegionFromPostcode(3000)).to.eql('melbourne')
+    expect(postcodes.marketingRegionFromPostcode(null)).to.eql('sydney')
+    expect(postcodes.marketingRegionFromPostcode('')).to.eql('sydney')
+    expect(postcodes.marketingRegionFromPostcode('', 'NZ')).to.eql('auckland')
+    expect(postcodes.marketingRegionFromPostcode('0211', 'NZ')).to.eql('auckland')
+    expect(postcodes.marketingRegionFromPostcode('5542', 'NZ')).to.eql('wellington')
   })
 })
 
