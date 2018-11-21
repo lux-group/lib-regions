@@ -70,6 +70,7 @@ module.exports = {
           'braintree',
           'qantas',
           'latitude',
+          'giftcard',
         ],
       },
       CAD: {
