@@ -454,8 +454,8 @@ module.exports = {
       flag_id: 'za_rhuusv',
       phone: {
         local: {
-          human_readable: '0800 060 109',
-          number: '0800060109',
+          human_readable: '+61 2 8320 6845',
+          number: '+61283206845',
         },
         international: {
           human_readable: '+61 2 8320 6845',
