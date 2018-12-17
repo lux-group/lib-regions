@@ -45,6 +45,7 @@ describe('getRegions()', function() {
           },
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
+        latitude_threshold: 999,
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ]
       },
       {
@@ -187,6 +188,7 @@ describe('getDefaultRegion()', function() {
         },
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
+      latitude_threshold: 999,
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ]
     })
   })
@@ -295,4 +297,3 @@ describe('eachRegionStatusFromPostcode', function() {
     expect(postcodes.marketingRegionFromPostcode('5542', 'NZ')).to.eql('wellington')
   })
 })
-
