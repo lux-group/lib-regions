@@ -23,6 +23,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
+      latitude_threshold: 999
     },
     {
       code: 'CA',
