@@ -114,5 +114,7 @@ module.exports = {
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,
   getFlightMainPort: flights.getFlightMainPort,
-  getFlightRegions: flights.getFlightRegions
+  getFlightRegions: flights.getFlightRegions,
+  getRegionDeparturePorts: flights.getRegionDeparturePorts,
+  getRegionDestinationPorts: flights.getRegionDestinationPorts
 }
