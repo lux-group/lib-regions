@@ -20,6 +20,7 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
+        referral_fee: '50'
       },
     ])
   })
@@ -46,7 +47,8 @@ describe('getRegions()', function() {
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         latitude_threshold: 999,
-        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ]
+        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
+        referral_fee: '50'
       },
       {
         code: 'CA',
@@ -67,7 +69,8 @@ describe('getRegions()', function() {
           },
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
-        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ]
+        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
+        referral_fee: '45'
       }
     ])
   })
@@ -106,6 +109,7 @@ describe('getRegionByCode()', function() {
         'braintree',
         'stripe',
       ],
+      referral_fee: '50'
     })
   })
 
@@ -133,7 +137,8 @@ describe('getRegionByCode()', function() {
         },
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
-      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ]
+      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
+      referral_fee: '45'
     })
   })
 })
@@ -165,6 +170,7 @@ describe('getDefaultRegion()', function() {
         'braintree',
         'stripe'
       ],
+      referral_fee: '50'
     })
   })
 
@@ -189,7 +195,8 @@ describe('getDefaultRegion()', function() {
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       latitude_threshold: 999,
-      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ]
+      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
+      referral_fee: '50'
     })
   })
 })
@@ -259,6 +266,16 @@ describe('getRegionLang()', function() {
 
   it('should return an array of region langs default brand to luxuryescapes', function() {
     expect(regionModule.getRegionLang()).to.deep.equal(['en-AU', 'en-CA'])
+  })
+})
+
+describe('getRegionReferralFeeByCode()', function() {
+  it('should return the region referral fee', function() {
+    expect(regionModule.getRegionReferralFeeByCode('AU', 'scoopontravel')).to.deep.equal('50')
+  })
+
+  it('should return the region referral fee by default brand to luxuryescapes', function() {
+    expect(regionModule.getRegionReferralFeeByCode('CA')).to.deep.equal('45')
   })
 })
 
