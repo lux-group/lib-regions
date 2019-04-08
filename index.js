@@ -78,6 +78,11 @@ function getRegionLang(brand) {
   return regions(brand).map(function(region) {return region.lang})
 }
 
+function getRegionReferralAmountByCode(code, brand) {
+  var region = getRegionByCode(code, brand)
+  return region && region.referral_amount || null
+}
+
 function getRegionPhonePrefix(brand) {
   return regions(brand).map(function(region) {return region.phone_prefix})
 }
@@ -115,6 +120,7 @@ module.exports = {
   getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
   getZeroDecimalCurrencies: getZeroDecimalCurrencies,
   getRegionLang: getRegionLang,
+  getRegionReferralAmountByCode: getRegionReferralAmountByCode,
   getRegionNamesAndCode: getRegionNamesAndCode,
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,

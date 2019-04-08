@@ -21,7 +21,8 @@ module.exports = {
         },
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      latitude_threshold: 999
+      latitude_threshold: 999,
+      referral_amount: '50'
     },
     {
       code: 'CA',
@@ -42,6 +43,7 @@ module.exports = {
         },
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
+      referral_amount: '45'
     },
   ],
   scoopontravel: [
@@ -51,7 +53,8 @@ module.exports = {
       lang: 'en-AU',
       phone_prefix: '61',
       currency_formatting_locale: 'en-AU',
-      currency_code: 'AUD'
+      currency_code: 'AUD',
+      referral_amount: '50'
     },
   ],
   treatmetravel: [
@@ -74,6 +77,7 @@ module.exports = {
         },
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
+      referral_amount: '50'
     }
   ],
 }
