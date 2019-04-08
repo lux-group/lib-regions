@@ -30,7 +30,7 @@ module.exports = {
         destination_ports: flights.getRegionDestinationPorts('AU'),
         main_port: flights.getFlightMainPort('AU')
       },
-      referral_fee: '50'
+      referral_amount: '50'
     },
     {
       code: 'CA',
@@ -52,7 +52,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     },
     {
       code: 'CN',
@@ -74,7 +74,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '240'
+      referral_amount: '240'
     },
     {
       code: 'FR',
@@ -96,7 +96,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '30'
+      referral_amount: '30'
     },
     {
       code: 'DE',
@@ -118,7 +118,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '30'
+      referral_amount: '30'
     },
     {
       code: 'HK',
@@ -140,7 +140,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: SINGAPORE_MAILING_ADDRESS,
-      referral_fee: '300'
+      referral_amount: '300'
     },
     {
       code: 'IN',
@@ -162,7 +162,7 @@ module.exports = {
         default: 'local',
       },
       mailing_address: SINGAPORE_MAILING_ADDRESS,
-      referral_fee: '2500'
+      referral_amount: '2500'
     },
     {
       code: 'ID',
@@ -184,7 +184,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '500000'
+      referral_amount: '500000'
     },
     {
       code: 'IE',
@@ -206,7 +206,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '30'
+      referral_amount: '30'
     },
     {
       code: 'IL',
@@ -228,7 +228,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '130'
+      referral_amount: '130'
     },
     {
       code: 'IT',
@@ -250,7 +250,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '30'
+      referral_amount: '30'
     },
     {
       code: 'JP',
@@ -272,7 +272,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '4000'
+      referral_amount: '4000'
     },
     {
       code: 'KR',
@@ -294,7 +294,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '40000'
+      referral_amount: '40000'
     },
     {
       code: 'MO',
@@ -316,7 +316,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '300'
+      referral_amount: '300'
     },
     {
       code: 'MY',
@@ -338,7 +338,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '150'
+      referral_amount: '150'
     },
     {
       code: 'NZ',
@@ -360,7 +360,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     },
     {
       code: 'PH',
@@ -382,7 +382,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '2000'
+      referral_amount: '2000'
     },
     {
       code: 'QA',
@@ -404,7 +404,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '130'
+      referral_amount: '130'
     },
     {
       code: 'RU',
@@ -426,7 +426,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '2500'
+      referral_amount: '2500'
     },
     {
       code: 'SA',
@@ -448,7 +448,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '130'
+      referral_amount: '130'
     },
     {
       code: 'SG',
@@ -470,7 +470,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: SINGAPORE_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     },
     {
       code: 'ZA',
@@ -492,7 +492,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '500'
+      referral_amount: '500'
     },
     {
       code: 'ES',
@@ -514,7 +514,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '30'
+      referral_amount: '30'
     },
     {
       code: 'TW',
@@ -536,7 +536,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '1000'
+      referral_amount: '1000'
     },
     {
       code: 'TH',
@@ -558,7 +558,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '1000'
+      referral_amount: '1000'
     },
     {
       code: 'AE',
@@ -580,7 +580,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '130'
+      referral_amount: '130'
     },
     {
       code: 'GB',
@@ -602,7 +602,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '25'
+      referral_amount: '25'
     },
     {
       code: 'US',
@@ -624,7 +624,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '35'
+      referral_amount: '35'
     },
     {
       code: 'VN',
@@ -646,7 +646,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '800000'
+      referral_amount: '800000'
     },
   ],
   scooponexperience: [
@@ -669,7 +669,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   scoopontravel: [
@@ -692,7 +692,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   cudotravel: [
@@ -715,7 +715,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   treatmetravel: [
@@ -739,7 +739,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   dealstravel: [
@@ -762,7 +762,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   cudo: [
@@ -785,7 +785,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   deals: [
@@ -808,7 +808,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
   treatme: [
@@ -831,7 +831,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_fee: '50'
+      referral_amount: '50'
     }
   ],
 }
