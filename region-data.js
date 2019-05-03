@@ -31,7 +31,8 @@ module.exports = {
         main_port: flights.getFlightMainPort('AU')
       },
       referral_amount: '50',
-      referral_min_spend_amount: '999'
+      referral_min_spend_amount: '999',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000, 3000, 4000, 5000, 10000]
     },
     {
       code: 'CA',
