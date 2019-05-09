@@ -127,6 +127,7 @@ module.exports = {
   getFlightMainPort: flights.getFlightMainPort,
   getFlightRegions: flights.getFlightRegions,
   getRegionDeparturePorts: flights.getRegionDeparturePorts,
+  getPopularRegionDeparturePorts: flights.getPopularRegionDeparturePorts,
   getRegionDestinationPorts: flights.getRegionDestinationPorts,
   getAirportByCode: flights.getAirportByCode,
   getCountries: getCountries
