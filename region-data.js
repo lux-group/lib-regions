@@ -32,7 +32,7 @@ module.exports = {
       },
       referral_amount: '50',
       referral_min_spend_amount: '499',
-      gift_card_options: [50, 100, 250, 500, 1000, 2000, 3000, 4000, 5000, 10000]
+      gift_card_options: [50, 100, 250, 500, 1000]
     },
     {
       code: 'CA',
