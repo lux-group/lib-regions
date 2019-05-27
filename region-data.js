@@ -631,8 +631,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '130',
-      referral_min_spend_amount: '1299'
-      150	300	500	1,000	2,500	3,000
+      referral_min_spend_amount: '1299',
+      gift_card_options: [150, 300 ,500	,1000,	2500,	3000],
     },
     {
       code: 'GB',
