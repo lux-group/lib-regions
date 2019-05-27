@@ -32,7 +32,7 @@ module.exports = {
       },
       referral_amount: '50',
       referral_min_spend_amount: '499',
-      gift_card_options: [50, 100, 250, 500, 1000]
+      gift_card_options: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
     },
     {
       code: 'CA',
@@ -55,7 +55,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      gift_card_options: [50, 100, 250, 500, 1000],
     },
     {
       code: 'CN',
@@ -78,7 +79,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '240',
-      referral_min_spend_amount: '2399'
+      referral_min_spend_amount: '2399',
+      gift_card_options: [250, 500,	1000,	2500, 5000, 10000],
     },
     {
       code: 'FR',
@@ -101,7 +103,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '30',
-      referral_min_spend_amount: '299'
+      referral_min_spend_amount: '299',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000],
     },
     {
       code: 'DE',
@@ -124,7 +127,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '30',
-      referral_min_spend_amount: '299'
+      referral_min_spend_amount: '299',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000],
     },
     {
       code: 'HK',
@@ -147,7 +151,8 @@ module.exports = {
       },
       mailing_address: SINGAPORE_MAILING_ADDRESS,
       referral_amount: '300',
-      referral_min_spend_amount: '2999'
+      referral_min_spend_amount: '2999',
+      gift_card_options: [250, 500,	1250,	2500,	5000,	10000],
     },
     {
       code: 'IN',
@@ -170,7 +175,8 @@ module.exports = {
       },
       mailing_address: SINGAPORE_MAILING_ADDRESS,
       referral_amount: '2500',
-      referral_min_spend_amount: '24999'
+      referral_min_spend_amount: '24999',
+      gift_card_options: [2500,	5000,	12500, 25000, 50000,	100000],
     },
     {
       code: 'ID',
@@ -193,7 +199,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '500000',
-      referral_min_spend_amount: '4999999'
+      referral_min_spend_amount: '4999999',
+      gift_card_options:[500000,	1000000,	2500000,	5000000,	10000000,	20000000],
     },
     {
       code: 'IE',
@@ -216,7 +223,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '30',
-      referral_min_spend_amount: '299'
+      referral_min_spend_amount: '299',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000],
     },
     {
       code: 'IL',
@@ -239,7 +247,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '130',
-      referral_min_spend_amount: '1299'
+      referral_min_spend_amount: '1299',
+      gift_card_options: [150, 300, 500, 1000,	2500,	3000],
     },
     {
       code: 'IT',
@@ -262,7 +271,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '30',
-      referral_min_spend_amount: '299'
+      referral_min_spend_amount: '299',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000],
     },
     {
       code: 'JP',
@@ -285,7 +295,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '4000',
-      referral_min_spend_amount: '39999'
+      referral_min_spend_amount: '39999',
+      gift_card_options: [2500,	5000,	15000,	50000,	75000,	150000],
     },
     {
       code: 'KR',
@@ -308,7 +319,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '40000',
-      referral_min_spend_amount: '399999'
+      referral_min_spend_amount: '399999',
+      gift_card_options: [25000,	50000,	200000,	500000,	750000,	1500000],
     },
     {
       code: 'MO',
@@ -331,7 +343,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '300',
-      referral_min_spend_amount: '2999'
+      referral_min_spend_amount: '2999',
+      gift_card_options: [250, 500, 1250,	2500,	5000,	10000],
     },
     {
       code: 'MY',
@@ -354,7 +367,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '150',
-      referral_min_spend_amount: '1499'
+      referral_min_spend_amount: '1499',
+      gift_card_options: [150, 300, 500,	1500,	3000,	5000],
     },
     {
       code: 'NZ',
@@ -377,7 +391,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      gift_card_options: [50, 100,	250,	500,	1000,	2000],
     },
     {
       code: 'PH',
@@ -400,7 +415,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '2000',
-      referral_min_spend_amount: '19999'
+      referral_min_spend_amount: '19999',
+      gift_card_options: [1500, 3000,	5000,	10000,	25000,	50000],
     },
     {
       code: 'QA',
@@ -423,7 +439,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '130',
-      referral_min_spend_amount: '1299'
+      referral_min_spend_amount: '1299',
+      gift_card_options: [150, 300, 500, 1000,	2500,	3000],
     },
     {
       code: 'RU',
@@ -446,7 +463,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '2500',
-      referral_min_spend_amount: '24999'
+      referral_min_spend_amount: '24999',
+      gift_card_options: [2000, 5000, 10000, 15000, 20000, 50000],
     },
     {
       code: 'SA',
@@ -469,7 +487,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '130',
-      referral_min_spend_amount: '1299'
+      referral_min_spend_amount: '1299',
+      gift_card_options: [150, 300, 500, 1000, 2500, 3000],
     },
     {
       code: 'SG',
@@ -492,7 +511,8 @@ module.exports = {
       },
       mailing_address: SINGAPORE_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      gift_card_options: [50, 100, 250, 500, 1000,	2000],
     },
     {
       code: 'ZA',
@@ -515,7 +535,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '500',
-      referral_min_spend_amount: '4999'
+      referral_min_spend_amount: '4999',
+      gift_card_options: [500, 1000,	2500,	5000,	10000,	50000],
     },
     {
       code: 'ES',
@@ -538,7 +559,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '30',
-      referral_min_spend_amount: '299'
+      referral_min_spend_amount: '299',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000],
     },
     {
       code: 'TW',
@@ -561,7 +583,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '1000',
-      referral_min_spend_amount: '19999'
+      referral_min_spend_amount: '19999',
+      gift_card_options: [1000, 2000 ,5000 ,10000 ,20000, 40000],
     },
     {
       code: 'TH',
@@ -584,7 +607,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '1000',
-      referral_min_spend_amount: '9999'
+      referral_min_spend_amount: '9999',
+      gift_card_options: [1000, 2000, 5000, 10000, 20000, 40000],
     },
     {
       code: 'AE',
@@ -608,6 +632,7 @@ module.exports = {
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '130',
       referral_min_spend_amount: '1299'
+      150	300	500	1,000	2,500	3,000
     },
     {
       code: 'GB',
@@ -630,7 +655,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '25',
-      referral_min_spend_amount: '249'
+      referral_min_spend_amount: '249',
+      gift_card_options: [50, 100, 250, 500, 1000, 2000],
     },
     {
       code: 'US',
@@ -653,7 +679,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '35',
-      referral_min_spend_amount: '349'
+      referral_min_spend_amount: '349',
+      gift_card_options: [50,	100,	250,	500,	1000,	2000],
     },
     {
       code: 'VN',
@@ -676,7 +703,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '800000',
-      referral_min_spend_amount: '7999999'
+      referral_min_spend_amount: '7999999',
+      gift_card_options: [500000,	1000000,	3000000,	5000000,	10000000,	20000000],
     },
   ],
   scooponexperience: [
@@ -845,7 +873,7 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
     }
   ],
   treatme: [
