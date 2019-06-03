@@ -20,7 +20,8 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
-        referral_amount: '50'
+        referral_amount: '50',
+        offer_urgency_tag: null
       },
     ])
   })
@@ -48,7 +49,17 @@ describe('getRegions()', function() {
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         latitude_threshold: 999,
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-        referral_amount: '50'
+        referral_amount: '50',
+        offer_urgency_tag: {
+          tour: {
+            min: 2,
+            period: 24
+          },
+          hotel: {
+            min: 10,
+            period: 24
+          }
+        }
       },
       {
         code: 'CA',
@@ -70,7 +81,8 @@ describe('getRegions()', function() {
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-        referral_amount: '45'
+        referral_amount: '45',
+        offer_urgency_tag: null
       }
     ])
   })
@@ -109,7 +121,8 @@ describe('getRegionByCode()', function() {
         'braintree',
         'stripe',
       ],
-      referral_amount: '50'
+      referral_amount: '50',
+      offer_urgency_tag: null
     })
   })
 
@@ -138,7 +151,8 @@ describe('getRegionByCode()', function() {
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-      referral_amount: '45'
+      referral_amount: '45',
+      offer_urgency_tag: null
     })
   })
 })
@@ -170,7 +184,8 @@ describe('getDefaultRegion()', function() {
         'braintree',
         'stripe'
       ],
-      referral_amount: '50'
+      referral_amount: '50',
+      offer_urgency_tag: null
     })
   })
 
@@ -196,7 +211,17 @@ describe('getDefaultRegion()', function() {
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       latitude_threshold: 999,
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-      referral_amount: '50'
+      referral_amount: '50',
+      offer_urgency_tag: {
+        tour: {
+          min: 2,
+          period: 24
+        },
+        hotel: {
+          min: 10,
+          period: 24
+        }
+      }
     })
   })
 })
