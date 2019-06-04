@@ -33,6 +33,16 @@ module.exports = {
       referral_amount: '50',
       referral_min_spend_amount: '499',
       gift_card_options: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
+      offer_urgency_tag: {
+        tour: {
+          min: 2,
+          period: 24
+        },
+        hotel: {
+          min: 10,
+          period: 24
+        }
+      }
     },
     {
       code: 'CA',
@@ -57,6 +67,7 @@ module.exports = {
       referral_amount: '50',
       referral_min_spend_amount: '499',
       gift_card_options: [50, 100, 250, 500, 1000],
+      offer_urgency_tag: null
     },
     {
       code: 'CN',
@@ -81,6 +92,7 @@ module.exports = {
       referral_amount: '240',
       referral_min_spend_amount: '2399',
       gift_card_options: [250, 500,	1000,	2500, 5000, 10000],
+      offer_urgency_tag: null
     },
     {
       code: 'FR',
@@ -105,6 +117,7 @@ module.exports = {
       referral_amount: '30',
       referral_min_spend_amount: '299',
       gift_card_options: [50, 100, 250, 500, 1000, 2000],
+      offer_urgency_tag: null
     },
     {
       code: 'DE',
@@ -129,6 +142,7 @@ module.exports = {
       referral_amount: '30',
       referral_min_spend_amount: '299',
       gift_card_options: [50, 100, 250, 500, 1000, 2000],
+      offer_urgency_tag: null
     },
     {
       code: 'HK',
@@ -153,6 +167,7 @@ module.exports = {
       referral_amount: '300',
       referral_min_spend_amount: '2999',
       gift_card_options: [250, 500,	1250,	2500,	5000,	10000],
+      offer_urgency_tag: null
     },
     {
       code: 'IN',
@@ -177,6 +192,7 @@ module.exports = {
       referral_amount: '2500',
       referral_min_spend_amount: '24999',
       gift_card_options: [2500,	5000,	12500, 25000, 50000,	100000],
+      offer_urgency_tag: null
     },
     {
       code: 'ID',
@@ -201,6 +217,7 @@ module.exports = {
       referral_amount: '500000',
       referral_min_spend_amount: '4999999',
       gift_card_options:[500000,	1000000,	2500000,	5000000,	10000000,	20000000],
+      offer_urgency_tag: null
     },
     {
       code: 'IE',
@@ -225,6 +242,7 @@ module.exports = {
       referral_amount: '30',
       referral_min_spend_amount: '299',
       gift_card_options: [50, 100, 250, 500, 1000, 2000],
+      offer_urgency_tag: null
     },
     {
       code: 'IL',
@@ -249,6 +267,7 @@ module.exports = {
       referral_amount: '130',
       referral_min_spend_amount: '1299',
       gift_card_options: [150, 300, 500, 1000,	2500,	3000],
+      offer_urgency_tag: null
     },
     {
       code: 'IT',
@@ -273,6 +292,7 @@ module.exports = {
       referral_amount: '30',
       referral_min_spend_amount: '299',
       gift_card_options: [50, 100, 250, 500, 1000, 2000],
+      offer_urgency_tag: null
     },
     {
       code: 'JP',
@@ -297,6 +317,7 @@ module.exports = {
       referral_amount: '4000',
       referral_min_spend_amount: '39999',
       gift_card_options: [2500,	5000,	15000,	50000,	75000,	150000],
+      offer_urgency_tag: null
     },
     {
       code: 'KR',
@@ -321,6 +342,7 @@ module.exports = {
       referral_amount: '40000',
       referral_min_spend_amount: '399999',
       gift_card_options: [25000,	50000,	200000,	500000,	750000,	1500000],
+      offer_urgency_tag: null
     },
     {
       code: 'MO',
@@ -345,6 +367,7 @@ module.exports = {
       referral_amount: '300',
       referral_min_spend_amount: '2999',
       gift_card_options: [250, 500, 1250,	2500,	5000,	10000],
+      offer_urgency_tag: null
     },
     {
       code: 'MY',
@@ -369,6 +392,7 @@ module.exports = {
       referral_amount: '150',
       referral_min_spend_amount: '1499',
       gift_card_options: [150, 300, 500,	1500,	3000,	5000],
+      offer_urgency_tag: null
     },
     {
       code: 'NZ',
@@ -393,6 +417,7 @@ module.exports = {
       referral_amount: '50',
       referral_min_spend_amount: '499',
       gift_card_options: [50, 100,	250,	500,	1000,	2000],
+      offer_urgency_tag: null
     },
     {
       code: 'PH',
@@ -417,6 +442,7 @@ module.exports = {
       referral_amount: '2000',
       referral_min_spend_amount: '19999',
       gift_card_options: [1500, 3000,	5000,	10000,	25000,	50000],
+      offer_urgency_tag: null
     },
     {
       code: 'QA',
@@ -441,6 +467,7 @@ module.exports = {
       referral_amount: '130',
       referral_min_spend_amount: '1299',
       gift_card_options: [150, 300, 500, 1000,	2500,	3000],
+      offer_urgency_tag: null
     },
     {
       code: 'RU',
@@ -465,6 +492,7 @@ module.exports = {
       referral_amount: '2500',
       referral_min_spend_amount: '24999',
       gift_card_options: [2000, 5000, 10000, 15000, 20000, 50000],
+      offer_urgency_tag: null
     },
     {
       code: 'SA',
@@ -489,6 +517,7 @@ module.exports = {
       referral_amount: '130',
       referral_min_spend_amount: '1299',
       gift_card_options: [150, 300, 500, 1000, 2500, 3000],
+      offer_urgency_tag: null
     },
     {
       code: 'SG',
@@ -513,6 +542,7 @@ module.exports = {
       referral_amount: '50',
       referral_min_spend_amount: '499',
       gift_card_options: [50, 100, 250, 500, 1000,	2000],
+      offer_urgency_tag: null
     },
     {
       code: 'ZA',
@@ -537,6 +567,7 @@ module.exports = {
       referral_amount: '500',
       referral_min_spend_amount: '4999',
       gift_card_options: [500, 1000,	2500,	5000,	10000,	50000],
+      offer_urgency_tag: null
     },
     {
       code: 'ES',
@@ -561,6 +592,7 @@ module.exports = {
       referral_amount: '30',
       referral_min_spend_amount: '299',
       gift_card_options: [50, 100, 250, 500, 1000, 2000],
+      offer_urgency_tag: null
     },
     {
       code: 'TW',
@@ -585,6 +617,7 @@ module.exports = {
       referral_amount: '1000',
       referral_min_spend_amount: '19999',
       gift_card_options: [1000, 2000 ,5000 ,10000 ,20000, 40000],
+      offer_urgency_tag: null
     },
     {
       code: 'TH',
@@ -609,6 +642,7 @@ module.exports = {
       referral_amount: '1000',
       referral_min_spend_amount: '9999',
       gift_card_options: [1000, 2000, 5000, 10000, 20000, 40000],
+      offer_urgency_tag: null
     },
     {
       code: 'AE',
@@ -633,6 +667,7 @@ module.exports = {
       referral_amount: '130',
       referral_min_spend_amount: '1299',
       gift_card_options: [150, 300 ,500	,1000,	2500,	3000],
+      offer_urgency_tag: null
     },
     {
       code: 'GB',
@@ -657,6 +692,7 @@ module.exports = {
       referral_amount: '25',
       referral_min_spend_amount: '249',
       gift_card_options: [50, 100, 250, 500, 1000, 2000],
+      offer_urgency_tag: null
     },
     {
       code: 'US',
@@ -681,6 +717,7 @@ module.exports = {
       referral_amount: '35',
       referral_min_spend_amount: '349',
       gift_card_options: [50,	100,	250,	500,	1000,	2000],
+      offer_urgency_tag: null
     },
     {
       code: 'VN',
@@ -705,6 +742,7 @@ module.exports = {
       referral_amount: '800000',
       referral_min_spend_amount: '7999999',
       gift_card_options: [500000,	1000000,	3000000,	5000000,	10000000,	20000000],
+      offer_urgency_tag: null
     },
   ],
   scooponexperience: [
@@ -728,7 +766,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   scoopontravel: [
@@ -752,7 +791,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   cudotravel: [
@@ -776,7 +816,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   treatmetravel: [
@@ -801,7 +842,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   dealstravel: [
@@ -825,7 +867,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   cudo: [
@@ -849,7 +892,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   deals: [
@@ -874,6 +918,7 @@ module.exports = {
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
       referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
   treatme: [
@@ -897,7 +942,8 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       referral_amount: '50',
-      referral_min_spend_amount: '499'
+      referral_min_spend_amount: '499',
+      offer_urgency_tag: null
     }
   ],
 }
