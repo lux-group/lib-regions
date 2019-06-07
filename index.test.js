@@ -52,12 +52,16 @@ describe('getRegions()', function() {
         referral_amount: '50',
         offer_urgency_tag: {
           tour: {
-            min: 2,
-            period: 24
+            popular: {
+              min: 2,
+              period: 24
+            }
           },
           hotel: {
-            min: 10,
-            period: 24
+            popular: {
+              min: 10,
+              period: 24
+            }
           }
         }
       },
@@ -214,12 +218,16 @@ describe('getDefaultRegion()', function() {
       referral_amount: '50',
       offer_urgency_tag: {
         tour: {
-          min: 2,
-          period: 24
+          popular: {
+            min: 2,
+            period: 24
+          }
         },
         hotel: {
-          min: 10,
-          period: 24
+          popular: {
+            min: 10,
+            period: 24
+          }
         }
       }
     })
