@@ -86,6 +86,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       EUR: {
@@ -100,6 +101,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       INR: {
@@ -115,6 +117,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       ILS: {
@@ -129,6 +132,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       KRW: {
@@ -136,6 +140,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       MOP: {
@@ -150,6 +155,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       NZD: {
@@ -164,6 +170,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       QAR: {
@@ -192,6 +199,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       TWD: {
@@ -199,6 +207,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ]
       },
       THB: {
@@ -206,6 +215,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ]
       },
       ZAR: {
@@ -227,6 +237,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       USD: {
@@ -234,6 +245,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
       VND: {
@@ -241,6 +253,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'kris',
         ],
       },
     },
