@@ -86,6 +86,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       EUR: {
@@ -100,6 +101,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       INR: {
@@ -115,6 +117,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       ILS: {
@@ -129,6 +132,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       KRW: {
@@ -136,6 +140,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       MOP: {
@@ -150,6 +155,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       NZD: {
@@ -164,6 +170,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       QAR: {
@@ -192,6 +199,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       TWD: {
@@ -199,6 +207,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ]
       },
       THB: {
@@ -206,6 +215,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ]
       },
       ZAR: {
@@ -227,6 +237,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       USD: {
@@ -234,6 +245,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
       VND: {
@@ -241,6 +253,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
+          'krisFlyer',
         ],
       },
     },
