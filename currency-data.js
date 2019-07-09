@@ -86,7 +86,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       EUR: {
@@ -101,7 +101,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       INR: {
@@ -117,7 +117,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       ILS: {
@@ -132,7 +132,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       KRW: {
@@ -140,7 +140,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       MOP: {
@@ -155,7 +155,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       NZD: {
@@ -170,7 +170,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       QAR: {
@@ -199,7 +199,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       TWD: {
@@ -207,7 +207,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ]
       },
       THB: {
@@ -215,7 +215,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ]
       },
       ZAR: {
@@ -237,7 +237,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       USD: {
@@ -245,7 +245,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
       VND: {
@@ -253,7 +253,7 @@ module.exports = {
           'le_credit',
           'stripe',
           'giftcard',
-          'kris',
+          'krisFlyer',
         ],
       },
     },
