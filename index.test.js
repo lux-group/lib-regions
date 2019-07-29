@@ -20,7 +20,7 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
-        parnerships: {},
+        parnerships: [],
         referral_amount: '50',
         offer_urgency_tag: null
       },
@@ -50,8 +50,8 @@ describe('getRegions()', function() {
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         latitude_threshold: 999,
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-        parnerships: {
-          qantas: {
+        parnerships: [
+          {
             hasEarn: true,
             hasBurn: true,
             brandName: 'Qantas',
@@ -70,7 +70,7 @@ describe('getRegions()', function() {
             numberMaxLength: 14,
             accountFields: ['qff', 'qff_last_name'],
           }
-        },
+        ],
         referral_amount: '50',
         offer_urgency_tag: {
           tour: {
@@ -107,7 +107,7 @@ describe('getRegions()', function() {
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-        parnerships: {},
+        parnerships: [],
         referral_amount: '45',
         offer_urgency_tag: null
       }
@@ -148,7 +148,7 @@ describe('getRegionByCode()', function() {
         'braintree',
         'stripe',
       ],
-      parnerships: {},
+      parnerships: [],
       referral_amount: '50',
       offer_urgency_tag: null
     })
@@ -179,7 +179,7 @@ describe('getRegionByCode()', function() {
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-      parnerships: {},
+      parnerships: [],
       referral_amount: '45',
       offer_urgency_tag: null
     })
@@ -213,7 +213,7 @@ describe('getDefaultRegion()', function() {
         'braintree',
         'stripe'
       ],
-      parnerships: {},
+      parnerships: [],
       referral_amount: '50',
       offer_urgency_tag: null
     })
@@ -241,8 +241,8 @@ describe('getDefaultRegion()', function() {
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       latitude_threshold: 999,
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-      parnerships: {
-        qantas: {
+      parnerships: [
+        {
           hasEarn: true,
           hasBurn: true,
           brandName: 'Qantas',
@@ -261,7 +261,7 @@ describe('getDefaultRegion()', function() {
           numberMaxLength: 14,
           accountFields: ['qff', 'qff_last_name'],
         }
-      },
+      ],
       referral_amount: '50',
       offer_urgency_tag: {
         tour: {
@@ -311,7 +311,7 @@ describe('getCurrencyCodes()', function() {
   })
 
   it('should return an array of currency codes default brand to luxuryescapes', function() {
-    expect(regionModule.getCurrencyCodes()).to.deep.equal(['AUD', 'CAD'])
+    expect(regionModule.getCurrencyCodes()).to.deep.equal(['AUD', 'CAD', 'SGD'])
   })
 })
 
@@ -329,6 +329,15 @@ describe('getPaymentMethodsByCurrencyCode()', function() {
       'braintree',
       'stripe',
       'qantas'
+    ])
+  })
+  
+  it('should return an array of payment methods default brand to luxuryescapes SGD', function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode('SGD')).to.deep.equal([
+      'le_credit',
+      'stripe',
+      'giftcard',
+      'krisFlyer',
     ])
   })
 })
@@ -384,27 +393,51 @@ describe('isRegionAllowed()', function() {
 });
 
 describe('getParnershipsByCurrencyCode()', function() {
-  expect(regionModule.getParnershipsByCurrencyCode('AUD')).to.deep.equal({
-    qantas: {
-      hasEarn: true,
-      hasBurn: true,
-      brandName: 'Qantas',
-      rewardName: 'Qantas Points',
-      programName: 'Qantas frequent flyer',
-      prefix: 'qff',
-      landingPage: 'qantas-frequent-flyer',
-      programLogo: 'QffLogo_2x_i99mv5',
-      reverseLogo: 'QffLogoReverse_2x_sxllsy',
-      icon: 'Qantas_2x_f6vhzx',
-      iconReversed: 'qantas_logo_reversed',
-      rewardPer: '$1',
-      rewardCurrency: 'AUD',
-      color: '#E5242A',
-      joinUrl: 'https://www.qantaspoints.com/join-now?code=LUXURYESCAPES',
-      numberMaxLength: 14,
-      accountFields: ['qff', 'qff_last_name'],
-    }
-  })
+  it('should return qantas', function() {
+    expect(regionModule.getParnershipsByCurrencyCode('AUD')).to.deep.equal([
+      {
+        hasEarn: true,
+        hasBurn: true,
+        brandName: 'Qantas',
+        rewardName: 'Qantas Points',
+        programName: 'Qantas frequent flyer',
+        prefix: 'qff',
+        landingPage: 'qantas-frequent-flyer',
+        programLogo: 'QffLogo_2x_i99mv5',
+        reverseLogo: 'QffLogoReverse_2x_sxllsy',
+        icon: 'Qantas_2x_f6vhzx',
+        iconReversed: 'qantas_logo_reversed',
+        rewardPer: '$1',
+        rewardCurrency: 'AUD',
+        color: '#E5242A',
+        joinUrl: 'https://www.qantaspoints.com/join-now?code=LUXURYESCAPES',
+        numberMaxLength: 14,
+        accountFields: ['qff', 'qff_last_name'],
+      }
+    ])
+  }) 
+  it('should return krisFlyer', function() {
+    expect(regionModule.getParnershipsByCurrencyCode('SGD', 'luxuryescapes')).to.deep.equal([
+      {
+        hasEarn: true,
+        hasBurn: false,
+        brandName: 'Singapore Airlines',
+        rewardName: 'KrisFlyer Miles',
+        programName: 'Kris flyer',
+        prefix: 'kfp',
+        landingPage: 'kris-flyer',
+        programLogo: 'krisFlyerLogo_2x_md61qq',
+        reverseLogo: 'krisFlyerLogoReverse_2x_gaivta',
+        icon: 'krisFlyer_2x_izuqwc',
+        iconReversed: 'krisFlyer_reverse_2x_tabtb2',
+        rewardCurrency: 'USD',
+        rewardPer: '$1 USD',
+        color: '#1D4886',
+        numberMaxLength: 10,
+        accountFields: ['kfp', 'kfp_first_name', 'kfp_last_name'],
+      }
+    ])
+  }) 
 });
 
 describe('eachRegionStatusFromPostcode', function() {

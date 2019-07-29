@@ -33,6 +33,14 @@ module.exports = {
           'maple_syrup_eh',
         ],
       },
+      SGD: {
+        payment_methods: [
+          'le_credit',
+          'stripe',
+          'giftcard',
+          'krisFlyer',
+        ],
+      },
     },
   },
 }

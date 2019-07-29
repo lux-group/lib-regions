@@ -6,12 +6,12 @@ var countries = require('./lib/countries')
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
-    var parnerships = {}
+    var parnerships = []
     var paymentMethods = currencies(k)[region.currency_code].payment_methods
 
     paymentMethods.forEach(function(paymentMethod) {
       if (parnershipData[paymentMethod]) {
-        parnerships[paymentMethod] = parnershipData[paymentMethod]
+        parnerships.push(parnershipData[paymentMethod])
       }
     })
 
@@ -86,11 +86,11 @@ function getParnerships() {
 }
 
 function getParnershipsByCurrencyCode(currencyCode, brand) {
-  var parnerships = {}
+  var parnerships = []
 
   getPaymentMethodsByCurrencyCode(currencyCode, brand).forEach(function(paymentMethod) {
     if (parnershipData[paymentMethod]) {
-      parnerships[paymentMethod] = parnershipData[paymentMethod]
+      parnerships.push(parnershipData[paymentMethod])
     }
   })
   
