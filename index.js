@@ -1,13 +1,24 @@
 var currencyData = require('./currency-data').currencies
+var parnershipData = require('./parnership-data')
 var regionData = require('./region-data')
 var flights = require('./lib/flights')
 var countries = require('./lib/countries')
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
+    var parnerships = []
+    var paymentMethods = currencies(k)[region.currency_code].payment_methods
+
+    paymentMethods.forEach(function(paymentMethod) {
+      if (parnershipData[paymentMethod]) {
+        parnerships.push(parnershipData[paymentMethod])
+      }
+    })
+
     return Object.assign({},
       region,
-      { payment_methods: currencies(k)[region.currency_code].payment_methods }
+      { payment_methods: paymentMethods },
+      { parnerships: parnerships }
     )
   })
   return acc
@@ -70,6 +81,22 @@ function getPaymentMethodsByCurrencyCode(currencyCode, brand) {
   return currencies(brand)[currencyCode].payment_methods
 }
 
+function getParnerships() {
+  return parnershipData
+}
+
+function getParnershipsByCurrencyCode(currencyCode, brand) {
+  var parnerships = []
+
+  getPaymentMethodsByCurrencyCode(currencyCode, brand).forEach(function(paymentMethod) {
+    if (parnershipData[paymentMethod]) {
+      parnerships.push(parnershipData[paymentMethod])
+    }
+  })
+  
+  return parnerships
+}
+
 function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies
 }
@@ -122,6 +149,7 @@ module.exports = {
   getRegionLang: getRegionLang,
   getRegionReferralAmountByCode: getRegionReferralAmountByCode,
   getRegionNamesAndCode: getRegionNamesAndCode,
+  getParnershipsByCurrencyCode: getParnershipsByCurrencyCode,
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,
   getFlightMainPort: flights.getFlightMainPort,
@@ -130,5 +158,6 @@ module.exports = {
   getPopularRegionDeparturePorts: flights.getPopularRegionDeparturePorts,
   getRegionDestinationPorts: flights.getRegionDestinationPorts,
   getAirportByCode: flights.getAirportByCode,
-  getCountries: getCountries
+  getCountries: getCountries,
+  getParnerships: getParnerships
 }
