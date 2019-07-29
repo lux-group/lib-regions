@@ -81,6 +81,10 @@ function getPaymentMethodsByCurrencyCode(currencyCode, brand) {
   return currencies(brand)[currencyCode].payment_methods
 }
 
+function getParnerships() {
+  return parnershipData
+}
+
 function getParnershipsByCurrencyCode(currencyCode, brand) {
   var parnerships = {}
 
@@ -154,5 +158,6 @@ module.exports = {
   getPopularRegionDeparturePorts: flights.getPopularRegionDeparturePorts,
   getRegionDestinationPorts: flights.getRegionDestinationPorts,
   getAirportByCode: flights.getAirportByCode,
-  getCountries: getCountries
+  getCountries: getCountries,
+  getParnerships: getParnerships
 }
