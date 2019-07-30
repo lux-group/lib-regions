@@ -1,6 +1,6 @@
 var camelcaseKeys = require('camelcase-keys');
 var currencyData = require('./currency-data').currencies
-var parnershipData = require('./parnership-data')
+var partnershipData = require('./partnership-data')
 var regionData = require('./region-data')
 var flights = require('./lib/flights')
 var countries = require('./lib/countries')
@@ -23,19 +23,19 @@ function camelFn(fn) {
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
-    var parnerships = []
+    var partnerships = []
     var paymentMethods = currencies(k)[region.currency_code].payment_methods
 
     paymentMethods.forEach(function(paymentMethod) {
-      if (parnershipData[paymentMethod]) {
-        parnerships.push(parnershipData[paymentMethod])
+      if (partnershipData[paymentMethod]) {
+        partnerships.push(partnershipData[paymentMethod])
       }
     })
 
     return Object.assign({},
       region,
       { payment_methods: paymentMethods },
-      { parnerships: parnerships }
+      { partnerships: partnerships }
     )
   })
   return acc
@@ -99,19 +99,19 @@ function getPaymentMethodsByCurrencyCode(currencyCode, brand) {
 }
 
 function getPartnerships() {
-  return parnershipData
+  return partnershipData
 }
 
 function getPartnershipsByCurrencyCode(currencyCode, brand) {
-  var parnerships = []
+  var partnerships = []
 
   getPaymentMethodsByCurrencyCode(currencyCode, brand).forEach(function(paymentMethod) {
-    if (parnershipData[paymentMethod]) {
-      parnerships.push(parnershipData[paymentMethod])
+    if (partnershipData[paymentMethod]) {
+      partnerships.push(partnershipData[paymentMethod])
     }
   })
 
-  return parnerships
+  return partnerships
 }
 
 function getZeroDecimalCurrencies() {

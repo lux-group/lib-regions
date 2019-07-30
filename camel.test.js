@@ -22,7 +22,7 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
-        parnerships: [],
+        partnerships: [],
         referralAmount: '50',
         offerUrgencyTag: null
       },

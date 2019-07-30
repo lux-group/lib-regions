@@ -21,7 +21,7 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
-        parnerships: [],
+        partnerships: [],
         referral_amount: '50',
         offer_urgency_tag: null
       },
@@ -51,7 +51,7 @@ describe('getRegions()', function() {
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         latitude_threshold: 999,
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-        parnerships: [
+        partnerships: [
           {
             hasEarn: true,
             hasBurn: true,
@@ -108,7 +108,7 @@ describe('getRegions()', function() {
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-        parnerships: [],
+        partnerships: [],
         referral_amount: '45',
         offer_urgency_tag: null
       }
@@ -149,7 +149,7 @@ describe('getRegionByCode()', function() {
         'braintree',
         'stripe',
       ],
-      parnerships: [],
+      partnerships: [],
       referral_amount: '50',
       offer_urgency_tag: null
     })
@@ -180,7 +180,7 @@ describe('getRegionByCode()', function() {
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-      parnerships: [],
+      partnerships: [],
       referral_amount: '45',
       offer_urgency_tag: null
     })
@@ -214,7 +214,7 @@ describe('getDefaultRegion()', function() {
         'braintree',
         'stripe'
       ],
-      parnerships: [],
+      partnerships: [],
       referral_amount: '50',
       offer_urgency_tag: null
     })
@@ -242,7 +242,7 @@ describe('getDefaultRegion()', function() {
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       latitude_threshold: 999,
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-      parnerships: [
+      partnerships: [
         {
           hasEarn: true,
           hasBurn: true,
