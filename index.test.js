@@ -4,6 +4,7 @@ jest.mock('./region-data.js')
 jest.mock('./currency-data.js')
 
 var regionModule = require('./index')
+
 const postcodes = require('lib-regions/postcodes')
 
 describe('getRegions()', function() {
@@ -331,7 +332,7 @@ describe('getPaymentMethodsByCurrencyCode()', function() {
       'qantas'
     ])
   })
-  
+
   it('should return an array of payment methods default brand to luxuryescapes SGD', function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode('SGD')).to.deep.equal([
       'le_credit',
@@ -415,7 +416,7 @@ describe('getParnershipsByCurrencyCode()', function() {
         accountFields: ['qff', 'qff_last_name'],
       }
     ])
-  }) 
+  })
   it('should return krisFlyer', function() {
     expect(regionModule.getParnershipsByCurrencyCode('SGD', 'luxuryescapes')).to.deep.equal([
       {
@@ -437,7 +438,7 @@ describe('getParnershipsByCurrencyCode()', function() {
         accountFields: ['kfp', 'kfp_first_name', 'kfp_last_name'],
       }
     ])
-  }) 
+  })
 });
 
 describe('eachRegionStatusFromPostcode', function() {

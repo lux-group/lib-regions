@@ -1,8 +1,24 @@
+var camelcaseKeys = require('camelcase-keys');
 var currencyData = require('./currency-data').currencies
 var parnershipData = require('./parnership-data')
 var regionData = require('./region-data')
 var flights = require('./lib/flights')
 var countries = require('./lib/countries')
+
+var camel = false
+
+function setCamel() {
+  camel = true
+}
+
+function present(fn) {
+  return function() {
+    if (camel) {
+      return camelcaseKeys(fn.apply(null, arguments), {deep: true});
+    }
+    return fn.apply(null, arguments)
+  }
+}
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
@@ -93,7 +109,7 @@ function getParnershipsByCurrencyCode(currencyCode, brand) {
       parnerships.push(parnershipData[paymentMethod])
     }
   })
-  
+
   return parnerships
 }
 
@@ -135,29 +151,30 @@ function getCountries() {
 }
 
 module.exports = {
-  getRegions: getRegions,
-  getRegionCodes: getRegionCodes,
-  getRegionNames: getRegionNames,
-  getRegionByCode: getRegionByCode,
-  getRegionNameByCode: getRegionNameByCode,
-  getDefaultRegion: getDefaultRegion,
-  getDefaultRegionCode: getDefaultRegionCode,
-  getDefaultRegionName: getDefaultRegionName,
-  getCurrencyCodes: getCurrencyCodes,
-  getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
-  getZeroDecimalCurrencies: getZeroDecimalCurrencies,
-  getRegionLang: getRegionLang,
-  getRegionReferralAmountByCode: getRegionReferralAmountByCode,
-  getRegionNamesAndCode: getRegionNamesAndCode,
-  getParnershipsByCurrencyCode: getParnershipsByCurrencyCode,
+  setCamel: setCamel,
+  getRegions: present(getRegions),
+  getRegionCodes: present(getRegionCodes),
+  getRegionNames: present(getRegionNames),
+  getRegionByCode: present(getRegionByCode),
+  getRegionNameByCode: present(getRegionNameByCode),
+  getDefaultRegion: present(getDefaultRegion),
+  getDefaultRegionCode: present(getDefaultRegionCode),
+  getDefaultRegionName: present(getDefaultRegionName),
+  getCurrencyCodes: present(getCurrencyCodes),
+  getPaymentMethodsByCurrencyCode: present(getPaymentMethodsByCurrencyCode),
+  getZeroDecimalCurrencies: present(getZeroDecimalCurrencies),
+  getRegionLang: present(getRegionLang),
+  getRegionReferralAmountByCode: present(getRegionReferralAmountByCode),
+  getRegionNamesAndCode: present(getRegionNamesAndCode),
+  getParnershipsByCurrencyCode: present(getParnershipsByCurrencyCode),
   isRegionAllowed: isRegionAllowed,
-  getRegionPhonePrefix: getRegionPhonePrefix,
-  getFlightMainPort: flights.getFlightMainPort,
-  getFlightRegions: flights.getFlightRegions,
-  getRegionDeparturePorts: flights.getRegionDeparturePorts,
-  getPopularRegionDeparturePorts: flights.getPopularRegionDeparturePorts,
-  getRegionDestinationPorts: flights.getRegionDestinationPorts,
-  getAirportByCode: flights.getAirportByCode,
-  getCountries: getCountries,
-  getParnerships: getParnerships
+  getRegionPhonePrefix: present(getRegionPhonePrefix),
+  getFlightMainPort: present(flights.getFlightMainPort),
+  getFlightRegions: present(flights.getFlightRegions),
+  getRegionDeparturePorts: present(flights.getRegionDeparturePorts),
+  getPopularRegionDeparturePorts: present(flights.getPopularRegionDeparturePorts),
+  getRegionDestinationPorts: present(flights.getRegionDestinationPorts),
+  getAirportByCode: present(flights.getAirportByCode),
+  getCountries: present(getCountries),
+  getParnerships: present(getParnerships)
 }

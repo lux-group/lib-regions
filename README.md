@@ -8,6 +8,15 @@ Region information for Luxury Escapes
 yarn test
 ```
 
+## Camel Case
+
+You can make everything camel case by:
+
+```js
+var libRegions = require('@luxuryescapes/lib-regions')
+libRegions.setCamel()
+```
+
 ## Release
 
 ```
