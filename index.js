@@ -13,10 +13,11 @@ function setCamel() {
 
 function camelFn(fn) {
   return function() {
-    if (camel) {
-      return camelcaseKeys(fn.apply(null, arguments), {deep: true});
+    var result = fn.apply(null, arguments)
+    if (camel && result) {
+      return camelcaseKeys(result, {deep: true});
     }
-    return fn.apply(null, arguments)
+    return result
   }
 }
 
