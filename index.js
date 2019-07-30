@@ -11,7 +11,7 @@ function setCamel() {
   camel = true
 }
 
-function present(fn) {
+function camelFn(fn) {
   return function() {
     if (camel) {
       return camelcaseKeys(fn.apply(null, arguments), {deep: true});
@@ -152,29 +152,29 @@ function getCountries() {
 
 module.exports = {
   setCamel: setCamel,
-  getRegions: present(getRegions),
-  getRegionCodes: present(getRegionCodes),
-  getRegionNames: present(getRegionNames),
-  getRegionByCode: present(getRegionByCode),
-  getRegionNameByCode: present(getRegionNameByCode),
-  getDefaultRegion: present(getDefaultRegion),
-  getDefaultRegionCode: present(getDefaultRegionCode),
-  getDefaultRegionName: present(getDefaultRegionName),
-  getCurrencyCodes: present(getCurrencyCodes),
-  getPaymentMethodsByCurrencyCode: present(getPaymentMethodsByCurrencyCode),
-  getZeroDecimalCurrencies: present(getZeroDecimalCurrencies),
-  getRegionLang: present(getRegionLang),
-  getRegionReferralAmountByCode: present(getRegionReferralAmountByCode),
-  getRegionNamesAndCode: present(getRegionNamesAndCode),
-  getParnershipsByCurrencyCode: present(getParnershipsByCurrencyCode),
+  getRegions: camelFn(getRegions),
+  getRegionCodes: camelFn(getRegionCodes),
+  getRegionNames: camelFn(getRegionNames),
+  getRegionByCode: camelFn(getRegionByCode),
+  getRegionNameByCode: camelFn(getRegionNameByCode),
+  getDefaultRegion: camelFn(getDefaultRegion),
+  getDefaultRegionCode: camelFn(getDefaultRegionCode),
+  getDefaultRegionName: camelFn(getDefaultRegionName),
+  getCurrencyCodes: camelFn(getCurrencyCodes),
+  getPaymentMethodsByCurrencyCode: camelFn(getPaymentMethodsByCurrencyCode),
+  getZeroDecimalCurrencies: camelFn(getZeroDecimalCurrencies),
+  getRegionLang: camelFn(getRegionLang),
+  getRegionReferralAmountByCode: camelFn(getRegionReferralAmountByCode),
+  getRegionNamesAndCode: camelFn(getRegionNamesAndCode),
+  getParnershipsByCurrencyCode: camelFn(getParnershipsByCurrencyCode),
   isRegionAllowed: isRegionAllowed,
-  getRegionPhonePrefix: present(getRegionPhonePrefix),
-  getFlightMainPort: present(flights.getFlightMainPort),
-  getFlightRegions: present(flights.getFlightRegions),
-  getRegionDeparturePorts: present(flights.getRegionDeparturePorts),
-  getPopularRegionDeparturePorts: present(flights.getPopularRegionDeparturePorts),
-  getRegionDestinationPorts: present(flights.getRegionDestinationPorts),
-  getAirportByCode: present(flights.getAirportByCode),
-  getCountries: present(getCountries),
-  getParnerships: present(getParnerships)
+  getRegionPhonePrefix: camelFn(getRegionPhonePrefix),
+  getFlightMainPort: camelFn(flights.getFlightMainPort),
+  getFlightRegions: camelFn(flights.getFlightRegions),
+  getRegionDeparturePorts: camelFn(flights.getRegionDeparturePorts),
+  getPopularRegionDeparturePorts: camelFn(flights.getPopularRegionDeparturePorts),
+  getRegionDestinationPorts: camelFn(flights.getRegionDestinationPorts),
+  getAirportByCode: camelFn(flights.getAirportByCode),
+  getCountries: camelFn(getCountries),
+  getParnerships: camelFn(getParnerships)
 }
