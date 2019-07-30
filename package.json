@@ -1,5 +1,5 @@
 {
-  "name": "lib-regions",
+  "name": "@luxuryescapes/lib-regions",
   "version": "3.8.0",
   "description": "Region information for Luxury Escapes",
   "main": "index.js",
