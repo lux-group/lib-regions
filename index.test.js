@@ -5,7 +5,7 @@ jest.mock('./currency-data.js')
 
 var regionModule = require('./index')
 
-const postcodes = require('lib-regions/postcodes')
+const postcodes = require('./postcodes')
 
 describe('getRegions()', function() {
   it('should return the region', function() {
@@ -393,9 +393,9 @@ describe('isRegionAllowed()', function() {
   })
 });
 
-describe('getParnershipsByCurrencyCode()', function() {
+describe('getPartnershipsByCurrencyCode()', function() {
   it('should return qantas', function() {
-    expect(regionModule.getParnershipsByCurrencyCode('AUD')).to.deep.equal([
+    expect(regionModule.getPartnershipsByCurrencyCode('AUD')).to.deep.equal([
       {
         hasEarn: true,
         hasBurn: true,
@@ -418,7 +418,7 @@ describe('getParnershipsByCurrencyCode()', function() {
     ])
   })
   it('should return krisFlyer', function() {
-    expect(regionModule.getParnershipsByCurrencyCode('SGD', 'luxuryescapes')).to.deep.equal([
+    expect(regionModule.getPartnershipsByCurrencyCode('SGD', 'luxuryescapes')).to.deep.equal([
       {
         hasEarn: true,
         hasBurn: false,

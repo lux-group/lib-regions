@@ -6,7 +6,7 @@ jest.mock('./currency-data.js')
 var regionModule = require('./index')
 regionModule.setCamel()
 
-const postcodes = require('lib-regions/postcodes')
+const postcodes = require('./postcodes')
 
 describe('getRegions()', function() {
   it('should return the region', function() {
