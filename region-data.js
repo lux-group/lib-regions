@@ -718,7 +718,7 @@ module.exports = {
         default: 'international',
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
-      referral_amount: '35',
+      referral_amount: '100',
       referral_min_spend_amount: '349',
       gift_card_options: [50,	100,	250,	500,	1000,	2000],
       offer_urgency_tag: null
