@@ -21,7 +21,6 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
-        partnerships: [],
         referral_amount: '50',
         offer_urgency_tag: null
       },
@@ -51,27 +50,6 @@ describe('getRegions()', function() {
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         latitude_threshold: 999,
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-        partnerships: [
-          {
-            hasEarn: true,
-            hasBurn: true,
-            brandName: 'Qantas',
-            rewardName: 'Qantas Points',
-            programName: 'Qantas frequent flyer',
-            prefix: 'qff',
-            landingPage: 'qantas-frequent-flyer',
-            programLogo: 'QffLogo_2x_i99mv5',
-            reverseLogo: 'QffLogoReverse_2x_sxllsy',
-            icon: 'Qantas_2x_f6vhzx',
-            iconReversed: 'qantas_logo_reversed',
-            rewardPer: '$1',
-            rewardCurrency: 'AUD',
-            color: '#E5242A',
-            joinUrl: 'https://www.qantaspoints.com/join-now?code=LUXURYESCAPES',
-            numberMaxLength: 14,
-            accountFields: ['qff', 'qff_last_name'],
-          }
-        ],
         referral_amount: '50',
         offer_urgency_tag: {
           tour: {
@@ -108,7 +86,6 @@ describe('getRegions()', function() {
         },
         mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
         payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-        partnerships: [],
         referral_amount: '45',
         offer_urgency_tag: null
       }
@@ -149,7 +126,6 @@ describe('getRegionByCode()', function() {
         'braintree',
         'stripe',
       ],
-      partnerships: [],
       referral_amount: '50',
       offer_urgency_tag: null
     })
@@ -180,7 +156,6 @@ describe('getRegionByCode()', function() {
       },
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-      partnerships: [],
       referral_amount: '45',
       offer_urgency_tag: null
     })
@@ -214,7 +189,6 @@ describe('getDefaultRegion()', function() {
         'braintree',
         'stripe'
       ],
-      partnerships: [],
       referral_amount: '50',
       offer_urgency_tag: null
     })
@@ -242,27 +216,6 @@ describe('getDefaultRegion()', function() {
       mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
       latitude_threshold: 999,
       payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-      partnerships: [
-        {
-          hasEarn: true,
-          hasBurn: true,
-          brandName: 'Qantas',
-          rewardName: 'Qantas Points',
-          programName: 'Qantas frequent flyer',
-          prefix: 'qff',
-          landingPage: 'qantas-frequent-flyer',
-          programLogo: 'QffLogo_2x_i99mv5',
-          reverseLogo: 'QffLogoReverse_2x_sxllsy',
-          icon: 'Qantas_2x_f6vhzx',
-          iconReversed: 'qantas_logo_reversed',
-          rewardPer: '$1',
-          rewardCurrency: 'AUD',
-          color: '#E5242A',
-          joinUrl: 'https://www.qantaspoints.com/join-now?code=LUXURYESCAPES',
-          numberMaxLength: 14,
-          accountFields: ['qff', 'qff_last_name'],
-        }
-      ],
       referral_amount: '50',
       offer_urgency_tag: {
         tour: {

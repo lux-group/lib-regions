@@ -1,6 +1,5 @@
 var camelcaseKeys = require('camelcase-keys');
 var currencyData = require('./currency-data').currencies
-var partnershipData = require('./partnership-data')
 var regionData = require('./region-data')
 var flights = require('./lib/flights')
 var countries = require('./lib/countries')
@@ -23,19 +22,9 @@ function camelFn(fn) {
 
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
-    var partnerships = []
-    var paymentMethods = currencies(k)[region.currency_code].payment_methods
-
-    paymentMethods.forEach(function(paymentMethod) {
-      if (partnershipData[paymentMethod]) {
-        partnerships.push(partnershipData[paymentMethod])
-      }
-    })
-
     return Object.assign({},
       region,
-      { payment_methods: paymentMethods },
-      { partnerships: partnerships }
+      { payment_methods: currencies(k)[region.currency_code].payment_methods }
     )
   })
   return acc
@@ -98,22 +87,6 @@ function getPaymentMethodsByCurrencyCode(currencyCode, brand) {
   return currencies(brand)[currencyCode].payment_methods
 }
 
-function getPartnerships() {
-  return partnershipData
-}
-
-function getPartnershipsByCurrencyCode(currencyCode, brand) {
-  var partnerships = []
-
-  getPaymentMethodsByCurrencyCode(currencyCode, brand).forEach(function(paymentMethod) {
-    if (partnershipData[paymentMethod]) {
-      partnerships.push(partnershipData[paymentMethod])
-    }
-  })
-
-  return partnerships
-}
-
 function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies
 }
@@ -167,7 +140,6 @@ module.exports = {
   getRegionLang: getRegionLang,
   getRegionReferralAmountByCode: getRegionReferralAmountByCode,
   getRegionNamesAndCode: getRegionNamesAndCode,
-  getPartnershipsByCurrencyCode: getPartnershipsByCurrencyCode,
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,
   getFlightMainPort: flights.getFlightMainPort,
@@ -176,6 +148,5 @@ module.exports = {
   getPopularRegionDeparturePorts: flights.getPopularRegionDeparturePorts,
   getRegionDestinationPorts: flights.getRegionDestinationPorts,
   getAirportByCode: flights.getAirportByCode,
-  getCountries: getCountries,
-  getPartnerships: getPartnerships
+  getCountries: getCountries
 }

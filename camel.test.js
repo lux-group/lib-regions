@@ -6,8 +6,6 @@ jest.mock('./currency-data.js')
 var regionModule = require('./index')
 regionModule.setCamel()
 
-const postcodes = require('./postcodes')
-
 describe('getRegions()', function() {
   it('should return the region', function() {
     expect(regionModule.getRegions('scoopontravel')).to.deep.equal([
@@ -22,7 +20,6 @@ describe('getRegions()', function() {
           'braintree',
           'stripe',
         ],
-        partnerships: [],
         referralAmount: '50',
         offerUrgencyTag: null
       },
