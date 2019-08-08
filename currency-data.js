@@ -60,6 +60,7 @@ module.exports = {
         payment_methods: [
           'stripe',
           'braintree',
+          'latitude_pay',
         ]
       }
     },
@@ -71,6 +72,7 @@ module.exports = {
           'braintree',
           'qantas',
           'latitude',
+          'latitude_pay',
           'giftcard',
         ],
       },
