@@ -1,4 +1,3 @@
-var camelcaseKeys = require('camelcase-keys');
 var currencyData = require('./currency-data').currencies
 var regionData = require('./region-data')
 var flights = require('./lib/flights')
