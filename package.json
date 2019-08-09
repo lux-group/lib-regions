@@ -1,6 +1,6 @@
 {
   "name": "@luxuryescapes/lib-regions",
-  "version": "3.8.7",
+  "version": "3.8.8",
   "description": "Region information for Luxury Escapes",
   "main": "index.js",
   "scripts": {
