@@ -4,22 +4,6 @@ var regionData = require('./region-data')
 var flights = require('./lib/flights')
 var countries = require('./lib/countries')
 
-var camel = false
-
-function setCamel() {
-  camel = true
-}
-
-function camelFn(fn) {
-  return function() {
-    var result = fn.apply(null, arguments)
-    if (camel && result) {
-      return camelcaseKeys(result, {deep: true});
-    }
-    return result
-  }
-}
-
 var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
   acc[k] = regionData[k].map(function(region) {
     return Object.assign({},
@@ -125,13 +109,12 @@ function getCountries() {
 }
 
 module.exports = {
-  setCamel: setCamel,
-  getRegions: camelFn(getRegions),
+  getRegions: getRegions,
   getRegionCodes: getRegionCodes,
   getRegionNames: getRegionNames,
-  getRegionByCode: camelFn(getRegionByCode),
+  getRegionByCode: getRegionByCode,
   getRegionNameByCode: getRegionNameByCode,
-  getDefaultRegion: camelFn(getDefaultRegion),
+  getDefaultRegion: getDefaultRegion,
   getDefaultRegionCode: getDefaultRegionCode,
   getDefaultRegionName: getDefaultRegionName,
   getCurrencyCodes: getCurrencyCodes,
