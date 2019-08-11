@@ -5,8 +5,6 @@ jest.mock('./currency-data.js')
 
 var regionModule = require('./index')
 
-const postcodes = require('./postcodes')
-
 describe('getRegions()', function() {
   it('should return the region', function() {
     expect(regionModule.getRegions('scoopontravel')).to.deep.equal([
@@ -345,15 +343,3 @@ describe('isRegionAllowed()', function() {
     expect(regionModule.isRegionAllowed('scoopontravel', 'NZ')).to.equal(false)
   })
 });
-
-describe('eachRegionStatusFromPostcode', function() {
-  it('works', function() {
-    expect(postcodes.marketingRegionFromPostcode(2000)).to.eql('sydney')
-    expect(postcodes.marketingRegionFromPostcode(3000)).to.eql('melbourne')
-    expect(postcodes.marketingRegionFromPostcode(null)).to.eql('sydney')
-    expect(postcodes.marketingRegionFromPostcode('')).to.eql('sydney')
-    expect(postcodes.marketingRegionFromPostcode('', 'NZ')).to.eql('auckland')
-    expect(postcodes.marketingRegionFromPostcode('0211', 'NZ')).to.eql('auckland')
-    expect(postcodes.marketingRegionFromPostcode('5542', 'NZ')).to.eql('wellington')
-  })
-})
