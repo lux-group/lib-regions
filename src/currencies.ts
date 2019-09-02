@@ -1,4 +1,4 @@
-interface Currency {
+export interface Currency {
   paymentMethods: string[];
 }
 
@@ -10,266 +10,264 @@ interface BrandCurrencies {
   [brand: string]: Currencies;
 }
 
-const currencies: BrandCurrencies = {
+export const currencies: BrandCurrencies = {
   treatmetravel: {
     NZD: {
       paymentMethods: [
-        'stripe',
+        "stripe",
       ],
     },
   },
   dealstravel: {
     AUD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-      ]
-    }
+        "stripe",
+        "braintree",
+      ],
+    },
   },
   cudotravel: {
     AUD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-      ]
-    }
+        "stripe",
+        "braintree",
+      ],
+    },
   },
   cudo: {
     AUD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-      ]
-    }
+        "stripe",
+        "braintree",
+      ],
+    },
   },
   deals: {
     AUD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-      ]
-    }
+        "stripe",
+        "braintree",
+      ],
+    },
   },
   treatme: {
     NZD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-      ]
-    }
+        "stripe",
+        "braintree",
+      ],
+    },
   },
   scooponexperience: {
     AUD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-      ]
-    }
+        "stripe",
+        "braintree",
+      ],
+    },
   },
   scoopontravel: {
     AUD: {
       paymentMethods: [
-        'stripe',
-        'braintree',
-        'latitude_pay',
-      ]
-    }
+        "stripe",
+        "braintree",
+        "latitude_pay",
+      ],
+    },
   },
   luxuryescapes: {
     AUD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'braintree',
-        'qantas',
-        'latitude',
-        'latitude_pay',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "braintree",
+        "qantas",
+        "latitude",
+        "latitude_pay",
+        "giftcard",
       ],
     },
     CAD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     CNY: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     EUR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     HKD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     INR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'razorpay',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "razorpay",
+        "giftcard",
       ],
     },
     IDR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     ILS: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     JPY: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     KRW: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     MOP: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     MYR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     NZD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     PHP: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     QAR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     RUB: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     SAR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     SGD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     TWD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
-      ]
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
+      ],
     },
     THB: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
-      ]
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
+      ],
     },
     ZAR: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     AED: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
+        "le_credit",
+        "stripe",
+        "giftcard",
       ],
     },
     GBP: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     USD: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
     VND: {
       paymentMethods: [
-        'le_credit',
-        'stripe',
-        'giftcard',
-        'krisFlyer',
+        "le_credit",
+        "stripe",
+        "giftcard",
+        "krisFlyer",
       ],
     },
   },
-}
-
-export default currencies
+};

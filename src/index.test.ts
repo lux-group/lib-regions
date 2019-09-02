@@ -1,342 +1,239 @@
-var expect = require('chai').expect
+import { expect } from "chai";
+import * as regionModule from "./";
 
-var regionModule = require('./index')
+describe("getRegionCodes()", function() {
+  it("should return an array of region codes", function() {
+    expect(regionModule.getRegionCodes("scoopontravel")).to.deep.equal(["AU"]);
+  });
+});
 
-describe('getRegions()', function() {
-  it('should return the region', function() {
-    expect(regionModule.getRegions('scoopontravel')).to.deep.equal([
-      {
-        code: 'AU',
-        name: 'Australia',
-        lang: 'en-AU',
-        phone_prefix: '61',
-        currency_formatting_locale: 'en-AU',
-        currency_code: 'AUD',
-        payment_methods: [
-          'braintree',
-          'stripe',
-        ],
-        referral_amount: '50',
-        offer_urgency_tag: null
-      },
-    ])
-  })
+describe("getRegionNames()", function() {
+  it("should return an array of region names", function() {
+    expect(regionModule.getRegionNames("scoopontravel")).to.deep.equal(["Australia"]);
+  });
 
-  it('should return the region info default brand to luxuryescapes', function() {
-    expect(regionModule.getRegions()).to.deep.equal([
-      {
-        code: 'AU',
-        name: 'Australia',
-        lang: 'en-AU',
-        phone_prefix: '61',
-        currency_formatting_locale: 'en-AU',
-        currency_code: 'AUD',
-        flag_id: 'au_iuox02',
-        phone: {
-          local: {
-            human_readable: '1300 88 99 00',
-            number: '1300889900',
-          },
-          international: {
-            human_readable: '+61 2 8320 6845',
-            number: '+61283206845',
-          },
-        },
-        mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
-        latitude_threshold: 999,
-        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-        referral_amount: '50',
-        offer_urgency_tag: {
-          tour: {
-            popular: {
-              min: 2,
-              period: 24
-            }
-          },
-          hotel: {
-            popular: {
-              min: 10,
-              period: 24
-            }
-          }
-        }
-      },
-      {
-        code: 'CA',
-        name: 'Canada',
-        lang: 'en-CA',
-        phone_prefix: '1',
-        currency_formatting_locale: 'en-CA',
-        currency_code: 'CAD',
-        flag_id: 'ca_nacvxi',
-        phone: {
-          local: {
-            human_readable: '778 300 0814',
-            number: '7783000814',
-          },
-          international: {
-            human_readable: '+61 2 8320 6845',
-            number: '+61283206845',
-          },
-        },
-        mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
-        payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-        referral_amount: '45',
-        offer_urgency_tag: null
-      }
-    ])
-  })
-})
+  it("should return an array of region names default brand to luxuryescapes", function() {
+    expect(regionModule.getRegionNames()).to.deep.equal([
+      "Australia",
+      "Canada",
+      "China",
+      "France",
+      "Germany",
+      "Hong Kong",
+      "India",
+      "Indonesia",
+      "Ireland",
+      "Israel",
+      "Italy",
+      "Japan",
+      "Korea",
+      "Macau",
+      "Malaysia",
+      "New Zealand",
+      "Philippines",
+      "Qatar",
+      "Russia",
+      "Saudi Arabia",
+      "Singapore",
+      "South Africa",
+      "Spain",
+      "Taiwan",
+      "Thailand",
+      "United Arab Emirates",
+      "United Kingdom",
+      "United States",
+      "Vietnam",
+    ]);
+  });
+});
 
-describe('getRegionCodes()', function() {
-  it('should return an array of region codes', function() {
-    expect(regionModule.getRegionCodes('scoopontravel')).to.deep.equal(['AU'])
-  })
+describe("getRegionByCode()", function() {
+  it("should return null in brand without region", function() {
+    expect(regionModule.getRegionByCode("CA", "scoopontravel")).to.be.undefined;
+  });
+});
 
-  it('should return an array of region codes default brand to luxuryescapes', function() {
-    expect(regionModule.getRegionCodes()).to.deep.equal(['AU', 'CA'])
-  })
-})
+describe("getRegionNameByCode()", function() {
+  it("returns region name if region exists", function() {
+    expect(regionModule.getRegionNameByCode("AU", "scoopontravel")).to.equal("Australia");
+  });
 
-describe('getRegionNames()', function() {
-  it('should return an array of region names', function() {
-    expect(regionModule.getRegionNames('scoopontravel')).to.deep.equal(['Australia'])
-  })
+  it("returns 'null' code if region is absent for brand", function() {
+    expect(regionModule.getRegionNameByCode("CA", "scoopontravel")).to.equal(null);
+  });
 
-  it('should return an array of region names default brand to luxuryescapes', function() {
-    expect(regionModule.getRegionNames()).to.deep.equal(['Australia', 'Canada'])
-  })
-})
+  it("returns region name if region exists default brand to luxuryescapes", function() {
+    expect(regionModule.getRegionNameByCode("AU")).to.equal("Australia");
+  });
+});
 
-describe('getRegionByCode()', function() {
-  it('should return the info for the given region code', function() {
-    expect(regionModule.getRegionByCode('AU', 'scoopontravel')).to.deep.equal({
-      code: 'AU',
-      name: 'Australia',
-      lang: 'en-AU',
-      phone_prefix: '61',
-      currency_formatting_locale: 'en-AU',
-      currency_code: 'AUD',
-      payment_methods: [
-        'braintree',
-        'stripe',
-      ],
-      referral_amount: '50',
-      offer_urgency_tag: null
-    })
-  })
+describe("getDefaultRegion()", function() {
+  it("should return the default region's info", function() {
+    expect(regionModule.getDefaultRegion("treatmetravel").code).to.equal("NZ");
+	});
+});
 
-  it('should return null in brand without region', function() {
-    expect(regionModule.getRegionByCode('CA', 'scoopontravel')).to.be.undefined
-  })
+describe("getDefaultRegionCode()", function() {
+  it("should return the default region's code", function() {
+    expect(regionModule.getDefaultRegionCode("luxuryescapes")).to.equal("AU");
+  });
 
-  it('should return the info for the given region code', function() {
-    expect(regionModule.getRegionByCode('CA')).to.deep.equal({
-      code: 'CA',
-      name: 'Canada',
-      lang: 'en-CA',
-      phone_prefix: '1',
-      currency_formatting_locale: 'en-CA',
-      currency_code: 'CAD',
-      flag_id: 'ca_nacvxi',
-      phone: {
-        local: {
-          human_readable: '778 300 0814',
-          number: '7783000814',
-        },
-        international: {
-          human_readable: '+61 2 8320 6845',
-          number: '+61283206845',
-        },
-      },
-      mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
-      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'maple_syrup_eh' ],
-      referral_amount: '45',
-      offer_urgency_tag: null
-    })
-  })
-})
+  it("should return the default region's code default brand to luxuryescapes", function() {
+    expect(regionModule.getDefaultRegionCode()).to.equal("AU");
+  });
 
-describe('getRegionNameByCode()', function () {
-  it('returns region name if region exists', function () {
-    expect(regionModule.getRegionNameByCode('AU', 'scoopontravel')).to.equal('Australia')
-  })
+  it("should return the default region for the brand", function() {
+    expect(regionModule.getDefaultRegionCode("treatmetravel")).to.equal("NZ");
+  });
+});
 
-  it('returns \'null\' code if region is absent for brand', function () {
-    expect(regionModule.getRegionNameByCode('CA', 'scoopontravel')).to.equal(null)
-  })
+describe("getDefaultRegionName()", function() {
+  it("should return the default region's name", function() {
+    expect(regionModule.getDefaultRegionName("scoopontravel")).to.equal("Australia");
+  });
 
-  it('returns region name if region exists default brand to luxuryescapes', function () {
-    expect(regionModule.getRegionNameByCode('AU')).to.equal('Australia')
-  })
-})
+  it("should return the default region's name default brand to luxuryescapes", function() {
+    expect(regionModule.getDefaultRegionName()).to.equal("Australia");
+  });
+});
 
-describe('getDefaultRegion()', function() {
-  it('should return the default region\'s info', function() {
-    expect(regionModule.getDefaultRegion('scoopontravel')).to.deep.equal({
-      code: 'AU',
-      name: 'Australia',
-      lang: 'en-AU',
-      phone_prefix: '61',
-      currency_formatting_locale: 'en-AU',
-      currency_code: 'AUD',
-      payment_methods: [
-        'braintree',
-        'stripe'
-      ],
-      referral_amount: '50',
-      offer_urgency_tag: null
-    })
-  })
+describe("getCurrencyCodes()", function() {
+  it("should return an array of currency codes", function() {
+    expect(regionModule.getCurrencyCodes("scoopontravel")).to.deep.equal(["AUD"]);
+  });
 
-  it('should return the default region\'s info default brand to luxuryescapes', function() {
-    expect(regionModule.getDefaultRegion()).to.deep.equal({
-      code: 'AU',
-      name: 'Australia',
-      lang: 'en-AU',
-      phone_prefix: '61',
-      currency_formatting_locale: 'en-AU',
-      currency_code: 'AUD',
-      flag_id: 'au_iuox02',
-      phone: {
-        local: {
-          human_readable: '1300 88 99 00',
-          number: '1300889900',
-        },
-        international: {
-          human_readable: '+61 2 8320 6845',
-          number: '+61283206845',
-        },
-      },
-      mailing_address: 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA',
-      latitude_threshold: 999,
-      payment_methods: [ 'le_credit', 'braintree', 'stripe', 'qantas' ],
-      referral_amount: '50',
-      offer_urgency_tag: {
-        tour: {
-          popular: {
-            min: 2,
-            period: 24
-          }
-        },
-        hotel: {
-          popular: {
-            min: 10,
-            period: 24
-          }
-        }
-      }
-    })
-  })
-})
+  it("should return an array of currency codes default brand to luxuryescapes", function() {
+    expect(regionModule.getCurrencyCodes()).to.deep.equal([
+      "AUD",
+      "CAD",
+      "CNY",
+      "EUR",
+      "HKD",
+      "INR",
+      "IDR",
+      "ILS",
+      "JPY",
+      "KRW",
+      "MOP",
+      "MYR",
+      "NZD",
+      "PHP",
+      "QAR",
+      "RUB",
+      "SAR",
+      "SGD",
+      "TWD",
+      "THB",
+      "ZAR",
+      "AED",
+      "GBP",
+      "USD",
+      "VND",
+    ]);
+  });
+});
 
-describe('getDefaultRegionCode()', function() {
-  it('should return the default region\'s code', function() {
-    expect(regionModule.getDefaultRegionCode('luxuryescapes')).to.equal('AU')
-  })
+describe("getPaymentMethodsByCurrencyCode()", function() {
+  it("should return an array of payment methods", function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")).to.deep.equal([
+      "stripe",
+      "braintree",
+      "latitude_pay",
+    ]);
+  });
 
-  it('should return the default region\'s code default brand to luxuryescapes', function() {
-    expect(regionModule.getDefaultRegionCode()).to.equal('AU')
-  })
+  it("should return an array of payment methods default brand to luxuryescapes", function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD")).to.deep.equal([
+      "le_credit",
+      "stripe",
+      "braintree",
+      "qantas",
+      "latitude",
+      "latitude_pay",
+      "giftcard",
+    ]);
+  });
 
-  it('should return the default region for the brand', function() {
-    expect(regionModule.getDefaultRegionCode('treatmetravel')).to.equal('NZ')
-  })
-})
+  it("should return an array of payment methods default brand to luxuryescapes SGD", function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("SGD")).to.deep.equal([
+      "le_credit",
+      "stripe",
+      "giftcard",
+      "krisFlyer",
+    ]);
+  });
+});
 
-describe('getDefaultRegionName()', function() {
-  it('should return the default region\'s name', function() {
-    expect(regionModule.getDefaultRegionName('scoopontravel')).to.equal('Australia')
-  })
+describe("getZeroDecimalCurrencies()", function() {
+  it("should return an array of currency codes", function() {
+    expect(regionModule.getZeroDecimalCurrencies()).to.be.an("array");
+  });
+});
 
-  it('should return the default region\'s name default brand to luxuryescapes', function() {
-    expect(regionModule.getDefaultRegionName()).to.equal('Australia')
-  })
-})
+describe("getRegionLang()", function() {
+  it("should return an array of region langs", function() {
+    expect(regionModule.getRegionLang("scoopontravel")).to.deep.equal(["en-AU"]);
+  });
 
-describe('getCurrencyCodes()', function() {
-  it('should return an array of currency codes', function() {
-    expect(regionModule.getCurrencyCodes('scoopontravel')).to.deep.equal(['AUD'])
-  })
+  it("should return an array of region langs default brand to luxuryescapes", function() {
+    expect(regionModule.getRegionLang()).to.deep.equal([
+      "en-AU",
+      "en-CA",
+      "en-CN",
+      "en-FR",
+      "en-DE",
+      "en-HK",
+      "en-IN",
+      "en-ID",
+      "en-IE",
+      "en-IL",
+      "en-IT",
+      "en-JP",
+      "en-KR",
+      "en-MO",
+      "en-MY",
+      "en-NZ",
+      "en-PH",
+      "en-QA",
+      "en-RU",
+      "en-SA",
+      "en-SG",
+      "en-ZA",
+      "en-ES",
+      "en-TW",
+      "en-TH",
+      "en-AE",
+      "en-GB",
+      "en-US",
+      "en-VN",
+    ]);
+  });
+});
 
-  it('should return an array of currency codes default brand to luxuryescapes', function() {
-    expect(regionModule.getCurrencyCodes()).to.deep.equal(['AUD', 'CAD', 'SGD'])
-  })
-})
+describe("getRegionReferralAmountByCode()", function() {
+  it("should return the region referral amount", function() {
+    expect(regionModule.getRegionReferralAmountByCode("AU", "scoopontravel")).to.deep.equal(50);
+  });
 
-describe('getPaymentMethodsByCurrencyCode()', function() {
-  it('should return an array of payment methods', function() {
-    expect(regionModule.getPaymentMethodsByCurrencyCode('AUD', 'scoopontravel')).to.deep.equal([
-      'braintree',
-      'stripe',
-    ])
-  })
+  it("should return the region referral amount by default brand to luxuryescapes", function() {
+    expect(regionModule.getRegionReferralAmountByCode("CA")).to.deep.equal(100);
+  });
+});
 
-  it('should return an array of payment methods default brand to luxuryescapes', function() {
-    expect(regionModule.getPaymentMethodsByCurrencyCode('AUD')).to.deep.equal([
-      'le_credit',
-      'braintree',
-      'stripe',
-      'qantas'
-    ])
-  })
+describe("getRegionNamesAndCode()", function() {
+  it("should return an array of region names and code", function() {
+    expect(regionModule.getRegionNamesAndCode("scoopontravel")).to.deep.equal([
+      {name: "Australia", code: "AU"},
+    ]);
+  });
+});
 
-  it('should return an array of payment methods default brand to luxuryescapes SGD', function() {
-    expect(regionModule.getPaymentMethodsByCurrencyCode('SGD')).to.deep.equal([
-      'le_credit',
-      'stripe',
-      'giftcard',
-      'krisFlyer',
-    ])
-  })
-})
+describe("isRegionAllowed()", function() {
+  it("should return true if brand has region", function() {
+    expect(regionModule.isRegionAllowed("luxuryescapes", "CA")).to.equal(true);
+  });
 
-describe('getZeroDecimalCurrencies()', function() {
-  it('should return an array of currency codes', function() {
-    expect(regionModule.getZeroDecimalCurrencies()).to.be.an('array');
-  })
-})
-
-describe('getRegionLang()', function() {
-  it('should return an array of region langs', function() {
-    expect(regionModule.getRegionLang('scoopontravel')).to.deep.equal(['en-AU'])
-  })
-
-  it('should return an array of region langs default brand to luxuryescapes', function() {
-    expect(regionModule.getRegionLang()).to.deep.equal(['en-AU', 'en-CA'])
-  })
-})
-
-describe('getRegionReferralAmountByCode()', function() {
-  it('should return the region referral amount', function() {
-    expect(regionModule.getRegionReferralAmountByCode('AU', 'scoopontravel')).to.deep.equal('50')
-  })
-
-  it('should return the region referral amount by default brand to luxuryescapes', function() {
-    expect(regionModule.getRegionReferralAmountByCode('CA')).to.deep.equal('45')
-  })
-})
-
-describe('getRegionNamesAndCode()', function() {
-  it('should return an array of region names and code', function() {
-    expect(regionModule.getRegionNamesAndCode('scoopontravel')).to.deep.equal([
-      {name: 'Australia', code: 'AU'},
-    ])
-  })
-
-  it('should return an array of region names and code default brand to luxuryescapes', function() {
-    expect(regionModule.getRegionNamesAndCode()).to.deep.equal([
-      {name: 'Australia', code: 'AU'},
-      {name: 'Canada', code: 'CA'}
-    ])
-  })
-})
-
-describe('isRegionAllowed()', function() {
-  it('should return true if brand has region', function() {
-    expect(regionModule.isRegionAllowed('luxuryescapes', 'CA')).to.equal(true)
-  })
-  it('should return true if brand has region', function() {
-    expect(regionModule.isRegionAllowed('scoopontravel', 'NZ')).to.equal(false)
-  })
+  it("should return true if brand has region", function() {
+    expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
+  });
 });

@@ -1,121 +1,88 @@
-import currenies from './currencies'
-import regions from './regions'
+import { currencies as _currencies } from "./currencies";
+import { ExtendedRegion, extendedRegions } from "./extended";
 
-var brandRegions = Object.keys(regions).reduce(function(acc ,k) {
-  acc[k] = regions[k].map(function(region) {
-    return Object.assign({},
-      region,
-      { payment_methods: currencies(k)[region.currency_code].payment_methods }
-    )
-  })
-  return acc
-}, {})
-
-function regions(brand) {
-  return brandRegions[brand || 'luxuryescapes']
+function regions(brand?: string) {
+  return extendedRegions[brand || "luxuryescapes"];
 }
 
-function currencies(brand) {
-  return currenies[brand || 'luxuryescapes']
+function currencies(brand?: string) {
+  return _currencies[brand || "luxuryescapes"];
 }
 
-var zeroDecimalCurrencies = [
-  'BIF', 'CLP', 'DJF', 'GNF', 'JPY', 'KMF', 'KRW', 'MGA',
-  'PYG', 'RWF', 'VND', 'VUV', 'XAF', 'XOF', 'XPF'
-]
+const zeroDecimalCurrencies = [
+  "BIF", "CLP", "DJF", "GNF", "JPY", "KMF", "KRW", "MGA",
+  "PYG", "RWF", "VND", "VUV", "XAF", "XOF", "XPF",
+];
 
-function getRegions(brand) {
-  return regions(brand)
+export function getRegions(brand?: string) {
+  return regions(brand);
 }
 
-function getRegionCodes(brand) {
-  return regions(brand).map(function(region) {return region.code})
+export function getRegionCodes(brand?: string) {
+  return regions(brand).map((region) => region.code);
 }
 
-function getRegionNames(brand) {
-  return regions(brand).map(function(region) {return region.name})
+export function getRegionNames(brand?: string) {
+  return regions(brand).map((region) => region.name);
 }
 
-function getRegionByCode(regionCode, brand) {
+export function getRegionByCode(regionCode: string, brand?: string) {
   if (!regionCode) {
-    return null
+    return null;
   }
-  return regions(brand).find(function(region) {return region.code.toLowerCase() === regionCode.toLowerCase()})
+  return regions(brand).find((region) => (region.code.toLowerCase() === regionCode.toLowerCase()));
 }
 
-function getDefaultRegion(brand) {
-  return regions(brand)[0]
+export function getDefaultRegion(brand?: string) {
+  return regions(brand)[0];
 }
 
-function getRegionNameByCode(code, brand) {
-  var region = getRegionByCode(code, brand)
-  return region && region.name || null
+export function getRegionNameByCode(code: string, brand?: string) {
+  const region = getRegionByCode(code, brand);
+  return region && region.name || null;
 }
 
-function getDefaultRegionCode(brand) {
-  return regions(brand)[0].code
+export function getDefaultRegionCode(brand?: string) {
+  return regions(brand)[0].code;
 }
 
-function getDefaultRegionName(brand) {
-  return regions(brand)[0].name
+export function getDefaultRegionName(brand?: string) {
+  return regions(brand)[0].name;
 }
 
-function getCurrencyCodes(brand) {
-  return Object.keys(currencies(brand))
+export function getCurrencyCodes(brand?: string) {
+  return Object.keys(currencies(brand));
 }
 
-function getPaymentMethodsByCurrencyCode(currencyCode, brand) {
-  return currencies(brand)[currencyCode].payment_methods
+export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: string) {
+  return currencies(brand)[currencyCode].paymentMethods;
 }
 
-function getZeroDecimalCurrencies() {
-  return zeroDecimalCurrencies
+export function getZeroDecimalCurrencies() {
+  return zeroDecimalCurrencies;
 }
 
-function getRegionLang(brand) {
-  return regions(brand).map(function(region) {return region.lang})
+export function getRegionLang(brand?: string) {
+  return regions(brand).map((region) => region.lang);
 }
 
-function getRegionReferralAmountByCode(code, brand) {
-  var region = getRegionByCode(code, brand)
-  return region && region.referral_amount || null
+export function getRegionReferralAmountByCode(code: string, brand?: string) {
+  const region = getRegionByCode(code, brand);
+  return region && region.referralAmount || null;
 }
 
-function getRegionPhonePrefix(brand) {
-  return regions(brand).map(function(region) {return region.phone_prefix})
+export function getRegionPhonePrefix(brand?: string) {
+  return regions(brand).map((region) => region.phonePrefix);
 }
 
-function getRegionNamesAndCode(brand) {
-  return regions(brand).map(function(region) {
-    return {
-      name: region.name,
-      code: region.code
-    }
-  })
+export function getRegionNamesAndCode(brand?: string) {
+  return regions(brand).map((region) => ({
+    name: region.name,
+    code: region.code,
+  }));
 }
 
-function isRegionAllowed(brand, country_code) {
-  var code = country_code || 'AU'
-  return regions(brand).some(function(region) {
-    return region.code === code
-  })
-}
-
-module.exports = {
-  getRegions: getRegions,
-  getRegionCodes: getRegionCodes,
-  getRegionNames: getRegionNames,
-  getRegionByCode: getRegionByCode,
-  getRegionNameByCode: getRegionNameByCode,
-  getDefaultRegion: getDefaultRegion,
-  getDefaultRegionCode: getDefaultRegionCode,
-  getDefaultRegionName: getDefaultRegionName,
-  getCurrencyCodes: getCurrencyCodes,
-  getPaymentMethodsByCurrencyCode: getPaymentMethodsByCurrencyCode,
-  getZeroDecimalCurrencies: getZeroDecimalCurrencies,
-  getRegionLang: getRegionLang,
-  getRegionReferralAmountByCode: getRegionReferralAmountByCode,
-  getRegionNamesAndCode: getRegionNamesAndCode,
-  isRegionAllowed: isRegionAllowed,
-  getRegionPhonePrefix: getRegionPhonePrefix,
+export function isRegionAllowed(brand: string, regionCode?: string) {
+  const code = regionCode || "AU";
+  return regions(brand).some((region) => region.code === code);
 }
