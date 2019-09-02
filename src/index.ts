@@ -1,10 +1,8 @@
-var currencyData = require('./currency-data').currencies
-var regionData = require('./region-data')
-var flights = require('./lib/flights')
-var countries = require('./lib/countries')
+import currenies from './currencies'
+import regions from './regions'
 
-var brandRegions = Object.keys(regionData).reduce(function(acc ,k) {
-  acc[k] = regionData[k].map(function(region) {
+var brandRegions = Object.keys(regions).reduce(function(acc ,k) {
+  acc[k] = regions[k].map(function(region) {
     return Object.assign({},
       region,
       { payment_methods: currencies(k)[region.currency_code].payment_methods }
@@ -18,7 +16,7 @@ function regions(brand) {
 }
 
 function currencies(brand) {
-  return currencyData[brand || 'luxuryescapes']
+  return currenies[brand || 'luxuryescapes']
 }
 
 var zeroDecimalCurrencies = [
@@ -103,10 +101,6 @@ function isRegionAllowed(brand, country_code) {
   })
 }
 
-function getCountries() {
-  return countries
-}
-
 module.exports = {
   getRegions: getRegions,
   getRegionCodes: getRegionCodes,
@@ -124,11 +118,4 @@ module.exports = {
   getRegionNamesAndCode: getRegionNamesAndCode,
   isRegionAllowed: isRegionAllowed,
   getRegionPhonePrefix: getRegionPhonePrefix,
-  getFlightMainPort: flights.getFlightMainPort,
-  getFlightRegions: flights.getFlightRegions,
-  getRegionDeparturePorts: flights.getRegionDeparturePorts,
-  getPopularRegionDeparturePorts: flights.getPopularRegionDeparturePorts,
-  getRegionDestinationPorts: flights.getRegionDestinationPorts,
-  getAirportByCode: flights.getAirportByCode,
-  getCountries: getCountries
 }

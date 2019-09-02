@@ -1,8 +1,5 @@
 var expect = require('chai').expect
 
-jest.mock('./region-data.js')
-jest.mock('./currency-data.js')
-
 var regionModule = require('./index')
 
 describe('getRegions()', function() {

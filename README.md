@@ -2,18 +2,6 @@
 
 Region information for Luxury Escapes
 
-## Running tests
-
+```js
+const libRegions = require('@luxuryescapes/lib-regions');
 ```
-yarn test
-```
-
-## Release
-
-```
-yarn publish
-git push && git push --tags
-```
-
-https://docs.npmjs.com/cli/version
-
