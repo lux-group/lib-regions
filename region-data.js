@@ -1,6 +1,5 @@
 var DEFAULT_MAILING_ADDRESS = 'Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA'
 var SINGAPORE_MAILING_ADDRESS = '168 Robinson Road, #12-01 Capital Tower, Singapore 068912'
-var flights = require('./lib/flights')
 
 module.exports = {
   luxuryescapes: [
@@ -25,11 +24,6 @@ module.exports = {
       },
       mailing_address: DEFAULT_MAILING_ADDRESS,
       latitude_threshold: 999,
-      flights: {
-        departure_ports: flights.getRegionDeparturePorts('AU'),
-        destination_ports: flights.getRegionDestinationPorts('AU'),
-        main_port: flights.getFlightMainPort('AU')
-      },
       referral_amount: '50',
       referral_min_spend_amount: '499',
       gift_card_options: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
