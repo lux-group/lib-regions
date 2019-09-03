@@ -70,7 +70,7 @@ describe("getRegionNameByCode()", function() {
 describe("getDefaultRegion()", function() {
   it("should return the default region's info", function() {
     expect(regionModule.getDefaultRegion("treatmetravel").code).to.equal("NZ");
-	});
+  });
 });
 
 describe("getDefaultRegionCode()", function() {

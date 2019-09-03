@@ -14,7 +14,9 @@ const brands = Object.keys(regions);
 const extendedRegions: ExtendedBrandRegions = {};
 
 for (const brand of brands) {
-  extendedRegions[brand] = regions[brand].map((region: Region) => extend(region, currencies[brand][region.currencyCode]));
+  extendedRegions[brand] = regions[brand].map((region: Region) => (
+    extend(region, currencies[brand][region.currencyCode])
+  ));
 }
 
 export { extendedRegions };

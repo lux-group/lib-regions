@@ -135,7 +135,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 240,
       referralMinSpendAmount: 2399,
-      giftCardOptions: [250, 500,	1000,	2500, 5000, 10000],
+      giftCardOptions: [250, 500, 1000, 2500, 5000, 10000],
       offerUrgencyTag: null,
     },
     {
@@ -210,7 +210,7 @@ export const regions: BrandRegions = {
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 300,
       referralMinSpendAmount: 2999,
-      giftCardOptions: [250, 500,	1250,	2500,	5000,	10000],
+      giftCardOptions: [250, 500, 1250, 2500, 5000, 10000],
       offerUrgencyTag: null,
     },
     {
@@ -235,7 +235,7 @@ export const regions: BrandRegions = {
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 2500,
       referralMinSpendAmount: 24999,
-      giftCardOptions: [2500,	5000,	12500, 25000, 50000,	100000],
+      giftCardOptions: [2500, 5000, 12500, 25000, 50000, 100000],
       offerUrgencyTag: null,
     },
     {
@@ -260,7 +260,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500000,
       referralMinSpendAmount: 4999999,
-      giftCardOptions: [500000,	1000000,	2500000,	5000000,	10000000,	20000000],
+      giftCardOptions: [500000, 1000000, 2500000, 5000000, 10000000, 20000000],
       offerUrgencyTag: null,
     },
     {
@@ -310,7 +310,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       referralMinSpendAmount: 1299,
-      giftCardOptions: [150, 300, 500, 1000,	2500,	3000],
+      giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: null,
     },
     {
@@ -360,7 +360,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 4000,
       referralMinSpendAmount: 39999,
-      giftCardOptions: [2500,	5000,	15000,	50000,	75000,	150000],
+      giftCardOptions: [2500, 5000, 15000, 50000, 75000, 150000],
       offerUrgencyTag: null,
     },
     {
@@ -385,7 +385,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 40000,
       referralMinSpendAmount: 399999,
-      giftCardOptions: [25000,	50000,	200000,	500000,	750000,	1500000],
+      giftCardOptions: [25000, 50000, 200000, 500000, 750000, 1500000],
       offerUrgencyTag: null,
     },
     {
@@ -410,7 +410,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 300,
       referralMinSpendAmount: 2999,
-      giftCardOptions: [250, 500, 1250,	2500,	5000,	10000],
+      giftCardOptions: [250, 500, 1250, 2500, 5000, 10000],
       offerUrgencyTag: null,
     },
     {
@@ -435,7 +435,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 150,
       referralMinSpendAmount: 1499,
-      giftCardOptions: [150, 300, 500,	1500,	3000,	5000],
+      giftCardOptions: [150, 300, 500, 1500, 3000, 5000],
       offerUrgencyTag: null,
     },
     {
@@ -460,7 +460,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       referralMinSpendAmount: 499,
-      giftCardOptions: [50, 100,	250,	500,	1000,	2000],
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: null,
     },
     {
@@ -485,7 +485,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2000,
       referralMinSpendAmount: 19999,
-      giftCardOptions: [1500, 3000,	5000,	10000,	25000,	50000],
+      giftCardOptions: [1500, 3000, 5000, 10000, 25000, 50000],
       offerUrgencyTag: null,
     },
     {
@@ -510,7 +510,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       referralMinSpendAmount: 1299,
-      giftCardOptions: [150, 300, 500, 1000,	2500,	3000],
+      giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: null,
     },
     {
@@ -585,7 +585,7 @@ export const regions: BrandRegions = {
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 50,
       referralMinSpendAmount: 499,
-      giftCardOptions: [50, 100, 250, 500, 1000,	2000],
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: null,
     },
     {
@@ -610,7 +610,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500,
       referralMinSpendAmount: 4999,
-      giftCardOptions: [500, 1000,	2500,	5000,	10000,	50000],
+      giftCardOptions: [500, 1000, 2500, 5000, 10000, 50000],
       offerUrgencyTag: null,
     },
     {
@@ -660,7 +660,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
       referralMinSpendAmount: 19999,
-      giftCardOptions: [1000, 2000 , 5000 , 10000 , 20000, 40000],
+      giftCardOptions: [1000, 2000, 5000, 10000, 20000, 40000],
       offerUrgencyTag: null,
     },
     {
@@ -710,7 +710,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       referralMinSpendAmount: 1299,
-      giftCardOptions: [150, 300 , 500	, 1000,	2500,	3000],
+      giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: null,
     },
     {
@@ -760,7 +760,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 100,
       referralMinSpendAmount: 349,
-      giftCardOptions: [50,	100,	250,	500,	1000,	2000],
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: null,
     },
     {
@@ -785,7 +785,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 800000,
       referralMinSpendAmount: 7999999,
-      giftCardOptions: [500000,	1000000,	3000000,	5000000,	10000000,	20000000],
+      giftCardOptions: [500000, 1000000, 3000000, 5000000, 10000000, 20000000],
       offerUrgencyTag: null,
     },
   ],
