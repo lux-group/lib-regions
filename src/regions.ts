@@ -33,7 +33,7 @@ export interface Region {
     default: string,
   };
   mailingAddress: string;
-  latitude_threshold?: number;
+  latitudeThreshold?: number;
   referralAmount: number;
   referralMinSpendAmount: number;
   giftCardOptions?: number[];
@@ -69,7 +69,7 @@ export const regions: BrandRegions = {
         default: "international",
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
-      latitude_threshold: 999,
+      latitudeThreshold: 999,
       referralAmount: 50,
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
