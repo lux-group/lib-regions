@@ -1,5 +1,5 @@
 import { currencies as _currencies } from "./currencies";
-import { ExtendedRegion, extendedRegions } from "./extended";
+import { ExtendedRegion, ExtendedBrandRegions, extendedRegions } from "./extended";
 
 function regions(brand?: string) {
   return extendedRegions[brand || "luxuryescapes"];
@@ -13,6 +13,10 @@ const zeroDecimalCurrencies = [
   "BIF", "CLP", "DJF", "GNF", "JPY", "KMF", "KRW", "MGA",
   "PYG", "RWF", "VND", "VUV", "XAF", "XOF", "XPF",
 ];
+
+export function getAllRegions(): ExtendedBrandRegions {
+  return extendedRegions;
+}
 
 export function getRegions(brand?: string) {
   return regions(brand);

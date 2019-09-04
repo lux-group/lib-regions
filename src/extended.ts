@@ -3,7 +3,7 @@ import { Region, regions } from "./regions";
 
 export interface ExtendedRegion extends Region, Currency {}
 
-interface ExtendedBrandRegions {
+export interface ExtendedBrandRegions {
   [brand: string]: ExtendedRegion[];
 }
 
