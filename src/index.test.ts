@@ -162,6 +162,16 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "krisFlyer",
     ]);
   });
+
+  it("should return an array of payment methods default brand to luxuryescapes IN", function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("INR")).to.deep.equal([
+      "le_credit",
+        "stripe",
+        "razorpay",
+        "giftcard",
+        "vistara",
+    ]);
+  });
 });
 
 describe("getZeroDecimalCurrencies()", function() {
