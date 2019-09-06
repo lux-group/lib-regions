@@ -177,6 +177,7 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "krisFlyer",
       ],
     },
     PHP: {
