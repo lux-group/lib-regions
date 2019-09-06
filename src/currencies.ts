@@ -123,6 +123,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "razorpay",
         "giftcard",
+        "vistara",
       ],
     },
     IDR: {
