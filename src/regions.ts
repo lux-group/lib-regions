@@ -1015,6 +1015,6 @@ export const regions: BrandRegions = {
       referralMinSpendAmount: 0,
       giftCardOptions: [],
       offerUrgencyTag: null,
-    }
+    },
   ],
 };
