@@ -272,4 +272,11 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  yidu: {
+    CNY: {
+      paymentMethods: [
+        "partner"
+      ],
+    },
+  }
 };

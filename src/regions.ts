@@ -990,4 +990,31 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
   ],
+  yidu: [
+    {
+      code: "CN",
+      name: "China",
+      lang: "en-CN",
+      phonePrefix: "86",
+      currencyFormattingLocale: "zh-CN",
+      currencyCode: "CNY",
+      flagId: "cn_nnripn",
+      phone: {
+        local: {
+          humanReadable: "",
+          number: "",
+        },
+        international: {
+          humanReadable: "",
+          number: "",
+        },
+        default: "local",
+      },
+      mailingAddress: "",
+      referralAmount: 0,
+      referralMinSpendAmount: 0,
+      giftCardOptions: [],
+      offerUrgencyTag: null,
+    }
+  ],
 };
