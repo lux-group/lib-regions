@@ -111,7 +111,20 @@ export const regions: BrandRegions = {
       referralAmount: 100,
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "CN",
@@ -136,7 +149,20 @@ export const regions: BrandRegions = {
       referralAmount: 240,
       referralMinSpendAmount: 2399,
       giftCardOptions: [250, 500, 1000, 2500, 5000, 10000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "FR",
@@ -161,7 +187,20 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "DE",
@@ -186,7 +225,20 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "HK",
@@ -211,7 +263,20 @@ export const regions: BrandRegions = {
       referralAmount: 300,
       referralMinSpendAmount: 2999,
       giftCardOptions: [250, 500, 1250, 2500, 5000, 10000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "IN",
@@ -236,7 +301,20 @@ export const regions: BrandRegions = {
       referralAmount: 2500,
       referralMinSpendAmount: 24999,
       giftCardOptions: [2500, 5000, 12500, 25000, 50000, 100000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "ID",
@@ -261,7 +339,20 @@ export const regions: BrandRegions = {
       referralAmount: 500000,
       referralMinSpendAmount: 4999999,
       giftCardOptions: [500000, 1000000, 2500000, 5000000, 10000000, 20000000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "IE",
@@ -286,7 +377,20 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "IL",
@@ -311,7 +415,20 @@ export const regions: BrandRegions = {
       referralAmount: 130,
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "IT",
@@ -336,7 +453,20 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "JP",
@@ -361,7 +491,20 @@ export const regions: BrandRegions = {
       referralAmount: 4000,
       referralMinSpendAmount: 39999,
       giftCardOptions: [2500, 5000, 15000, 50000, 75000, 150000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "KR",
@@ -386,7 +529,20 @@ export const regions: BrandRegions = {
       referralAmount: 40000,
       referralMinSpendAmount: 399999,
       giftCardOptions: [25000, 50000, 200000, 500000, 750000, 1500000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "MO",
@@ -411,7 +567,20 @@ export const regions: BrandRegions = {
       referralAmount: 300,
       referralMinSpendAmount: 2999,
       giftCardOptions: [250, 500, 1250, 2500, 5000, 10000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "MY",
@@ -436,7 +605,20 @@ export const regions: BrandRegions = {
       referralAmount: 150,
       referralMinSpendAmount: 1499,
       giftCardOptions: [150, 300, 500, 1500, 3000, 5000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "NZ",
@@ -461,7 +643,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "PH",
@@ -486,7 +681,20 @@ export const regions: BrandRegions = {
       referralAmount: 2000,
       referralMinSpendAmount: 19999,
       giftCardOptions: [1500, 3000, 5000, 10000, 25000, 50000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "QA",
@@ -511,7 +719,20 @@ export const regions: BrandRegions = {
       referralAmount: 130,
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "RU",
@@ -536,7 +757,20 @@ export const regions: BrandRegions = {
       referralAmount: 2500,
       referralMinSpendAmount: 24999,
       giftCardOptions: [2000, 5000, 10000, 15000, 20000, 50000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "SA",
@@ -561,7 +795,20 @@ export const regions: BrandRegions = {
       referralAmount: 130,
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "SG",
@@ -586,7 +833,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "ZA",
@@ -611,7 +871,20 @@ export const regions: BrandRegions = {
       referralAmount: 500,
       referralMinSpendAmount: 4999,
       giftCardOptions: [500, 1000, 2500, 5000, 10000, 50000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "ES",
@@ -636,7 +909,20 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "TW",
@@ -661,7 +947,20 @@ export const regions: BrandRegions = {
       referralAmount: 1000,
       referralMinSpendAmount: 19999,
       giftCardOptions: [1000, 2000, 5000, 10000, 20000, 40000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "TH",
@@ -686,7 +985,20 @@ export const regions: BrandRegions = {
       referralAmount: 1000,
       referralMinSpendAmount: 9999,
       giftCardOptions: [1000, 2000, 5000, 10000, 20000, 40000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "AE",
@@ -711,7 +1023,20 @@ export const regions: BrandRegions = {
       referralAmount: 130,
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "GB",
@@ -736,7 +1061,20 @@ export const regions: BrandRegions = {
       referralAmount: 25,
       referralMinSpendAmount: 249,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "US",
@@ -761,7 +1099,20 @@ export const regions: BrandRegions = {
       referralAmount: 100,
       referralMinSpendAmount: 349,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
     {
       code: "VN",
@@ -786,7 +1137,20 @@ export const regions: BrandRegions = {
       referralAmount: 800000,
       referralMinSpendAmount: 7999999,
       giftCardOptions: [500000, 1000000, 3000000, 5000000, 10000000, 20000000],
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
     },
   ],
   scooponexperience: [
