@@ -1365,16 +1365,16 @@ export const regions: BrandRegions = {
       flagId: "cn_nnripn",
       phone: {
         local: {
-          humanReadable: "",
-          number: "",
+          humanReadable: "186 0113 2153",
+          number: "18601132153",
         },
         international: {
-          humanReadable: "",
-          number: "",
+          humanReadable: "+86 186 0113 2153",
+          number: "+8618601132153",
         },
-        default: "local",
+        default: "international",
       },
-      mailingAddress: "",
+      mailingAddress: "No.363 Chang Ping Lu, ChangPing DaSha, 4th Floor, Room 102, Jing An district, Shanghai, China",
       referralAmount: 0,
       referralMinSpendAmount: 0,
       giftCardOptions: [],
