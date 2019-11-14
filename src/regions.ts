@@ -20,6 +20,7 @@ export interface Region {
   phonePrefix: string;
   currencyFormattingLocale: string;
   currencyCode: string;
+  currencyPrefix: string;
   flagId?: string;
   phone: {
     local: {
@@ -56,6 +57,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "A",
       flagId: "au_iuox02",
       phone: {
         local: {
@@ -95,6 +97,7 @@ export const regions: BrandRegions = {
       phonePrefix: "1",
       currencyFormattingLocale: "en-CA",
       currencyCode: "CAD",
+      currencyPrefix: "CA",
       flagId: "ca_nacvxi",
       phone: {
         local: {
@@ -133,6 +136,7 @@ export const regions: BrandRegions = {
       phonePrefix: "86",
       currencyFormattingLocale: "zh-CN",
       currencyCode: "CNY",
+      currencyPrefix: "",
       flagId: "cn_nnripn",
       phone: {
         local: {
@@ -171,6 +175,7 @@ export const regions: BrandRegions = {
       phonePrefix: "33",
       currencyFormattingLocale: "fr-FR",
       currencyCode: "EUR",
+      currencyPrefix: "",
       flagId: "fr_ch1vgi",
       phone: {
         local: {
@@ -209,6 +214,7 @@ export const regions: BrandRegions = {
       phonePrefix: "49",
       currencyFormattingLocale: "de-DE",
       currencyCode: "EUR",
+      currencyPrefix: "",
       flagId: "de_wj4y6k",
       phone: {
         local: {
@@ -247,6 +253,7 @@ export const regions: BrandRegions = {
       phonePrefix: "852",
       currencyFormattingLocale: "en-HK",
       currencyCode: "HKD",
+      currencyPrefix: "HK",
       flagId: "hk_wjyavc",
       phone: {
         local: {
@@ -285,6 +292,7 @@ export const regions: BrandRegions = {
       phonePrefix: "91",
       currencyFormattingLocale: "en-IN",
       currencyCode: "INR",
+      currencyPrefix: "",
       flagId: "in_opf3wm",
       phone: {
         local: {
@@ -323,6 +331,7 @@ export const regions: BrandRegions = {
       phonePrefix: "62",
       currencyFormattingLocale: "id-ID",
       currencyCode: "IDR",
+      currencyPrefix: "",
       flagId: "id_yveumv",
       phone: {
         local: {
@@ -361,6 +370,7 @@ export const regions: BrandRegions = {
       phonePrefix: "353",
       currencyFormattingLocale: "en-IE",
       currencyCode: "EUR",
+      currencyPrefix: "",
       flagId: "ie_kqc7pg",
       phone: {
         local: {
@@ -399,6 +409,7 @@ export const regions: BrandRegions = {
       phonePrefix: "972",
       currencyFormattingLocale: "iw-IL",
       currencyCode: "ILS",
+      currencyPrefix: "",
       flagId: "il_x5duyz",
       phone: {
         local: {
@@ -437,6 +448,7 @@ export const regions: BrandRegions = {
       phonePrefix: "39",
       currencyFormattingLocale: "it-IT",
       currencyCode: "EUR",
+      currencyPrefix: "",
       flagId: "it_yex5ap",
       phone: {
         local: {
@@ -475,6 +487,7 @@ export const regions: BrandRegions = {
       phonePrefix: "81",
       currencyFormattingLocale: "ja-JP",
       currencyCode: "JPY",
+      currencyPrefix: "",
       flagId: "jp_m6elxg",
       phone: {
         local: {
@@ -513,6 +526,7 @@ export const regions: BrandRegions = {
       phonePrefix: "82",
       currencyFormattingLocale: "ko-KR",
       currencyCode: "KRW",
+      currencyPrefix: "",
       flagId: "kr_mrnua8",
       phone: {
         local: {
@@ -551,6 +565,7 @@ export const regions: BrandRegions = {
       phonePrefix: "853",
       currencyFormattingLocale: "en-MO",
       currencyCode: "MOP",
+      currencyPrefix: "MOP",
       flagId: "mo_k6c6by",
       phone: {
         local: {
@@ -589,6 +604,7 @@ export const regions: BrandRegions = {
       phonePrefix: "60",
       currencyFormattingLocale: "ms-MY",
       currencyCode: "MYR",
+      currencyPrefix: "",
       flagId: "my_zzejgo",
       phone: {
         local: {
@@ -627,6 +643,7 @@ export const regions: BrandRegions = {
       phonePrefix: "64",
       currencyFormattingLocale: "en-NZ",
       currencyCode: "NZD",
+      currencyPrefix: "NZ",
       flagId: "nz_o98shy",
       phone: {
         local: {
@@ -665,6 +682,7 @@ export const regions: BrandRegions = {
       phonePrefix: "63",
       currencyFormattingLocale: "en-PH",
       currencyCode: "PHP",
+      currencyPrefix: "",
       flagId: "ph_cmq6es",
       phone: {
         local: {
@@ -703,6 +721,7 @@ export const regions: BrandRegions = {
       phonePrefix: "974",
       currencyFormattingLocale: "en-QA",
       currencyCode: "QAR",
+      currencyPrefix: "",
       flagId: "qa_zt7eo8",
       phone: {
         local: {
@@ -741,6 +760,7 @@ export const regions: BrandRegions = {
       phonePrefix: "7",
       currencyFormattingLocale: "en-RU",
       currencyCode: "RUB",
+      currencyPrefix: "",
       flagId: "ru_szpk5m",
       phone: {
         local: {
@@ -779,6 +799,7 @@ export const regions: BrandRegions = {
       phonePrefix: "966",
       currencyFormattingLocale: "en-SA",
       currencyCode: "SAR",
+      currencyPrefix: "",
       flagId: "sa_evxi8g",
       phone: {
         local: {
@@ -817,6 +838,7 @@ export const regions: BrandRegions = {
       phonePrefix: "65",
       currencyFormattingLocale: "en-SG",
       currencyCode: "SGD",
+      currencyPrefix: "S",
       flagId: "sg_qrenqc",
       phone: {
         local: {
@@ -855,6 +877,7 @@ export const regions: BrandRegions = {
       phonePrefix: "27",
       currencyFormattingLocale: "af-ZA",
       currencyCode: "ZAR",
+      currencyPrefix: "",
       flagId: "za_rhuusv",
       phone: {
         local: {
@@ -893,6 +916,7 @@ export const regions: BrandRegions = {
       phonePrefix: "34",
       currencyFormattingLocale: "es-ES",
       currencyCode: "EUR",
+      currencyPrefix: "",
       flagId: "es_wxszqg",
       phone: {
         local: {
@@ -931,6 +955,7 @@ export const regions: BrandRegions = {
       phonePrefix: "886",
       currencyFormattingLocale: "zh-TW",
       currencyCode: "TWD",
+      currencyPrefix: "NT",
       flagId: "tw_a9lqx6",
       phone: {
         local: {
@@ -969,6 +994,7 @@ export const regions: BrandRegions = {
       phonePrefix: "66",
       currencyFormattingLocale: "th-TH",
       currencyCode: "THB",
+      currencyPrefix: "",
       flagId: "th_isrxzq",
       phone: {
         local: {
@@ -1007,6 +1033,7 @@ export const regions: BrandRegions = {
       phonePrefix: "971",
       currencyFormattingLocale: "en-AE",
       currencyCode: "AED",
+      currencyPrefix: "",
       flagId: "ae_grfjya",
       phone: {
         local: {
@@ -1045,6 +1072,7 @@ export const regions: BrandRegions = {
       phonePrefix: "44",
       currencyFormattingLocale: "en-GB",
       currencyCode: "GBP",
+      currencyPrefix: "",
       flagId: "gb_ta8bez",
       phone: {
         local: {
@@ -1083,6 +1111,7 @@ export const regions: BrandRegions = {
       phonePrefix: "1",
       currencyFormattingLocale: "en-US",
       currencyCode: "USD",
+      currencyPrefix: "US",
       flagId: "us_fapjn8",
       phone: {
         local: {
@@ -1121,6 +1150,7 @@ export const regions: BrandRegions = {
       phonePrefix: "84",
       currencyFormattingLocale: "vi-VN",
       currencyCode: "VND",
+      currencyPrefix: "",
       flagId: "vn_mixye2",
       phone: {
         local: {
@@ -1161,6 +1191,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "1300 72 66 76",
@@ -1186,6 +1217,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "1300 72 66 76",
@@ -1211,6 +1243,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "1300 892 711",
@@ -1236,6 +1269,7 @@ export const regions: BrandRegions = {
       phonePrefix: "64",
       currencyFormattingLocale: "en-NZ",
       currencyCode: "NZD",
+      currencyPrefix: "",
       flagId: "nz_o98shy",
       phone: {
         local: {
@@ -1262,6 +1296,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "1300 869 711",
@@ -1287,6 +1322,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "1300 892 711",
@@ -1312,6 +1348,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "1300 869 711",
@@ -1337,6 +1374,7 @@ export const regions: BrandRegions = {
       phonePrefix: "64",
       currencyFormattingLocale: "en-NZ",
       currencyCode: "NZD",
+      currencyPrefix: "",
       phone: {
         local: {
           humanReadable: "09 222 4643",
@@ -1362,6 +1400,7 @@ export const regions: BrandRegions = {
       phonePrefix: "86",
       currencyFormattingLocale: "zh-CN",
       currencyCode: "CNY",
+      currencyPrefix: "",
       flagId: "cn_nnripn",
       phone: {
         local: {
