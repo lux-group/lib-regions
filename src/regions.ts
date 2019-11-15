@@ -565,7 +565,7 @@ export const regions: BrandRegions = {
       phonePrefix: "853",
       currencyFormattingLocale: "en-MO",
       currencyCode: "MOP",
-      currencyPrefix: "MOP",
+      currencyPrefix: "",
       flagId: "mo_k6c6by",
       phone: {
         local: {
