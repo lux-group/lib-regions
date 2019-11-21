@@ -253,7 +253,7 @@ export const regions: BrandRegions = {
       phonePrefix: "852",
       currencyFormattingLocale: "en-HK",
       currencyCode: "HKD",
-      currencyPrefix: "HK",
+      currencyPrefix: "",
       flagId: "hk_wjyavc",
       phone: {
         local: {
