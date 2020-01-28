@@ -75,6 +75,21 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  led_admin: {
+    AUD: {
+      paymentMethods: [
+        "stripe",
+        "braintree",
+        "latitude_pay",
+      ],
+    },
+    NZD: {
+      paymentMethods: [
+        "stripe",
+        "braintree",
+      ],
+    },
+  },
   luxuryescapes: {
     AUD: {
       paymentMethods: [
