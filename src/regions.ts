@@ -1392,6 +1392,56 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
   ],
+  led_admin: [
+    {
+      code: "AU",
+      name: "Australia",
+      lang: "en-AU",
+      phonePrefix: "61",
+      currencyFormattingLocale: "en-AU",
+      currencyCode: "AUD",
+      currencyPrefix: "",
+      phone: {
+        local: {
+          humanReadable: "1300 72 66 76",
+          number: "1300726676",
+        },
+        international: {
+          humanReadable: "+61 2 8311 3542",
+          number: "+61283113542",
+        },
+        default: "international",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 50,
+      referralMinSpendAmount: 499,
+      offerUrgencyTag: null,
+    },
+    {
+      code: "NZ",
+      name: "New Zealand",
+      lang: "en-NZ",
+      phonePrefix: "64",
+      currencyFormattingLocale: "en-NZ",
+      currencyCode: "NZD",
+      currencyPrefix: "",
+      phone: {
+        local: {
+          humanReadable: "09 222 4643",
+          number: "092224643",
+        },
+        international: {
+          humanReadable: "+64 9 222 4643",
+          number: "+6492224643",
+        },
+        default: "international",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 50,
+      referralMinSpendAmount: 499,
+      offerUrgencyTag: null,
+    },
+  ],
   yidu: [
     {
       code: "CN",
