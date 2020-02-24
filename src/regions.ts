@@ -1491,7 +1491,7 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
-      mailingAddress: 'Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia',
+      mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
       referralMinSpendAmount: 0,
       giftCardOptions: [],
