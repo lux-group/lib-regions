@@ -294,4 +294,11 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  zoomzoom: {
+    KRW: {
+      paymentMethods: [
+        "partner",
+      ],
+    },
+  },
 };

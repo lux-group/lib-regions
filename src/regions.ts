@@ -1470,4 +1470,32 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
   ],
+  zoomzoom: [
+    {
+      code: "KR",
+      name: "Korea",
+      lang: "en-KR",
+      phonePrefix: "82",
+      currencyFormattingLocale: "ko-KR",
+      currencyCode: "KRW",
+      currencyPrefix: "",
+      flagId: "kr_mrnua8",
+      phone: {
+        local: {
+          humanReadable: "+61 2 8387 99837",
+          number: "+61283879983",
+        },
+        international: {
+          humanReadable: "+61 2 8320 6845",
+          number: "+61283879983",
+        },
+        default: "international",
+      },
+      mailingAddress: 'Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia',
+      referralAmount: 0,
+      referralMinSpendAmount: 0,
+      giftCardOptions: [],
+      offerUrgencyTag: null
+    },
+  ],
 };
