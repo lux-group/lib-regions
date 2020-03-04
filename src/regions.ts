@@ -22,6 +22,7 @@ export interface Region {
   currencyCode: string;
   currencyPrefix: string;
   flagId?: string;
+  flightsSupportEmail: string;
   phone: {
     local: {
       humanReadable: string
@@ -47,6 +48,7 @@ interface BrandRegions {
 
 const DEFAULT_MAILING_ADDRESS = "Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA";
 const SINGAPORE_MAILING_ADDRESS = "168 Robinson Road, #12-01 Capital Tower, Singapore 068912";
+const DEFAULT_FLIGHTS_SUPPORT_EMAIL = "flights@luxuryescapes.com";
 
 export const regions: BrandRegions = {
   luxuryescapes: [
@@ -59,6 +61,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "A",
       flagId: "au_iuox02",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 88 99 00",
@@ -99,6 +102,7 @@ export const regions: BrandRegions = {
       currencyCode: "CAD",
       currencyPrefix: "CA",
       flagId: "ca_nacvxi",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "778 300 0814",
@@ -138,6 +142,7 @@ export const regions: BrandRegions = {
       currencyCode: "CNY",
       currencyPrefix: "",
       flagId: "cn_nnripn",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "800 597 138",
@@ -177,6 +182,7 @@ export const regions: BrandRegions = {
       currencyCode: "EUR",
       currencyPrefix: "",
       flagId: "fr_ch1vgi",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "0805 08 42 02",
@@ -216,6 +222,7 @@ export const regions: BrandRegions = {
       currencyCode: "EUR",
       currencyPrefix: "",
       flagId: "de_wj4y6k",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "0211 38789806",
@@ -255,6 +262,7 @@ export const regions: BrandRegions = {
       currencyCode: "HKD",
       currencyPrefix: "",
       flagId: "hk_wjyavc",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "3018 8509",
@@ -294,6 +302,7 @@ export const regions: BrandRegions = {
       currencyCode: "INR",
       currencyPrefix: "",
       flagId: "in_opf3wm",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1800 1200 336",
@@ -333,6 +342,7 @@ export const regions: BrandRegions = {
       currencyCode: "IDR",
       currencyPrefix: "",
       flagId: "id_yveumv",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "007 803 321 8413",
@@ -372,6 +382,7 @@ export const regions: BrandRegions = {
       currencyCode: "EUR",
       currencyPrefix: "",
       flagId: "ie_kqc7pg",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 88 99 00",
@@ -411,6 +422,7 @@ export const regions: BrandRegions = {
       currencyCode: "ILS",
       currencyPrefix: "",
       flagId: "il_x5duyz",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1 801 227 262",
@@ -450,6 +462,7 @@ export const regions: BrandRegions = {
       currencyCode: "EUR",
       currencyPrefix: "",
       flagId: "it_yex5ap",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 88 99 00",
@@ -489,6 +502,7 @@ export const regions: BrandRegions = {
       currencyCode: "JPY",
       currencyPrefix: "",
       flagId: "jp_m6elxg",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -528,6 +542,7 @@ export const regions: BrandRegions = {
       currencyCode: "KRW",
       currencyPrefix: "",
       flagId: "kr_mrnua8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "0808 220 277",
@@ -567,6 +582,7 @@ export const regions: BrandRegions = {
       currencyCode: "MOP",
       currencyPrefix: "",
       flagId: "mo_k6c6by",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -606,6 +622,7 @@ export const regions: BrandRegions = {
       currencyCode: "MYR",
       currencyPrefix: "",
       flagId: "my_zzejgo",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "03 9212 7293",
@@ -645,6 +662,7 @@ export const regions: BrandRegions = {
       currencyCode: "NZD",
       currencyPrefix: "NZ",
       flagId: "nz_o98shy",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "0800 441 457",
@@ -684,6 +702,7 @@ export const regions: BrandRegions = {
       currencyCode: "PHP",
       currencyPrefix: "",
       flagId: "ph_cmq6es",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1800 1320 0074",
@@ -723,6 +742,7 @@ export const regions: BrandRegions = {
       currencyCode: "QAR",
       currencyPrefix: "",
       flagId: "qa_zt7eo8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -762,6 +782,7 @@ export const regions: BrandRegions = {
       currencyCode: "RUB",
       currencyPrefix: "",
       flagId: "ru_szpk5m",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -801,6 +822,7 @@ export const regions: BrandRegions = {
       currencyCode: "SAR",
       currencyPrefix: "",
       flagId: "sa_evxi8g",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -840,6 +862,7 @@ export const regions: BrandRegions = {
       currencyCode: "SGD",
       currencyPrefix: "S",
       flagId: "sg_qrenqc",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "800 492 2237",
@@ -879,6 +902,7 @@ export const regions: BrandRegions = {
       currencyCode: "ZAR",
       currencyPrefix: "",
       flagId: "za_rhuusv",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -918,6 +942,7 @@ export const regions: BrandRegions = {
       currencyCode: "EUR",
       currencyPrefix: "",
       flagId: "es_wxszqg",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "911 230 742",
@@ -957,6 +982,7 @@ export const regions: BrandRegions = {
       currencyCode: "TWD",
       currencyPrefix: "NT",
       flagId: "tw_a9lqx6",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -996,6 +1022,7 @@ export const regions: BrandRegions = {
       currencyCode: "THB",
       currencyPrefix: "",
       flagId: "th_isrxzq",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "02 026 0685",
@@ -1035,6 +1062,7 @@ export const regions: BrandRegions = {
       currencyCode: "AED",
       currencyPrefix: "",
       flagId: "ae_grfjya",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -1074,6 +1102,7 @@ export const regions: BrandRegions = {
       currencyCode: "GBP",
       currencyPrefix: "",
       flagId: "gb_ta8bez",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "020 8068 2668",
@@ -1113,6 +1142,7 @@ export const regions: BrandRegions = {
       currencyCode: "USD",
       currencyPrefix: "US",
       flagId: "us_fapjn8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "888 402 1238",
@@ -1152,6 +1182,7 @@ export const regions: BrandRegions = {
       currencyCode: "VND",
       currencyPrefix: "",
       flagId: "vn_mixye2",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -1192,6 +1223,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 72 66 76",
@@ -1218,6 +1250,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 72 66 76",
@@ -1244,6 +1277,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 892 711",
@@ -1271,6 +1305,7 @@ export const regions: BrandRegions = {
       currencyCode: "NZD",
       currencyPrefix: "",
       flagId: "nz_o98shy",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "09 222 4643",
@@ -1297,6 +1332,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 869 711",
@@ -1323,6 +1359,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 892 711",
@@ -1349,6 +1386,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 869 711",
@@ -1375,6 +1413,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-NZ",
       currencyCode: "NZD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "09 222 4643",
@@ -1401,6 +1440,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "1300 72 66 76",
@@ -1425,6 +1465,7 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-NZ",
       currencyCode: "NZD",
       currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "09 222 4643",
@@ -1452,6 +1493,7 @@ export const regions: BrandRegions = {
       currencyCode: "CNY",
       currencyPrefix: "",
       flagId: "cn_nnripn",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "186 0113 2153",
