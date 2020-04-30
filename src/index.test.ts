@@ -226,7 +226,7 @@ describe("getRegionReferralAmountByCode()", function() {
   });
 
   it("should return the region referral amount by default brand to luxuryescapes", function() {
-    expect(regionModule.getRegionReferralAmountByCode("CA")).to.deep.equal(100);
+    expect(regionModule.getRegionReferralAmountByCode("CA")).to.deep.equal(50);
   });
 });
 

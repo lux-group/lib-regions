@@ -1522,6 +1522,7 @@ export const regions: BrandRegions = {
       currencyCode: "KRW",
       currencyPrefix: "",
       flagId: "kr_mrnua8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8387 99837",
