@@ -115,7 +115,7 @@ export const regions: BrandRegions = {
         default: "international",
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
-      referralAmount: 100,
+      referralAmount: 50,
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000],
       offerUrgencyTag: {
@@ -1155,7 +1155,7 @@ export const regions: BrandRegions = {
         default: "international",
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
-      referralAmount: 100,
+      referralAmount: 50,
       referralMinSpendAmount: 349,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -1522,6 +1522,7 @@ export const regions: BrandRegions = {
       currencyCode: "KRW",
       currencyPrefix: "",
       flagId: "kr_mrnua8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
           humanReadable: "+61 2 8387 99837",
