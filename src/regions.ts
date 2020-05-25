@@ -1156,7 +1156,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      referralMinSpendAmount: 349,
+      referralMinSpendAmount: 500,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
         tour: {
