@@ -295,7 +295,7 @@ export const currencies: BrandCurrencies = {
     },
   },
   zoomzoom: {
-    KRW: {
+    AUD: {
       paymentMethods: [
         "partner",
       ],
