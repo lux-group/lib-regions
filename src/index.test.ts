@@ -151,6 +151,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "latitude",
       "latitude_pay",
       "giftcard",
+      "klarna"
     ]);
   });
 
