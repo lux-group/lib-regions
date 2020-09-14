@@ -1226,8 +1226,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "1300 72 66 76",
-          number: "1300726676",
+          humanReadable: "(02) 9051 1815",
+          number: "(02)90511815",
         },
         international: {
           humanReadable: "+61 2 8311 3542",
@@ -1253,8 +1253,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "1300 72 66 76",
-          number: "1300726676",
+          humanReadable: "(02) 9051 1815",
+          number: "(02)90511815",
         },
         international: {
           humanReadable: "+61 2 8311 3542",
@@ -1443,8 +1443,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "1300 72 66 76",
-          number: "1300726676",
+          humanReadable: "(02) 9051 1815",
+          number: "(02)90511815",
         },
         international: {
           humanReadable: "+61 2 8311 3542",
