@@ -1065,8 +1065,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 8320 6845",
-          number: "+61283206845",
+          humanReadable: "800 035704409",
+          number: "800035704409",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
