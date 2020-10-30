@@ -98,6 +98,7 @@ export const currencies: BrandCurrencies = {
         "braintree",
         "qantas",
         "latitude",
+        "latitude_gem",
         "latitude_pay",
         "giftcard",
         "klarna",
