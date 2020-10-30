@@ -149,6 +149,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "braintree",
       "qantas",
       "latitude",
+      "latitude_gem",
       "latitude_pay",
       "giftcard",
       "klarna"
