@@ -33,6 +33,13 @@ export function getRegionByCode(regionCode: string, brand?: string) {
   return regions(brand).find((region) => (region.code.toLowerCase() === regionCode.toLowerCase()));
 }
 
+export function getRegionByCurrency(currencyCode: string, brand?: string) {
+  if (!currencyCode) {
+    return null;
+  }
+  return regions(brand).find((region) => (region.currencyCode.toLowerCase() === currencyCode.toLowerCase()));
+}
+
 export function getDefaultRegion(brand?: string) {
   return regions(brand)[0];
 }
