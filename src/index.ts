@@ -34,9 +34,6 @@ export function getRegionByCode(regionCode: string, brand?: string) {
 }
 
 export function getRegionByCurrency(currencyCode: string, brand?: string) {
-  if (!currencyCode) {
-    return null;
-  }
   return regions(brand).find((region) => (region.currencyCode.toLowerCase() === currencyCode.toLowerCase()));
 }
 
