@@ -53,6 +53,13 @@ describe("getRegionByCode()", function() {
   });
 });
 
+describe("getRegionByCurrency()", function() {
+  it("should return region from currency code", function() {
+    const region = regionModule.getRegionByCurrency("AUD", "luxuryescapes")
+    expect(region ? region.code : 'fail test if region undefined').to.equal("AU");
+  });
+});
+
 describe("getRegionNameByCode()", function() {
   it("returns region name if region exists", function() {
     expect(regionModule.getRegionNameByCode("AU", "scoopontravel")).to.equal("Australia");
