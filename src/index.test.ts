@@ -159,7 +159,8 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "latitude_gem",
       "latitude_pay",
       "giftcard",
-      "klarna"
+      "klarna",
+      "bridger_pay",
     ]);
   });
 

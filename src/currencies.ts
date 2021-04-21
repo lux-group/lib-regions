@@ -102,6 +102,7 @@ export const currencies: BrandCurrencies = {
         "latitude_pay",
         "giftcard",
         "klarna",
+        "bridger_pay",
       ],
     },
     CAD: {
