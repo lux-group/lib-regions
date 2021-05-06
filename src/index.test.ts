@@ -160,7 +160,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "latitude_pay",
       "giftcard",
       "klarna",
-      "bridger_pay",
+      "bridgerpay",
     ]);
   });
 
