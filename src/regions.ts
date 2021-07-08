@@ -37,6 +37,7 @@ export interface Region {
   mailingAddress: string;
   latitudeThreshold?: number;
   referralAmount: number;
+  insuranceProductName: string;
   referralMinSpendAmount: number;
   giftCardOptions?: number[];
   offerUrgencyTag: OfferUrgencyTag | null;
@@ -76,6 +77,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
       offerUrgencyTag: {
@@ -116,6 +118,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000],
       offerUrgencyTag: {
@@ -156,6 +159,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 240,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 2399,
       giftCardOptions: [250, 500, 1000, 2500, 5000, 10000],
       offerUrgencyTag: {
@@ -196,6 +200,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -236,6 +241,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -276,6 +282,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 300,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 2999,
       giftCardOptions: [250, 500, 1250, 2500, 5000, 10000],
       offerUrgencyTag: {
@@ -316,6 +323,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 2500,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 24999,
       giftCardOptions: [2500, 5000, 12500, 25000, 50000, 100000],
       offerUrgencyTag: {
@@ -356,6 +364,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 4999999,
       giftCardOptions: [500000, 1000000, 2500000, 5000000, 10000000, 20000000],
       offerUrgencyTag: {
@@ -396,6 +405,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -436,6 +446,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: {
@@ -476,6 +487,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -516,6 +528,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 4000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 39999,
       giftCardOptions: [2500, 5000, 15000, 50000, 75000, 150000],
       offerUrgencyTag: {
@@ -556,6 +569,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 40000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 399999,
       giftCardOptions: [25000, 50000, 200000, 500000, 750000, 1500000],
       offerUrgencyTag: {
@@ -596,6 +610,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 300,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 2999,
       giftCardOptions: [250, 500, 1250, 2500, 5000, 10000],
       offerUrgencyTag: {
@@ -636,6 +651,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 150,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 1499,
       giftCardOptions: [150, 300, 500, 1500, 3000, 5000],
       offerUrgencyTag: {
@@ -676,6 +692,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -716,6 +733,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 19999,
       giftCardOptions: [1500, 3000, 5000, 10000, 25000, 50000],
       offerUrgencyTag: {
@@ -756,6 +774,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: {
@@ -796,6 +815,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2500,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 24999,
       giftCardOptions: [2000, 5000, 10000, 15000, 20000, 50000],
       offerUrgencyTag: {
@@ -836,6 +856,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: {
@@ -876,6 +897,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -916,6 +938,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 4999,
       giftCardOptions: [500, 1000, 2500, 5000, 10000, 50000],
       offerUrgencyTag: {
@@ -956,6 +979,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 299,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -996,6 +1020,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 19999,
       giftCardOptions: [1000, 2000, 5000, 10000, 20000, 40000],
       offerUrgencyTag: {
@@ -1036,6 +1061,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 9999,
       giftCardOptions: [1000, 2000, 5000, 10000, 20000, 40000],
       offerUrgencyTag: {
@@ -1076,6 +1102,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 1299,
       giftCardOptions: [150, 300, 500, 1000, 2500, 3000],
       offerUrgencyTag: {
@@ -1116,6 +1143,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 249,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -1156,6 +1184,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 500,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
@@ -1196,6 +1225,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 800000,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 7999999,
       giftCardOptions: [500000, 1000000, 3000000, 5000000, 10000000, 20000000],
       offerUrgencyTag: {
@@ -1237,6 +1267,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1264,6 +1295,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1291,6 +1323,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1319,6 +1352,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1346,6 +1380,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1373,6 +1408,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1400,6 +1436,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1427,6 +1464,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1454,6 +1492,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1479,6 +1518,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1507,6 +1547,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: "No.363 Chang Ping Lu, ChangPing DaSha, 4th Floor, Room 102, Jing An district, Shanghai, China",
       referralAmount: 0,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 0,
       giftCardOptions: [],
       offerUrgencyTag: null,
@@ -1536,6 +1577,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
+      insuranceProductName: "protection",
       referralMinSpendAmount: 0,
       giftCardOptions: [],
       offerUrgencyTag: null,
@@ -1563,6 +1605,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
+      insuranceProductName: "insurance",
       referralMinSpendAmount: 0,
       giftCardOptions: [],
       offerUrgencyTag: null,
