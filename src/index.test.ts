@@ -161,6 +161,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "giftcard",
       "klarna",
       "bridgerpay",
+      "applepay",
     ]);
   });
 
