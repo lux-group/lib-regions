@@ -1,5 +1,6 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion, extendedRegions } from "./extended";
+import { usStates } from "./usStates";
 
 function regions(brand?: string) {
   return extendedRegions[brand || "luxuryescapes"];
@@ -89,4 +90,8 @@ export function getRegionNamesAndCode(brand?: string) {
 export function isRegionAllowed(brand: string, regionCode?: string) {
   const code = regionCode || "AU";
   return regions(brand).some((region) => region.code === code);
+}
+
+export function getUsStates() {
+  return usStates;
 }

@@ -55,8 +55,8 @@ describe("getRegionByCode()", function() {
 
 describe("getRegionByCurrency()", function() {
   it("should return region from currency code", function() {
-    const region = regionModule.getRegionByCurrency("AUD", "luxuryescapes")
-    expect(region ? region.code : 'fail test if region undefined').to.equal("AU");
+    const region = regionModule.getRegionByCurrency("AUD", "luxuryescapes");
+    expect(region ? region.code : "fail test if region undefined").to.equal("AU");
   });
 });
 
@@ -256,5 +256,66 @@ describe("isRegionAllowed()", function() {
 
   it("should return true if brand has region", function() {
     expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
+  });
+});
+
+describe("getUsStates()", function() {
+  it("should return true if states number is 50", function() {
+    expect(regionModule.getUsStates()).to.have.lengthOf(50);
+  });
+
+  it("should return an array of US states", function() {
+    expect(regionModule.getUsStates()).to.deep.equal([
+      "Alabama (AL)",
+      "Alaska (AK)",
+      "Arizona (AZ)",
+      "Arkansas (AR)",
+      "California (CA)",
+      "Colorado (CO)",
+      "Connecticut (CT)",
+      "Delaware (DE)",
+      "Florida (FL)",
+      "Georgia (GA)",
+      "Hawaii (HI)",
+      "Idaho (ID)",
+      "Illinois (IL)",
+      "Indiana (IN)",
+      "Iowa (IA)",
+      "Kansas (KS)",
+      "Kentucky (KY)",
+      "Louisiana (LA)",
+      "Maine (ME)",
+      "Maryland (MD)",
+      "Massachusetts (MA)",
+      "Michigan (MI)",
+      "Minnesota (MN)",
+      "Mississippi (MS)",
+      "Missouri (MO)",
+      "Montana (MT)",
+      "Nebraska (NE)",
+      "Nevada (NV)",
+      "New Hampshire (NH)",
+      "New Jersey (NJ)",
+      "New Mexico (NM)",
+      "New York (NY)",
+      "North Carolina (NC)",
+      "North Dakota (ND)",
+      "Ohio (OH)",
+      "Oklahoma (OK)",
+      "Oregon (OR)",
+      "Pennsylvania (PA)",
+      "Rhode Island (RI)",
+      "South Carolina (SC)",
+      "South Dakota (SD)",
+      "Tennessee (TN)",
+      "Texas (TX)",
+      "Utah (UT)",
+      "Vermont (VT)",
+      "Virginia[E] (VA)",
+      "Washington (WA)",
+      "West Virginia (WV)",
+      "Wisconsin (WI)",
+      "Wyoming (WY)",
+    ]);
   });
 });
