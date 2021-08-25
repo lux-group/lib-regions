@@ -47,7 +47,7 @@ interface BrandRegions {
   [brand: string]: Region[];
 }
 
-const DEFAULT_MAILING_ADDRESS = "Level 1, 50-56 York St, South Melbourne, VIC 3205, AUSTRALIA";
+const DEFAULT_MAILING_ADDRESS = "Level 4, 68 Clarke Street, Southbank, VIC 3006, Australia";
 const SINGAPORE_MAILING_ADDRESS = "168 Robinson Road, #12-01 Capital Tower, Singapore 068912";
 const DEFAULT_FLIGHTS_SUPPORT_EMAIL = "flights@luxuryescapes.com";
 

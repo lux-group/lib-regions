@@ -103,6 +103,7 @@ export const currencies: BrandCurrencies = {
         "giftcard",
         "klarna",
         "bridgerpay",
+        "applepay",
       ],
     },
     CAD: {
@@ -196,6 +197,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "bridgerpay",
       ],
     },
     PHP: {
