@@ -670,6 +670,47 @@ export const regions: BrandRegions = {
       },
     },
     {
+      code: "NL",
+      name: "Netherlands",
+      lang: "en-NL",
+      phonePrefix: "31",
+      currencyFormattingLocale: "en-NL",
+      currencyCode: "EUR",
+      currencyPrefix: "",
+      flagId: "nz_o98shy",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      phone: {
+        local: {
+          humanReadable: "+61 2 8046 1120",
+          number: "+61280461120",
+        },
+        international: {
+          humanReadable: "+61 2 8320 6845",
+          number: "+61283206845",
+        },
+        default: "international",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 30,
+      insuranceProductName: "protection",
+      referralMinSpendAmount: 299,
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+    },
+    {
       code: "NZ",
       name: "New Zealand",
       lang: "en-NZ",
