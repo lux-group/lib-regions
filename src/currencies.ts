@@ -104,6 +104,7 @@ export const currencies: BrandCurrencies = {
         "klarna",
         "bridgerpay",
         "applepay",
+        "googlepay",
       ],
     },
     CAD: {
