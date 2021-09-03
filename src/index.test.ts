@@ -163,6 +163,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "klarna",
       "bridgerpay",
       "applepay",
+      "googlepay",
     ]);
   });
 
