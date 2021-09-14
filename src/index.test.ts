@@ -172,6 +172,8 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "stripe",
       "giftcard",
       "krisFlyer",
+      "applepay",
+      "googlepay",
     ]);
   });
 
