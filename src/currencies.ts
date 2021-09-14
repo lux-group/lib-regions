@@ -112,6 +112,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     CNY: {
@@ -120,6 +122,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
       ],
     },
     EUR: {
@@ -127,6 +130,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     HKD: {
@@ -135,6 +140,8 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
+        "googlepay",
       ],
     },
     INR: {
@@ -152,6 +159,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "googlepay",
       ],
     },
     ILS: {
@@ -159,6 +167,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     JPY: {
@@ -167,6 +177,8 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
+        "googlepay",
       ],
     },
     KRW: {
@@ -182,6 +194,7 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
       ],
     },
     MYR: {
@@ -190,6 +203,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "googlepay",
       ],
     },
     NZD: {
@@ -199,6 +213,8 @@ export const currencies: BrandCurrencies = {
         "giftcard",
         "krisFlyer",
         "bridgerpay",
+        "applepay",
+        "googlepay",
       ],
     },
     PHP: {
@@ -207,6 +223,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "googlepay",
       ],
     },
     QAR: {
@@ -214,6 +231,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     RUB: {
@@ -221,6 +240,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     SAR: {
@@ -228,6 +249,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     SGD: {
@@ -236,6 +259,8 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
+        "googlepay",
       ],
     },
     TWD: {
@@ -244,6 +269,8 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
+        "googlepay",
       ],
     },
     THB: {
@@ -252,6 +279,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "googlepay",
       ],
     },
     ZAR: {
@@ -259,6 +287,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     AED: {
@@ -266,6 +296,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
+        "applepay",
+        "googlepay",
       ],
     },
     GBP: {
@@ -274,6 +306,8 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
+        "googlepay",
       ],
     },
     USD: {
@@ -282,6 +316,8 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "applepay",
+        "googlepay",
       ],
     },
     VND: {
@@ -290,6 +326,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
+        "googlepay",
       ],
     },
   },
