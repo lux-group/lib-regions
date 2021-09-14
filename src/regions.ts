@@ -674,10 +674,10 @@ export const regions: BrandRegions = {
       name: "Netherlands",
       lang: "en-NL",
       phonePrefix: "31",
-      currencyFormattingLocale: "en-NL",
+      currencyFormattingLocale: "nl-NL",
       currencyCode: "EUR",
       currencyPrefix: "",
-      flagId: "nz_o98shy",
+      flagId: "nl_h9g3ks",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
