@@ -215,6 +215,7 @@ export const currencies: BrandCurrencies = {
         "bridgerpay",
         "applepay",
         "googlepay",
+        "klarna_bp",
       ],
     },
     PHP: {
@@ -308,6 +309,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "applepay",
         "googlepay",
+        "klarna_bp",
       ],
     },
     USD: {
@@ -318,6 +320,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "applepay",
         "googlepay",
+        "klarna_bp",
       ],
     },
     VND: {
