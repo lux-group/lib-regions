@@ -167,8 +167,8 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
-        "applepay",
-        "googlepay",
+        // "applepay",  // Apple Pay is not supported in IL
+        // "googlepay", // Google Pay is not supported in IL
       ],
     },
     JPY: {
