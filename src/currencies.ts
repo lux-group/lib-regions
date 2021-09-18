@@ -288,7 +288,7 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "giftcard",
-        "applepay",
+        // "applepay", Apple Pay is not supported in South Africa
         // "googlepay", Google Pay is not supported in South Africa
       ],
     },
