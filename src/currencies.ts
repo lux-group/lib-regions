@@ -213,7 +213,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "giftcard",
         "krisFlyer",
-        "bridgerpay",
+        "afterpay_bp",
         "applepay",
         "googlepay",
         "klarna_bp",
