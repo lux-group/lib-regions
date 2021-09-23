@@ -105,6 +105,7 @@ export const currencies: BrandCurrencies = {
         "bridgerpay",
         "applepay",
         "googlepay",
+        "afterpay_bp",
       ],
     },
     CAD: {

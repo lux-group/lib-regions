@@ -164,6 +164,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "bridgerpay",
       "applepay",
       "googlepay",
+      "afterpay_bp",
     ]);
   });
 
