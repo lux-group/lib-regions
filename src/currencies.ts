@@ -143,6 +143,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "applepay",
         "googlepay",
+        "hoolah_bp",
       ],
     },
     INR: {
@@ -205,6 +206,7 @@ export const currencies: BrandCurrencies = {
         "giftcard",
         "krisFlyer",
         "googlepay",
+        "hoolah_bp",
       ],
     },
     NZD: {
@@ -263,6 +265,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "applepay",
         "googlepay",
+        "hoolah_bp"
       ],
     },
     TWD: {
