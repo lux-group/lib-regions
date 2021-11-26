@@ -176,6 +176,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "krisFlyer",
       "applepay",
       "googlepay",
+      "hoolah_bp",
     ]);
   });
 
