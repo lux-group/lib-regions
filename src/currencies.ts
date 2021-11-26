@@ -265,7 +265,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "applepay",
         "googlepay",
-        "hoolah_bp"
+        "hoolah_bp",
       ],
     },
     TWD: {
