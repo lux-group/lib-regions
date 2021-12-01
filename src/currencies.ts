@@ -325,6 +325,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "klarna_bp",
+        "afterpay_bp",
       ],
     },
     VND: {
