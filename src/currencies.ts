@@ -351,7 +351,7 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
-  whitelabeltest: {    
+  nwl: {    
       AUD: {
         paymentMethods: [
           "le_credit",
