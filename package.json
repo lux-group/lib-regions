@@ -11,7 +11,7 @@
     "src"
   ],
   "scripts": {
-    "build": "rm -rf lib && tsc",
+    "build": "npx rimraf -rf lib && tsc",
     "test": "mocha -r ts-node/register src/index.test.ts",
     "lint": "tslint -p tsconfig.json",
     "lint-fix": "tslint --fix -p tsconfig.json",
@@ -28,5 +28,8 @@
     "ts-node": "^8.3.0",
     "tslint": "^5.19.0",
     "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
