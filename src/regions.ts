@@ -1652,4 +1652,48 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
   ],
+  newwhitelabel: [
+    {
+      code: "AU",
+      name: "Australia",
+      lang: "en-AU",
+      phonePrefix: "61",
+      currencyFormattingLocale: "en-AU",
+      currencyCode: "AUD",
+      currencyPrefix: "A",
+      flagId: "au_iuox02",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      phone: {
+        local: {
+          humanReadable: "1300 88 99 00",
+          number: "1300889900",
+        },
+        international: {
+          humanReadable: "+61 2 8320 6845",
+          number: "+61283206845",
+        },
+        default: "international",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      latitudeThreshold: 999,
+      referralAmount: 50,
+      insuranceProductName: "insurance",
+      referralMinSpendAmount: 499,
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 10,
+            period: 24,
+          },
+        },
+      },
+    },
+  ],
 };
