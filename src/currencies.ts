@@ -352,7 +352,7 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
-  newwhitelabel: {    
+  newwhitelabel: {
       AUD: {
         paymentMethods: [
           "le_credit",
@@ -597,6 +597,6 @@ export const currencies: BrandCurrencies = {
           "krisFlyer",
           // "googlepay", // Google Pay is not supported in South Africa
         ],
-      },    
-  }
+      },
+  },
 };

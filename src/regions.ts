@@ -1652,7 +1652,7 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
   ],
-  newwhitelabel:[
+  newwhitelabel: [
     {
       code: "AU",
       name: "Australia",
@@ -1695,5 +1695,5 @@ export const regions: BrandRegions = {
         },
       },
     },
-  ]
+  ],
 };
