@@ -352,4 +352,23 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  newwhitelabel: {
+      AUD: {
+        paymentMethods: [
+          "le_credit",
+          "stripe",
+          "braintree",
+          "qantas",
+          "latitude",
+          "latitude_gem",
+          "latitude_pay",
+          "giftcard",
+          "klarna",
+          "bridgerpay",
+          "applepay",
+          "googlepay",
+          "afterpay_bp",
+        ],
+      },
+  },
 };

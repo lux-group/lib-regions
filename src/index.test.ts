@@ -7,10 +7,55 @@ describe("getRegionCodes()", function() {
   });
 });
 
+const expectedLeRegions = [
+  "Australia",
+  "Canada",
+  "China",
+  "France",
+  "Germany",
+  "Hong Kong",
+  "India",
+  "Indonesia",
+  "Ireland",
+  "Israel",
+  "Italy",
+  "Japan",
+  "Korea",
+  "Macau",
+  "Malaysia",
+  "Netherlands",
+  "New Zealand",
+  "Philippines",
+  "Qatar",
+  "Russia",
+  "Saudi Arabia",
+  "Singapore",
+  "South Africa",
+  "Spain",
+  "Taiwan",
+  "Thailand",
+  "United Arab Emirates",
+  "United Kingdom",
+  "United States",
+  "Vietnam",
+];
+
 describe("getRegionNames()", function() {
-  it("should return an array of region names", function() {
-    expect(regionModule.getRegionNames("scoopontravel")).to.deep.equal(["Australia"]);
-  });
+  const cases: [string, string[]][] = [
+    ['luxuryescapes', expectedLeRegions],
+    ['scoopontravel', ['Australia']],
+    ['cudotravel', ['Australia']],
+    ['treatmetravel', ['New Zealand']],
+    ['dealstravel', ['Australia']],
+    ['yidu', ['China']],
+    ['zoomzoom', ['Korea', 'Australia']],
+    ['newwhitelabel', ['Australia']],
+  ];
+  cases.forEach(([brand, expectedRegions]) => {
+    it(`when the brand "${brand}" is passed as an argument to getRegionNames(brand), the function should return ${expectedRegions}`, () => {
+      expect(regionModule.getRegionNames(brand)).to.deep.equal(expectedRegions);
+    })
+  })
 
   it("should return an array of region names default brand to luxuryescapes", function() {
     expect(regionModule.getRegionNames()).to.deep.equal([
