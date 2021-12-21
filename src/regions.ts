@@ -1498,8 +1498,8 @@ export const regions: BrandRegions = {
           number: "0800843182",
         },
         international: {
-          humanReadable: "+64 800 843 182",
-          number: "+648008431823",
+          humanReadable: "+64 9 222 4643",
+          number: "+6492224643",
         },
         default: "international",
       },
