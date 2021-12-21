@@ -1581,8 +1581,8 @@ export const regions: BrandRegions = {
           number: "+61370323480",
         },
         international: {
-          humanReadable: "+61 3 7032 3480",
-          number: "+61370323480",
+          humanReadable: "+86 186 0113 2153",
+          number: "+8618601132153",
         },
         default: "international",
       },
