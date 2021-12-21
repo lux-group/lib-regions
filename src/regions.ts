@@ -107,8 +107,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "778 300 0814",
-          number: "7783000814",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -148,8 +148,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "800 597 138",
-          number: "800597138",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -189,8 +189,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "0805 08 42 02",
-          number: "0805084202",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -230,8 +230,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "0211 38789806",
-          number: "021138789806",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -353,8 +353,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "007 803 321 8413",
-          number: "0078033218413",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -640,8 +640,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "03 9212 7293",
-          number: "0392127293",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -722,8 +722,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "0800 441 457",
-          number: "0800441457",
+          humanReadable: "0800 900 094",
+          number: "0800900094",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -763,8 +763,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "1800 1320 0074",
-          number: "180013200074",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -927,8 +927,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "800 492 2237",
-          number: "8004922237",
+          humanReadable: "6690 5451",
+          number: "66905451",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1009,8 +1009,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "911 230 742",
-          number: "911230742",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1091,8 +1091,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "02 026 0685",
-          number: "020260685",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1132,8 +1132,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "800 035704409",
-          number: "800035704409",
+          humanReadable: "+61 2 9167 8207",
+          number: "+61291678207",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1494,8 +1494,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "09 222 4643",
-          number: "092224643",
+          humanReadable: "0800 843 182",
+          number: "0800843182",
         },
         international: {
           humanReadable: "+64 9 222 4643",
@@ -1577,8 +1577,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "186 0113 2153",
-          number: "18601132153",
+          humanReadable: "+61 3 7032 3480",
+          number: "+61370323480",
         },
         international: {
           humanReadable: "+86 186 0113 2153",
