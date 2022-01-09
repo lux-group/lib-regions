@@ -1,7 +1,7 @@
 {
   "name": "@luxuryescapes/lib-regions",
   "version": "4.8.1",
-  "description": "Region information for Luxury Escapes",
+  "description": "Region information for Luxury Escapes !",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "repository": "https://github.com/brandsExclusive/lib-regions",
