@@ -95,6 +95,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "braintree",
         "qantas",
         "latitude",
@@ -112,6 +113,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "applepay",
         "googlepay",
@@ -121,6 +123,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -130,6 +133,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "applepay",
         "googlepay",
@@ -139,6 +143,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -150,6 +155,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "razorpay",
         "giftcard",
         "vistara",
@@ -159,6 +165,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "googlepay",
@@ -168,6 +175,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         // "applepay",  // Apple Pay is not supported in IL
         // "googlepay", // Google Pay is not supported in IL
@@ -177,6 +185,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -187,6 +196,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
       ],
@@ -195,6 +205,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "applepay",
       ],
@@ -203,6 +214,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "googlepay",
@@ -213,6 +225,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "afterpay_bp",
@@ -225,6 +238,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "googlepay",
@@ -234,6 +248,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         // "applepay",  // Apple Pay is not supported in QA
         // "googlepay", // Google Pay is not supported in QA
@@ -243,6 +258,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         // "applepay", // Apple Pay is not supported in RU
         // "googlepay", // Google Pay is not supported in RU
@@ -252,6 +268,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         // "applepay", // Apple Pay is not supported in SA
         // "googlepay", // Google Pay is not supported in SA
@@ -261,6 +278,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -272,6 +290,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -282,6 +301,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "googlepay",
@@ -291,6 +311,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         // "applepay", Apple Pay is not supported in South Africa
         // "googlepay", Google Pay is not supported in South Africa
@@ -300,6 +321,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "applepay",
         "googlepay",
@@ -309,6 +331,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -320,6 +343,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         "applepay",
@@ -332,6 +356,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "le_credit",
         "stripe",
+        "deposit_stripe",
         "giftcard",
         "krisFlyer",
         // "googlepay", // Google Pay is not supported in South Africa

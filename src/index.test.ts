@@ -199,6 +199,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD")).to.deep.equal([
       "le_credit",
       "stripe",
+      "deposit_stripe",
       "braintree",
       "qantas",
       "latitude",
@@ -217,6 +218,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode("SGD")).to.deep.equal([
       "le_credit",
       "stripe",
+      "deposit_stripe",
       "giftcard",
       "krisFlyer",
       "applepay",
@@ -229,6 +231,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode("INR")).to.deep.equal([
       "le_credit",
         "stripe",
+        "deposit_stripe",
         "razorpay",
         "giftcard",
         "vistara",
