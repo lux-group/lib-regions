@@ -232,6 +232,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "klarna_bp",
+        "stripe_3ds",
       ],
     },
     PHP: {
