@@ -1,5 +1,6 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion, extendedRegions } from "./extended";
+import { REGION_CODE } from "./regions";
 
 function regions(brand?: string) {
   return extendedRegions[brand || "luxuryescapes"];

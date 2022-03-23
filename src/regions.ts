@@ -13,8 +13,41 @@ interface OfferUrgencyTag {
   };
 }
 
+export enum REGION_CODE {
+  AU = "AU",
+  CA = "CA",
+  CN = "CN",
+  FR = "FR",
+  DE = "DE",
+  HK = "HK",
+  IN = "IN",
+  ID = "ID",
+  IE = "IE",
+  IL = "IL",
+  IT = "IT",
+  JP = "JP",
+  KR = "KR",
+  MO = "MO",
+  MY = "MY",
+  NL = "NL",
+  NZ = "NZ",
+  PH = "PH",
+  QA = "QA",
+  RU = "RU",
+  SA = "SA",
+  SG = "SG",
+  ZA = "ZA",
+  ES = "ES",
+  TW = "TW",
+  TH = "TH",
+  AE = "AE",
+  GB = "GB",
+  US = "US",
+  VN = "VN",
+}
+
 export interface Region {
-  code: string;
+  code: REGION_CODE;
   name: string;
   lang: string;
   phonePrefix: string;
@@ -54,7 +87,7 @@ const DEFAULT_FLIGHTS_SUPPORT_EMAIL = "flights@luxuryescapes.com";
 export const regions: BrandRegions = {
   luxuryescapes: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -96,7 +129,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "CA",
+      code: REGION_CODE.CA,
       name: "Canada",
       lang: "en-CA",
       phonePrefix: "1",
@@ -137,7 +170,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "CN",
+      code: REGION_CODE.CN,
       name: "China",
       lang: "en-CN",
       phonePrefix: "86",
@@ -178,7 +211,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "FR",
+      code: REGION_CODE.FR,
       name: "France",
       lang: "en-FR",
       phonePrefix: "33",
@@ -219,7 +252,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "DE",
+      code: REGION_CODE.DE,
       name: "Germany",
       lang: "en-DE",
       phonePrefix: "49",
@@ -260,7 +293,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "HK",
+      code: REGION_CODE.HK,
       name: "Hong Kong",
       lang: "en-HK",
       phonePrefix: "852",
@@ -301,7 +334,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "IN",
+      code: REGION_CODE.IN,
       name: "India",
       lang: "en-IN",
       phonePrefix: "91",
@@ -342,7 +375,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "ID",
+      code: REGION_CODE.ID,
       name: "Indonesia",
       lang: "en-ID",
       phonePrefix: "62",
@@ -383,7 +416,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "IE",
+      code: REGION_CODE.IE,
       name: "Ireland",
       lang: "en-IE",
       phonePrefix: "353",
@@ -424,7 +457,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "IL",
+      code: REGION_CODE.IL,
       name: "Israel",
       lang: "en-IL",
       phonePrefix: "972",
@@ -465,7 +498,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "IT",
+      code: REGION_CODE.IT,
       name: "Italy",
       lang: "en-IT",
       phonePrefix: "39",
@@ -506,7 +539,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "JP",
+      code: REGION_CODE.JP,
       name: "Japan",
       lang: "en-JP",
       phonePrefix: "81",
@@ -547,7 +580,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "KR",
+      code: REGION_CODE.KR,
       name: "Korea",
       lang: "en-KR",
       phonePrefix: "82",
@@ -588,7 +621,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "MO",
+      code: REGION_CODE.MO,
       name: "Macau",
       lang: "en-MO",
       phonePrefix: "853",
@@ -629,7 +662,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "MY",
+      code: REGION_CODE.MY,
       name: "Malaysia",
       lang: "en-MY",
       phonePrefix: "60",
@@ -670,7 +703,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "NL",
+      code: REGION_CODE.NL,
       name: "Netherlands",
       lang: "en-NL",
       phonePrefix: "31",
@@ -711,7 +744,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "NZ",
+      code: REGION_CODE.NZ,
       name: "New Zealand",
       lang: "en-NZ",
       phonePrefix: "64",
@@ -752,7 +785,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "PH",
+      code: REGION_CODE.PH,
       name: "Philippines",
       lang: "en-PH",
       phonePrefix: "63",
@@ -793,7 +826,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "QA",
+      code: REGION_CODE.QA,
       name: "Qatar",
       lang: "en-QA",
       phonePrefix: "974",
@@ -834,7 +867,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "RU",
+      code: REGION_CODE.RU,
       name: "Russia",
       lang: "en-RU",
       phonePrefix: "7",
@@ -875,7 +908,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "SA",
+      code: REGION_CODE.SA,
       name: "Saudi Arabia",
       lang: "en-SA",
       phonePrefix: "966",
@@ -916,7 +949,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "SG",
+      code: REGION_CODE.SG,
       name: "Singapore",
       lang: "en-SG",
       phonePrefix: "65",
@@ -957,7 +990,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "ZA",
+      code: REGION_CODE.ZA,
       name: "South Africa",
       lang: "en-ZA",
       phonePrefix: "27",
@@ -998,7 +1031,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "ES",
+      code: REGION_CODE.ES,
       name: "Spain",
       lang: "en-ES",
       phonePrefix: "34",
@@ -1039,7 +1072,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "TW",
+      code: REGION_CODE.TW,
       name: "Taiwan",
       lang: "en-TW",
       phonePrefix: "886",
@@ -1080,7 +1113,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "TH",
+      code: REGION_CODE.TH,
       name: "Thailand",
       lang: "en-TH",
       phonePrefix: "66",
@@ -1121,7 +1154,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "AE",
+      code: REGION_CODE.AE,
       name: "United Arab Emirates",
       lang: "en-AE",
       phonePrefix: "971",
@@ -1162,7 +1195,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "GB",
+      code: REGION_CODE.GB,
       name: "United Kingdom",
       lang: "en-GB",
       phonePrefix: "44",
@@ -1203,7 +1236,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "US",
+      code: REGION_CODE.US,
       name: "United States",
       lang: "en-US",
       phonePrefix: "1",
@@ -1244,7 +1277,7 @@ export const regions: BrandRegions = {
       },
     },
     {
-      code: "VN",
+      code: REGION_CODE.VN,
       name: "Vietnam",
       lang: "en-VN",
       phonePrefix: "84",
@@ -1287,7 +1320,7 @@ export const regions: BrandRegions = {
   ],
   scooponexperience: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1315,7 +1348,7 @@ export const regions: BrandRegions = {
   ],
   scoopontravel: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1343,7 +1376,7 @@ export const regions: BrandRegions = {
   ],
   cudotravel: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1371,7 +1404,7 @@ export const regions: BrandRegions = {
   ],
   treatmetravel: [
     {
-      code: "NZ",
+      code: REGION_CODE.NZ,
       name: "New Zealand",
       lang: "en-NZ",
       phonePrefix: "64",
@@ -1400,7 +1433,7 @@ export const regions: BrandRegions = {
   ],
   dealstravel: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1428,7 +1461,7 @@ export const regions: BrandRegions = {
   ],
   cudo: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1456,7 +1489,7 @@ export const regions: BrandRegions = {
   ],
   deals: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1484,7 +1517,7 @@ export const regions: BrandRegions = {
   ],
   treatme: [
     {
-      code: "NZ",
+      code: REGION_CODE.NZ,
       name: "New Zealand",
       lang: "en-NZ",
       phonePrefix: "64",
@@ -1512,7 +1545,7 @@ export const regions: BrandRegions = {
   ],
   led_admin: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
@@ -1538,7 +1571,7 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
     {
-      code: "NZ",
+      code: REGION_CODE.NZ,
       name: "New Zealand",
       lang: "en-NZ",
       phonePrefix: "64",
@@ -1566,7 +1599,7 @@ export const regions: BrandRegions = {
   ],
   yidu: [
     {
-      code: "CN",
+      code: REGION_CODE.CN,
       name: "China",
       lang: "en-CN",
       phonePrefix: "86",
@@ -1596,7 +1629,7 @@ export const regions: BrandRegions = {
   ],
   zoomzoom: [
     {
-      code: "KR",
+      code: REGION_CODE.KR,
       name: "Korea",
       lang: "en-KR",
       phonePrefix: "82",
@@ -1624,7 +1657,7 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-KR",
       phonePrefix: "82",
@@ -1654,7 +1687,7 @@ export const regions: BrandRegions = {
   ],
   newwhitelabel: [
     {
-      code: "AU",
+      code: REGION_CODE.AU,
       name: "Australia",
       lang: "en-AU",
       phonePrefix: "61",
