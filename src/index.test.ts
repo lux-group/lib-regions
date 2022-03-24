@@ -211,6 +211,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "applepay",
       "googlepay",
       "afterpay_bp",
+      "stripe_3ds",
     ]);
   });
 
@@ -224,6 +225,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "applepay",
       "googlepay",
       "hoolah_bp",
+      "stripe_3ds",
     ]);
   });
 

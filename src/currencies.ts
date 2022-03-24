@@ -107,6 +107,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "afterpay_bp",
+        "stripe_3ds",
       ],
     },
     CAD: {
@@ -285,6 +286,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "hoolah_bp",
+        "stripe_3ds",
       ],
     },
     TWD: {
@@ -352,6 +354,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "klarna_bp",
         "afterpay_bp",
+        "stripe_3ds",
       ],
     },
     VND: {
