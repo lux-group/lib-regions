@@ -1,5 +1,6 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion, extendedRegions } from "./extended";
+import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 
 function regions(brand?: string) {
   return extendedRegions[brand || "luxuryescapes"];
@@ -13,6 +14,22 @@ const zeroDecimalCurrencies = [
   "BIF", "CLP", "DJF", "GNF", "JPY", "KMF", "KRW", "MGA",
   "PYG", "RWF", "VND", "VUV", "XAF", "XOF", "XPF",
 ];
+
+export function getPriorityPhoneNumbers(brand?: string) {
+  return priorityPhoneNumbers[brand || "luxuryescapes"];
+}
+
+export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string) {
+  if (!regionCode) {
+    return null;
+  }
+  return getPriorityPhoneNumbers(brand)
+    .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase()));
+}
+
+export function getDefaultPriorityPhoneNumber(brand?: string) {
+  return getPriorityPhoneNumbers(brand)[0];
+}
 
 export function getRegions(brand?: string) {
   return regions(brand);
