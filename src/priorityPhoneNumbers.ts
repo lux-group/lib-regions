@@ -29,7 +29,7 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
       phonePrefix: "61",
       phone: {
         local: {
-          humanReadable: "1300 860 454",
+          humanReadable: "1300 86 04 54",
           number: "1300860454",
         },
         international: {
