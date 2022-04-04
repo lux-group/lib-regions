@@ -54,6 +54,47 @@ const DEFAULT_FLIGHTS_SUPPORT_EMAIL = "flights@luxuryescapes.com";
 export const regions: BrandRegions = {
   luxuryescapes: [
     {
+      code: "US",
+      name: "United States",
+      lang: "en-US",
+      phonePrefix: "1",
+      currencyFormattingLocale: "en-US",
+      currencyCode: "USD",
+      currencyPrefix: "US",
+      flagId: "us_fapjn8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      phone: {
+        local: {
+          humanReadable: "888 809 6860",
+          number: "8888096860",
+        },
+        international: {
+          humanReadable: "+61 2 8320 6845",
+          number: "+61283206845",
+        },
+        default: "international",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 50,
+      insuranceProductName: "protection",
+      referralMinSpendAmount: 500,
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+    },
+    {
       code: "AU",
       name: "Australia",
       lang: "en-AU",
@@ -1186,47 +1227,6 @@ export const regions: BrandRegions = {
       referralAmount: 25,
       insuranceProductName: "protection",
       referralMinSpendAmount: 249,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
-      offerUrgencyTag: {
-        tour: {
-          popular: {
-            min: 2,
-            period: 24,
-          },
-        },
-        hotel: {
-          popular: {
-            min: 4,
-            period: 24,
-          },
-        },
-      },
-    },
-    {
-      code: "US",
-      name: "United States",
-      lang: "en-US",
-      phonePrefix: "1",
-      currencyFormattingLocale: "en-US",
-      currencyCode: "USD",
-      currencyPrefix: "US",
-      flagId: "us_fapjn8",
-      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      phone: {
-        local: {
-          humanReadable: "888 809 6860",
-          number: "8888096860",
-        },
-        international: {
-          humanReadable: "+61 2 8320 6845",
-          number: "+61283206845",
-        },
-        default: "international",
-      },
-      mailingAddress: DEFAULT_MAILING_ADDRESS,
-      referralAmount: 50,
-      insuranceProductName: "protection",
-      referralMinSpendAmount: 500,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000],
       offerUrgencyTag: {
         tour: {
