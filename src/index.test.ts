@@ -8,7 +8,6 @@ describe("getRegionCodes()", function() {
 });
 
 const expectedLeRegions = [
-  "United States",
   "Australia",
   "Canada",
   "China",
@@ -37,6 +36,7 @@ const expectedLeRegions = [
   "Thailand",
   "United Arab Emirates",
   "United Kingdom",
+  "United States",
   "Vietnam",
 ];
 
@@ -59,7 +59,6 @@ describe("getRegionNames()", function() {
 
   it("should return an array of region names default brand to luxuryescapes", function() {
     expect(regionModule.getRegionNames()).to.deep.equal([
-      "United States",
       "Australia",
       "Canada",
       "China",
@@ -88,6 +87,7 @@ describe("getRegionNames()", function() {
       "Thailand",
       "United Arab Emirates",
       "United Kingdom",
+      "United States",
       "Vietnam",
     ]);
   });
@@ -128,11 +128,11 @@ describe("getDefaultRegion()", function() {
 
 describe("getDefaultRegionCode()", function() {
   it("should return the default region's code", function() {
-    expect(regionModule.getDefaultRegionCode("luxuryescapes")).to.equal("US");
+    expect(regionModule.getDefaultRegionCode("luxuryescapes")).to.equal("AU");
   });
 
   it("should return the default region's code default brand to luxuryescapes", function() {
-    expect(regionModule.getDefaultRegionCode()).to.equal("US");
+    expect(regionModule.getDefaultRegionCode()).to.equal("AU");
   });
 
   it("should return the default region for the brand", function() {
@@ -146,7 +146,7 @@ describe("getDefaultRegionName()", function() {
   });
 
   it("should return the default region's name default brand to luxuryescapes", function() {
-    expect(regionModule.getDefaultRegionName()).to.equal("United States");
+    expect(regionModule.getDefaultRegionName()).to.equal("Australia");
   });
 });
 
@@ -254,7 +254,6 @@ describe("getRegionLang()", function() {
 
   it("should return an array of region langs default brand to luxuryescapes", function() {
     expect(regionModule.getRegionLang()).to.deep.equal([
-      "en-US",
       "en-AU",
       "en-CA",
       "en-CN",
@@ -283,6 +282,7 @@ describe("getRegionLang()", function() {
       "en-TH",
       "en-AE",
       "en-GB",
+      "en-US",
       "en-VN",
     ]);
   });
