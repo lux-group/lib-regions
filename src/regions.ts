@@ -107,8 +107,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 9167 8207",
-          number: "+61291678207",
+          humanReadable: "888 841 8898",
+          number: "8888418898",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -353,8 +353,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 9167 8207",
-          number: "+61291678207",
+          humanReadable: "03 7032 3337",
+          number: "0370323337",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -640,8 +640,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 9167 8207",
-          number: "+61291678207",
+          humanReadable: "03 8689 8204",
+          number: "0386898204",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -763,8 +763,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 9167 8207",
-          number: "+61291678207",
+          humanReadable: "1800 1320 0244",
+          number: "180013200244",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1009,8 +1009,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 9167 8207",
-          number: "+61291678207",
+          humanReadable: "90184 8018",
+          number: "901848018",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1577,8 +1577,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 3 7032 3480",
-          number: "+61370323480",
+          humanReadable: "400 842 8021",
+          number: "4008428021",
         },
         international: {
           humanReadable: "+86 186 0113 2153",
