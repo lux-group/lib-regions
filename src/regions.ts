@@ -148,8 +148,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "+61 2 9167 8207",
-          number: "+61291678207",
+          humanReadable: "400 842 8021",
+          number: "4008428021",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
@@ -1577,8 +1577,8 @@ export const regions: BrandRegions = {
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       phone: {
         local: {
-          humanReadable: "400 842 8021",
-          number: "4008428021",
+          humanReadable: "+61 3 7032 3480",
+          number: "+61370323480",
         },
         international: {
           humanReadable: "+86 186 0113 2153",
