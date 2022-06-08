@@ -226,6 +226,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "googlepay",
       "hoolah_bp",
       "stripe_3ds",
+      "atome_bp",
     ]);
   });
 
