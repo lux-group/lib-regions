@@ -154,6 +154,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "hoolah_bp",
         "stripe_3ds",
+        "atome_bp",
       ],
     },
     INR: {
@@ -230,6 +231,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "hoolah_bp",
         "stripe_3ds",
+        "atome_bp",
       ],
     },
     NZD: {
@@ -301,6 +303,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "hoolah_bp",
         "stripe_3ds",
+        "atome_bp",
       ],
     },
     TWD: {
