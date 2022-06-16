@@ -36,8 +36,10 @@ export interface Region {
   };
   mailingAddress: string;
   latitudeThreshold?: number;
+  /** @deprecated get referral data from the svc-promo directly */
   referralAmount: number;
   insuranceProductName: string;
+  /** @deprecated get referral data from the svc-promo directly */
   referralMinSpendAmount: number;
   giftCardOptions?: number[];
   offerUrgencyTag: OfferUrgencyTag | null;
