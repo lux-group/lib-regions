@@ -1,8 +1,10 @@
 import { currencies as _currencies } from "./currencies";
-import { ExtendedRegion, extendedRegions } from "./extended";
+import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 
-function regions(brand?: string) {
+export { Region };
+
+function regions(brand?: string): Region[] {
   return extendedRegions[brand || "luxuryescapes"];
 }
 
@@ -31,7 +33,7 @@ export function getDefaultPriorityPhoneNumber(brand?: string) {
   return getPriorityPhoneNumbers(brand)[0];
 }
 
-export function getRegions(brand?: string) {
+export function getRegions(brand?: string): Region[] {
   return regions(brand);
 }
 
