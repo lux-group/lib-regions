@@ -8,7 +8,7 @@ const libRegions = require('@luxuryescapes/lib-regions');
 import * as libRegions from '@luxuryescapes/lib-regions'
 ```
 
-## publish after changes
+## publishing after changes
 1. Merge your branch - including a bump to `version` in `package.json` (a separate PR is acceptable)
 2. Checkout master and pull down your changes
 3. (Run `yarn install`)
