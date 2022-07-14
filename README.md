@@ -11,5 +11,5 @@ import * as libRegions from '@luxuryescapes/lib-regions'
 ## publish after changes
 1. Merge your branch - including a bump to `version` in `package.json` (a separate PR is acceptable)
 2. Checkout master and pull down your changes
-3a. Run `yarn install`
-3b. Run `yarn publish`
+3. (Run `yarn install`)
+4. Run `yarn publish`
