@@ -15,6 +15,7 @@ export const currencies: BrandCurrencies = {
     NZD: {
       paymentMethods: [
         "stripe",
+        "stripe_3ds",
       ],
     },
   },
@@ -23,6 +24,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -31,6 +33,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -72,6 +75,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "braintree",
         "latitude_pay",
+        "stripe_3ds",
       ],
     },
   },
