@@ -192,6 +192,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "stripe",
       "braintree",
       "latitude_pay",
+      "stripe_3ds",
     ]);
   });
 
