@@ -79,6 +79,16 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  kogantravel: {
+    AUD: {
+      paymentMethods: [
+        "stripe",
+        "braintree",
+        "latitude_pay",
+        "stripe_3ds",
+      ],
+    },
+  },
   led_admin: {
     AUD: {
       paymentMethods: [
