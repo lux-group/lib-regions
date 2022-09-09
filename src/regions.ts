@@ -1343,6 +1343,34 @@ export const regions: BrandRegions = {
       offerUrgencyTag: null,
     },
   ],
+  kogantravel: [
+    {
+      code: "AU",
+      name: "Australia",
+      lang: "en-AU",
+      phonePrefix: "61",
+      currencyFormattingLocale: "en-AU",
+      currencyCode: "AUD",
+      currencyPrefix: "",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      phone: {
+        local: {
+          humanReadable: "",
+          number: "",
+        },
+        international: {
+          humanReadable: "",
+          number: "",
+        },
+        default: "international",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 50,
+      insuranceProductName: "insurance",
+      referralMinSpendAmount: 499,
+      offerUrgencyTag: null,
+    },
+  ],
   cudotravel: [
     {
       code: "AU",
