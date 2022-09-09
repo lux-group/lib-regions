@@ -4,6 +4,7 @@ import * as regionModule from "./";
 describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
     expect(regionModule.getRegionCodes("scoopontravel")).to.deep.equal(["AU"]);
+    expect(regionModule.getRegionCodes("kogantravel")).to.deep.equal(["AU"]);
   });
 });
 
@@ -47,6 +48,7 @@ describe("getRegionNames()", function() {
     ['cudotravel', ['Australia']],
     ['treatmetravel', ['New Zealand']],
     ['dealstravel', ['Australia']],
+    ['kogantravel', ['Australia']],
     ['yidu', ['China']],
     ['zoomzoom', ['Korea', 'Australia']],
     ['newwhitelabel', ['Australia']],
@@ -153,6 +155,7 @@ describe("getDefaultRegionName()", function() {
 describe("getCurrencyCodes()", function() {
   it("should return an array of currency codes", function() {
     expect(regionModule.getCurrencyCodes("scoopontravel")).to.deep.equal(["AUD"]);
+    expect(regionModule.getCurrencyCodes("kogantravel")).to.deep.equal(["AUD"]);
   });
 
   it("should return an array of currency codes default brand to luxuryescapes", function() {
@@ -189,6 +192,12 @@ describe("getCurrencyCodes()", function() {
 describe("getPaymentMethodsByCurrencyCode()", function() {
   it("should return an array of payment methods", function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")).to.deep.equal([
+      "stripe",
+      "braintree",
+      "latitude_pay",
+      "stripe_3ds",
+    ]);
+    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")).to.deep.equal([
       "stripe",
       "braintree",
       "latitude_pay",
