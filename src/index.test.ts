@@ -222,6 +222,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "googlepay",
       "afterpay_bp",
       "stripe_3ds",
+      "waave_bp",
     ]);
   });
 
