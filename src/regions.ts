@@ -23,7 +23,7 @@ export interface Region {
   currencyPrefix: string;
   flagId?: string;
   flightsSupportEmail: string;
-  marketed_los: number;
+  marketedLos: number;
   phone: {
     local: {
       humanReadable: string
@@ -67,7 +67,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "A",
       flagId: "au_iuox02",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1300 88 99 00",
@@ -110,7 +110,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "CA",
       flagId: "ca_nacvxi",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "888 841 8898",
@@ -152,7 +152,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "cn_nnripn",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "400 842 8021",
@@ -194,7 +194,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "fr_ch1vgi",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 907 498",
@@ -236,7 +236,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "de_wj4y6k",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 001 0786",
@@ -278,7 +278,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "hk_wjyavc",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "3018 8509",
@@ -320,7 +320,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "in_opf3wm",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1800 258 7282",
@@ -362,7 +362,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "id_yveumv",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "03 7032 3337",
@@ -404,7 +404,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "ie_kqc7pg",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1800 816 039",
@@ -446,7 +446,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "il_x5duyz",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1809 510 015",
@@ -488,7 +488,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "it_yex5ap",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "800 684 328",
@@ -530,7 +530,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "jp_m6elxg",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "034 510 0114",
@@ -572,7 +572,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "kr_mrnua8",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "07 98 8521 1567",
@@ -614,7 +614,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "mo_k6c6by",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "6857 0524",
@@ -656,7 +656,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "my_zzejgo",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "03 8689 8204",
@@ -698,7 +698,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "nl_h9g3ks",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 2300300",
@@ -740,7 +740,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "NZ",
       flagId: "nz_o98shy",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 900 094",
@@ -782,7 +782,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "ph_cmq6es",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1800 1320 0244",
@@ -824,7 +824,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "qa_zt7eo8",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "00 800 101636",
@@ -866,7 +866,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "ru_szpk5m",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -908,7 +908,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "sa_evxi8g",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "800 850 1445",
@@ -950,7 +950,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "S",
       flagId: "sg_qrenqc",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "6690 5451",
@@ -992,7 +992,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "za_rhuusv",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "+61 2 8320 6845",
@@ -1034,7 +1034,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "es_wxszqg",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "90184 8018",
@@ -1076,7 +1076,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "NT",
       flagId: "tw_a9lqx6",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "02 7703 4472",
@@ -1118,7 +1118,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "th_isrxzq",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1800 014 168",
@@ -1160,7 +1160,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "ae_grfjya",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "800 0183 0572",
@@ -1202,7 +1202,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "gb_ta8bez",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 014 8176",
@@ -1244,7 +1244,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "US",
       flagId: "us_fapjn8",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "888 809 6860",
@@ -1286,7 +1286,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "vn_mixye2",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1800 400 427",
@@ -1329,7 +1329,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "(02) 9051 1815",
@@ -1358,7 +1358,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "(02) 9051 1815",
@@ -1387,7 +1387,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "",
@@ -1416,7 +1416,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1300 892 711",
@@ -1446,7 +1446,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "nz_o98shy",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 846 182",
@@ -1475,7 +1475,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1300 869 711",
@@ -1504,7 +1504,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1300 892 711",
@@ -1533,7 +1533,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1300 869 711",
@@ -1562,7 +1562,7 @@ export const regions: BrandRegions = {
       currencyCode: "NZD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "0800 846 182",
@@ -1591,7 +1591,7 @@ export const regions: BrandRegions = {
       currencyCode: "AUD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "(02) 9051 1815",
@@ -1618,7 +1618,7 @@ export const regions: BrandRegions = {
       currencyCode: "NZD",
       currencyPrefix: "",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "09 222 4643",
@@ -1648,7 +1648,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "cn_nnripn",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "+61 3 7032 3480",
@@ -1679,7 +1679,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "",
       flagId: "kr_mrnua8",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "07 98 8521 1567",
@@ -1708,7 +1708,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "A",
       flagId: "au_iuox02",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "+61 2 8387 99837",
@@ -1739,7 +1739,7 @@ export const regions: BrandRegions = {
       currencyPrefix: "A",
       flagId: "au_iuox02",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
-      marketed_los: DEFAULT_MARKETED_LOS,
+      marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
           humanReadable: "1300 88 99 00",
