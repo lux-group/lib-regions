@@ -240,6 +240,9 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "atome_bp",
     ]);
   });
+  it("should return an empty array of payment methods when brand doesn't have sellected currency", function() {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "treatmetravel")).to.deep.equal([]);
+  });
 
   it("should return an array of payment methods default brand to luxuryescapes IN", function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode("INR")).to.deep.equal([
