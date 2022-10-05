@@ -78,8 +78,8 @@ export function getCurrencyCodes(brand?: string) {
 }
 
 export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: string) {
-  if(!currencies(brand)[currencyCode]){
-    return []
+  if (!currencies(brand)[currencyCode]) {
+    return [];
   }
 
   return currencies(brand)[currencyCode].paymentMethods;
