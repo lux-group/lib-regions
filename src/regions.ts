@@ -995,8 +995,8 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "+61 2 8320 6845",
-          number: "+61283206845",
+          humanReadable: "080 001 0712",
+          number: "0800010712",
         },
         international: {
           humanReadable: "+61 2 8320 6845",
