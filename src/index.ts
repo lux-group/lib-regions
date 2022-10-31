@@ -26,12 +26,12 @@ export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string)
     return null;
   }
 
-  if (getPriorityPhoneNumbers(brand)) {
-    return getPriorityPhoneNumbers(brand)
-      .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase())) ;
-  } else {
-    return null;
-  }
+    const priorityNumbers = getPriorityPhoneNumbers(brand)
+    if (priorityNumbers.length > 0) {
+      return priorityNumbers.find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase())) ;
+    }
+
+    return null
 
 }
 
