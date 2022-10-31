@@ -25,8 +25,14 @@ export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string)
   if (!regionCode) {
     return null;
   }
-  return getPriorityPhoneNumbers(brand)
-    .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase()));
+
+  if (getPriorityPhoneNumbers(brand)) {
+    return getPriorityPhoneNumbers(brand)
+      .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase())) ;
+  } else {
+    return null;
+  }
+
 }
 
 export function getDefaultPriorityPhoneNumber(brand?: string) {
