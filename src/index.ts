@@ -28,9 +28,10 @@ export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string)
 
   const priorityNumbers = getPriorityPhoneNumbers(brand);
   if (priorityNumbers.length > 0) {
-    const pNumbers = priorityNumbers
+    const pNumber = priorityNumbers
       .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase()));
-    return pNumbers ? pNumbers : null;
+
+    return pNumber ? pNumber : null;
   }
 
   return null;
