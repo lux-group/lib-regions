@@ -26,13 +26,14 @@ export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string)
     return null;
   }
 
-    const priorityNumbers = getPriorityPhoneNumbers(brand)
-    if (priorityNumbers.length > 0) {
-      return priorityNumbers.find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase())) ;
-    }
+  const priorityNumbers = getPriorityPhoneNumbers(brand);
+  if (priorityNumbers.length > 0) {
+    const pNumbers = priorityNumbers
+      .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase()));
+    return pNumbers ? pNumbers : null;
+  }
 
-    return null
-
+  return null;
 }
 
 export function getDefaultPriorityPhoneNumber(brand?: string) {
