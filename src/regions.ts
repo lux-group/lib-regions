@@ -1375,6 +1375,7 @@ export const regions: BrandRegions = {
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
+      giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
   kogantravel: [
@@ -1404,6 +1405,7 @@ export const regions: BrandRegions = {
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
+      giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
   cudotravel: [
@@ -1433,6 +1435,7 @@ export const regions: BrandRegions = {
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
+      giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
   treatmetravel: [
@@ -1463,6 +1466,7 @@ export const regions: BrandRegions = {
       insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
+      giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
   dealstravel: [
@@ -1492,6 +1496,7 @@ export const regions: BrandRegions = {
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
+      giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
   cudo: [
