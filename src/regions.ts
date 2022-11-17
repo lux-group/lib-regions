@@ -1374,7 +1374,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
       giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
@@ -1404,7 +1417,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
       giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
@@ -1434,7 +1460,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
       giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
@@ -1465,7 +1504,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "protection",
       referralMinSpendAmount: 499,
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
       giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
@@ -1495,7 +1547,20 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
-      offerUrgencyTag: null,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
       giftCardOptions: [20, 50, 100, 250, 500, 1000],
     },
   ],
