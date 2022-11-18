@@ -1390,14 +1390,14 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "",
-          number: "",
+          humanReadable: "1300 517 210",
+          number: "1300517210",
         },
         international: {
-          humanReadable: "",
-          number: "",
+          humanReadable: "+61 1300 517 210",
+          number: "+611300517210",
         },
-        default: "international",
+        default: "local",
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
