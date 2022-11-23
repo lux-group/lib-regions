@@ -196,12 +196,14 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "braintree",
       "latitude_pay",
       "stripe_3ds",
+      "giftcard",
     ]);
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")).to.deep.equal([
       "stripe",
       "braintree",
       "latitude_pay",
       "stripe_3ds",
+      "giftcard",
     ]);
   });
 
