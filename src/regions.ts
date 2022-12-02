@@ -55,7 +55,6 @@ const SINGAPORE_MAILING_ADDRESS = "168 Robinson Road, #12-01 Capital Tower, Sing
 const DEFAULT_FLIGHTS_SUPPORT_EMAIL = "flights@luxuryescapes.com";
 const DEFAULT_MARKETED_LOS = 3;
 
-// TODOMB :: Update here new gift card value based on region selected
 export const regions: BrandRegions = {
   luxuryescapes: [
     {
