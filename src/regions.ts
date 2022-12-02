@@ -84,7 +84,7 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "insurance",
       referralMinSpendAmount: 499,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000, 4000, 5000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -126,7 +126,7 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "protection",
       referralMinSpendAmount: 499,
-      giftCardOptions: [50, 100, 250, 500, 1000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -210,7 +210,7 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       insuranceProductName: "protection",
       referralMinSpendAmount: 299,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -252,7 +252,7 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       insuranceProductName: "protection",
       referralMinSpendAmount: 299,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -420,7 +420,7 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       insuranceProductName: "protection",
       referralMinSpendAmount: 299,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -504,7 +504,7 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       insuranceProductName: "protection",
       referralMinSpendAmount: 299,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -714,7 +714,7 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       insuranceProductName: "protection",
       referralMinSpendAmount: 299,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -1050,7 +1050,7 @@ export const regions: BrandRegions = {
       referralAmount: 30,
       insuranceProductName: "protection",
       referralMinSpendAmount: 299,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -1218,7 +1218,7 @@ export const regions: BrandRegions = {
       referralAmount: 25,
       insuranceProductName: "protection",
       referralMinSpendAmount: 249,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
@@ -1260,7 +1260,7 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "protection",
       referralMinSpendAmount: 500,
-      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
       offerUrgencyTag: {
         tour: {
           popular: {
