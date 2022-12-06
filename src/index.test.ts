@@ -194,14 +194,12 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")).to.deep.equal([
       "stripe",
       "braintree",
-      "latitude_pay",
       "stripe_3ds",
       "giftcard",
     ]);
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")).to.deep.equal([
       "stripe",
       "braintree",
-      "latitude_pay",
       "stripe_3ds",
       "giftcard",
     ]);
