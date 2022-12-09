@@ -46,9 +46,28 @@ export interface Region {
   offerUrgencyTag: OfferUrgencyTag | null;
 }
 
-interface BrandRegions {
-  [brand: string]: Region[];
-}
+export const LUXURY_ESCAPES = "luxuryescapes";
+
+export const BRANDS = [
+  LUXURY_ESCAPES,
+  "scooponexperience",
+  "scoopontravel",
+  "kogantravel",
+  "cudotravel",
+  "treatmetravel",
+  "dealstravel",
+  "cudo",
+  "deals",
+  "treatme",
+  "led_admin",
+  "yidu",
+  "zoomzoom",
+  "newwhitelabel",
+] as const;
+
+export type Brand = typeof BRANDS[number];
+
+type BrandRegions = Record<typeof BRANDS[number], Region[]>;
 
 const DEFAULT_MAILING_ADDRESS = "Level 4, 68 Clarke Street, Southbank, VIC 3006, Australia";
 const SINGAPORE_MAILING_ADDRESS = "168 Robinson Road, #12-01 Capital Tower, Singapore 068912";
