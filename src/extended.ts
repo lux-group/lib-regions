@@ -3,7 +3,7 @@ import { BRANDS, Region, regions } from "./regions";
 
 export interface ExtendedRegion extends Region, Currency {}
 
-type ExtendedBrandRegions = Record<typeof BRANDS[number], Region[]>;
+type ExtendedBrandRegions = Record<typeof BRANDS[number], ExtendedRegion[]>;
 
 const extendedRegions = {} as ExtendedBrandRegions;
 
