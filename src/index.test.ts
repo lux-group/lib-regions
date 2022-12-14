@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import * as regionModule from "./";
+import { Brand } from "./regions";
 
 describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
@@ -42,7 +43,7 @@ const expectedLeRegions = [
 ];
 
 describe("getRegionNames()", function() {
-  const cases: [string, string[]][] = [
+  const cases: [Brand, string[]][] = [
     ['luxuryescapes', expectedLeRegions],
     ['scoopontravel', ['Australia']],
     ['cudotravel', ['Australia']],

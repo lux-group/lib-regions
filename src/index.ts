@@ -1,15 +1,16 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
+import { Brand, LUXURY_ESCAPES } from "./regions";
 
 export { Region };
 
-function regions(brand?: string): Region[] {
-  return extendedRegions[brand || "luxuryescapes"];
+function regions(brand?: Brand) {
+  return extendedRegions[brand || LUXURY_ESCAPES];
 }
 
 function currencies(brand?: string) {
-  return _currencies[brand || "luxuryescapes"];
+  return _currencies[brand || LUXURY_ESCAPES];
 }
 
 const zeroDecimalCurrencies = [
@@ -18,7 +19,7 @@ const zeroDecimalCurrencies = [
 ];
 
 export function getPriorityPhoneNumbers(brand?: string) {
-  return priorityPhoneNumbers[brand || "luxuryescapes"];
+  return priorityPhoneNumbers[brand || LUXURY_ESCAPES];
 }
 
 export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string) {
@@ -41,43 +42,43 @@ export function getDefaultPriorityPhoneNumber(brand?: string) {
   return getPriorityPhoneNumbers(brand)[0];
 }
 
-export function getRegions(brand?: string): Region[] {
+export function getRegions(brand?: Brand) {
   return regions(brand);
 }
 
-export function getRegionCodes(brand?: string) {
+export function getRegionCodes(brand?: Brand) {
   return regions(brand).map((region) => region.code);
 }
 
-export function getRegionNames(brand?: string) {
+export function getRegionNames(brand?: Brand) {
   return regions(brand).map((region) => region.name);
 }
 
-export function getRegionByCode(regionCode: string, brand?: string) {
+export function getRegionByCode(regionCode: string, brand?: Brand) {
   if (!regionCode) {
     return null;
   }
   return regions(brand).find((region) => (region.code.toLowerCase() === regionCode.toLowerCase()));
 }
 
-export function getRegionByCurrency(currencyCode: string, brand?: string) {
+export function getRegionByCurrency(currencyCode: string, brand?: Brand) {
   return regions(brand).find((region) => (region.currencyCode.toLowerCase() === currencyCode.toLowerCase()));
 }
 
-export function getDefaultRegion(brand?: string) {
+export function getDefaultRegion(brand?: Brand) {
   return regions(brand)[0];
 }
 
-export function getRegionNameByCode(code: string, brand?: string) {
+export function getRegionNameByCode(code: string, brand?: Brand) {
   const region = getRegionByCode(code, brand);
   return region && region.name || null;
 }
 
-export function getDefaultRegionCode(brand?: string) {
+export function getDefaultRegionCode(brand?: Brand) {
   return regions(brand)[0].code;
 }
 
-export function getDefaultRegionName(brand?: string) {
+export function getDefaultRegionName(brand?: Brand) {
   return regions(brand)[0].name;
 }
 
@@ -97,27 +98,27 @@ export function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies;
 }
 
-export function getRegionLang(brand?: string) {
+export function getRegionLang(brand?: Brand) {
   return regions(brand).map((region) => region.lang);
 }
 
-export function getRegionReferralAmountByCode(code: string, brand?: string) {
+export function getRegionReferralAmountByCode(code: string, brand?: Brand) {
   const region = getRegionByCode(code, brand);
   return region && region.referralAmount || null;
 }
 
-export function getRegionPhonePrefix(brand?: string) {
+export function getRegionPhonePrefix(brand?: Brand) {
   return regions(brand).map((region) => region.phonePrefix);
 }
 
-export function getRegionNamesAndCode(brand?: string) {
+export function getRegionNamesAndCode(brand?: Brand) {
   return regions(brand).map((region) => ({
     name: region.name,
     code: region.code,
   }));
 }
 
-export function isRegionAllowed(brand: string, regionCode?: string) {
+export function isRegionAllowed(brand: Brand, regionCode?: string) {
   const code = regionCode || "AU";
   return regions(brand).some((region) => region.code === code);
 }
