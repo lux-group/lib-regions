@@ -92,6 +92,15 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  leforwork: {
+    AUD: {
+      paymentMethods: [
+        "stripe",
+        "braintree",
+        "stripe_3ds",
+      ],
+    },
+  },
   led_admin: {
     AUD: {
       paymentMethods: [
