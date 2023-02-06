@@ -6,6 +6,7 @@ describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
     expect(regionModule.getRegionCodes("scoopontravel")).to.deep.equal(["AU"]);
     expect(regionModule.getRegionCodes("kogantravel")).to.deep.equal(["AU"]);
+    expect(regionModule.getRegionCodes("leforwork")).to.deep.equal(["AU"]);
   });
 });
 
@@ -158,6 +159,7 @@ describe("getCurrencyCodes()", function() {
   it("should return an array of currency codes", function() {
     expect(regionModule.getCurrencyCodes("scoopontravel")).to.deep.equal(["AUD"]);
     expect(regionModule.getCurrencyCodes("kogantravel")).to.deep.equal(["AUD"]);
+    expect(regionModule.getCurrencyCodes("leforwork")).to.deep.equal(["AUD"]);
   });
 
   it("should return an array of currency codes default brand to luxuryescapes", function() {
