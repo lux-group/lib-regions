@@ -53,6 +53,7 @@ export const BRANDS = [
   "scooponexperience",
   "scoopontravel",
   "kogantravel",
+  "leforwork",
   "cudotravel",
   "treatmetravel",
   "dealstravel",
@@ -1860,6 +1861,50 @@ export const regions: BrandRegions = {
           },
         },
       },
+    },
+  ],
+  leforwork : [
+    {
+      code: "AU",
+      name: "Australia",
+      lang: "en-AU",
+      phonePrefix: "61",
+      currencyFormattingLocale: "en-AU",
+      currencyCode: "AUD",
+      currencyPrefix: "",
+      flagId: "au_iuox02",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      marketedLos: DEFAULT_MARKETED_LOS,
+      phone: {
+        local: {
+          humanReadable: "1300 88 99 00",
+          number: "1300889900",
+        },
+        international: {
+          humanReadable: "+61 2 8320 6845",
+          number: "+61283206845",
+        },
+        default: "local",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 0,
+      insuranceProductName: "insurance",
+      referralMinSpendAmount: 0,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+      giftCardOptions: [],
     },
   ],
 };
