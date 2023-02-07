@@ -1872,23 +1872,24 @@ export const regions: BrandRegions = {
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
       currencyPrefix: "",
+      flagId: "au_iuox02",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "",
-          number: "",
+          humanReadable: "1300 88 99 00",
+          number: "1300889900",
         },
         international: {
-          humanReadable: "",
-          number: "",
+          humanReadable: "+61 2 8320 6845",
+          number: "+61283206845",
         },
         default: "local",
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 0,
       insuranceProductName: "insurance",
-      referralMinSpendAmount: 499,
+      referralMinSpendAmount: 0,
       offerUrgencyTag: {
         tour: {
           popular: {
