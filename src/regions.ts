@@ -1428,8 +1428,8 @@ export const regions: BrandRegions = {
           number: "1300517210",
         },
         international: {
-          humanReadable: "+61 1300 517 210",
-          number: "+611300517210",
+          humanReadable: "+61 3 7032 3416",
+          number: "+61370323416",
         },
         default: "local",
       },
