@@ -106,7 +106,6 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
-        "latitude_pay",
       ],
     },
     NZD: {
@@ -126,7 +125,6 @@ export const currencies: BrandCurrencies = {
         "qantas",
         "latitude",
         "latitude_gem",
-        "latitude_pay",
         "giftcard",
         "klarna",
         "bridgerpay",
@@ -440,7 +438,6 @@ export const currencies: BrandCurrencies = {
           "qantas",
           "latitude",
           "latitude_gem",
-          "latitude_pay",
           "giftcard",
           "klarna",
           "bridgerpay",
