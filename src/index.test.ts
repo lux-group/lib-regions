@@ -218,7 +218,6 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "qantas",
       "latitude",
       "latitude_gem",
-      "latitude_pay",
       "giftcard",
       "klarna",
       "bridgerpay",
