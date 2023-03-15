@@ -1,7 +1,6 @@
 import { expect } from "chai";
 import * as regionModule from "./";
 import { Brand } from "./regions";
-import { dynamicTags } from './dynamicTags'
 
 describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
@@ -201,7 +200,7 @@ describe("getDynamicTagsForBrand()", function () {
     expect(regionModule.getDynamicTagsForBrand("kogantravel")).to.have.property("SalesEmail", "sales@kogantravel.com");
     expect(regionModule.getDynamicTagsForBrand("leforwork")).to.have.property("BrandName", "LE for Business");
     //Defaulted to LE when no brand is passed
-    expect(regionModule.getDynamicTagsForBrand("")).to.have.property("BrandName", "Luxury Escapes");
+    expect(regionModule.getDynamicTagsForBrand()).to.have.property("BrandName", "Luxury Escapes");
   });
 });
 

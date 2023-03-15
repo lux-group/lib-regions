@@ -14,7 +14,7 @@ function currencies(brand?: string) {
   return _currencies[brand || LUXURY_ESCAPES];
 }
 
-function dynamicTagsForBrand(brand?: string): Tags {
+function dynamicTagsForBrand(brand?: Brand): Tags {
   return _dynamicTags[brand || LUXURY_ESCAPES];
 }
 
@@ -91,7 +91,7 @@ export function getCurrencyCodes(brand?: string) {
   return Object.keys(currencies(brand));
 }
 
-export function getDynamicTagsForBrand(brand: string): Tags {
+export function getDynamicTagsForBrand(brand?: Brand): Tags {
   return dynamicTagsForBrand(brand);
 }
 

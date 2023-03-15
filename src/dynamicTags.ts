@@ -1,10 +1,23 @@
+const BRANDS = [
+  "luxuryescapes",
+  "scooponexperience",
+  "scoopontravel",
+  "kogantravel",
+  "leforwork",
+  "cudotravel",
+  "treatmetravel",
+  "dealstravel",
+];
+
+type Brand = typeof BRANDS[number];
+
 export interface Tags {
   [tag: string]: string;
 }
 
-interface BrandTags {
-  [brand: string]: Tags;
-}
+type BrandTags = {
+  [brand in Brand]: Tags;
+};
 
 export const dynamicTags: BrandTags = {
   treatmetravel: {
