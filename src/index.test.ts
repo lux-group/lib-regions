@@ -1,6 +1,7 @@
 import { expect } from "chai";
 import * as regionModule from "./";
 import { Brand } from "./regions";
+import { dynamicTags } from './dynamicTags'
 
 describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
@@ -190,6 +191,14 @@ describe("getCurrencyCodes()", function() {
       "USD",
       "VND",
     ]);
+  });
+});
+
+describe("getDynamicTagsForBrand()", function () {
+  it.only("should return an dynamic tags for brands", function () {
+    expect(regionModule.getDynamicTagsForBrand("scoopontravel")).to.have.property("BrandName", "Scoopon");
+    expect(regionModule.getDynamicTagsForBrand("kogantravel")).to.have.property("SalesEmail", "sales@kogantravel.com");
+    expect(regionModule.getDynamicTagsForBrand("leforwork")).to.have.property("BrandName", "LE for Business");
   });
 });
 
