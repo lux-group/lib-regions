@@ -196,9 +196,12 @@ describe("getCurrencyCodes()", function() {
 
 describe("getDynamicTagsForBrand()", function () {
   it.only("should return an dynamic tags for brands", function () {
+    // Spot check few parameters for a few brands
     expect(regionModule.getDynamicTagsForBrand("scoopontravel")).to.have.property("BrandName", "Scoopon");
     expect(regionModule.getDynamicTagsForBrand("kogantravel")).to.have.property("SalesEmail", "sales@kogantravel.com");
     expect(regionModule.getDynamicTagsForBrand("leforwork")).to.have.property("BrandName", "LE for Business");
+    //Defaulted to LE when no brand is passed
+    expect(regionModule.getDynamicTagsForBrand("")).to.have.property("BrandName", "Luxury Escapes");
   });
 });
 
