@@ -9,11 +9,22 @@ const BRANDS = [
   "dealstravel",
 ];
 
+export enum PermittedTags {
+  "BrandName" = "BrandName",
+  "SalesEmail" = "SalesEmail",
+  "CruiseEmail" = "CruiseEmail",
+  "TourEmail" = "TourEmail",
+  "TrustedPartnerTourEmail" = "TrustedPartnerTourEmail",
+  "FlightPolicyLink" = "FlightPolicyLink"
+};
+
+type PermittedTagsType = keyof typeof PermittedTags;
+
 type Brand = typeof BRANDS[number];
 
-export interface Tags {
-  [tag: string]: string;
-}
+export type Tags = {
+  [key in PermittedTagsType]: string;
+};
 
 type BrandTags = {
   [brand in Brand]: Tags;
