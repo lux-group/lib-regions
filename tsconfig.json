@@ -4,10 +4,14 @@
     "rootDir": "./src",
     "target": "es5",
     "declaration": true,
-    "lib": ["dom", "es7"],
+    "lib": [
+      "dom",
+      "es7",
+      "es2017"
+    ],
     "module": "commonjs",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
   },
   "exclude": [
     "*/**.test.ts"
