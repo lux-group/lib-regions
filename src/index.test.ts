@@ -234,8 +234,6 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "deposit_stripe",
       "braintree",
       "qantas",
-      "latitude",
-      "latitude_gem",
       "giftcard",
       "klarna",
       "bridgerpay",
