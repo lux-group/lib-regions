@@ -15,8 +15,8 @@ export enum PermittedTags {
   "CruiseEmail" = "CruiseEmail",
   "TourEmail" = "TourEmail",
   "TrustedPartnerTourEmail" = "TrustedPartnerTourEmail",
-  "FlightPolicyLink" = "FlightPolicyLink"
-};
+  "FlightPolicyLink" = "FlightPolicyLink",
+}
 
 type PermittedTagsType = keyof typeof PermittedTags;
 

@@ -1,5 +1,5 @@
 import { currencies as _currencies } from "./currencies";
-import { dynamicTags as _dynamicTags, Tags, PermittedTags } from "./dynamicTags";
+import { dynamicTags as _dynamicTags, PermittedTags, Tags } from "./dynamicTags";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
