@@ -135,7 +135,7 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
       },
     },
   ],
-  leforwork: [
+  lebusinesstraveller: [
     {
       code: "AU",
       name: "Australia",

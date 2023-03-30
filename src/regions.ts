@@ -53,7 +53,7 @@ export const BRANDS = [
   "scooponexperience",
   "scoopontravel",
   "kogantravel",
-  "leforwork",
+  "lebusinesstraveller",
   "cudotravel",
   "treatmetravel",
   "dealstravel",
@@ -1863,7 +1863,7 @@ export const regions: BrandRegions = {
       },
     },
   ],
-  leforwork : [
+  lebusinesstraveller : [
     {
       code: "AU",
       name: "Australia",
