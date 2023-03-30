@@ -7,7 +7,7 @@ describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
     expect(regionModule.getRegionCodes("scoopontravel")).to.deep.equal(["AU"]);
     expect(regionModule.getRegionCodes("kogantravel")).to.deep.equal(["AU"]);
-    expect(regionModule.getRegionCodes("leforwork")).to.deep.equal(["AU"]);
+    expect(regionModule.getRegionCodes("lebusinesstraveller")).to.deep.equal(["AU"]);
   });
 });
 
@@ -55,7 +55,7 @@ describe("getRegionNames()", function() {
     ['yidu', ['China']],
     ['zoomzoom', ['Korea', 'Australia']],
     ['newwhitelabel', ['Australia']],
-    ['leforwork', ['Australia']],
+    ['lebusinesstraveller', ['Australia']],
   ];
   cases.forEach(([brand, expectedRegions]) => {
     it(`when the brand "${brand}" is passed as an argument to getRegionNames(brand), the function should return ${expectedRegions}`, () => {
@@ -160,7 +160,7 @@ describe("getCurrencyCodes()", function() {
   it("should return an array of currency codes", function() {
     expect(regionModule.getCurrencyCodes("scoopontravel")).to.deep.equal(["AUD"]);
     expect(regionModule.getCurrencyCodes("kogantravel")).to.deep.equal(["AUD"]);
-    expect(regionModule.getCurrencyCodes("leforwork")).to.deep.equal(["AUD"]);
+    expect(regionModule.getCurrencyCodes("lebusinesstraveller")).to.deep.equal(["AUD"]);
   });
 
   it("should return an array of currency codes default brand to luxuryescapes", function() {
@@ -199,7 +199,7 @@ describe("getDynamicTagsForBrand()", function () {
     // Spot check few parameters for a few brands
     expect(regionModule.getDynamicTagsForBrand("scoopontravel")).to.have.property("BrandName", "Scoopon");
     expect(regionModule.getDynamicTagsForBrand("kogantravel")).to.have.property("SalesEmail", "sales@kogantravel.com");
-    expect(regionModule.getDynamicTagsForBrand("leforwork")).to.have.property("BrandName", "LE for Business");
+    expect(regionModule.getDynamicTagsForBrand("lebusinesstraveller")).to.have.property("BrandName", "LE for Business");
     //Defaulted to LE when no brand is passed
     expect(regionModule.getDynamicTagsForBrand()).to.have.property("BrandName", "Luxury Escapes");
   });

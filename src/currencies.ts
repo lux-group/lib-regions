@@ -92,7 +92,7 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
-  leforwork: {
+  lebusinesstraveller: {
     AUD: {
       paymentMethods: [
         "stripe",
