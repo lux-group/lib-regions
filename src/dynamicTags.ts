@@ -3,7 +3,7 @@ const BRANDS = [
   "scooponexperience",
   "scoopontravel",
   "kogantravel",
-  "leforwork",
+  "lebusinesstraveller",
   "cudotravel",
   "treatmetravel",
   "dealstravel",
@@ -71,7 +71,7 @@ export const dynamicTags: BrandTags = {
     TrustedPartnerTourEmail: "sales@kogantravel.com",
     FlightPolicyLink: "https://kogantravel.com/au/flights-policies",
   },
-  leforwork: {
+  lebusinesstraveller: {
     BrandName: "LE for Business",
     SalesEmail: "sales@luxuryescapes.com",
     CruiseEmail: "cruises@luxuryescapes.com",
