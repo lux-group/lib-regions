@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import * as regionModule from "./";
 import { Brand } from "./regions";
-import { PermittedTags } from './dynamicTags';
+import { PermittedTags, DYNAMIC_TAG_BRANDS } from './dynamicTags';
 
 describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
@@ -208,6 +208,12 @@ describe("getDynamicTagsForBrand()", function () {
 describe("getValidDynamicTags()", function () {
   it("should return list of valid dynamic tags", function () {
     expect(regionModule.getValidDynamicTags()).to.deep.equal(Object.values(PermittedTags))
+  });
+});
+
+describe("getAllBrandsThatSupportDynamicTags()", function () {
+  it("should return list of valid brands that support dynamic tags", function () {
+    expect(regionModule.getAllBrandsThatSupportDynamicTags()).to.deep.equal(DYNAMIC_TAG_BRANDS)
   });
 });
 

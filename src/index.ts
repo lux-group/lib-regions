@@ -1,5 +1,5 @@
 import { currencies as _currencies } from "./currencies";
-import { dynamicTags as _dynamicTags, PermittedTags, Tags } from "./dynamicTags";
+import { DYNAMIC_TAG_BRANDS, dynamicTags as _dynamicTags, PermittedTags, Tags } from "./dynamicTags";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
@@ -97,6 +97,10 @@ export function getDynamicTagsForBrand(brand?: Brand): Tags {
 
 export function getValidDynamicTags(): string[] {
   return Object.keys(PermittedTags);
+}
+
+export function getAllBrandsThatSupportDynamicTags(): string[] {
+  return DYNAMIC_TAG_BRANDS;
 }
 
 export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: string) {

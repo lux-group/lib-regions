@@ -1,4 +1,4 @@
-const BRANDS = [
+export const DYNAMIC_TAG_BRANDS = [
   "luxuryescapes",
   "scooponexperience",
   "scoopontravel",
@@ -20,7 +20,7 @@ export enum PermittedTags {
 
 type PermittedTagsType = keyof typeof PermittedTags;
 
-type Brand = typeof BRANDS[number];
+type Brand = typeof DYNAMIC_TAG_BRANDS[number];
 
 export type Tags = {
   [key in PermittedTagsType]: string;
