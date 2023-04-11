@@ -1,3 +1,7 @@
+// When dynamic tags are modified or brands are added DYNAMIC_TAG_BRANDS list, remember
+// to publish a new lib-regions npm version and include that version number in
+// svc-offer and svc-public offer service.
+
 export const DYNAMIC_TAG_BRANDS = [
   "luxuryescapes",
   "scooponexperience",
