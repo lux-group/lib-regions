@@ -1,4 +1,8 @@
-const BRANDS = [
+// When dynamic tags are modified or brands are added DYNAMIC_TAG_BRANDS list, remember
+// to publish a new lib-regions npm version and include that version number in
+// svc-offer and svc-public offer service.
+
+export const DYNAMIC_TAG_BRANDS = [
   "luxuryescapes",
   "scooponexperience",
   "scoopontravel",
@@ -20,7 +24,7 @@ export enum PermittedTags {
 
 type PermittedTagsType = keyof typeof PermittedTags;
 
-type Brand = typeof BRANDS[number];
+type Brand = typeof DYNAMIC_TAG_BRANDS[number];
 
 export type Tags = {
   [key in PermittedTagsType]: string;
