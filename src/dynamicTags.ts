@@ -4,7 +4,6 @@
 
 export const DYNAMIC_TAG_BRANDS = [
   "luxuryescapes",
-  "scooponexperience",
   "scoopontravel",
   "kogantravel",
   "lebusinesstraveller",
