@@ -21,13 +21,13 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.0",
+    "@types/chai": "^4.3.4",
     "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
+    "chai": "^4.3.7",
+    "mocha": "^6.2.3",
     "rimraf": "^3.0.2",
-    "ts-node": "^8.3.0",
-    "tslint": "^5.19.0",
-    "typescript": "^3.6.2"
+    "ts-node": "^8.10.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.9.10"
   }
 }
