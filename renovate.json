@@ -1,0 +1,3 @@
+{
+  "extends": ["github>lux-group/renovate-config"]
+}
