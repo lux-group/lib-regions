@@ -248,6 +248,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "afterpay_bp",
       "stripe_3ds",
       "waave_bp",
+      "latitude_gem",
     ]);
   });
 
