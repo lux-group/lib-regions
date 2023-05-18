@@ -1,9 +1,9 @@
-/** 
+  /*
  * @deprecated use from lib-global instead
- * 
+ *
  * This logic was moved to lib-global
- * 
- * */
+ *
+ **/
 
 // When dynamic tags are modified or brands are added DYNAMIC_TAG_BRANDS list, remember
 // to publish a new lib-regions npm version and include that version number in
