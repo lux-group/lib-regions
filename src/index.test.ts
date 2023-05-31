@@ -249,6 +249,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "stripe_3ds",
       "waave_bp",
       "latitude_gem",
+      "velocity",
     ]);
   });
 

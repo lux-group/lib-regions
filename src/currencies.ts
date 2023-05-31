@@ -132,6 +132,7 @@ export const currencies: BrandCurrencies = {
         "stripe_3ds",
         "waave_bp",
         "latitude_gem",
+        "velocity",
       ],
     },
     CAD: {
