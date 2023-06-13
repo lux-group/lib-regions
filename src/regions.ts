@@ -102,7 +102,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000, 4000, 5000],
       offerUrgencyTag: {
@@ -1363,7 +1363,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1392,7 +1392,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: {
         tour: {
@@ -1435,7 +1435,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: {
         tour: {
@@ -1478,7 +1478,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: {
         tour: {
@@ -1565,7 +1565,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: {
         tour: {
@@ -1608,7 +1608,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1637,7 +1637,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1666,7 +1666,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1695,7 +1695,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       offerUrgencyTag: null,
     },
@@ -1812,7 +1812,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 0,
       giftCardOptions: [],
       offerUrgencyTag: null,
@@ -1844,7 +1844,7 @@ export const regions: BrandRegions = {
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
       referralAmount: 50,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 499,
       giftCardOptions: [50, 100, 250, 500, 1000, 2000, 4000, 5000],
       offerUrgencyTag: {
@@ -1888,7 +1888,7 @@ export const regions: BrandRegions = {
       },
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 0,
-      insuranceProductName: "insurance",
+      insuranceProductName: "protection",
       referralMinSpendAmount: 0,
       offerUrgencyTag: {
         tour: {
