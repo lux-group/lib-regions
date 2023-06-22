@@ -189,6 +189,7 @@ export const currencies: BrandCurrencies = {
         "razorpay",
         "giftcard",
         "vistara",
+        "stripe_3ds",
       ],
     },
     IDR: {
