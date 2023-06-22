@@ -442,6 +442,7 @@ export const currencies: BrandCurrencies = {
           "applepay",
           "googlepay",
           "afterpay_bp",
+          "stripe_3ds",
         ],
       },
   },
