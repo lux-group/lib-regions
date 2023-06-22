@@ -279,6 +279,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
         "razorpay",
         "giftcard",
         "vistara",
+        "stripe_3ds",
     ]);
   });
 });

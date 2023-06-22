@@ -45,6 +45,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -53,6 +54,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -61,6 +63,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -69,6 +72,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -189,6 +193,7 @@ export const currencies: BrandCurrencies = {
         "razorpay",
         "giftcard",
         "vistara",
+        "stripe_3ds",
       ],
     },
     IDR: {
@@ -441,6 +446,7 @@ export const currencies: BrandCurrencies = {
           "applepay",
           "googlepay",
           "afterpay_bp",
+          "stripe_3ds",
         ],
       },
   },
