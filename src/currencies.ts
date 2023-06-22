@@ -45,6 +45,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -53,6 +54,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -61,6 +63,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
@@ -69,6 +72,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "braintree",
+        "stripe_3ds",
       ],
     },
   },
