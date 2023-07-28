@@ -100,7 +100,6 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
         "stripe_3ds",
       ],
     },
