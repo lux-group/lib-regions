@@ -1,5 +1,4 @@
 import { currencies as _currencies } from "./currencies";
-import { DYNAMIC_TAG_BRANDS, dynamicTags as _dynamicTags, PermittedTags, Tags } from "./dynamicTags";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
@@ -12,11 +11,6 @@ function regions(brand?: Brand) {
 
 function currencies(brand?: string) {
   return _currencies[brand || LUXURY_ESCAPES];
-}
-
-/** @deprecated use from lib-global instead */
-function dynamicTagsForBrand(brand?: Brand): Tags {
-  return _dynamicTags[brand || LUXURY_ESCAPES];
 }
 
 const zeroDecimalCurrencies = [
@@ -90,21 +84,6 @@ export function getDefaultRegionName(brand?: Brand) {
 
 export function getCurrencyCodes(brand?: string) {
   return Object.keys(currencies(brand));
-}
-
-/** @deprecated use from lib-global instead */
-export function getDynamicTagsForBrand(brand?: Brand): Tags {
-  return dynamicTagsForBrand(brand);
-}
-
-/** @deprecated use from lib-global instead */
-export function getValidDynamicTags(): string[] {
-  return Object.keys(PermittedTags);
-}
-
-/** @deprecated use from lib-global instead */
-export function getAllBrandsThatSupportDynamicTags(): string[] {
-  return DYNAMIC_TAG_BRANDS;
 }
 
 export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: string) {
