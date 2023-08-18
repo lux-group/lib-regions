@@ -104,7 +104,7 @@ export const regions: BrandRegions = {
       referralAmount: 50,
       insuranceProductName: "protection",
       referralMinSpendAmount: 499,
-      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000, 4000, 5000],
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000, 4000, 4500],
       offerUrgencyTag: {
         tour: {
           popular: {
