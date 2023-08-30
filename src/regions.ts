@@ -343,8 +343,8 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "1800 258 7282",
-          number: "18002587282",
+          humanReadable: "+91 803 783 5334",
+          number: "+918037835334",
         },
         international: {
           humanReadable: "+61 3 7032 3381",
