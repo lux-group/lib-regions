@@ -9,10 +9,4 @@ import * as libRegions from "@luxuryescapes/lib-regions";
 ```
 
 ## Publish after your changes
-
-1. Merge your branch - do NOT yet bump `version` in `package.json`
-2. Checkout master and pull down your changes
-3. (Run `yarn install`)
-4. Run `yarn publish`
-5. Update version in `package.json` in new branch
-6. Update the version of the library in the package.json file of the microservice the update is for
+Update index.d.ts to reflect new changes. Run "yarn build" to recompile js with new changes before merging. Update the version in package.json as part of your PR and CircleCI will do the rest.
