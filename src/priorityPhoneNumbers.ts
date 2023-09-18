@@ -36,7 +36,58 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
           humanReadable: "+61 3 7032 3381",
           number: "+61370323381",
         },
-        default: "international",
+        default: "local",
+      },
+    },
+    {
+      code: "US",
+      name: "United States",
+      lang: "en-US",
+      phonePrefix: "1",
+      phone: {
+        local: {
+          humanReadable: "888 583 5444",
+          number: "8885835444",
+        },
+        international: {
+          humanReadable: "+61 3 7032 3381",
+          number: "+61370323381",
+        },
+        default: "local",
+      },
+    },
+    {
+      code: "GB",
+      name: "United Kingdom",
+      lang: "en-GB",
+      phonePrefix: "44",
+      phone: {
+        local: {
+          humanReadable: "0808 304 4066",
+          number: "08083044066",
+        },
+        international: {
+          humanReadable: "+61 3 7032 3381",
+          number: "+61370323381",
+        },
+        default: "local",
+      },
+    },
+    {
+      code: "NZ",
+      name: "New Zealand",
+      lang: "en-NZ",
+      phonePrefix: "64",
+      phone: {
+        local: {
+          humanReadable: "0800 856 497",
+          number: "0800856497",
+        },
+        international: {
+          humanReadable: "+61 3 7032 3381",
+          number: "+61370323381",
+        },
+        default: "local",
       },
     },
   ],
