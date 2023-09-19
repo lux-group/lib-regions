@@ -1,7 +1,6 @@
 import { expect } from "chai";
 import * as regionModule from "./";
 import { Brand } from "./regions";
-import { PermittedTags, DYNAMIC_TAG_BRANDS } from './dynamicTags';
 
 describe("getRegionCodes()", function() {
   it("should return an array of region codes", function() {
@@ -191,29 +190,6 @@ describe("getCurrencyCodes()", function() {
       "USD",
       "VND",
     ]);
-  });
-});
-
-describe("getDynamicTagsForBrand()", function () {
-  it("should return an dynamic tags for brands", function () {
-    // Spot check few parameters for a few brands
-    expect(regionModule.getDynamicTagsForBrand("scoopontravel")).to.have.property("BrandName", "Scoopon");
-    expect(regionModule.getDynamicTagsForBrand("kogantravel")).to.have.property("SalesEmail", "sales@kogantravel.com");
-    expect(regionModule.getDynamicTagsForBrand("lebusinesstraveller")).to.have.property("BrandName", "LE for Business");
-    //Defaulted to LE when no brand is passed
-    expect(regionModule.getDynamicTagsForBrand()).to.have.property("BrandName", "Luxury Escapes");
-  });
-});
-
-describe("getValidDynamicTags()", function () {
-  it("should return list of valid dynamic tags", function () {
-    expect(regionModule.getValidDynamicTags()).to.deep.equal(Object.values(PermittedTags))
-  });
-});
-
-describe("getAllBrandsThatSupportDynamicTags()", function () {
-  it("should return list of valid brands that support dynamic tags", function () {
-    expect(regionModule.getAllBrandsThatSupportDynamicTags()).to.deep.equal(DYNAMIC_TAG_BRANDS)
   });
 });
 

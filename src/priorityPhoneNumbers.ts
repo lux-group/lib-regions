@@ -36,7 +36,7 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
           humanReadable: "+61 3 7032 3381",
           number: "+61370323381",
         },
-        default: "international",
+        default: "local",
       },
     },
     {
@@ -53,7 +53,7 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
           humanReadable: "+61 3 7032 3381",
           number: "+61370323381",
         },
-        default: "international",
+        default: "local",
       },
     },
     {
@@ -70,7 +70,7 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
           humanReadable: "+61 3 7032 3381",
           number: "+61370323381",
         },
-        default: "international",
+        default: "local",
       },
     },
     {
@@ -87,7 +87,7 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
           humanReadable: "+61 3 7032 3381",
           number: "+61370323381",
         },
-        default: "international",
+        default: "local",
       },
     },
   ],
