@@ -1385,8 +1385,8 @@ export const regions: BrandRegions = {
           number: "(02)90511815",
         },
         international: {
-          humanReadable: "+61 2 8311 3542",
-          number: "+61283113542",
+          humanReadable: "+61 2 9051 1815",
+          number: "+61290511815",
         },
         default: "international",
       },
