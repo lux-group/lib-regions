@@ -111,6 +111,18 @@ describe("getRegionByCurrency()", function() {
   });
 });
 
+describe("getPaymentMethodsByRegion()", function() {
+  it("should list payment methods for a region", function() {
+    const paymentMethods = regionModule.getPaymentMethodsByRegion("DE")
+    expect(paymentMethods.length).to.equal(1);
+    expect(paymentMethods[0]).to.equal('stripe_payment_element_card')
+  });
+  it("should return an empty array if a region does not have a region specific payment method",function(){
+    const paymentMethods = regionModule.getPaymentMethodsByRegion("FR")
+    expect(paymentMethods).to.deep.equal([]);
+  })
+});
+
 describe("getRegionNameByCode()", function() {
   it("returns region name if region exists", function() {
     expect(regionModule.getRegionNameByCode("AU", "scoopontravel")).to.equal("Australia");
