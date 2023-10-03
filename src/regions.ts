@@ -1225,12 +1225,12 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "0800 014 8176",
-          number: "08000148176",
+          humanReadable: "0808 175 4987",
+          number: "08081754987",
         },
         international: {
-          humanReadable: "+61 3 7032 3381",
-          number: "+61370323381",
+          humanReadable: "+44 20 3763 8046",
+          number: "+442037638046",
         },
         default: "local",
       },
@@ -1267,12 +1267,12 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "888 809 6860",
-          number: "8888096860",
+          humanReadable: "888 337 2083",
+          number: "8883372083",
         },
         international: {
-          humanReadable: "+61 3 7032 3381",
-          number: "+61370323381",
+          humanReadable: "+1201 977 8523",
+          number: "+12019778523",
         },
         default: "local",
       },
