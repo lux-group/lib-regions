@@ -238,6 +238,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "waave_bp",
       "latitude_gem",
       "velocity",
+      "gocardless",
     ]);
   });
 
