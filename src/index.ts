@@ -95,11 +95,6 @@ export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: st
   return currencies(brand)[currencyCode].paymentMethods;
 }
 
-export function getPaymentMethodsByRegion(regionCode: string): string[] {
-  const paymentMethodsByRegionMap = paymentMethodsByRegion;
-  return paymentMethodsByRegionMap[regionCode] || [];
-}
-
 export function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies;
 }
