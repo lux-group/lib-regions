@@ -3,11 +3,24 @@
 // all regions for the currency (i.e. currencywide) add the payment method in currencies.ts instead
 
 interface PaymentMethodsByRegion {
-    [key: string]: string[];
+    [brand: string]: Region;
+}
+
+interface PaymentMethods {
+    paymentMethods: string[];
+}
+  
+interface Region {
+    [regionCode: string]: PaymentMethods;
 }
 
 export const paymentMethodsByRegion: PaymentMethodsByRegion = {
-    DE: [
-        "stripe_payment_element_card",
-    ],
+    luxuryescapes:{
+            DE: {
+            paymentMethods: [
+                "stripe_payment_element_card",
+                "stripe_payment_element_giropay",
+                ],
+            }
+    } 
 };
