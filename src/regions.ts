@@ -1515,8 +1515,8 @@ export const regions: BrandRegions = {
           number: "0800846182",
         },
         international: {
-          humanReadable: "+61 3 7032 3413",
-          number: "+61370323413",
+          humanReadable: "+64 8 0084 6182",
+          number: "+64800846182",
         },
         default: "international",
       },
@@ -1659,8 +1659,8 @@ export const regions: BrandRegions = {
           number: "0800846182",
         },
         international: {
-          humanReadable: "+61 3 7032 3413",
-          number: "+61370323413",
+          humanReadable: "+64 8 0084 6182",
+          number: "+64800846182",
         },
         default: "international",
       },
