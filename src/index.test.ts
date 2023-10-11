@@ -221,10 +221,8 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "bridgerpay",
       "applepay",
       "googlepay",
-      "afterpay_bp",
       "stripe_3ds",
       "waave_bp",
-      "latitude_gem",
       "velocity",
       "gocardless",
     ]);
