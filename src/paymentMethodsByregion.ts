@@ -9,18 +9,18 @@ interface PaymentMethodsByRegion {
 interface PaymentMethods {
     paymentMethods: string[];
 }
-  
+
 interface Region {
     [regionCode: string]: PaymentMethods;
 }
 
 export const paymentMethodsByRegion: PaymentMethodsByRegion = {
-    luxuryescapes:{
+    luxuryescapes: {
             DE: {
             paymentMethods: [
                 "stripe_payment_element_card",
                 "stripe_payment_element_giropay",
                 ],
-            }
-    } 
+            },
+    },
 };
