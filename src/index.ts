@@ -95,10 +95,6 @@ export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: st
   return currencies(brand)[currencyCode].paymentMethods;
 }
 
-function paymentMethodsByRegion(brand?: string) {
-  return _paymentMethodsByRegion[brand || LUXURY_ESCAPES];
-}
-
 export function getZeroDecimalCurrencies() {
   return zeroDecimalCurrencies;
 }
