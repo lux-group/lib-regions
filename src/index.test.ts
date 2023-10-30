@@ -217,7 +217,6 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "braintree",
       "qantas",
       "giftcard",
-      "klarna",
       "bridgerpay",
       "applepay",
       "googlepay",
