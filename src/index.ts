@@ -41,7 +41,7 @@ export function getPriorityPhoneNumbers(brand?: string) {
 
 export function getPriorityPhoneNumberByCode(
   regionCode: string,
-  brand?: string
+  brand?: string,
 ) {
   if (!regionCode) {
     return null;
@@ -51,7 +51,7 @@ export function getPriorityPhoneNumberByCode(
   if (priorityNumbers.length > 0) {
     const pNumber = priorityNumbers.find(
       (phoneNumber) =>
-        phoneNumber.code.toLowerCase() === regionCode.toLowerCase()
+        phoneNumber.code.toLowerCase() === regionCode.toLowerCase(),
     );
 
     return pNumber ? pNumber : null;
@@ -74,17 +74,17 @@ export function getRegionCodes(brand?: Brand) {
 
 export function getRegionCodesSortedByKeyRegions(
   brand?: Brand,
-  excludedRegions?: string[]
+  excludedRegions?: string[],
 ) {
   const codes = excludedRegions
     ? getRegionCodes(brand).filter((code) => !excludedRegions.includes(code))
     : getRegionCodes(brand);
 
   const keyRegions = Array.from(REGIONS_START_ORDER).filter((code) =>
-    codes.includes(code)
+    codes.includes(code),
   );
   const otherRegions = codes.filter(
-    (code) => !REGIONS_START_ORDER.includes(code)
+    (code) => !REGIONS_START_ORDER.includes(code),
   );
 
   return {
@@ -102,13 +102,13 @@ export function getRegionByCode(regionCode: string, brand?: Brand) {
     return null;
   }
   return regions(brand).find(
-    (region) => region.code.toLowerCase() === regionCode.toLowerCase()
+    (region) => region.code.toLowerCase() === regionCode.toLowerCase(),
   );
 }
 
 export function getRegionByCurrency(currencyCode: string, brand?: Brand) {
   return regions(brand).find(
-    (region) => region.currencyCode.toLowerCase() === currencyCode.toLowerCase()
+    (region) => region.currencyCode.toLowerCase() === currencyCode.toLowerCase(),
   );
 }
 
@@ -135,7 +135,7 @@ export function getCurrencyCodes(brand?: string) {
 
 export function getPaymentMethodsByCurrencyCode(
   currencyCode: string,
-  brand?: string
+  brand?: string,
 ) {
   if (!currencies(brand)[currencyCode]) {
     return [];
