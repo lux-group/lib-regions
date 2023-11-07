@@ -32,7 +32,8 @@ const zeroDecimalCurrencies = [
   "XPF",
 ];
 
-const REGIONS_START_ORDER = new Set(["AU", "US", "GB", "NZ", "SG"]);
+// Custom order of countries that are more important to LE, showing it before other countries on CP and admin
+const REGIONS_START_ORDER = ["AU", "US", "GB", "NZ", "SG"];
 
 export function getPriorityPhoneNumbers(brand?: string) {
   return priorityPhoneNumbers[brand || LUXURY_ESCAPES];
@@ -40,7 +41,7 @@ export function getPriorityPhoneNumbers(brand?: string) {
 
 export function getPriorityPhoneNumberByCode(
   regionCode: string,
-  brand?: string,
+  brand?: string
 ) {
   if (!regionCode) {
     return null;
@@ -50,7 +51,7 @@ export function getPriorityPhoneNumberByCode(
   if (priorityNumbers.length > 0) {
     const pNumber = priorityNumbers.find(
       (phoneNumber) =>
-        phoneNumber.code.toLowerCase() === regionCode.toLowerCase(),
+        phoneNumber.code.toLowerCase() === regionCode.toLowerCase()
     );
 
     return pNumber ? pNumber : null;
@@ -71,33 +72,24 @@ export function getRegionCodes(brand?: Brand) {
   return regions(brand).map((region) => region.code);
 }
 
-// TODO: Implement avoid codes
 export function getRegionCodesSortedByKeyRegions(
   brand?: Brand,
-  excludedRegions?: string[],
+  excludedRegions?: string[]
 ) {
   const codes = excludedRegions
     ? getRegionCodes(brand).filter((code) => !excludedRegions.includes(code))
     : getRegionCodes(brand);
 
-  const keyRegions = new Set<string>([]);
-  const otherRegions: string[] = [];
-
-  for (const code of codes) {
-    if (REGIONS_START_ORDER.has(code)) {
-      keyRegions.add(code);
-    } else {
-      otherRegions.push(code);
-    }
-  }
-
-  const sortedKeyRegions = Array.from(REGIONS_START_ORDER).filter((code) =>
-    keyRegions.has(code),
+  const keyRegions = Array.from(REGIONS_START_ORDER).filter((code) =>
+    codes.includes(code)
+  );
+  const otherRegions = codes.filter(
+    (code) => !REGIONS_START_ORDER.includes(code)
   );
 
   return {
-    allRegionCodes: [...sortedKeyRegions, ...otherRegions],
-    lastKeyRegionIndex: keyRegions.size > 0 ? keyRegions.size - 1 : null,
+    allRegionCodes: [...keyRegions, ...otherRegions],
+    lastKeyRegionIndex: keyRegions.length > 0 ? keyRegions.length - 1 : null,
   };
 }
 
@@ -110,13 +102,13 @@ export function getRegionByCode(regionCode: string, brand?: Brand) {
     return null;
   }
   return regions(brand).find(
-    (region) => region.code.toLowerCase() === regionCode.toLowerCase(),
+    (region) => region.code.toLowerCase() === regionCode.toLowerCase()
   );
 }
 
 export function getRegionByCurrency(currencyCode: string, brand?: Brand) {
   return regions(brand).find(
-    (region) => region.currencyCode.toLowerCase() === currencyCode.toLowerCase(),
+    (region) => region.currencyCode.toLowerCase() === currencyCode.toLowerCase()
   );
 }
 
@@ -143,7 +135,7 @@ export function getCurrencyCodes(brand?: string) {
 
 export function getPaymentMethodsByCurrencyCode(
   currencyCode: string,
-  brand?: string,
+  brand?: string
 ) {
   if (!currencies(brand)[currencyCode]) {
     return [];
