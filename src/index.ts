@@ -15,23 +15,44 @@ function currencies(brand?: string) {
 }
 
 const zeroDecimalCurrencies = [
-  "BIF", "CLP", "DJF", "GNF", "JPY", "KMF", "KRW", "MGA",
-  "PYG", "RWF", "VND", "VUV", "XAF", "XOF", "XPF",
+  "BIF",
+  "CLP",
+  "DJF",
+  "GNF",
+  "JPY",
+  "KMF",
+  "KRW",
+  "MGA",
+  "PYG",
+  "RWF",
+  "VND",
+  "VUV",
+  "XAF",
+  "XOF",
+  "XPF",
 ];
+
+// Custom order of countries that are more important to LE, showing it before other countries on CP and admin
+const REGIONS_START_ORDER = ["AU", "US", "GB", "NZ", "SG"];
 
 export function getPriorityPhoneNumbers(brand?: string) {
   return priorityPhoneNumbers[brand || LUXURY_ESCAPES];
 }
 
-export function getPriorityPhoneNumberByCode(regionCode: string, brand?: string) {
+export function getPriorityPhoneNumberByCode(
+  regionCode: string,
+  brand?: string,
+) {
   if (!regionCode) {
     return null;
   }
 
   const priorityNumbers = getPriorityPhoneNumbers(brand);
   if (priorityNumbers.length > 0) {
-    const pNumber = priorityNumbers
-      .find((phoneNumber) => (phoneNumber.code.toLowerCase() === regionCode.toLowerCase()));
+    const pNumber = priorityNumbers.find(
+      (phoneNumber) =>
+        phoneNumber.code.toLowerCase() === regionCode.toLowerCase(),
+    );
 
     return pNumber ? pNumber : null;
   }
@@ -51,6 +72,25 @@ export function getRegionCodes(brand?: Brand) {
   return regions(brand).map((region) => region.code);
 }
 
+export function getRegionCodesSortedByKeyRegions(
+  brand?: Brand,
+  excludedRegions?: string[],
+) {
+  const codes = excludedRegions
+    ? getRegionCodes(brand).filter((code) => !excludedRegions.includes(code))
+    : getRegionCodes(brand);
+
+  const keyRegions = REGIONS_START_ORDER.filter((code) => codes.includes(code));
+  const otherRegions = codes.filter(
+    (code) => !REGIONS_START_ORDER.includes(code),
+  );
+
+  return {
+    allRegionCodes: [...keyRegions, ...otherRegions],
+    lastKeyRegionIndex: keyRegions.length > 0 ? keyRegions.length - 1 : null,
+  };
+}
+
 export function getRegionNames(brand?: Brand) {
   return regions(brand).map((region) => region.name);
 }
@@ -59,11 +99,15 @@ export function getRegionByCode(regionCode: string, brand?: Brand) {
   if (!regionCode) {
     return null;
   }
-  return regions(brand).find((region) => (region.code.toLowerCase() === regionCode.toLowerCase()));
+  return regions(brand).find(
+    (region) => region.code.toLowerCase() === regionCode.toLowerCase(),
+  );
 }
 
 export function getRegionByCurrency(currencyCode: string, brand?: Brand) {
-  return regions(brand).find((region) => (region.currencyCode.toLowerCase() === currencyCode.toLowerCase()));
+  return regions(brand).find(
+    (region) => region.currencyCode.toLowerCase() === currencyCode.toLowerCase(),
+  );
 }
 
 export function getDefaultRegion(brand?: Brand) {
@@ -72,7 +116,7 @@ export function getDefaultRegion(brand?: Brand) {
 
 export function getRegionNameByCode(code: string, brand?: Brand) {
   const region = getRegionByCode(code, brand);
-  return region && region.name || null;
+  return (region && region.name) || null;
 }
 
 export function getDefaultRegionCode(brand?: Brand) {
@@ -87,7 +131,10 @@ export function getCurrencyCodes(brand?: string) {
   return Object.keys(currencies(brand));
 }
 
-export function getPaymentMethodsByCurrencyCode(currencyCode: string, brand?: string) {
+export function getPaymentMethodsByCurrencyCode(
+  currencyCode: string,
+  brand?: string,
+) {
   if (!currencies(brand)[currencyCode]) {
     return [];
   }
@@ -105,7 +152,7 @@ export function getRegionLang(brand?: Brand) {
 
 export function getRegionReferralAmountByCode(code: string, brand?: Brand) {
   const region = getRegionByCode(code, brand);
-  return region && region.referralAmount || null;
+  return (region && region.referralAmount) || null;
 }
 
 export function getRegionPhonePrefix(brand?: Brand) {

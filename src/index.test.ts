@@ -2,11 +2,40 @@ import { expect } from "chai";
 import * as regionModule from "./";
 import { Brand } from "./regions";
 
-describe("getRegionCodes()", function() {
-  it("should return an array of region codes", function() {
+describe("getRegionCodes()", function () {
+  it("should return an array of region codes", function () {
     expect(regionModule.getRegionCodes("scoopontravel")).to.deep.equal(["AU"]);
     expect(regionModule.getRegionCodes("kogantravel")).to.deep.equal(["AU"]);
-    expect(regionModule.getRegionCodes("lebusinesstraveller")).to.deep.equal(["AU"]);
+    expect(regionModule.getRegionCodes("lebusinesstraveller")).to.deep.equal([
+      "AU",
+    ]);
+  });
+});
+
+describe("getRegionCodesSortedByKeyRegions", () => {
+  const { allRegionCodes, lastKeyRegionIndex } =
+    regionModule.getRegionCodesSortedByKeyRegions();
+
+  it("should return key region codes sorted and as initial elements", () => {
+    const keyRegionCodes = allRegionCodes.slice(0, 5);
+    expect(keyRegionCodes).to.deep.equal(["AU", "US", "GB", "NZ", "SG"]);
+  });
+
+  it("should return the index of last key region", () => {
+    expect(lastKeyRegionIndex).to.be.equal(4);
+  });
+
+  it("should return other region codes sorted and after key region codes", () => {
+    const otherRegionCodes = allRegionCodes.slice(5, 10);
+    expect(otherRegionCodes).to.deep.equal(["CA", "CN", "FR", "DE", "HK"]);
+  });
+
+  it("should not return excluded regions", () => {
+    const { allRegionCodes } = regionModule.getRegionCodesSortedByKeyRegions(
+      "scoopontravel",
+      ["AU"]
+    );
+    expect(allRegionCodes).to.deep.equal([]);
   });
 });
 
@@ -43,26 +72,26 @@ const expectedLeRegions = [
   "Vietnam",
 ];
 
-describe("getRegionNames()", function() {
+describe("getRegionNames()", function () {
   const cases: [Brand, string[]][] = [
-    ['luxuryescapes', expectedLeRegions],
-    ['scoopontravel', ['Australia']],
-    ['cudotravel', ['Australia']],
-    ['treatmetravel', ['New Zealand']],
-    ['dealstravel', ['Australia']],
-    ['kogantravel', ['Australia']],
-    ['yidu', ['China']],
-    ['zoomzoom', ['Korea', 'Australia']],
-    ['newwhitelabel', ['Australia']],
-    ['lebusinesstraveller', ['Australia']],
+    ["luxuryescapes", expectedLeRegions],
+    ["scoopontravel", ["Australia"]],
+    ["cudotravel", ["Australia"]],
+    ["treatmetravel", ["New Zealand"]],
+    ["dealstravel", ["Australia"]],
+    ["kogantravel", ["Australia"]],
+    ["yidu", ["China"]],
+    ["zoomzoom", ["Korea", "Australia"]],
+    ["newwhitelabel", ["Australia"]],
+    ["lebusinesstraveller", ["Australia"]],
   ];
   cases.forEach(([brand, expectedRegions]) => {
     it(`when the brand "${brand}" is passed as an argument to getRegionNames(brand), the function should return ${expectedRegions}`, () => {
       expect(regionModule.getRegionNames(brand)).to.deep.equal(expectedRegions);
-    })
-  })
+    });
+  });
 
-  it("should return an array of region names default brand to luxuryescapes", function() {
+  it("should return an array of region names default brand to luxuryescapes", function () {
     expect(regionModule.getRegionNames()).to.deep.equal([
       "Australia",
       "Canada",
@@ -98,71 +127,83 @@ describe("getRegionNames()", function() {
   });
 });
 
-describe("getRegionByCode()", function() {
-  it("should return null in brand without region", function() {
+describe("getRegionByCode()", function () {
+  it("should return null in brand without region", function () {
     expect(regionModule.getRegionByCode("CA", "scoopontravel")).to.be.undefined;
   });
 });
 
-describe("getRegionByCurrency()", function() {
-  it("should return region from currency code", function() {
-    const region = regionModule.getRegionByCurrency("AUD", "luxuryescapes")
-    expect(region ? region.code : 'fail test if region undefined').to.equal("AU");
+describe("getRegionByCurrency()", function () {
+  it("should return region from currency code", function () {
+    const region = regionModule.getRegionByCurrency("AUD", "luxuryescapes");
+    expect(region ? region.code : "fail test if region undefined").to.equal(
+      "AU"
+    );
   });
 });
 
-describe("getRegionNameByCode()", function() {
-  it("returns region name if region exists", function() {
-    expect(regionModule.getRegionNameByCode("AU", "scoopontravel")).to.equal("Australia");
+describe("getRegionNameByCode()", function () {
+  it("returns region name if region exists", function () {
+    expect(regionModule.getRegionNameByCode("AU", "scoopontravel")).to.equal(
+      "Australia"
+    );
   });
 
-  it("returns 'null' code if region is absent for brand", function() {
-    expect(regionModule.getRegionNameByCode("CA", "scoopontravel")).to.equal(null);
+  it("returns 'null' code if region is absent for brand", function () {
+    expect(regionModule.getRegionNameByCode("CA", "scoopontravel")).to.equal(
+      null
+    );
   });
 
-  it("returns region name if region exists default brand to luxuryescapes", function() {
+  it("returns region name if region exists default brand to luxuryescapes", function () {
     expect(regionModule.getRegionNameByCode("AU")).to.equal("Australia");
   });
 });
 
-describe("getDefaultRegion()", function() {
-  it("should return the default region's info", function() {
+describe("getDefaultRegion()", function () {
+  it("should return the default region's info", function () {
     expect(regionModule.getDefaultRegion("treatmetravel").code).to.equal("NZ");
   });
 });
 
-describe("getDefaultRegionCode()", function() {
-  it("should return the default region's code", function() {
+describe("getDefaultRegionCode()", function () {
+  it("should return the default region's code", function () {
     expect(regionModule.getDefaultRegionCode("luxuryescapes")).to.equal("AU");
   });
 
-  it("should return the default region's code default brand to luxuryescapes", function() {
+  it("should return the default region's code default brand to luxuryescapes", function () {
     expect(regionModule.getDefaultRegionCode()).to.equal("AU");
   });
 
-  it("should return the default region for the brand", function() {
+  it("should return the default region for the brand", function () {
     expect(regionModule.getDefaultRegionCode("treatmetravel")).to.equal("NZ");
   });
 });
 
-describe("getDefaultRegionName()", function() {
-  it("should return the default region's name", function() {
-    expect(regionModule.getDefaultRegionName("scoopontravel")).to.equal("Australia");
+describe("getDefaultRegionName()", function () {
+  it("should return the default region's name", function () {
+    expect(regionModule.getDefaultRegionName("scoopontravel")).to.equal(
+      "Australia"
+    );
   });
 
-  it("should return the default region's name default brand to luxuryescapes", function() {
+  it("should return the default region's name default brand to luxuryescapes", function () {
     expect(regionModule.getDefaultRegionName()).to.equal("Australia");
   });
 });
 
-describe("getCurrencyCodes()", function() {
-  it("should return an array of currency codes", function() {
-    expect(regionModule.getCurrencyCodes("scoopontravel")).to.deep.equal(["AUD"]);
+describe("getCurrencyCodes()", function () {
+  it("should return an array of currency codes", function () {
+    expect(regionModule.getCurrencyCodes("scoopontravel")).to.deep.equal([
+      "AUD",
+    ]);
     expect(regionModule.getCurrencyCodes("kogantravel")).to.deep.equal(["AUD"]);
-    expect(regionModule.getCurrencyCodes("lebusinesstraveller")).to.deep.equal(["AUD"]);
+    expect(regionModule.getCurrencyCodes("lebusinesstraveller")).to.deep.equal([
+      "AUD",
+    ]);
   });
 
-  it("should return an array of currency codes default brand to luxuryescapes", function() {
+  it("should return an array of currency codes default brand to luxuryescapes", function () {
     expect(regionModule.getCurrencyCodes()).to.deep.equal([
       "AUD",
       "CAD",
@@ -193,23 +234,17 @@ describe("getCurrencyCodes()", function() {
   });
 });
 
-describe("getPaymentMethodsByCurrencyCode()", function() {
-  it("should return an array of payment methods", function() {
-    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")).to.deep.equal([
-      "stripe",
-      "braintree",
-      "stripe_3ds",
-      "giftcard",
-    ]);
-    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")).to.deep.equal([
-      "stripe",
-      "braintree",
-      "stripe_3ds",
-      "giftcard",
-    ]);
+describe("getPaymentMethodsByCurrencyCode()", function () {
+  it("should return an array of payment methods", function () {
+    expect(
+      regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")
+    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
+    expect(
+      regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")
+    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
   });
 
-  it("should return an array of payment methods default brand to luxuryescapes", function() {
+  it("should return an array of payment methods default brand to luxuryescapes", function () {
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD")).to.deep.equal([
       "le_credit",
       "stripe",
@@ -227,7 +262,7 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
     ]);
   });
 
-  it("should return an array of payment methods default brand to luxuryescapes SGD", function() {
+  it("should return an array of payment methods default brand to luxuryescapes SGD", function () {
     expect(regionModule.getPaymentMethodsByCurrencyCode("SGD")).to.deep.equal([
       "le_credit",
       "stripe",
@@ -241,35 +276,39 @@ describe("getPaymentMethodsByCurrencyCode()", function() {
       "atome_bp",
     ]);
   });
-  it("should return an empty array of payment methods when brand doesn't have sellected currency", function() {
-    expect(regionModule.getPaymentMethodsByCurrencyCode("AUD", "treatmetravel")).to.deep.equal([]);
+  it("should return an empty array of payment methods when brand doesn't have sellected currency", function () {
+    expect(
+      regionModule.getPaymentMethodsByCurrencyCode("AUD", "treatmetravel")
+    ).to.deep.equal([]);
   });
 
-  it("should return an array of payment methods default brand to luxuryescapes IN", function() {
+  it("should return an array of payment methods default brand to luxuryescapes IN", function () {
     expect(regionModule.getPaymentMethodsByCurrencyCode("INR")).to.deep.equal([
       "le_credit",
-        "stripe",
-        "deposit_stripe",
-        "razorpay",
-        "giftcard",
-        "vistara",
-        "stripe_3ds",
+      "stripe",
+      "deposit_stripe",
+      "razorpay",
+      "giftcard",
+      "vistara",
+      "stripe_3ds",
     ]);
   });
 });
 
-describe("getZeroDecimalCurrencies()", function() {
-  it("should return an array of currency codes", function() {
+describe("getZeroDecimalCurrencies()", function () {
+  it("should return an array of currency codes", function () {
     expect(regionModule.getZeroDecimalCurrencies()).to.be.an("array");
   });
 });
 
-describe("getRegionLang()", function() {
-  it("should return an array of region langs", function() {
-    expect(regionModule.getRegionLang("scoopontravel")).to.deep.equal(["en-AU"]);
+describe("getRegionLang()", function () {
+  it("should return an array of region langs", function () {
+    expect(regionModule.getRegionLang("scoopontravel")).to.deep.equal([
+      "en-AU",
+    ]);
   });
 
-  it("should return an array of region langs default brand to luxuryescapes", function() {
+  it("should return an array of region langs default brand to luxuryescapes", function () {
     expect(regionModule.getRegionLang()).to.deep.equal([
       "en-AU",
       "en-CA",
@@ -305,30 +344,32 @@ describe("getRegionLang()", function() {
   });
 });
 
-describe("getRegionReferralAmountByCode()", function() {
-  it("should return the region referral amount", function() {
-    expect(regionModule.getRegionReferralAmountByCode("AU", "scoopontravel")).to.deep.equal(50);
+describe("getRegionReferralAmountByCode()", function () {
+  it("should return the region referral amount", function () {
+    expect(
+      regionModule.getRegionReferralAmountByCode("AU", "scoopontravel")
+    ).to.deep.equal(50);
   });
 
-  it("should return the region referral amount by default brand to luxuryescapes", function() {
+  it("should return the region referral amount by default brand to luxuryescapes", function () {
     expect(regionModule.getRegionReferralAmountByCode("CA")).to.deep.equal(50);
   });
 });
 
-describe("getRegionNamesAndCode()", function() {
-  it("should return an array of region names and code", function() {
+describe("getRegionNamesAndCode()", function () {
+  it("should return an array of region names and code", function () {
     expect(regionModule.getRegionNamesAndCode("scoopontravel")).to.deep.equal([
-      {name: "Australia", code: "AU"},
+      { name: "Australia", code: "AU" },
     ]);
   });
 });
 
-describe("isRegionAllowed()", function() {
-  it("should return true if brand has region", function() {
+describe("isRegionAllowed()", function () {
+  it("should return true if brand has region", function () {
     expect(regionModule.isRegionAllowed("luxuryescapes", "CA")).to.equal(true);
   });
 
-  it("should return true if brand has region", function() {
+  it("should return true if brand has region", function () {
     expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
   });
 });
