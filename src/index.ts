@@ -80,9 +80,7 @@ export function getRegionCodesSortedByKeyRegions(
     ? getRegionCodes(brand).filter((code) => !excludedRegions.includes(code))
     : getRegionCodes(brand);
 
-  const keyRegions = Array.from(REGIONS_START_ORDER).filter((code) =>
-    codes.includes(code),
-  );
+  const keyRegions = REGIONS_START_ORDER.filter((code) => codes.includes(code));
   const otherRegions = codes.filter(
     (code) => !REGIONS_START_ORDER.includes(code),
   );
