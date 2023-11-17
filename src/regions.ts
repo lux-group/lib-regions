@@ -1057,12 +1057,12 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "90184 8018",
-          number: "901848018",
+          humanReadable: "44 20 3763 8046",
+          number: "442037638046",
         },
         international: {
-          humanReadable: "+61 3 7032 3381",
-          number: "+61370323381",
+          humanReadable: "44 20 3763 8046",
+          number: "442037638046",
         },
         default: "local",
       },
