@@ -104,7 +104,7 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
-  wholesale: {
+  leagenthub: {
     AUD: {
       paymentMethods: [
         "stripe",

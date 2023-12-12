@@ -64,7 +64,7 @@ export const BRANDS = [
   "yidu",
   "zoomzoom",
   "newwhitelabel",
-  "wholesale",
+  "leagenthub",
 ] as const;
 
 export type Brand = typeof BRANDS[number];
@@ -1908,7 +1908,7 @@ export const regions: BrandRegions = {
       giftCardOptions: [],
     },
   ],
-  wholesale : [
+  leagenthub : [
     {
       code: "AU",
       name: "Australia",
