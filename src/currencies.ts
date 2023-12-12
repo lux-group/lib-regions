@@ -104,6 +104,14 @@ export const currencies: BrandCurrencies = {
       ],
     },
   },
+  wholesale: {
+    AUD: {
+      paymentMethods: [
+        "stripe",
+        "stripe_3ds",
+      ],
+    },
+  },
   led_admin: {
     AUD: {
       paymentMethods: [
