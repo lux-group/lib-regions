@@ -64,6 +64,7 @@ export const BRANDS = [
   "yidu",
   "zoomzoom",
   "newwhitelabel",
+  "leagenthub",
 ] as const;
 
 export type Brand = typeof BRANDS[number];
@@ -1864,6 +1865,50 @@ export const regions: BrandRegions = {
     },
   ],
   lebusinesstraveller : [
+    {
+      code: "AU",
+      name: "Australia",
+      lang: "en-AU",
+      phonePrefix: "61",
+      currencyFormattingLocale: "en-AU",
+      currencyCode: "AUD",
+      currencyPrefix: "",
+      flagId: "au_iuox02",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      marketedLos: DEFAULT_MARKETED_LOS,
+      phone: {
+        local: {
+          humanReadable: "1300 962 509",
+          number: "1300962509",
+        },
+        international: {
+          humanReadable: "+61 3 7032 4242",
+          number: "+61370324242",
+        },
+        default: "local",
+      },
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 0,
+      insuranceProductName: "protection",
+      referralMinSpendAmount: 0,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+      giftCardOptions: [],
+    },
+  ],
+  leagenthub : [
     {
       code: "AU",
       name: "Australia",
