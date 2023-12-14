@@ -24,7 +24,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
         "giftcard",
       ],
@@ -34,7 +34,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
         "giftcard",
       ],
@@ -44,7 +44,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
       ],
     },
@@ -53,7 +53,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
       ],
     },
@@ -62,7 +62,7 @@ export const currencies: BrandCurrencies = {
     NZD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
       ],
     },
@@ -71,7 +71,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
       ],
     },
@@ -80,7 +80,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
         "giftcard",
       ],
@@ -90,7 +90,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
         "stripe_3ds",
         "giftcard",
       ],
@@ -116,13 +116,13 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
       ],
     },
     NZD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        // "braintree",
       ],
     },
   },
@@ -132,7 +132,7 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "deposit_stripe",
-        "braintree",
+        // "braintree",
         "qantas",
         "giftcard",
         "bridgerpay",
@@ -439,7 +439,7 @@ export const currencies: BrandCurrencies = {
         paymentMethods: [
           "le_credit",
           "stripe",
-          "braintree",
+          // "braintree",
           "qantas",
           "giftcard",
           "bridgerpay",
