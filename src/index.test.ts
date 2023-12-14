@@ -243,12 +243,10 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
   it("should return an array of payment methods", function () {
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")
-    // ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
-    ).to.deep.equal(["stripe", "stripe_3ds", "giftcard"]);
+    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")
-    // ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
-    ).to.deep.equal(["stripe", "stripe_3ds", "giftcard"]);
+    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
   });
 
   it("should return an array of payment methods default brand to luxuryescapes", function () {
@@ -256,7 +254,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "le_credit",
       "stripe",
       "deposit_stripe",
-      // "braintree",
+      "braintree",
       "qantas",
       "giftcard",
       "bridgerpay",
