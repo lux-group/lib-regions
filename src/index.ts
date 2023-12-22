@@ -1,8 +1,9 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByregion";
-import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
+import { PriorityPhoneNumber, priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
+import { PriorityPhoneNumberContact, PriorityPhoneNumberType, priorityPhoneNumbersByType } from "./priorityPhoneNumbersByType";
 
 export { Region };
 
@@ -38,6 +39,42 @@ const REGIONS_START_ORDER = ["AU", "US", "GB", "NZ", "SG"];
 export function getPriorityPhoneNumbers(brand?: string) {
   return priorityPhoneNumbers[brand || LUXURY_ESCAPES];
 }
+
+export function getPriorityPhoneNumbersByType(
+  regionCode?: string,
+  brand?: Brand,
+  type?: PriorityPhoneNumberType,
+): PriorityPhoneNumberContact | null {
+
+  if (!regionCode || !brand || !type) {
+    return null;
+  }
+
+  const brandPriorityPhoneNumbersByType = priorityPhoneNumbersByType[brand || LUXURY_ESCAPES];
+  const brandRegionPriorityPhoneNumbersByType = brandPriorityPhoneNumbersByType?.find(
+    (priorityPhoneNumber) => priorityPhoneNumber.code === regionCode,
+  );
+
+  if (!brandRegionPriorityPhoneNumbersByType) {
+    return null;
+  }
+
+  const priorityPhoneNumberByType = brandRegionPriorityPhoneNumbersByType.types[type || 'base'];
+
+  // This is to return only what we need in the payload
+  const returnedPriorityPhoneNumber: PriorityPhoneNumberContact = {
+    code: brandRegionPriorityPhoneNumbersByType.code,
+    name: brandRegionPriorityPhoneNumbersByType.name,
+    lang: brandRegionPriorityPhoneNumbersByType.lang,
+    phonePrefix: brandRegionPriorityPhoneNumbersByType.phonePrefix,
+    types: {
+      [type]: priorityPhoneNumberByType,
+    },
+  }
+
+  return returnedPriorityPhoneNumber;
+}
+
 
 export function getPriorityPhoneNumberByCode(
   regionCode: string,
