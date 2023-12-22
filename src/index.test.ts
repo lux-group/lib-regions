@@ -1,6 +1,7 @@
 import { expect } from "chai";
 import * as regionModule from "./";
 import { Brand } from "./regions";
+import { priorityPhoneNumbersByType } from "./priorityPhoneNumbersByType";
 
 describe("getRegionCodes()", function () {
   it("should return an array of region codes", function () {
@@ -376,5 +377,30 @@ describe("isRegionAllowed()", function () {
 
   it("should return true if brand has region", function () {
     expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
+  });
+});
+
+describe('getPriorityPhoneNumbersByType()', () => {
+  it('should return null if regionCode, brand, or type is missing', () => {
+    expect(regionModule.getPriorityPhoneNumbersByType()).to.be.null;
+    expect(regionModule.getPriorityPhoneNumbersByType('AU')).to.be.null;
+    expect(regionModule.getPriorityPhoneNumbersByType(undefined, 'luxuryescapes', 'base')).to.be.null;
+  });
+
+  it('should return the correct priority phone number for given regionCode, brand, and type', () => {
+    const regionCode = 'AU';
+    const brand = 'luxuryescapes';
+    const type = 'tours';
+    const result = regionModule.getPriorityPhoneNumbersByType(regionCode, brand, type);
+
+    expect(result).to.not.be.null;
+    expect(result).to.be.an('object');
+    expect(result?.code).to.equal(regionCode);
+    expect(result?.types[type]).to.deep.equal(priorityPhoneNumbersByType?.[brand]?.find(priorityPhoneContact => priorityPhoneContact?.code === regionCode)?.types[type]);
+  });
+
+  it('should return null if the regionCode is not found for the brand', () => {
+    const result = regionModule.getPriorityPhoneNumbersByType('NonExistingCode', 'luxuryescapes', 'base');
+    expect(result).to.be.null;
   });
 });
