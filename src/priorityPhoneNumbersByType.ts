@@ -1,6 +1,6 @@
 import { Brand } from "./regions";
 
-export type PriorityPhoneNumberType = 'base' | 'cruises' | 'tours' | 'ultralux' | 'supportAssistant' | 'luxPlus'
+export type PriorityPhoneNumberType = "base" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "luxPlus";
 
 interface PhoneNumber {
   humanReadable: string;
@@ -15,7 +15,7 @@ export interface PriorityPhoneNumberContact {
   types: Partial<{ [type in PriorityPhoneNumberType]: {
     local: PhoneNumber;
     international: PhoneNumber;
-    default: 'local' | 'international';
+    default: "local" | "international";
   } }>;
 }
 
@@ -80,9 +80,9 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "0000000000",
           },
           international: defaultInternationalNumberLuxuryEscapes,
-            default: "local",
-        }
-      }
+          default: "local",
+        },
+      },
     },
     {
       code: "GB",
@@ -98,7 +98,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
           international: defaultInternationalNumberLuxuryEscapes,
           default: "local",
         },
-      }
+      },
     },
     {
       code: "NZ",
@@ -114,7 +114,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
           international: defaultInternationalNumberLuxuryEscapes,
           default: "local",
         },
-      }
+      },
     },
     {
       code: "US",
@@ -130,8 +130,8 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
           international: defaultInternationalNumberLuxuryEscapes,
           default: "local",
         },
-      }
-    }
+      },
+    },
   ],
   scoopontravel: [
     {
@@ -150,7 +150,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       },
     },
   ],
@@ -171,7 +171,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       },
     },
   ],
@@ -192,7 +192,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       },
     },
   ],
@@ -213,7 +213,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "+61283206845",
           },
           default: "international",
-        }
+        },
       },
     },
   ],
@@ -234,7 +234,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       },
     },
   ],
@@ -255,7 +255,7 @@ export const priorityPhoneNumbersByType: BrandPriorityPhoneNumber = {
             number: "+61370324242",
           },
           default: "international",
-        }
+        },
       },
     },
   ],

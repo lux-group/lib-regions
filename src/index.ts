@@ -1,9 +1,9 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByregion";
-import { PriorityPhoneNumber, priorityPhoneNumbers } from "./priorityPhoneNumbers";
+import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
+import { PriorityPhoneNumberContact, priorityPhoneNumbersByType, PriorityPhoneNumberType } from "./priorityPhoneNumbersByType";
 import { Brand, LUXURY_ESCAPES } from "./regions";
-import { PriorityPhoneNumberContact, PriorityPhoneNumberType, priorityPhoneNumbersByType } from "./priorityPhoneNumbersByType";
 
 export { Region };
 
@@ -59,7 +59,7 @@ export function getPriorityPhoneNumbersByType(
     return null;
   }
 
-  const priorityPhoneNumberByType = brandRegionPriorityPhoneNumbersByType.types[type || 'base'];
+  const priorityPhoneNumberByType = brandRegionPriorityPhoneNumbersByType.types[type || "base"];
 
   // This is to return only what we need in the payload
   const returnedPriorityPhoneNumber: PriorityPhoneNumberContact = {
@@ -70,11 +70,10 @@ export function getPriorityPhoneNumbersByType(
     types: {
       [type]: priorityPhoneNumberByType,
     },
-  }
+  };
 
   return returnedPriorityPhoneNumber;
 }
-
 
 export function getPriorityPhoneNumberByCode(
   regionCode: string,
