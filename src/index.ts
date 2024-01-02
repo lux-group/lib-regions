@@ -40,6 +40,10 @@ export function getPriorityPhoneNumbers(brand?: string) {
   return priorityPhoneNumbers[brand || LUXURY_ESCAPES];
 }
 
+export function getBrandPriorityPhoneNumbersByType(brand?: Brand) {
+  return priorityPhoneNumbersByType[brand || LUXURY_ESCAPES];
+}
+
 export function getPriorityPhoneNumbersByType(
   regionCode?: string,
   brand?: Brand,
