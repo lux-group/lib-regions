@@ -24,10 +24,8 @@ interface Contact {
   type: ContactType;
   local: PhoneNumber;
   international: PhoneNumber;
-  default: string,
+  default: string;
 }
-
-
 export interface Region {
   code: string;
   name: string;
@@ -118,7 +116,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 88 99 00",
             number: "1300889900",
@@ -130,7 +128,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "1300 701 198",
             number: "1300701198",
@@ -142,7 +140,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'tours',
+          type: "tours",
           local: {
             humanReadable: "1300 670 243",
             number: "1300670243",
@@ -154,7 +152,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'cruises',
+          type: "cruises",
           local: {
             humanReadable: "1300 820 853",
             number: "1300820853",
@@ -166,7 +164,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'ultralux',
+          type: "ultralux",
           local: {
             humanReadable: "1300 86 04 54",
             number: "1300860454",
@@ -178,7 +176,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'supportAssistant',
+          type: "supportAssistant",
           local: {
             humanReadable: "1300 489 055",
             number: "1300489055",
@@ -190,7 +188,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'luxPlus',
+          type: "luxPlus",
           local: {
             humanReadable: "0000 000 000",
             number: "0000000000",
@@ -247,7 +245,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "888 841 8898",
             number: "8888418898",
@@ -257,7 +255,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -303,7 +301,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "400 842 8021",
             number: "4008428021",
@@ -313,7 +311,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 240,
@@ -359,7 +357,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0800 907 498",
             number: "0800907498",
@@ -369,7 +367,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
@@ -415,7 +413,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0800 001 0786",
             number: "08000010786",
@@ -425,7 +423,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
@@ -471,7 +469,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "3018 8509",
             number: "30188509",
@@ -481,7 +479,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 300,
@@ -527,7 +525,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "+91 803 783 5334",
             number: "+918037835334",
@@ -537,7 +535,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 2500,
@@ -583,7 +581,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "03 7032 3337",
             number: "0370323337",
@@ -593,7 +591,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500000,
@@ -639,7 +637,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1800 816 039",
             number: "1800816039",
@@ -649,7 +647,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
@@ -695,7 +693,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1809 510 015",
             number: "1809510015",
@@ -705,7 +703,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
@@ -751,7 +749,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "800 684 328",
             number: "800684328",
@@ -761,7 +759,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
@@ -807,7 +805,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "034 510 0114",
             number: "0345100114",
@@ -817,7 +815,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 4000,
@@ -863,7 +861,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "07 98 8521 1567",
             number: "079885211567",
@@ -873,7 +871,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 40000,
@@ -919,7 +917,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "6857 0524",
             number: "68570524",
@@ -929,7 +927,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 300,
@@ -975,7 +973,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "03 8689 8204",
             number: "0386898204",
@@ -985,7 +983,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 150,
@@ -1031,7 +1029,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0800 2300300",
             number: "08002300300",
@@ -1041,7 +1039,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
@@ -1087,7 +1085,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0800 900 094",
             number: "0800900094",
@@ -1099,7 +1097,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "0800 856 497",
             number: "0800856497",
@@ -1109,7 +1107,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -1155,7 +1153,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1800 1320 0244",
             number: "180013200244",
@@ -1165,7 +1163,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2000,
@@ -1211,7 +1209,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "00 800 101636",
             number: "00800101636",
@@ -1221,7 +1219,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
@@ -1267,7 +1265,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "+61 2 8320 6845",
             number: "+61283206845",
@@ -1277,7 +1275,7 @@ export const regions: BrandRegions = {
             number: "+61283206845",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2500,
@@ -1323,7 +1321,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "800 850 1445",
             number: "8008501445",
@@ -1333,7 +1331,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
@@ -1379,7 +1377,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "6690 5451",
             number: "66905451",
@@ -1389,7 +1387,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 50,
@@ -1435,7 +1433,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "080 001 0712",
             number: "0800010712",
@@ -1445,7 +1443,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500,
@@ -1491,7 +1489,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "900 75 17 84",
             number: "900751784",
@@ -1501,7 +1499,7 @@ export const regions: BrandRegions = {
             number: "900751784",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
@@ -1547,7 +1545,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "02 7703 4472",
             number: "0277034472",
@@ -1557,7 +1555,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
@@ -1603,7 +1601,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1800 014 168",
             number: "1800014168",
@@ -1613,7 +1611,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
@@ -1659,7 +1657,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "800 0183 0572",
             number: "80001830572",
@@ -1669,7 +1667,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
@@ -1715,7 +1713,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0808 175 4987",
             number: "08081754987",
@@ -1727,7 +1725,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "0808 304 4066",
             number: "08083044066",
@@ -1737,7 +1735,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
@@ -1783,7 +1781,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "888 337 2083",
             number: "8883372083",
@@ -1795,7 +1793,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "888 583 5444",
             number: "8885835444",
@@ -1851,7 +1849,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1800 400 427",
             number: "1800400427",
@@ -1861,7 +1859,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 800000,
@@ -1908,7 +1906,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "(02) 9051 1815",
             number: "(02)90511815",
@@ -1918,7 +1916,7 @@ export const regions: BrandRegions = {
             number: "+61283113542",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -1951,7 +1949,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "(02) 9051 1815",
             number: "(02)90511815",
@@ -1963,7 +1961,7 @@ export const regions: BrandRegions = {
           default: "international",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "1300 86 04 54",
             number: "1300860454",
@@ -1973,7 +1971,7 @@ export const regions: BrandRegions = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2020,7 +2018,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 517 210",
             number: "1300517210",
@@ -2032,7 +2030,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "1300 86 04 54",
             number: "1300860454",
@@ -2042,7 +2040,7 @@ export const regions: BrandRegions = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2089,7 +2087,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 892 711",
             number: "1300892711",
@@ -2101,7 +2099,7 @@ export const regions: BrandRegions = {
           default: "international",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "1300 86 04 54",
             number: "1300860454",
@@ -2111,7 +2109,7 @@ export const regions: BrandRegions = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2159,7 +2157,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0800 846 182",
             number: "0800846182",
@@ -2171,7 +2169,7 @@ export const regions: BrandRegions = {
           default: "international",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "0800 900 094",
             number: "0800900094",
@@ -2181,7 +2179,7 @@ export const regions: BrandRegions = {
             number: "+61283206845",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2228,7 +2226,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 869 711",
             number: "1300869711",
@@ -2240,7 +2238,7 @@ export const regions: BrandRegions = {
           default: "international",
         },
         {
-          type: 'highValue',
+          type: "highValue",
           local: {
             humanReadable: "1300 86 04 54",
             number: "1300860454",
@@ -2250,7 +2248,7 @@ export const regions: BrandRegions = {
             number: "+61385934859",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2297,7 +2295,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 892 711",
             number: "1300892711",
@@ -2307,7 +2305,7 @@ export const regions: BrandRegions = {
             number: "+61290511816",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2340,7 +2338,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 869 711",
             number: "1300869711",
@@ -2350,7 +2348,7 @@ export const regions: BrandRegions = {
             number: "+61290511817",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2383,7 +2381,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "0800 846 182",
             number: "0800846182",
@@ -2393,7 +2391,7 @@ export const regions: BrandRegions = {
             number: "+64800846182",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2426,7 +2424,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "(02) 9051 1815",
             number: "(02)90511815",
@@ -2436,7 +2434,7 @@ export const regions: BrandRegions = {
             number: "+61283113542",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2467,7 +2465,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "09 222 4643",
             number: "092224643",
@@ -2477,7 +2475,7 @@ export const regions: BrandRegions = {
             number: "+6492224643",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -2511,7 +2509,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "+61 3 7032 3480",
             number: "+61370323480",
@@ -2521,7 +2519,7 @@ export const regions: BrandRegions = {
             number: "+8618601132153",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: "No.363 Chang Ping Lu, ChangPing DaSha, 4th Floor, Room 102, Jing An district, Shanghai, China",
       referralAmount: 0,
@@ -2556,7 +2554,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "07 98 8521 1567",
             number: "079885211567",
@@ -2566,7 +2564,7 @@ export const regions: BrandRegions = {
             number: "+61283879983",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
@@ -2599,7 +2597,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "+61 2 8387 99837",
             number: "+61283879983",
@@ -2609,7 +2607,7 @@ export const regions: BrandRegions = {
             number: "+61283879983",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
@@ -2644,7 +2642,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 88 99 00",
             number: "1300889900",
@@ -2654,7 +2652,7 @@ export const regions: BrandRegions = {
             number: "+61283206845",
           },
           default: "international",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
@@ -2703,7 +2701,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 962 509",
             number: "1300962509",
@@ -2713,7 +2711,7 @@ export const regions: BrandRegions = {
             number: "+61370324242",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 0,
@@ -2761,7 +2759,7 @@ export const regions: BrandRegions = {
       },
       contacts: [
         {
-          type: 'general',
+          type: "general",
           local: {
             humanReadable: "1300 962 509",
             number: "1300962509",
@@ -2771,7 +2769,7 @@ export const regions: BrandRegions = {
             number: "+61370324242",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 0,
