@@ -63,6 +63,7 @@ export function getPriorityPhoneNumbersByType(
     return null;
   }
 
+  // return all types
   return brandRegionPriorityPhoneNumbersByType;
 }
 
