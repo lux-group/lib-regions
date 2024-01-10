@@ -63,20 +63,7 @@ export function getPriorityPhoneNumbersByType(
     return null;
   }
 
-  const priorityPhoneNumberByType = brandRegionPriorityPhoneNumbersByType.types[type || "base"];
-
-  // This is to return only what we need in the payload
-  const returnedPriorityPhoneNumber: PriorityPhoneNumberContact = {
-    code: brandRegionPriorityPhoneNumbersByType.code,
-    name: brandRegionPriorityPhoneNumbersByType.name,
-    lang: brandRegionPriorityPhoneNumbersByType.lang,
-    phonePrefix: brandRegionPriorityPhoneNumbersByType.phonePrefix,
-    types: {
-      [type]: priorityPhoneNumberByType,
-    },
-  };
-
-  return returnedPriorityPhoneNumber;
+  return brandRegionPriorityPhoneNumbersByType;
 }
 
 export function getPriorityPhoneNumberByCode(
