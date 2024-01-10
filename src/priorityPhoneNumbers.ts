@@ -205,4 +205,23 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
       },
     },
   ],
+  leagenthub: [
+    {
+      code: "AU",
+      name: "Australia",
+      lang: "en-AU",
+      phonePrefix: "61",
+      phone: {
+        local: {
+          humanReadable: "1300 962 509",
+          number: "1300962509",
+        },
+        international: {
+          humanReadable: "+61 3 7032 4242",
+          number: "+61370324242",
+        },
+        default: "international",
+      },
+    },
+  ],
 };
