@@ -13,6 +13,20 @@ interface OfferUrgencyTag {
   };
 }
 
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "luxPlus";
+
+interface PhoneNumber {
+  humanReadable: string;
+  number: string;
+}
+
+interface Contact {
+  type: ContactType;
+  local: PhoneNumber;
+  international: PhoneNumber;
+  default: string;
+}
+
 export interface Region {
   code: string;
   name: string;
@@ -35,6 +49,7 @@ export interface Region {
     },
     default: string,
   };
+  contacts: Contact[];
   mailingAddress: string;
   latitudeThreshold?: number;
   /** @deprecated get referral data from the svc-promo directly */
@@ -100,6 +115,92 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 88 99 00",
+            number: "1300889900",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "1300 701 198",
+            number: "1300701198",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "tours",
+          local: {
+            humanReadable: "1300 670 243",
+            number: "1300670243",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "cruises",
+          local: {
+            humanReadable: "1300 820 853",
+            number: "1300820853",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "ultralux",
+          local: {
+            humanReadable: "1300 86 04 54",
+            number: "1300860454",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "supportAssistant",
+          local: {
+            humanReadable: "1300 489 055",
+            number: "1300489055",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "luxPlus",
+          local: {
+            humanReadable: "0000 000 000",
+            number: "0000000000",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
       referralAmount: 50,
@@ -143,6 +244,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "888 841 8898",
+            number: "8888418898",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -185,6 +300,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "400 842 8021",
+            number: "4008428021",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 240,
       insuranceProductName: "protection",
@@ -227,6 +356,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0800 907 498",
+            number: "0800907498",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
       insuranceProductName: "protection",
@@ -269,6 +412,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0800 001 0786",
+            number: "08000010786",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
       insuranceProductName: "protection",
@@ -311,6 +468,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "3018 8509",
+            number: "30188509",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 300,
       insuranceProductName: "protection",
@@ -353,6 +524,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "+91 803 783 5334",
+            number: "+918037835334",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 2500,
       insuranceProductName: "protection",
@@ -395,6 +580,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "03 7032 3337",
+            number: "0370323337",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500000,
       insuranceProductName: "protection",
@@ -437,6 +636,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1800 816 039",
+            number: "1800816039",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
       insuranceProductName: "protection",
@@ -479,6 +692,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1809 510 015",
+            number: "1809510015",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       insuranceProductName: "protection",
@@ -521,6 +748,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "800 684 328",
+            number: "800684328",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
       insuranceProductName: "protection",
@@ -563,6 +804,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "034 510 0114",
+            number: "0345100114",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 4000,
       insuranceProductName: "protection",
@@ -605,6 +860,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "07 98 8521 1567",
+            number: "079885211567",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 40000,
       insuranceProductName: "protection",
@@ -647,6 +916,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "6857 0524",
+            number: "68570524",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 300,
       insuranceProductName: "protection",
@@ -689,6 +972,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "03 8689 8204",
+            number: "0386898204",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 150,
       insuranceProductName: "protection",
@@ -731,6 +1028,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0800 2300300",
+            number: "08002300300",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
       insuranceProductName: "protection",
@@ -773,6 +1084,32 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0800 900 094",
+            number: "0800900094",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "0800 856 497",
+            number: "0800856497",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -815,6 +1152,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1800 1320 0244",
+            number: "180013200244",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2000,
       insuranceProductName: "protection",
@@ -857,6 +1208,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "00 800 101636",
+            number: "00800101636",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       insuranceProductName: "protection",
@@ -899,6 +1264,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "+61 2 8320 6845",
+            number: "+61283206845",
+          },
+          international: {
+            humanReadable: "+61 2 8320 6845",
+            number: "+61283206845",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 2500,
       insuranceProductName: "protection",
@@ -941,6 +1320,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "800 850 1445",
+            number: "8008501445",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       insuranceProductName: "protection",
@@ -983,6 +1376,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "6690 5451",
+            number: "66905451",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1025,6 +1432,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "080 001 0712",
+            number: "0800010712",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 500,
       insuranceProductName: "protection",
@@ -1067,6 +1488,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "900 75 17 84",
+            number: "900751784",
+          },
+          international: {
+            humanReadable: "900 75 17 84",
+            number: "900751784",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 30,
       insuranceProductName: "protection",
@@ -1109,6 +1544,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "02 7703 4472",
+            number: "0277034472",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
       insuranceProductName: "protection",
@@ -1151,6 +1600,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1800 014 168",
+            number: "1800014168",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 1000,
       insuranceProductName: "protection",
@@ -1193,6 +1656,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "800 0183 0572",
+            number: "80001830572",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 130,
       insuranceProductName: "protection",
@@ -1235,6 +1712,32 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0808 175 4987",
+            number: "08081754987",
+          },
+          international: {
+            humanReadable: "+44 20 3763 8046",
+            number: "+442037638046",
+          },
+          default: "local",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "0808 304 4066",
+            number: "08083044066",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
       insuranceProductName: "protection",
@@ -1277,6 +1780,32 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "888 337 2083",
+            number: "8883372083",
+          },
+          international: {
+            humanReadable: "+1201 977 8523",
+            number: "+12019778523",
+          },
+          default: "local",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "888 583 5444",
+            number: "8885835444",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1319,6 +1848,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1800 400 427",
+            number: "1800400427",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 800000,
       insuranceProductName: "protection",
@@ -1362,6 +1905,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "(02) 9051 1815",
+            number: "(02)90511815",
+          },
+          international: {
+            humanReadable: "+61 2 8311 3542",
+            number: "+61283113542",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1391,6 +1948,32 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "(02) 9051 1815",
+            number: "(02)90511815",
+          },
+          international: {
+            humanReadable: "+61 2 9051 1815",
+            number: "+61290511815",
+          },
+          default: "international",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "1300 86 04 54",
+            number: "1300860454",
+          },
+          international: {
+            humanReadable: "+61 3 8593 4859",
+            number: "+61385934859",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1434,6 +2017,32 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 517 210",
+            number: "1300517210",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3416",
+            number: "+61370323416",
+          },
+          default: "local",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "1300 86 04 54",
+            number: "1300860454",
+          },
+          international: {
+            humanReadable: "+61 3 8593 4859",
+            number: "+61385934859",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1477,6 +2086,32 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 892 711",
+            number: "1300892711",
+          },
+          international: {
+            humanReadable: "+61 2 9051 1816",
+            number: "+61290511816",
+          },
+          default: "international",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "1300 86 04 54",
+            number: "1300860454",
+          },
+          international: {
+            humanReadable: "+61 3 8593 4859",
+            number: "+61385934859",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1521,6 +2156,32 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0800 846 182",
+            number: "0800846182",
+          },
+          international: {
+            humanReadable: "+64 8 0084 6182",
+            number: "+64800846182",
+          },
+          default: "international",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "0800 900 094",
+            number: "0800900094",
+          },
+          international: {
+            humanReadable: "+61 2 8320 6845",
+            number: "+61283206845",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1564,6 +2225,32 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 869 711",
+            number: "1300869711",
+          },
+          international: {
+            humanReadable: "+61 2 9051 1817",
+            number: "+61290511817",
+          },
+          default: "international",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "1300 86 04 54",
+            number: "1300860454",
+          },
+          international: {
+            humanReadable: "+61 3 8593 4859",
+            number: "+61385934859",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1607,6 +2294,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 892 711",
+            number: "1300892711",
+          },
+          international: {
+            humanReadable: "+61 2 9051 1816",
+            number: "+61290511816",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1636,6 +2337,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 869 711",
+            number: "1300869711",
+          },
+          international: {
+            humanReadable: "+61 2 9051 1817",
+            number: "+61290511817",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1665,6 +2380,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0800 846 182",
+            number: "0800846182",
+          },
+          international: {
+            humanReadable: "+64 8 0084 6182",
+            number: "+64800846182",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1694,6 +2423,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "(02) 9051 1815",
+            number: "(02)90511815",
+          },
+          international: {
+            humanReadable: "+61 2 8311 3542",
+            number: "+61283113542",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1721,6 +2464,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "09 222 4643",
+            number: "092224643",
+          },
+          international: {
+            humanReadable: "+64 9 222 4643",
+            number: "+6492224643",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
       insuranceProductName: "protection",
@@ -1751,6 +2508,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "+61 3 7032 3480",
+            number: "+61370323480",
+          },
+          international: {
+            humanReadable: "+86 186 0113 2153",
+            number: "+8618601132153",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: "No.363 Chang Ping Lu, ChangPing DaSha, 4th Floor, Room 102, Jing An district, Shanghai, China",
       referralAmount: 0,
       insuranceProductName: "protection",
@@ -1782,6 +2553,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "07 98 8521 1567",
+            number: "079885211567",
+          },
+          international: {
+            humanReadable: "+61 2 8320 6845",
+            number: "+61283879983",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
       insuranceProductName: "protection",
@@ -1811,6 +2596,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "+61 2 8387 99837",
+            number: "+61283879983",
+          },
+          international: {
+            humanReadable: "+61 2 8320 6845",
+            number: "+61283879983",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: "Suite 55, 104 Bathurst Street, Sydney, NSW 2000 Australia",
       referralAmount: 0,
       insuranceProductName: "protection",
@@ -1842,6 +2641,20 @@ export const regions: BrandRegions = {
         },
         default: "international",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 88 99 00",
+            number: "1300889900",
+          },
+          international: {
+            humanReadable: "+61 2 8320 6845",
+            number: "+61283206845",
+          },
+          default: "international",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
       referralAmount: 50,
@@ -1887,6 +2700,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 962 509",
+            number: "1300962509",
+          },
+          international: {
+            humanReadable: "+61 3 7032 4242",
+            number: "+61370324242",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 0,
       insuranceProductName: "protection",
@@ -1931,6 +2758,20 @@ export const regions: BrandRegions = {
         },
         default: "local",
       },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "1300 962 509",
+            number: "1300962509",
+          },
+          international: {
+            humanReadable: "+61 3 7032 4242",
+            number: "+61370324242",
+          },
+          default: "local",
+        },
+      ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 0,
       insuranceProductName: "protection",
