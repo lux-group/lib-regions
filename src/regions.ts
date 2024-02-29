@@ -2749,12 +2749,12 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "1300 962 509",
-          number: "1300962509",
+          humanReadable: "+61 3 7032 3441",
+          number: "+61370323441",
         },
         international: {
-          humanReadable: "+61 3 7032 4242",
-          number: "+61370324242",
+          humanReadable: "+61 3 7032 3441",
+          number: "+61370323441",
         },
         default: "local",
       },
@@ -2762,12 +2762,12 @@ export const regions: BrandRegions = {
         {
           type: "general",
           local: {
-            humanReadable: "1300 962 509",
-            number: "1300962509",
+            humanReadable: "+61 3 7032 3441",
+            number: "+61370323441",
           },
           international: {
-            humanReadable: "+61 3 7032 4242",
-            number: "+61370324242",
+            humanReadable: "+61 3 7032 3441",
+            number: "+61370323441",
           },
           default: "local",
         },
