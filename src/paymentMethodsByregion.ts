@@ -19,7 +19,7 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
             DE: {
             paymentMethods: [
                 "stripe_payment_element_card",
-                "stripe_payment_element_giropay",
+                "stripe_payment_element_giropay", // restrict by region as Euro is used in many countries
                 ],
             },
     },
