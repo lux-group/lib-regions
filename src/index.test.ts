@@ -264,6 +264,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "waave_bp",
       "velocity",
       "gocardless",
+      "stripe_payment_element_payto",
     ]);
   });
 
