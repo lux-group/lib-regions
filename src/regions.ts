@@ -131,12 +131,12 @@ export const regions: BrandRegions = {
         {
           type: "highValue",
           local: {
-            humanReadable: "1300 701 198",
-            number: "1300701198",
+            humanReadable: "1300 941 887",
+            number: "1300941887",
           },
           international: {
-            humanReadable: "+61 3 7032 3381",
-            number: "+61370323381",
+            humanReadable: "+61 2 8317 2477",
+            number: "+61283172477",
           },
           default: "local",
         },
