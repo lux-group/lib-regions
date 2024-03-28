@@ -85,7 +85,7 @@ describe("getRegionNames()", function () {
     ["zoomzoom", ["Korea", "Australia"]],
     ["newwhitelabel", ["Australia"]],
     ["lebusinesstraveller", ["Australia"]],
-    ["leagenthub", ["Australia"]],
+    ["leagenthub", ["Australia", "New Zealand"]],
   ];
   cases.forEach(([brand, expectedRegions]) => {
     it(`when the brand "${brand}" is passed as an argument to getRegionNames(brand), the function should return ${expectedRegions}`, () => {

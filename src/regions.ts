@@ -2816,5 +2816,61 @@ export const regions: BrandRegions = {
       },
       giftCardOptions: [],
     },
+    {
+      code: "NZ",
+      name: "New Zealand",
+      lang: "en-NZ",
+      phonePrefix: "64",
+      currencyFormattingLocale: "en-NZ",
+      currencyCode: "NZD",
+      currencyPrefix: "NZ",
+      flagId: "nz_o98shy",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      marketedLos: DEFAULT_MARKETED_LOS,
+      phone: {
+        local: {
+          humanReadable: "+61 3 7032 3441",
+          number: "+61370323441",
+        },
+        international: {
+          humanReadable: "+61 3 7032 3441",
+          number: "+61370323441",
+        },
+        default: "local",
+      },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "+61 3 7032 3441",
+            number: "+61370323441",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3441",
+            number: "+61370323441",
+          },
+          default: "local",
+        },
+      ],
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 50,
+      insuranceProductName: "protection",
+      referralMinSpendAmount: 499,
+      giftCardOptions: [50, 100, 250, 500, 1000, 2000],
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+    },
   ],
 };
