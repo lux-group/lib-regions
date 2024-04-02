@@ -116,7 +116,7 @@ export const currencies: BrandCurrencies = {
         "stripe",
         "stripe_3ds",
       ],
-    }
+    },
   },
   led_admin: {
     AUD: {
