@@ -223,5 +223,22 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
         default: "international",
       },
     },
+    {
+      code: "NZ",
+      name: "New Zealand",
+      lang: "en-NZ",
+      phonePrefix: "64",
+      phone: {
+        local: {
+          humanReadable: "0800 856 497",
+          number: "0800856497",
+        },
+        international: {
+          humanReadable: "+61 3 7032 3381",
+          number: "+61370323381",
+        },
+        default: "local",
+      },
+    },
   ],
 };

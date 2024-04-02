@@ -9,7 +9,7 @@ describe("getRegionCodes()", function () {
     expect(regionModule.getRegionCodes("lebusinesstraveller")).to.deep.equal([
       "AU",
     ]);
-    expect(regionModule.getRegionCodes("leagenthub")).to.deep.equal(["AU"]);
+    expect(regionModule.getRegionCodes("leagenthub")).to.deep.equal(["AU", "NZ"]);
   });
 });
 
@@ -85,7 +85,7 @@ describe("getRegionNames()", function () {
     ["zoomzoom", ["Korea", "Australia"]],
     ["newwhitelabel", ["Australia"]],
     ["lebusinesstraveller", ["Australia"]],
-    ["leagenthub", ["Australia"]],
+    ["leagenthub", ["Australia", "New Zealand"]],
   ];
   cases.forEach(([brand, expectedRegions]) => {
     it(`when the brand "${brand}" is passed as an argument to getRegionNames(brand), the function should return ${expectedRegions}`, () => {
@@ -204,7 +204,7 @@ describe("getCurrencyCodes()", function () {
       "AUD",
     ]);
     expect(regionModule.getCurrencyCodes("leagenthub")).to.deep.equal([
-      "AUD",
+      "AUD", "NZD",
     ]);
   });
 
