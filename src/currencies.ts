@@ -148,7 +148,7 @@ export const currencies: BrandCurrencies = {
         "waave_bp",
         "velocity",
         "gocardless",
-        "stripe_payment_element_payto",
+        "stripe_custom_payto",
       ],
     },
     CAD: {
