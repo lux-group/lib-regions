@@ -64,7 +64,7 @@ export interface Region {
 export const LUXURY_ESCAPES = "luxuryescapes";
 
 export const BRANDS = [
-  LUXURY_ESCAPES,
+  "LUXURY_ESCAPES",
   "scooponexperience",
   "scoopontravel",
   "kogantravel",
