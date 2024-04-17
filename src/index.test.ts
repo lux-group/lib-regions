@@ -299,6 +299,19 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_3ds",
     ]);
   });
+
+  it("should return an array of payment methods for brand to luxuryescapes for EUR", function () {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("EUR")).to.deep.equal([
+      "le_credit",
+        "stripe",
+        "deposit_stripe",
+        "giftcard",
+        "applepay",
+        "googlepay",
+        "stripe_3ds",
+        "stripe_3ds_v2"
+    ]);
+  });
 });
 
 describe("getZeroDecimalCurrencies()", function () {
