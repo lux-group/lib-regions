@@ -240,5 +240,22 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
         default: "local",
       },
     },
+    {
+      code: "US",
+      name: "United States",
+      lang: "en-US",
+      phonePrefix: "1",
+      phone: {
+        local: {
+          humanReadable: "888 337 2083",
+          number: "8883372083",
+        },
+        international: {
+          humanReadable: "+1201 977 8523",
+          number: "+12019778523",
+        },
+        default: "local",
+      },
+    },
   ],
 };
