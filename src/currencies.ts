@@ -117,6 +117,12 @@ export const currencies: BrandCurrencies = {
         "stripe_3ds",
       ],
     },
+    USD: {
+      paymentMethods: [
+        "stripe",
+        "stripe_3ds",
+      ],
+    },
   },
   led_admin: {
     AUD: {

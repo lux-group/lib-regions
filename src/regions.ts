@@ -2767,7 +2767,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
-      currencyPrefix: "",
+      currencyPrefix: "A",
       flagId: "au_iuox02",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       marketedLos: DEFAULT_MARKETED_LOS,
@@ -2871,6 +2871,62 @@ export const regions: BrandRegions = {
           },
         },
       },
+    },
+    {
+      code: "US",
+      name: "United States",
+      lang: "en-US",
+      phonePrefix: "1",
+      currencyFormattingLocale: "en-US",
+      currencyCode: "USD",
+      currencyPrefix: "US",
+      flagId: "us_fapjn8",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      marketedLos: DEFAULT_MARKETED_LOS,
+      phone: {
+        local: {
+          humanReadable: "888 337 2083",
+          number: "8883372083",
+        },
+        international: {
+          humanReadable: "+1201 977 8523",
+          number: "+12019778523",
+        },
+        default: "local",
+      },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "888 337 2083",
+            number: "8883372083",
+          },
+          international: {
+            humanReadable: "+1201 977 8523",
+            number: "+12019778523",
+          },
+          default: "local",
+        },
+      ],
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 0,
+      insuranceProductName: "protection",
+      referralMinSpendAmount: 0,
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+      giftCardOptions: [],
     },
   ],
 };
