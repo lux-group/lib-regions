@@ -1133,6 +1133,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "luxPlus",
+          local: {
+            humanReadable: "0800 130 004",
+            number: "0800130004",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
