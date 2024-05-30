@@ -3,24 +3,34 @@
 // all regions for the currency (i.e. currencywide) add the payment method in currencies.ts instead
 
 interface PaymentMethodsByRegion {
-    [brand: string]: Region;
+  [brand: string]: Region;
 }
 
 interface PaymentMethods {
-    paymentMethods: string[];
+  paymentMethods: string[];
 }
 
 interface Region {
-    [regionCode: string]: PaymentMethods;
+  [regionCode: string]: PaymentMethods;
 }
 
 export const paymentMethodsByRegion: PaymentMethodsByRegion = {
-    luxuryescapes: {
-            DE: {
-            paymentMethods: [
-                "stripe_payment_element_card",
-                "stripe_payment_element_giropay", // restrict by region as Euro is used in many countries
-                ],
-            },
+  luxuryescapes: {
+    DE: {
+      paymentMethods: [
+        "stripe_payment_element_card",
+        "stripe_payment_element_giropay", // restrict by region as Euro is used in many countries
+      ],
     },
+    AU: {
+      paymentMethods: [
+        "stripe_payment_element_card",
+      ],
+    },
+    NZ: {
+      paymentMethods: [
+        "stripe_payment_element_card",
+      ],
+    },
+  },
 };

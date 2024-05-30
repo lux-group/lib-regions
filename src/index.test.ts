@@ -392,3 +392,14 @@ describe("isRegionAllowed()", function () {
     expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
   });
 });
+
+describe("getPaymentMethodsByRegion()", function () {
+  it("should return an array of payment methods", function () {
+    expect(
+      regionModule.getPaymentMethodsByRegion("AU", "luxuryescapes")
+    ).to.deep.equal(["stripe_payment_element_card"]);
+    expect(
+      regionModule.getPaymentMethodsByRegion("NZ", "luxuryescapes")
+    ).to.deep.equal(["stripe_payment_element_card"]);
+  });
+});
