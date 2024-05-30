@@ -14,6 +14,10 @@ function currencies(brand?: string) {
   return _currencies[brand || LUXURY_ESCAPES];
 }
 
+function paymentMethodsByRegion(brand?: string) {
+  return _paymentMethodsByRegion[brand || LUXURY_ESCAPES];
+}
+
 const zeroDecimalCurrencies = [
   "BIF",
   "CLP",
@@ -140,6 +144,17 @@ export function getPaymentMethodsByCurrencyCode(
   }
 
   return currencies(brand)[currencyCode].paymentMethods;
+}
+
+export function getPaymentMethodsByRegion(
+  regionCode: string,
+  brand?: string,
+) {
+  if (!paymentMethodsByRegion(brand)[regionCode]) {
+    return [];
+  }
+
+  return paymentMethodsByRegion(brand)[regionCode].paymentMethods;
 }
 
 export function getZeroDecimalCurrencies() {
