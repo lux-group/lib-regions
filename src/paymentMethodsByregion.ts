@@ -22,15 +22,5 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
         "stripe_payment_element_giropay", // restrict by region as Euro is used in many countries
       ],
     },
-    AU: {
-      paymentMethods: [
-        "stripe_payment_element_card",
-      ],
-    },
-    NZ: {
-      paymentMethods: [
-        "stripe_payment_element_card",
-      ],
-    },
   },
 };

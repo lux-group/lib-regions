@@ -243,7 +243,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
   it("should return an array of payment methods", function () {
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")
-    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
+    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard", "stripe_payment_element_card"]);
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")
     ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
@@ -265,6 +265,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "velocity",
       "gocardless",
       "stripe_custom_payto",
+      "stripe_payment_element_card",
     ]);
   });
 
@@ -390,16 +391,5 @@ describe("isRegionAllowed()", function () {
 
   it("should return true if brand has region", function () {
     expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
-  });
-});
-
-describe("getPaymentMethodsByRegion()", function () {
-  it("should return an array of payment methods", function () {
-    expect(
-      regionModule.getPaymentMethodsByRegion("AU", "luxuryescapes")
-    ).to.deep.equal(["stripe_payment_element_card"]);
-    expect(
-      regionModule.getPaymentMethodsByRegion("NZ", "luxuryescapes")
-    ).to.deep.equal(["stripe_payment_element_card"]);
   });
 });
