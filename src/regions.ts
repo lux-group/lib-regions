@@ -203,8 +203,8 @@ export const regions: BrandRegions = {
         {
           type: "luxPlus",
           local: {
-            humanReadable: "0000 000 000",
-            number: "0000000000",
+            humanReadable: "1300 860 445",
+            number: "1300860445",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
