@@ -211,7 +211,7 @@ export const regions: BrandRegions = {
             number: "+61370323381",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
