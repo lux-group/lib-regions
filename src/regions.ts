@@ -13,7 +13,7 @@ interface OfferUrgencyTag {
   };
 }
 
-type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "luxPlus" | "homepage" | "midValue";
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "luxPlus" | "midValue";
 
 interface PhoneNumber {
   humanReadable: string;
@@ -205,18 +205,6 @@ export const regions: BrandRegions = {
           local: {
             humanReadable: "1300 860 445",
             number: "1300860445",
-          },
-          international: {
-            humanReadable: "+61 3 7032 3381",
-            number: "+61370323381",
-          },
-          default: "local",
-        },
-        {
-          type: "homepage",
-          local: {
-            humanReadable: "1300 692 173",
-            number: "1300692173",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
