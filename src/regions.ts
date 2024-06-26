@@ -13,7 +13,7 @@ interface OfferUrgencyTag {
   };
 }
 
-type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSales" | "luxPlus" | "midValue";
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue";
 
 interface PhoneNumber {
   humanReadable: string;
@@ -201,7 +201,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: "supportAssistantSales",
+          type: "supportAssistantSalesFlow",
           local: {
             humanReadable: "1300 789 419",
             number: "1300789419",
@@ -1146,7 +1146,7 @@ export const regions: BrandRegions = {
           default: "local",
         },
         {
-          type: "supportAssistantSales",
+          type: "supportAssistantSalesFlow",
           local: {
             humanReadable: "0800 215 037",
             number: "0800215037",
