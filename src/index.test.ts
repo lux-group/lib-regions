@@ -393,3 +393,29 @@ describe("isRegionAllowed()", function () {
     expect(regionModule.isRegionAllowed("scoopontravel", "NZ")).to.equal(false);
   });
 });
+
+describe("Insurance countries", function () {
+  it('should return "Australian Waters (cruises)" name for "Australian Waters" country', function() {
+    const countryName = regionModule.getInsuranceCountryNameByCode('Australian Waters')
+
+    expect(countryName).to.equal("Australian Waters (cruises)")
+  });
+
+  it('should return "Australia" name by "AU" iso code', function() {
+    const countryName = regionModule.getInsuranceCountryNameByTwoLetterCode('AU')
+
+    expect(countryName).to.equal("Australia")
+  });
+
+  it('should return "AU" iso code by "Australia"', function() {
+    const isoCode = regionModule.getInsuranceCountryTwoLetterCodeByName('Australia')
+
+    expect(isoCode).to.equal("AU")
+  });
+
+  it('should return "AU" iso code by "Australian Waters (cruises)"', function() {
+    const isoCode = regionModule.getInsuranceCountryTwoLetterCodeByName('Australia')
+
+    expect(isoCode).to.equal("AU")
+  });
+});
