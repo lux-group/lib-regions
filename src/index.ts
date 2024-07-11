@@ -202,16 +202,16 @@ export function getInsuranceCountryNames() {
 }
 
 export function getInsuranceCountryNameByCode(code: string) {
-  const country = insuranceCountries.find((country) => country.code === code);
-  return country?.name;
+  const insuranceCountry = insuranceCountries.find((country) => country.code === code);
+  return insuranceCountry?.name;
 }
 
 export function getInsuranceCountryNameByTwoLetterCode(twoLetterCode: string) {
-  const country = insuranceCountries.find((country) => country.two_letter_country_code === twoLetterCode);
-  return country?.name;
+  const insuranceCountry = insuranceCountries.find((country) => country.two_letter_country_code === twoLetterCode);
+  return insuranceCountry?.name;
 }
 
 export function getInsuranceCountryTwoLetterCodeByName(name: string) {
-  const country = insuranceCountries.find((country) => country.name === name);
-  return country?.two_letter_country_code;
+  const insuranceCountry = insuranceCountries.find((country) => country.name === name);
+  return insuranceCountry?.two_letter_country_code;
 }
