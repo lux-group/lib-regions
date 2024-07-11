@@ -1,5 +1,6 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
+import { ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
 import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByregion";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
@@ -184,4 +185,33 @@ export function getRegionNamesAndCode(brand?: Brand) {
 export function isRegionAllowed(brand: Brand, regionCode?: string) {
   const code = regionCode || "AU";
   return regions(brand).some((region) => region.code === code);
+}
+
+const insuranceCountries = [...COVER_GENIUS_COUNTRIES, ...UNIVERSAL_COUNTRIES];
+
+export function getInsuranceCountries() {
+  return insuranceCountries;
+}
+
+export function getInsuranceAllowedOriginCountries() {
+  return ALLOWED_ORIGIN_COUNTRIES;
+}
+
+export function getInsuranceCountryNames() {
+  return insuranceCountries.map((country) => country.name);
+}
+
+export function getInsuranceCountryNameByCode(code: string) {
+  const country = insuranceCountries.find((country) => country.code === code);
+  return country?.name;
+}
+
+export function getInsuranceCountryNameByTwoLetterCode(twoLetterCode: string) {
+  const country = insuranceCountries.find((country) => country.two_letter_country_code === twoLetterCode);
+  return country?.name;
+}
+
+export function getInsuranceCountryTwoLetterCodeByName(name: string) {
+  const country = insuranceCountries.find((country) => country.name === name);
+  return country?.two_letter_country_code;
 }
