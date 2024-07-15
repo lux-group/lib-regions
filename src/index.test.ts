@@ -281,6 +281,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "hoolah_bp",
       "stripe_3ds",
       "atome_bp",
+      "stripe_payment_element_card",
     ]);
   });
   it("should return an empty array of payment methods when brand doesn't have sellected currency", function () {
@@ -298,6 +299,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "giftcard",
       "vistara",
       "stripe_3ds",
+      "stripe_payment_element_card",
     ]);
   });
 

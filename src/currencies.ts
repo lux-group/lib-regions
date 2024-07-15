@@ -175,6 +175,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "applepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     EUR: {
@@ -199,6 +200,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     INR: {
@@ -210,6 +212,7 @@ export const currencies: BrandCurrencies = {
         "giftcard",
         "vistara",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     IDR: {
@@ -221,6 +224,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     ILS: {
@@ -232,6 +236,7 @@ export const currencies: BrandCurrencies = {
         // "applepay",  // Apple Pay is not supported in IL
         // "googlepay", // Google Pay is not supported in IL
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     JPY: {
@@ -244,6 +249,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     KRW: {
@@ -254,6 +260,7 @@ export const currencies: BrandCurrencies = {
         "giftcard",
         "krisFlyer",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     MOP: {
@@ -264,6 +271,7 @@ export const currencies: BrandCurrencies = {
         "giftcard",
         "applepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     MYR: {
@@ -277,6 +285,7 @@ export const currencies: BrandCurrencies = {
         "hoolah_bp",
         "stripe_3ds",
         "atome_bp",
+        "stripe_payment_element_card",
       ],
     },
     NZD: {
@@ -302,6 +311,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     QAR: {
@@ -313,6 +323,7 @@ export const currencies: BrandCurrencies = {
         // "applepay",  // Apple Pay is not supported in QA
         // "googlepay", // Google Pay is not supported in QA
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     RUB: {
@@ -335,6 +346,7 @@ export const currencies: BrandCurrencies = {
         // "applepay", // Apple Pay is not supported in SA
         // "googlepay", // Google Pay is not supported in SA
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     SGD: {
@@ -349,6 +361,7 @@ export const currencies: BrandCurrencies = {
         "hoolah_bp",
         "stripe_3ds",
         "atome_bp",
+        "stripe_payment_element_card",
       ],
     },
     TWD: {
@@ -361,6 +374,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     THB: {
@@ -372,6 +386,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     ZAR: {
@@ -394,6 +409,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     GBP: {
@@ -430,6 +446,7 @@ export const currencies: BrandCurrencies = {
         "krisFlyer",
         // "googlepay", // Google Pay is not supported in South Africa
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
   },
