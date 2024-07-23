@@ -278,7 +278,6 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "krisFlyer",
       "applepay",
       "googlepay",
-      "hoolah_bp",
       "stripe_3ds",
       "atome_bp",
       "stripe_payment_element_card",
