@@ -210,7 +210,6 @@ export const currencies: BrandCurrencies = {
         "deposit_stripe",
         "razorpay",
         "giftcard",
-        "vistara",
         "stripe_3ds",
         "stripe_payment_element_card",
       ],
