@@ -131,8 +131,8 @@ export const regions: BrandRegions = {
         {
           type: "highValue",
           local: {
-            humanReadable: "1300 915 086",
-            number: "1300915086",
+            humanReadable: "1300 701 198",
+            number: "1300701198",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
@@ -155,8 +155,8 @@ export const regions: BrandRegions = {
         {
           type: "tours",
           local: {
-            humanReadable: "1300 915 086",
-            number: "1300915086",
+            humanReadable: "1300 670 243",
+            number: "1300670243",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
