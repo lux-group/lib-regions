@@ -72,19 +72,24 @@ export const currencies: BrandCurrencies = {
   scooponexperience: {
     AUD: {
       paymentMethods: [
+        "applepay",
         "stripe",
         "braintree",
         "stripe_3ds",
+        "stripe_custom_payto",
+        "stripe_payment_element_card",
       ],
     },
   },
   scoopontravel: {
     AUD: {
       paymentMethods: [
+        "applepay",
         "stripe",
         "braintree",
         "stripe_3ds",
         "giftcard",
+        "stripe_custom_payto",
         "stripe_payment_element_card",
       ],
     },
