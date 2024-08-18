@@ -1,6 +1,6 @@
 {
   "name": "@luxuryescapes/lib-regions",
-  "version": "5.6.20",
+  "version": "5.6.21",
   "description": "Region information for Luxury Escapes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -18,7 +18,8 @@
     "prepare": "yarn run build",
     "prepublishOnly": "yarn test && yarn run lint",
     "preversion": "yarn run lint",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "prepare:beta": "npm version prerelease --preid=beta"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
