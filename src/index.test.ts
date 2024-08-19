@@ -311,7 +311,8 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
         "applepay",
         "googlepay",
         "stripe_3ds",
-        "stripe_3ds_v2"
+        "stripe_3ds_v2",
+        "stripe_payment_element_card"
     ]);
   });
 });
