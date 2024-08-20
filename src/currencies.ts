@@ -193,6 +193,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "stripe_3ds",
         "stripe_3ds_v2",
+        "stripe_payment_element_card",
       ],
     },
     HKD: {
@@ -426,6 +427,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     USD: {
