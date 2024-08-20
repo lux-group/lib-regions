@@ -22,5 +22,15 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
         "stripe_payment_element_giropay", // restrict by region as Euro is used in many countries
       ],
     },
+    NL: {
+      paymentMethods: [
+        "le_credit",
+        "giftcard",
+        "applepay",
+        "googlepay",
+        "stripe_payment_element_card",
+        "ideal",
+      ],
+    },
   },
 };
