@@ -33,7 +33,7 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
         "stripe_3ds",
         "stripe_3ds_v2",
         "stripe_payment_element_card",
-        "ideal",
+        "stripe_payment_element_ideal",
       ],
     },
   },
