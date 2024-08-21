@@ -65,7 +65,7 @@ jobs:
           command: npm publish --tag beta
       - run:
           name: View post-pubish packages
-          command: sleep 5 && npm view @luxuryescapes/lib-regions versions --json
+          command: sleep 10 && npm view @luxuryescapes/lib-regions versions --json
 
 workflows:
   version: 2
