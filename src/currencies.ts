@@ -441,6 +441,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "afterpay_bp",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     VND: {

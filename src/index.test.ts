@@ -315,6 +315,21 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
         "stripe_payment_element_card"
     ]);
   });
+
+  it("should return an array of payment methods for brand to luxuryescapes for USD", function () {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("USD")).to.deep.equal([
+      "le_credit",
+        "stripe",
+        "deposit_stripe",
+        "giftcard",
+        "krisFlyer",
+        "applepay",
+        "googlepay",
+        "afterpay_bp",
+        "stripe_3ds",
+        "stripe_payment_element_card",
+    ]);
+  });
 });
 
 describe("getPaymentMethodsByRegion()", function () {
