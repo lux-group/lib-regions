@@ -16,7 +16,7 @@ import * as libRegions from "@luxuryescapes/lib-regions";
 ```
 - npm prepare:beta and it will generate beta version in package.json
 ```
-npm prepare:beta
+yarn prepare:beta
 ```
 - raise a PR
 
