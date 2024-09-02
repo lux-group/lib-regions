@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: cimg/node:14.18.2
+    - image: cimg/node:20.9.0
 
 feature-branches: &feature-branches
   branches:
