@@ -118,12 +118,14 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     NZD: {
       paymentMethods: [
         "stripe",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
   },
