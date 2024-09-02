@@ -109,6 +109,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
   },
@@ -117,12 +118,14 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "stripe",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     NZD: {
       paymentMethods: [
         "stripe",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
   },
@@ -169,6 +172,7 @@ export const currencies: BrandCurrencies = {
         "applepay",
         "googlepay",
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     CNY: {
@@ -340,6 +344,7 @@ export const currencies: BrandCurrencies = {
         // "applepay", // Apple Pay is not supported in RU
         // "googlepay", // Google Pay is not supported in RU
         "stripe_3ds",
+        "stripe_payment_element_card",
       ],
     },
     SAR: {
@@ -403,6 +408,7 @@ export const currencies: BrandCurrencies = {
         "stripe_3ds",
         // "applepay", Apple Pay is not supported in South Africa
         // "googlepay", Google Pay is not supported in South Africa
+        "stripe_payment_element_card",
       ],
     },
     AED: {
