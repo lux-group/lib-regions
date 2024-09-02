@@ -313,7 +313,8 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
         "googlepay",
         "stripe_3ds",
         "stripe_3ds_v2",
-        "stripe_payment_element_card"
+        "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
     ]);
   });
 
@@ -329,6 +330,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
         "afterpay_bp",
         "stripe_3ds",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
     ]);
   });
 });
@@ -346,6 +348,7 @@ describe("getPaymentMethodsByRegion()", function () {
       "stripe_3ds_v2",
       "stripe_payment_element_card",
       "stripe_payment_element_ideal",
+      "stripe_payment_element_klarna",
     ]);
   });
 });
