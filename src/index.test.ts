@@ -246,7 +246,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
     ).to.deep.equal(["applepay", "stripe", "braintree", "stripe_3ds", "giftcard", "stripe_custom_payto", "stripe_payment_element_card"]);
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")
-    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard"]);
+    ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard", "stripe_payment_element_card"]);
   });
 
   it("should return an array of payment methods default brand to luxuryescapes", function () {
