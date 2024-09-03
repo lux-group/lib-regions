@@ -166,6 +166,7 @@ export const currencies: BrandCurrencies = {
         "gocardless",
         "stripe_custom_payto",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
       ],
     },
     CAD: {
@@ -203,6 +204,7 @@ export const currencies: BrandCurrencies = {
         "stripe_3ds",
         "stripe_3ds_v2",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
       ],
     },
     HKD: {
@@ -314,6 +316,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "stripe_3ds",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
       ],
     },
     PHP: {
@@ -439,6 +442,7 @@ export const currencies: BrandCurrencies = {
         "googlepay",
         "stripe_3ds",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
       ],
     },
     USD: {
@@ -453,6 +457,7 @@ export const currencies: BrandCurrencies = {
         "afterpay_bp",
         "stripe_3ds",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
       ],
     },
     VND: {

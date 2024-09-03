@@ -266,6 +266,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "gocardless",
       "stripe_custom_payto",
       "stripe_payment_element_card",
+      "stripe_payment_element_klarna",
     ]);
   });
 
@@ -312,7 +313,8 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
         "googlepay",
         "stripe_3ds",
         "stripe_3ds_v2",
-        "stripe_payment_element_card"
+        "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
     ]);
   });
 
@@ -328,6 +330,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
         "afterpay_bp",
         "stripe_3ds",
         "stripe_payment_element_card",
+        "stripe_payment_element_klarna",
     ]);
   });
 });
