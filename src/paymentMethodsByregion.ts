@@ -20,7 +20,6 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
       paymentMethods: [
         "stripe_payment_element_card",
         "stripe_payment_element_giropay", // restrict by region as Euro is used in many countries
-        "stripe_payment_element_klarna",
       ],
     },
     NL: {
@@ -35,7 +34,6 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
         "stripe_3ds_v2",
         "stripe_payment_element_card",
         "stripe_payment_element_ideal",
-        "stripe_payment_element_klarna",
       ],
     },
   },

@@ -348,7 +348,6 @@ describe("getPaymentMethodsByRegion()", function () {
       "stripe_3ds_v2",
       "stripe_payment_element_card",
       "stripe_payment_element_ideal",
-      "stripe_payment_element_klarna",
     ]);
   });
 });
