@@ -16,7 +16,7 @@ import * as libRegions from "@luxuryescapes/lib-regions";
 yarn prepare:beta
 ```
 - raise a PR
-- From PR, click on circle ci approve publish beta.
+- From PR, click on circle ci approve to publish beta.
 
 ## Publish after your changes
 Update index.d.ts to reflect new changes. Run "yarn build" to recompile js with new changes before merging. Update the version in package.json as part of your PR and CircleCI will do the rest.
