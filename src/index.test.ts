@@ -338,16 +338,14 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
 describe("getPaymentMethodsByRegion()", function () {
   it("NL region to luxuryescapes", function () {
     expect(regionModule.getPaymentMethodsByRegion("NL", "luxuryescapes")).to.deep.equal([
-      "le_credit",
-      "stripe",
-      "deposit_stripe",
-      "giftcard",
-      "applepay",
-      "googlepay",
-      "stripe_3ds",
-      "stripe_3ds_v2",
-      "stripe_payment_element_card",
       "stripe_payment_element_ideal",
+      "flying_blue",
+    ]);
+  });
+
+  it("FR region to luxuryescapes", function () {
+    expect(regionModule.getPaymentMethodsByRegion("FR", "luxuryescapes")).to.deep.equal([
+     "flying_blue",
     ]);
   });
 });

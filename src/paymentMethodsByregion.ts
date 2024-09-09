@@ -24,16 +24,13 @@ export const paymentMethodsByRegion: PaymentMethodsByRegion = {
     },
     NL: {
       paymentMethods: [
-        "le_credit",
-        "stripe",
-        "deposit_stripe",
-        "giftcard",
-        "applepay",
-        "googlepay",
-        "stripe_3ds",
-        "stripe_3ds_v2",
-        "stripe_payment_element_card",
         "stripe_payment_element_ideal",
+        "flying_blue",
+      ],
+    },
+    FR: {
+      paymentMethods: [
+        "flying_blue",
       ],
     },
   },
