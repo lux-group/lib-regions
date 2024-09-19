@@ -267,6 +267,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_custom_payto",
       "stripe_payment_element_card",
       "stripe_payment_element_klarna",
+      "secure_payment",
     ]);
   });
 
