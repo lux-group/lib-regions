@@ -1,8 +1,8 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
-import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByRegion";
 import { paymentMethodLimitsByRegion as _paymentMethodLimitsByRegion } from "./paymentMethodLimitsByRegion";
+import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByRegion";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
 
