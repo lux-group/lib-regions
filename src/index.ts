@@ -1,7 +1,8 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
-import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByregion";
+import { PaymentMethodLimit, paymentMethodLimitsByRegion as _paymentMethodLimitsByRegion } from "./paymentMethodLimitsByRegion";
+import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByRegion";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
 
@@ -17,6 +18,10 @@ function currencies(brand?: string) {
 
 function paymentMethodsByRegion(brand?: string) {
   return _paymentMethodsByRegion[brand || LUXURY_ESCAPES];
+}
+
+function paymentMethodLimitsByRegion(brand?: string) {
+  return _paymentMethodLimitsByRegion[brand || LUXURY_ESCAPES];
 }
 
 const zeroDecimalCurrencies = [
@@ -156,6 +161,17 @@ export function getPaymentMethodsByRegion(
   }
 
   return paymentMethodsByRegion(brand)[regionCode].paymentMethods;
+}
+
+export function getPaymentMethodLimitsByRegion(
+  regionCode: string,
+  brand?: string,
+): PaymentMethodLimit[] {
+  if (!paymentMethodLimitsByRegion(brand)[regionCode]) {
+    return [];
+  }
+
+  return paymentMethodLimitsByRegion(brand)[regionCode];
 }
 
 export function getZeroDecimalCurrencies() {
