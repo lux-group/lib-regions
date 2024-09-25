@@ -10,7 +10,7 @@ interface Region {
   [regionCode: string]: PaymentMethodLimit[];
 }
 
-interface PaymentMethodLimit {
+export interface PaymentMethodLimit {
   paymentMethod: string;
   limit: number;
 }
