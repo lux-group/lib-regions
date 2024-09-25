@@ -20,7 +20,7 @@ export const paymentMethodLimitsByRegion: PaymentMethodsByRegion = {
     AU: [ // Australia
       {
         paymentMethod: "stripe_payment_element_klarna",
-        limit: 3000,
+        limit: 2971, // merchant fee subtracted from 3000
       },
     ],
     US: [ // America
