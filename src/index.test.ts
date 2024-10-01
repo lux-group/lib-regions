@@ -133,6 +133,10 @@ describe("getRegionByCode()", function () {
   it("should return null in brand without region", function () {
     expect(regionModule.getRegionByCode("CA", "scoopontravel")).to.be.undefined;
   });
+
+  it('should handle special region mapping for Denmark', function() {
+    expect(regionModule.getRegionByCode("DK", "luxuryescapes")).to.deep.equal(regionModule.getRegionByCode("NL", "luxuryescapes"));
+  })
 });
 
 describe("getRegionByCurrency()", function () {

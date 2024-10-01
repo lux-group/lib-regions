@@ -109,8 +109,13 @@ export function getRegionByCode(regionCode: string, brand?: Brand) {
   if (!regionCode) {
     return null;
   }
+  const specialRegionCodeMapping: { [key: string]: string } = {
+    dk: 'nl',
+  }
+  const mappedRegionCode: string = specialRegionCodeMapping[regionCode] ? specialRegionCodeMapping[regionCode] : regionCode;
+
   return regions(brand).find(
-    (region) => region.code.toLowerCase() === regionCode.toLowerCase(),
+    (region) => region.code.toLowerCase() === mappedRegionCode.toLowerCase(),
   );
 }
 
