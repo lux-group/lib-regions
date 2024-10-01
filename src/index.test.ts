@@ -133,6 +133,18 @@ describe("getRegionByCode()", function () {
   it("should return null in brand without region", function () {
     expect(regionModule.getRegionByCode("CA", "scoopontravel")).to.be.undefined;
   });
+
+  it('should handle special region mapping for Denmark', function() {
+    expect(regionModule.getRegionByCode("DK", "luxuryescapes")).to.deep.equal(regionModule.getRegionByCode("NL", "luxuryescapes"));
+  });
+
+  it('should handle special region mapping for Sweden', function() {
+    expect(regionModule.getRegionByCode("SE", "luxuryescapes")).to.deep.equal(regionModule.getRegionByCode("ES", "luxuryescapes"));
+  });
+
+  it('should handle special region mapping for Norway', function() {
+    expect(regionModule.getRegionByCode("NO", "luxuryescapes")).to.deep.equal(regionModule.getRegionByCode("IT", "luxuryescapes"));
+  });
 });
 
 describe("getRegionByCurrency()", function () {
