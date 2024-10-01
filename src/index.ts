@@ -111,6 +111,8 @@ export function getRegionByCode(regionCode: string, brand?: Brand) {
   }
   const specialRegionCodeMapping: { [key: string]: string } = {
     dk: 'nl',
+    se: 'es',
+    no: 'it'
   }
   const mappedRegionCode: string = specialRegionCodeMapping[regionCode] ? specialRegionCodeMapping[regionCode] : regionCode;
 
