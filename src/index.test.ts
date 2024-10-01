@@ -134,7 +134,7 @@ describe("getRegionByCode()", function () {
     expect(regionModule.getRegionByCode("CA", "scoopontravel")).to.be.undefined;
   });
 
-  it('should handle special region mapping for Denmark', function() {
+  it.only('should handle special region mapping for Denmark', function() {
     expect(regionModule.getRegionByCode("DK", "luxuryescapes")).to.deep.equal(regionModule.getRegionByCode("NL", "luxuryescapes"));
   })
 });

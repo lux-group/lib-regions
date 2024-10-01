@@ -114,7 +114,7 @@ export function getRegionByCode(regionCode: string, brand?: Brand) {
     se: 'es',
     no: 'it'
   }
-  const mappedRegionCode: string = specialRegionCodeMapping[regionCode] ? specialRegionCodeMapping[regionCode] : regionCode;
+  const mappedRegionCode: string = specialRegionCodeMapping[regionCode.toLowerCase()] ? specialRegionCodeMapping[regionCode.toLowerCase()] : regionCode;
 
   return regions(brand).find(
     (region) => region.code.toLowerCase() === mappedRegionCode.toLowerCase(),
