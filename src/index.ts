@@ -105,20 +105,23 @@ export function getRegionNames(brand?: Brand) {
   return regions(brand).map((region) => region.name);
 }
 
-export function getRegionByCode(regionCode: string, brand?: Brand) {
-  if (!regionCode) {
-    return null;
-  }
+export function mapSpecialRegionsToDefaultRegionCode(regionCode: string) {
   const specialRegionCodeMapping: { [key: string]: string } = {
     dk: "nl",
     se: "es",
     no: "it",
   };
-  const mappedRegionCode: string = specialRegionCodeMapping[regionCode.toLowerCase()] ?
-    specialRegionCodeMapping[regionCode.toLowerCase()] : regionCode;
+
+  return specialRegionCodeMapping[regionCode.toLowerCase()] || regionCode;
+}
+
+export function getRegionByCode(regionCode: string, brand?: Brand) {
+  if (!regionCode) {
+    return null;
+  }
 
   return regions(brand).find(
-    (region) => region.code.toLowerCase() === mappedRegionCode.toLowerCase(),
+    (region) => region.code.toLowerCase() === mapSpecialRegionsToDefaultRegionCode(regionCode).toLowerCase(),
   );
 }
 
