@@ -13,7 +13,7 @@ interface OfferUrgencyTag {
   };
 }
 
-type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue" | "cancellationRetention"
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue" | "cancellationRetention";
 
 interface PhoneNumber {
   humanReadable: string;
@@ -234,8 +234,8 @@ export const regions: BrandRegions = {
             humanReadable: "+61 3 7032 3381",
             number: "+61370323381",
           },
-          default: "local"
-        }
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
@@ -1179,8 +1179,8 @@ export const regions: BrandRegions = {
             humanReadable: "+61 3 7032 3381",
             number: "+61370323381",
           },
-          default: "local"
-        }
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -1819,8 +1819,8 @@ export const regions: BrandRegions = {
             humanReadable: "+61 3 7032 3381",
             number: "+61370323381",
           },
-          default: "local"
-        }
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
@@ -1899,8 +1899,8 @@ export const regions: BrandRegions = {
             humanReadable: "+61 3 7032 3381",
             number: "+61370323381",
           },
-          default: "local"
-        }
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
