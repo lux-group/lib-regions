@@ -13,7 +13,7 @@ interface OfferUrgencyTag {
   };
 }
 
-type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue";
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue" | "cancellationRetention"
 
 interface PhoneNumber {
   humanReadable: string;
@@ -224,6 +224,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "cancellationRetention",
+          local: {
+            humanReadable: "1300 739 349",
+            number: "1300739349",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local"
+        }
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       latitudeThreshold: 999,
@@ -1157,6 +1169,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "cancellationRetention",
+          local: {
+            humanReadable: "0800 130 064",
+            number: "0800130064",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local"
+        }
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -1785,6 +1809,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "cancellationRetention",
+          local: {
+            humanReadable: "0800 680 0085",
+            number: "08006800085",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local"
+        }
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
@@ -1853,6 +1889,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "cancellationRetention",
+          local: {
+            humanReadable: "888 300 2414",
+            number: "8883002414",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local"
+        }
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
