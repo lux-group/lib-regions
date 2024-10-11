@@ -240,5 +240,22 @@ export const priorityPhoneNumbers: BrandPriorityPhoneNumber = {
         default: "local",
       },
     },
+    {
+      code: "GB",
+      name: "United Kingdom",
+      lang: "en-GB",
+      phonePrefix: "44",
+      phone: {
+        local: {
+          humanReadable: "0808 304 4066",
+          number: "08083044066",
+        },
+        international: {
+          humanReadable: "+61 3 7032 3381",
+          number: "+61370323381",
+        },
+        default: "local",
+      },
+    },
   ],
 };
