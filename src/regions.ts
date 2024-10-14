@@ -2791,7 +2791,7 @@ export const regions: BrandRegions = {
       phonePrefix: "61",
       currencyFormattingLocale: "en-AU",
       currencyCode: "AUD",
-      currencyPrefix: "A",
+      currencyPrefix: "",
       flagId: "au_iuox02",
       flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
       marketedLos: DEFAULT_MARKETED_LOS,
