@@ -133,6 +133,13 @@ export const currencies: BrandCurrencies = {
         "stripe_payment_element_card",
       ],
     },
+    GBP: {
+      paymentMethods: [
+        "stripe",
+        "stripe_3ds",
+        "stripe_payment_element_card",
+      ],
+    },
   },
   led_admin: {
     AUD: {

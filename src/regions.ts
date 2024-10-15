@@ -2896,5 +2896,73 @@ export const regions: BrandRegions = {
         },
       },
     },
+    {
+      code: "GB",
+      name: "United Kingdom",
+      lang: "en-GB",
+      phonePrefix: "44",
+      currencyFormattingLocale: "en-GB",
+      currencyCode: "GBP",
+      currencyPrefix: "",
+      flagId: "gb_ta8bez",
+      flightsSupportEmail: DEFAULT_FLIGHTS_SUPPORT_EMAIL,
+      marketedLos: DEFAULT_MARKETED_LOS,
+      phone: {
+        local: {
+          humanReadable: "0808 175 4987",
+          number: "08081754987",
+        },
+        international: {
+          humanReadable: "+44 20 3763 8046",
+          number: "+442037638046",
+        },
+        default: "local",
+      },
+      contacts: [
+        {
+          type: "general",
+          local: {
+            humanReadable: "0808 175 4987",
+            number: "08081754987",
+          },
+          international: {
+            humanReadable: "+44 20 3763 8046",
+            number: "+442037638046",
+          },
+          default: "local",
+        },
+        {
+          type: "highValue",
+          local: {
+            humanReadable: "0808 304 4066",
+            number: "08083044066",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+      ],
+      mailingAddress: DEFAULT_MAILING_ADDRESS,
+      referralAmount: 25,
+      insuranceProductName: "protection",
+      referralMinSpendAmount: 249,
+      giftCardOptions: [50, 100, 250, 500, 750, 1000, 2000],
+      offerUrgencyTag: {
+        tour: {
+          popular: {
+            min: 2,
+            period: 24,
+          },
+        },
+        hotel: {
+          popular: {
+            min: 4,
+            period: 24,
+          },
+        },
+      },
+    },
   ],
 };
