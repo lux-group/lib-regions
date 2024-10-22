@@ -467,3 +467,14 @@ describe("Insurance countries", function () {
     expect(isoCode).to.equal("AU")
   });
 });
+
+describe('getDefaultCancellationRetentionPhoneNumber', () => {
+  it('should return the AU cancellation retention phone number', () => {
+    const phoneNumber = regionModule.getDefaultCancellationRetentionPhoneNumber()
+
+    expect(phoneNumber).to.deep.equal({
+      number: "1300739349",
+      humanReadable: "1300 739 349",
+    })
+  })
+})
