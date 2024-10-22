@@ -239,3 +239,12 @@ export function getInsuranceCountryTwoLetterCodeByName(name: string) {
   const insuranceCountry = insuranceCountries.find((country) => country.name === name);
   return insuranceCountry?.two_letter_country_code;
 }
+
+export function getDefaultCancellationRetentionPhoneNumber(brand?: Brand) {
+  const auRegion = regions(brand).find((region) => region.code === 'AU')
+  const retentionContact = auRegion?.contacts.find((contact) => contact.type === 'cancellationRetention')
+  return {
+    number: retentionContact?.local.number ?? '1300739349',
+    humanReadable: retentionContact?.local.humanReadable ?? '1300 739 349'
+  }
+}
