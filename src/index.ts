@@ -241,10 +241,10 @@ export function getInsuranceCountryTwoLetterCodeByName(name: string) {
 }
 
 export function getDefaultCancellationRetentionPhoneNumber(brand?: Brand) {
-  const auRegion = regions(brand).find((region) => region.code === 'AU')
-  const retentionContact = auRegion?.contacts.find((contact) => contact.type === 'cancellationRetention')
+  const auRegion = regions(brand).find((region) => region.code === "AU");
+  const retentionContact = auRegion?.contacts.find((contact) => contact.type === "cancellationRetention");
   return {
-    number: retentionContact?.local.number ?? '1300739349',
-    humanReadable: retentionContact?.local.humanReadable ?? '1300 739 349'
-  }
+    number: retentionContact?.local.number ?? "1300739349",
+    humanReadable: retentionContact?.local.humanReadable ?? "1300 739 349",
+  };
 }
