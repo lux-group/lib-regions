@@ -23,11 +23,11 @@ describe("getRegionCodesSortedByKeyRegions", () => {
   });
 
   it("should return the index of last key region", () => {
-    expect(lastKeyRegionIndex).to.be.equal(4);
+    expect(lastKeyRegionIndex).to.be.equal(6);
   });
 
   it("should return other region codes sorted and after key region codes", () => {
-    const otherRegionCodes = allRegionCodes.slice(5, 10);
+    const otherRegionCodes = allRegionCodes.slice(7, 12);
     expect(otherRegionCodes).to.deep.equal(["CA", "CN", "FR", "DE", "IN"]);
   });
 
