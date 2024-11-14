@@ -18,17 +18,17 @@ describe("getRegionCodesSortedByKeyRegions", () => {
     regionModule.getRegionCodesSortedByKeyRegions();
 
   it("should return key region codes sorted and as initial elements", () => {
-    const keyRegionCodes = allRegionCodes.slice(0, 5);
-    expect(keyRegionCodes).to.deep.equal(["AU", "US", "GB", "NZ", "SG"]);
+    const keyRegionCodes = allRegionCodes.slice(0, 7);
+    expect(keyRegionCodes).to.deep.equal(["AU", "US", "GB", "NZ", "SG", "HK", "TW"]);
   });
 
   it("should return the index of last key region", () => {
-    expect(lastKeyRegionIndex).to.be.equal(4);
+    expect(lastKeyRegionIndex).to.be.equal(6);
   });
 
   it("should return other region codes sorted and after key region codes", () => {
-    const otherRegionCodes = allRegionCodes.slice(5, 10);
-    expect(otherRegionCodes).to.deep.equal(["CA", "CN", "FR", "DE", "HK"]);
+    const otherRegionCodes = allRegionCodes.slice(7, 12);
+    expect(otherRegionCodes).to.deep.equal(["CA", "CN", "FR", "DE", "IN"]);
   });
 
   it("should not return excluded regions", () => {
