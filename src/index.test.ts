@@ -18,8 +18,8 @@ describe("getRegionCodesSortedByKeyRegions", () => {
     regionModule.getRegionCodesSortedByKeyRegions();
 
   it("should return key region codes sorted and as initial elements", () => {
-    const keyRegionCodes = allRegionCodes.slice(0, 5);
-    expect(keyRegionCodes).to.deep.equal(["AU", "US", "GB", "NZ", "SG"]);
+    const keyRegionCodes = allRegionCodes.slice(0, 7);
+    expect(keyRegionCodes).to.deep.equal(["AU", "US", "GB", "NZ", "SG", "HK", "TW"]);
   });
 
   it("should return the index of last key region", () => {
