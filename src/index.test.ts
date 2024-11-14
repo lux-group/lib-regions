@@ -28,7 +28,7 @@ describe("getRegionCodesSortedByKeyRegions", () => {
 
   it("should return other region codes sorted and after key region codes", () => {
     const otherRegionCodes = allRegionCodes.slice(5, 10);
-    expect(otherRegionCodes).to.deep.equal(["CA", "CN", "FR", "DE", "HK"]);
+    expect(otherRegionCodes).to.deep.equal(["CA", "CN", "FR", "DE", "IN"]);
   });
 
   it("should not return excluded regions", () => {
