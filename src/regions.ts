@@ -1461,6 +1461,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "luxPlus",
+          local: {
+            humanReadable: "6690 5682",
+            number: "66905682",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
       ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 50,
