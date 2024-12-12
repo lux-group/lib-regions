@@ -1439,8 +1439,8 @@ export const regions: BrandRegions = {
       marketedLos: DEFAULT_MARKETED_LOS,
       phone: {
         local: {
-          humanReadable: "6690 5451",
-          number: "66905451",
+          humanReadable: "+65 6690 5451",
+          number: "+6566905451",
         },
         international: {
           humanReadable: "+61 3 7032 3381",
@@ -1452,8 +1452,8 @@ export const regions: BrandRegions = {
         {
           type: "general",
           local: {
-            humanReadable: "6690 5451",
-            number: "66905451",
+            humanReadable: "+65 6690 5451",
+            number: "+6566905451",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
@@ -1464,8 +1464,8 @@ export const regions: BrandRegions = {
         {
           type: "luxPlus",
           local: {
-            humanReadable: "6690 5682",
-            number: "66905682",
+            humanReadable: "+65 6690 5682",
+            number: "+6566905682",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
