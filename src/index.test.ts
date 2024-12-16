@@ -296,6 +296,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_3ds",
       "atome_bp",
       "stripe_payment_element_card",
+      "stripe_payment_element_paynow",
     ]);
   });
   it("should return an empty array of payment methods when brand doesn't have sellected currency", function () {
