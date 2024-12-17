@@ -319,31 +319,46 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
   it("should return an array of payment methods for brand to luxuryescapes for EUR", function () {
     expect(regionModule.getPaymentMethodsByCurrencyCode("EUR")).to.deep.equal([
       "le_credit",
-        "stripe",
-        "deposit_stripe",
-        "giftcard",
-        "applepay",
-        "googlepay",
-        "stripe_3ds",
-        "stripe_3ds_v2",
-        "stripe_payment_element_card",
-        "stripe_payment_element_klarna",
+      "stripe",
+      "deposit_stripe",
+      "giftcard",
+      "applepay",
+      "googlepay",
+      "stripe_3ds",
+      "stripe_3ds_v2",
+      "stripe_payment_element_card",
+      "stripe_payment_element_klarna",
     ]);
   });
 
   it("should return an array of payment methods for brand to luxuryescapes for USD", function () {
     expect(regionModule.getPaymentMethodsByCurrencyCode("USD")).to.deep.equal([
       "le_credit",
-        "stripe",
-        "deposit_stripe",
-        "giftcard",
-        "krisFlyer",
-        "applepay",
-        "googlepay",
-        "afterpay_bp",
-        "stripe_3ds",
-        "stripe_payment_element_card",
-        "stripe_payment_element_klarna",
+      "stripe",
+      "deposit_stripe",
+      "giftcard",
+      "krisFlyer",
+      "applepay",
+      "googlepay",
+      "afterpay_bp",
+      "stripe_3ds",
+      "stripe_payment_element_card",
+      "stripe_payment_element_klarna",
+    ]);
+  });
+
+  it("should return an array of payment methods for brand to luxuryescapes for HKD", function () {
+    expect(regionModule.getPaymentMethodsByCurrencyCode("HKD")).to.deep.equal([
+      "le_credit",
+      "stripe",
+      "deposit_stripe",
+      "giftcard",
+      "krisFlyer",
+      "applepay",
+      "googlepay",
+      "stripe_3ds",
+      "stripe_payment_element_card",
+      "stripe_payment_element_wechatpay",
     ]);
   });
 });
