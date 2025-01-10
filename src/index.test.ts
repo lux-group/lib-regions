@@ -255,7 +255,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
   it("should return an array of payment methods", function () {
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")
-    ).to.deep.equal(["applepay", "stripe", "braintree", "stripe_3ds", "giftcard", "stripe_custom_payto", "stripe_payment_element_card"]);
+    ).to.deep.equal(["applepay", "stripe", "braintree", "stripe_3ds", "giftcard", "stripe_custom_payto", "stripe_payment_element_card", "googlepay"]);
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")
     ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard", "stripe_payment_element_card"]);
