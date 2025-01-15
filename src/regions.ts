@@ -517,6 +517,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "luxPlus",
+          local: {
+            humanReadable: "3018 8575",
+            number: "30188575",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
       ],
       mailingAddress: SINGAPORE_MAILING_ADDRESS,
       referralAmount: 300,
@@ -1833,6 +1845,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "luxPlus",
+          local: {
+            humanReadable: "08000 239 156",
+            number: "08000239156",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
@@ -1906,6 +1930,18 @@ export const regions: BrandRegions = {
           local: {
             humanReadable: "888 300 2414",
             number: "8883002414",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "luxPlus",
+          local: {
+            humanReadable: "888 243 2076",
+            number: "8882432076",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
