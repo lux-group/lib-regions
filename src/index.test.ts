@@ -280,6 +280,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_payment_element_card",
       "stripe_payment_element_klarna",
       "secure_payment",
+      "azupay_pay_id",
     ]);
   });
 
