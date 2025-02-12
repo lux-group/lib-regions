@@ -128,7 +128,8 @@ export function getRegionByCurrency(currencyCode: string, brand?: Brand) {
   );
 }
 
-export function isPhoneNumberValidForRegion({ phoneNumber, regionCode, brand }: { phoneNumber: string, regionCode: string, brand?: Brand }) {
+export function isPhoneNumberValidForRegion(
+  { phoneNumber, regionCode, brand }: { phoneNumber: string, regionCode: string, brand?: Brand }) {
   const region = getRegionByCode(regionCode, brand);
 
   if (!region?.phoneRegex) {
