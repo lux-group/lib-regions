@@ -106,7 +106,7 @@ export const PHONE_REGEX: Record<string, RegExp> = {
   QA: /^[3567]\d{7}$/,
   RU: /^9\d{9}$/,
   SA: /^5\d{8}$/,
-  SG: /^[89]\d{7}$/,
+  SG: /^[689]\d{7}$/,
   ZA: /^[678]\d{8}$/,
   ES: /^[67]\d{8}$/,
   TW: /^9\d{8}$/,
