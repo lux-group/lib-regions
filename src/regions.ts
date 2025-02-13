@@ -86,7 +86,7 @@ export const BRANDS = [
 
 export const PHONE_REGEX: Record<string, RegExp> = {
   AU: /^[2-478]\d{8}$/,
-  CA: /^[2-9]\d[2-9]\d{7}$/,
+  CA: /\(?\d{3}\)?-? *\d{3}-? *-?\d{4}/,
   CN: /^1[3-9]\d{9}$/,
   FR: /^[67]\d{8}$/,
   DE: /^1(?:5[0-9]|6[0-9]|7[0-9])\d{7,8}$/,
@@ -113,7 +113,7 @@ export const PHONE_REGEX: Record<string, RegExp> = {
   TH: /^[689]\d{8}$/,
   AE: /^5\d{8}$/,
   GB: /^7(?:[1-9]\d{8})$/,
-  US: /^[2-9]\d[2-9]\d{7}$/,
+  US: /\(?\d{3}\)?-? *\d{3}-? *-?\d{4}/,
   VN: /^(?:[35789])\d{8}$/,
 };
 
