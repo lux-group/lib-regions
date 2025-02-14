@@ -494,3 +494,239 @@ describe('getDefaultCancellationRetentionPhoneNumber', () => {
     })
   })
 })
+
+describe('isRegionPhoneNumberValid', () => {
+  it('should return true if phone number is valid for region AU', () => {
+    const args = {
+      phoneNumber: '412121212',
+      regionCode: 'AU',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if phone number is not valid for region AU', () => {
+    const args = {
+      phoneNumber: '4121212121',
+      regionCode: 'AU',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if the international prefix is provided for region AU', () => {
+    const args = {
+      phoneNumber: '+61412121212',
+      regionCode: 'AU',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has the trunk prefix of 0 for region AU', () => {
+    const args = {
+      phoneNumber: '0412121212',
+      regionCode: 'AU',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return true if phone number is valid for region NZ', () => {
+    const args = {
+      phoneNumber: '212121212',
+      regionCode: 'NZ',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if the international prefix is provided for region NZ', () => {
+    const args = {
+      phoneNumber: '+64212121212',
+      regionCode: 'NZ',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number is not valid for region NZ', () => {
+    const args = {
+      phoneNumber: '9121212121',
+      regionCode: 'NZ',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has the trunk prefix of 0 for region NZ', () => {
+    const args = {
+      phoneNumber: '0212121212',
+      regionCode: 'NZ',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return true if phone number is valid for region US', () => {
+    const args = {
+      phoneNumber: '2035671234',
+      regionCode: 'US',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if phone number is not valid for region US', () => {
+    const args = {
+      phoneNumber: '20356712341123',
+      regionCode: 'US',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if the international prefix is provided for region US', () => {
+    const args = {
+      phoneNumber: '+12035671234',
+      regionCode: 'US',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return true if phone number is valid for region GB', () => {
+    const args = {
+      phoneNumber: '7123456789',
+      regionCode: 'GB',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if phone number is not valid for region GB', () => {
+    const args = {
+      phoneNumber: '712345678912',
+      regionCode: 'GB',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if the international prefix is provided for region GB', () => {
+    const args = {
+      phoneNumber: '+447912345678',
+      regionCode: 'GB',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has a prefix for region GB', () => {
+    const args = {
+      phoneNumber: '07123456789',
+      regionCode: 'GB',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return true if phone number is valid for region CA', () => {
+    const args = {
+      phoneNumber: '5559044252',
+      regionCode: 'CA',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return true if phone number is valid for region SG', () => {
+    const args = {
+      phoneNumber: '95553957',
+      regionCode: 'SG',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if phone number is not valid for region SG', () => {
+    const args = {
+      phoneNumber: '955539571231',
+      regionCode: 'SG',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has the international prefix for region SG', () => {
+    const args = {
+      phoneNumber: '+6595553957',
+      regionCode: 'SG',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return true if phone number is valid for region HK', () => {
+    const args = {
+      phoneNumber: '56655571',
+      regionCode: 'HK',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if phone number is not valid for region HK', () => {
+    const args = {
+      phoneNumber: '566555711231',
+      regionCode: 'HK',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has the international prefix for region HK', () => {
+    const args = {
+      phoneNumber: '+85256655571',
+      regionCode: 'HK',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has the trunk prefix of 0 for region HK', () => {
+    const args = {
+      phoneNumber: '056655571',
+      regionCode: 'HK',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return true if phone number is valid for region ZA', () => {
+    const args = {
+      phoneNumber: '555328675',
+      regionCode: 'ZA',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
+  })
+
+  it('should return false if phone number is not valid for region ZA', () => {
+    const args = {
+      phoneNumber: '5553286751231',
+      regionCode: 'ZA',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+
+  it('should return false if phone number has the international prefix for region ZA', () => {
+    const args = {
+      phoneNumber: '+27555328675',
+      regionCode: 'ZA',
+      brand: 'luxuryescapes' as Brand
+    }
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
+  })
+})
