@@ -495,14 +495,14 @@ describe('getDefaultCancellationRetentionPhoneNumber', () => {
   })
 })
 
-describe('isPhoneNumberValidForRegion', () => {
+describe('isRegionPhoneNumberValid', () => {
   it('should return true if phone number is valid for region AU', () => {
     const args = {
       phoneNumber: '412121212',
       regionCode: 'AU',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if phone number is not valid for region AU', () => {
@@ -511,7 +511,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'AU',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if the international prefix is provided for region AU', () => {
@@ -520,7 +520,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'AU',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has the trunk prefix of 0 for region AU', () => {
@@ -529,7 +529,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'AU',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return true if phone number is valid for region NZ', () => {
@@ -538,7 +538,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'NZ',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if the international prefix is provided for region NZ', () => {
@@ -547,7 +547,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'NZ',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number is not valid for region NZ', () => {
@@ -556,7 +556,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'NZ',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has the trunk prefix of 0 for region NZ', () => {
@@ -565,7 +565,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'NZ',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return true if phone number is valid for region US', () => {
@@ -574,7 +574,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'US',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if phone number is not valid for region US', () => {
@@ -583,7 +583,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'US',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if the international prefix is provided for region US', () => {
@@ -592,7 +592,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'US',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return true if phone number is valid for region GB', () => {
@@ -601,7 +601,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'GB',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if phone number is not valid for region GB', () => {
@@ -610,7 +610,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'GB',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if the international prefix is provided for region GB', () => {
@@ -619,7 +619,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'GB',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has a prefix for region GB', () => {
@@ -628,7 +628,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'GB',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return true if phone number is valid for region CA', () => {
@@ -637,7 +637,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'CA',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return true if phone number is valid for region SG', () => {
@@ -646,7 +646,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'SG',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if phone number is not valid for region SG', () => {
@@ -655,7 +655,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'SG',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has the international prefix for region SG', () => {
@@ -664,7 +664,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'SG',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return true if phone number is valid for region HK', () => {
@@ -673,7 +673,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'HK',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if phone number is not valid for region HK', () => {
@@ -682,7 +682,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'HK',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has the international prefix for region HK', () => {
@@ -691,7 +691,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'HK',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has the trunk prefix of 0 for region HK', () => {
@@ -700,7 +700,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'HK',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return true if phone number is valid for region ZA', () => {
@@ -709,7 +709,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'ZA',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(true);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(true);
   })
 
   it('should return false if phone number is not valid for region ZA', () => {
@@ -718,7 +718,7 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'ZA',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 
   it('should return false if phone number has the international prefix for region ZA', () => {
@@ -727,6 +727,6 @@ describe('isPhoneNumberValidForRegion', () => {
       regionCode: 'ZA',
       brand: 'luxuryescapes' as Brand
     }
-    expect(regionModule.isPhoneNumberValidForRegion(args)).to.equal(false);
+    expect(regionModule.isRegionPhoneNumberValid(args)).to.equal(false);
   })
 })
