@@ -1,6 +1,6 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
-import { ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
+import { ALLOWED_CFMR_ORIGIN_COUNTRIES, ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
 import { PaymentMethodLimit, paymentMethodLimitsByRegion as _paymentMethodLimitsByRegion } from "./paymentMethodLimitsByRegion";
 import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByRegion";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
@@ -230,6 +230,10 @@ export function getInsuranceCountries() {
 
 export function getInsuranceAllowedOriginCountries() {
   return ALLOWED_ORIGIN_COUNTRIES;
+}
+
+export function getInsuranceCFMRAllowedOriginCountries() {
+  return ALLOWED_CFMR_ORIGIN_COUNTRIES;
 }
 
 export function getInsuranceCountryNames() {
