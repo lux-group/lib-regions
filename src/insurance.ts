@@ -1,4 +1,5 @@
 export const ALLOWED_ORIGIN_COUNTRIES = ["NZ", "AU", "SG", "MY", "TH", "IN", "HK"];
+export const ALLOWED_CFMR_ORIGIN_COUNTRIES = ['AU', 'NZ', 'US', 'GB', 'CA', 'VN', 'AE', 'SA', 'QA', 'FR', 'DE', 'IE', 'IT', 'ES', 'NL'];
 
 export const COVER_GENIUS_COUNTRIES = [
   {
