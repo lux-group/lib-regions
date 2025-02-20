@@ -1,11 +1,11 @@
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { ALLOWED_CFMR_ORIGIN_COUNTRIES, ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
+import { CountryCode, isPossiblePhoneNumber } from "libphonenumber-js";
 import { PaymentMethodLimit, paymentMethodLimitsByRegion as _paymentMethodLimitsByRegion } from "./paymentMethodLimitsByRegion";
 import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByRegion";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
-import { isPossiblePhoneNumber } from "libphonenumber-js";
 
 export { Region };
 
@@ -142,7 +142,7 @@ export function isRegionPhoneNumberValid(
 
 export function altIsRegionPhoneNumberValid(
   { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
-    return isPossiblePhoneNumber(phoneNumber, regionCode);
+    return isPossiblePhoneNumber(phoneNumber, regionCode as CountryCode);
 }
 
 export function getDefaultRegion(brand?: Brand) {
