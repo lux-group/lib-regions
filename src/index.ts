@@ -5,6 +5,7 @@ import { PaymentMethodLimit, paymentMethodLimitsByRegion as _paymentMethodLimits
 import { paymentMethodsByRegion as _paymentMethodsByRegion } from "./paymentMethodsByRegion";
 import { priorityPhoneNumbers } from "./priorityPhoneNumbers";
 import { Brand, LUXURY_ESCAPES } from "./regions";
+import { isPossiblePhoneNumber } from "libphonenumber-js";
 
 export { Region };
 
@@ -137,6 +138,11 @@ export function isRegionPhoneNumberValid(
   }
 
   return region.phoneRegex.test(phoneNumber);
+}
+
+export function altIsRegionPhoneNumberValid(
+  { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
+    return isPossiblePhoneNumber(phoneNumber, regionCode);
 }
 
 export function getDefaultRegion(brand?: Brand) {
