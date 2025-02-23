@@ -1,4 +1,5 @@
-import { CountryCode, isPossiblePhoneNumber } from "libphonenumber-js/min";
+// import { CountryCode, isPossiblePhoneNumber } from "libphonenumber-js/min";
+import { phone } from 'phone';
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { ALLOWED_CFMR_ORIGIN_COUNTRIES, ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
@@ -142,7 +143,8 @@ export function isRegionPhoneNumberValid(
 
 export function altIsRegionPhoneNumberValid(
   { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
-    return isPossiblePhoneNumber(phoneNumber, regionCode as CountryCode);
+    // return isPossiblePhoneNumber(phoneNumber, regionCode as CountryCode);
+    return phone(phoneNumber, { country: regionCode }).isValid;
 }
 
 export function getDefaultRegion(brand?: Brand) {

@@ -32,6 +32,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "libphonenumber-js": "^1.11.20"
+    "phone": "^3.1.58"
   }
 }
