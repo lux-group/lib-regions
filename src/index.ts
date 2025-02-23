@@ -1,5 +1,5 @@
 // import { CountryCode, isPossiblePhoneNumber } from "libphonenumber-js/min";
-import { phone } from 'phone';
+import { phone } from "phone";
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { ALLOWED_CFMR_ORIGIN_COUNTRIES, ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
