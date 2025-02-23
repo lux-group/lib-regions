@@ -1,5 +1,4 @@
 // import { CountryCode, isPossiblePhoneNumber } from "libphonenumber-js/min";
-import { phone } from "phone";
 import { currencies as _currencies } from "./currencies";
 import { ExtendedRegion as Region, extendedRegions } from "./extended";
 import { ALLOWED_CFMR_ORIGIN_COUNTRIES, ALLOWED_ORIGIN_COUNTRIES, COVER_GENIUS_COUNTRIES, UNIVERSAL_COUNTRIES } from "./insurance";
@@ -141,9 +140,9 @@ export function isRegionPhoneNumberValid(
   return region.phoneRegex.test(phoneNumber);
 }
 
-export function altIsRegionPhoneNumberValid(
+export async function altIsRegionPhoneNumberValid(
   { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
-    // return isPossiblePhoneNumber(phoneNumber, regionCode as CountryCode);
+    const { phone } = await import('phone')
     return phone(phoneNumber, { country: regionCode }).isValid;
 }
 
