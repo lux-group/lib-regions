@@ -140,12 +140,6 @@ export function isRegionPhoneNumberValid(
   return region.phoneRegex.test(phoneNumber);
 }
 
-export async function altIsRegionPhoneNumberValid(
-  { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
-    const { phone } = await import("phone");
-    return phone(phoneNumber, { country: regionCode }).isValid;
-}
-
 export function getDefaultRegion(brand?: Brand) {
   return regions(brand)[0];
 }
