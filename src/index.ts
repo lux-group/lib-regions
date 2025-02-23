@@ -142,7 +142,7 @@ export function isRegionPhoneNumberValid(
 
 export async function altIsRegionPhoneNumberValid(
   { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
-    const { phone } = await import('phone');
+    const { phone } = await import("phone");
     return phone(phoneNumber, { country: regionCode }).isValid;
 }
 
