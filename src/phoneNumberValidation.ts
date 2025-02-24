@@ -62,6 +62,7 @@ export function isPhoneNumberValidForRegion(
     const phoneNumberResult = phone(phoneNumber, {
       country: regionCode,
       strictDetection: true,
+      validateMobilePrefix: false,
     });
 
     return phoneNumberResult.isValid;

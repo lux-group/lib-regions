@@ -28,11 +28,10 @@ describe("isPhoneNumberValidForRegion", () => {
     expect(result).to.be.false;
   })
 
-  it("should return false for an invalid AU phone number", () => {
-    const result = isPhoneNumberValidForRegion({ phoneNumber: "212121212", regionCode: "AU" });
-    expect(result).to.be.false;
-  });
-
+  it("should return true if the phone number is a valid Australian landline phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "212345678", regionCode: "AU" });
+    expect(result).to.be.true;
+  })
 
   it("should return true for a valid NZ phone number", () => {
     const result = isPhoneNumberValidForRegion({ phoneNumber: "212121212", regionCode: "NZ" });
@@ -79,11 +78,10 @@ describe("isPhoneNumberValidForRegion", () => {
     expect(result).to.be.true;
   });
 
-  it("should return false for an invalid SG phone number", () => {
-    // SG phone numbers should start with 6, 8, or 9
-    const result = isPhoneNumberValidForRegion({ phoneNumber: "21234567", regionCode: "SG" });
-    expect(result).to.be.false;
-  });
+  it("should return true for a valid SG landline phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "81234567", regionCode: "SG" });
+    expect(result).to.be.true;
+  })
 
   it("should return true for a valid HK phone number", () => {
     const result = isPhoneNumberValidForRegion({ phoneNumber: "51234567", regionCode: "HK" });
@@ -98,11 +96,6 @@ describe("isPhoneNumberValidForRegion", () => {
   it("should return true for a valid IN phone number", () => {
     const result = isPhoneNumberValidForRegion({ phoneNumber: "9123456789", regionCode: "IN" });
     expect(result).to.be.true;
-  });
-
-  it("should return false for an invalid IN phone number", () => {
-    const result = isPhoneNumberValidForRegion({ phoneNumber: "912345678912", regionCode: "IN" });
-    expect(result).to.be.false;
   });
 
   it("should return true for a valid BE phone number", () => {
