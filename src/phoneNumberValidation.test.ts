@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { isPhoneNumberValidForRegion } from "./phoneNumberValidation";
 
-describe("altIsRegionPhoneNumberValid", () => {
+describe("isPhoneNumberValidForRegion", () => {
   it("should return false for a phone number with non-numeric characters", () => {
     const result = isPhoneNumberValidForRegion({ phoneNumber: "41212ASD12", regionCode: "AU" });
     expect(result).to.be.false;
