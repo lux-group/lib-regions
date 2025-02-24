@@ -3,275 +3,275 @@ import { phone } from "phone";
 const NON_NUMERICAL_CHARACTERS_REGEX = /[^0-9]/;
 
 export const REGIONS_COUNTRY_CODES = {
-  "AD": {
+  AD: {
     countryName: "Andorra",
     countryCode: "376",
   },
-  "AE": {
+  AE: {
     countryName: "United Arab Emirates",
     countryCode: "971",
   },
-  "AL": {
+  AL: {
     countryName: "Albania",
     countryCode: "355",
   },
-  "AT": {
+  AT: {
     countryName: "Austria",
     countryCode: "43",
   },
-  "AU": {
+  AU: {
     countryName: "Australia",
     countryCode: "61",
   },
-  "BA": {
+  BA: {
     countryName: "Bosnia and Herzegovina",
     countryCode: "387",
   },
-  "BE": {
+  BE: {
     countryName: "Belgium",
     countryCode: "32",
   },
-  "BG": {
+  BG: {
     countryName: "Bulgaria",
     countryCode: "359",
   },
-  "BY": {
+  BY: {
     countryName: "Belarus",
     countryCode: "375",
   },
-  "CA": {
+  CA: {
     countryName: "Canada",
     countryCode: "1",
   },
-  "CH": {
+  CH: {
     countryName: "Switzerland",
     countryCode: "41",
   },
-  "CN": {
+  CN: {
     countryName: "China",
     countryCode: "86",
   },
-  "CY": {
+  CY: {
     countryName: "Cyprus",
     countryCode: "357",
   },
-  "CZ": {
+  CZ: {
     countryName: "Czech Republic",
     countryCode: "420",
   },
-  "DE": {
+  DE: {
     countryName: "Germany",
     countryCode: "49",
   },
-  "DK": {
+  DK: {
     countryName: "Denmark",
     countryCode: "45",
   },
-  "EE": {
+  EE: {
     countryName: "Estonia",
     countryCode: "372",
   },
-  "ES": {
+  ES: {
     countryName: "Spain",
     countryCode: "34",
   },
-  "FI": {
+  FI: {
     countryName: "Finland",
     countryCode: "358",
   },
-  "FR": {
+  FR: {
     countryName: "France",
     countryCode: "33",
   },
-  "GB": {
+  GB: {
     countryName: "United Kingdom",
     countryCode: "44",
   },
-  "GR": {
+  GR: {
     countryName: "Greece",
     countryCode: "30",
   },
-  "HK": {
+  HK: {
     countryName: "Hong Kong",
     countryCode: "852",
   },
-  "HR": {
+  HR: {
     countryName: "Croatia",
     countryCode: "385",
   },
-  "HU": {
+  HU: {
     countryName: "Hungary",
     countryCode: "36",
   },
-  "ID": {
+  ID: {
     countryName: "Indonesia",
     countryCode: "62",
   },
-  "IE": {
+  IE: {
     countryName: "Ireland",
     countryCode: "353",
   },
-  "IL": {
+  IL: {
     countryName: "Israel",
     countryCode: "972",
   },
-  "IN": {
+  IN: {
     countryName: "India",
     countryCode: "91",
   },
-  "IS": {
+  IS: {
     countryName: "Iceland",
     countryCode: "354",
   },
-  "IT": {
+  IT: {
     countryName: "Italy",
     countryCode: "39",
   },
-  "JP": {
+  JP: {
     countryName: "Japan",
     countryCode: "81",
   },
-  "KR": {
+  KR: {
     countryName: "Korea",
     countryCode: "82",
   },
-  "LI": {
+  LI: {
     countryName: "Liechtenstein",
     countryCode: "423",
   },
-  "LT": {
+  LT: {
     countryName: "Lithuania",
     countryCode: "370",
   },
-  "LU": {
+  LU: {
     countryName: "Luxembourg",
     countryCode: "352",
   },
-  "LV": {
+  LV: {
     countryName: "Latvia",
     countryCode: "371",
   },
-  "MC": {
+  MC: {
     countryName: "Monaco",
     countryCode: "377",
   },
-  "MD": {
+  MD: {
     countryName: "Moldova",
     countryCode: "373",
   },
-  "ME": {
+  ME: {
     countryName: "Montenegro",
     countryCode: "382",
   },
-  "MK": {
+  MK: {
     countryName: "North Macedonia",
     countryCode: "389",
   },
-  "MO": {
+  MO: {
     countryName: "Macau",
     countryCode: "853",
   },
-  "MT": {
+  MT: {
     countryName: "Malta",
     countryCode: "356",
   },
-  "MY": {
+  MY: {
     countryName: "Malaysia",
     countryCode: "60",
   },
-  "NL": {
+  NL: {
     countryName: "Netherlands",
     countryCode: "31",
   },
-  "NO": {
+  NO: {
     countryName: "Norway",
     countryCode: "47",
   },
-  "NZ": {
+  NZ: {
     countryName: "New Zealand",
     countryCode: "64",
   },
-  "PH": {
+  PH: {
     countryName: "Philippines",
     countryCode: "63",
   },
-  "PL": {
+  PL: {
     countryName: "Poland",
     countryCode: "48",
   },
-  "PT": {
+  PT: {
     countryName: "Portugal",
     countryCode: "351",
   },
-  "QA": {
+  QA: {
     countryName: "Qatar",
     countryCode: "964",
   },
-  "RO": {
+  RO: {
     countryName: "Romania",
     countryCode: "40",
   },
-  "RS": {
+  RS: {
     countryName: "Serbia",
     countryCode: "381",
   },
-  "RU": {
+  RU: {
     countryName: "Russia",
     countryCode: "7",
   },
-  "SA": {
+  SA: {
     countryName: "Saudi Arabia",
     countryCode: "966",
   },
-  "SE": {
+  SE: {
     countryName: "Sweden",
     countryCode: "46",
   },
-  "SG": {
+  SG: {
     countryName: "Singapore",
     countryCode: "65",
   },
-  "SI": {
+  SI: {
     countryName: "Slovenia",
     countryCode: "386",
   },
-  "SK": {
+  SK: {
     countryName: "Slovakia",
     countryCode: "421",
   },
-  "SM": {
+  SM: {
     countryName: "San Marino",
     countryCode: "378",
   },
-  "TH": {
+  TH: {
     countryName: "Thailand",
     countryCode: "66",
   },
-  "TW": {
+  TW: {
     countryName: "Taiwan",
     countryCode: "886",
   },
-  "UA": {
+  UA: {
     countryName: "Ukraine",
     countryCode: "380",
   },
-  "US": {
+  US: {
     countryName: "United States",
     countryCode: "1",
   },
-  "VA": {
+  VA: {
     countryName: "Vatican City",
     countryCode: "379",
   },
-  "VN": {
+  VN: {
     countryName: "Vietnam",
     countryCode: "84",
   },
-  "ZA": {
+  ZA: {
     countryName: "South Africa",
     countryCode: "27",
-  }
-}
+  },
+};
 
 const REGIONS_WITH_ZERO_TRUNK_PREFIX = new Set([
   "AT", // Austria
