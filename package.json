@@ -1,6 +1,6 @@
 {
   "name": "@luxuryescapes/lib-regions",
-  "version": "5.6.50",
+  "version": "5.6.51",
   "description": "Region information for Luxury Escapes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -30,5 +30,8 @@
     "ts-node": "^10.9.1",
     "tslint": "^5.20.1",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "phone": "^3.1.58"
   }
 }
