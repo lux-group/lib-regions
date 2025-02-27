@@ -261,7 +261,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
     ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard", "stripe_payment_element_card"]);
   });
 
-  it("should return an array of payment methods default brand to luxuryescapes", function () {
+  it("should return an array of payment methods default brand to luxuryescapes AUD", function () {
     expect(regionModule.getPaymentMethodsByCurrencyCode("AUD")).to.deep.equal([
       "le_credit",
       "stripe",
@@ -281,6 +281,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_payment_element_klarna",
       "secure_payment",
       "azupay_pay_id",
+      "le_points",
     ]);
   });
 
