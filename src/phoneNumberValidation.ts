@@ -346,7 +346,5 @@ export function isPhoneNumberValidForRegion(
       validateMobilePrefix: false,
     });
 
-    console.log('phone number result', phoneNumberResult);
-
     return phoneNumberResult.isValid;
 }
