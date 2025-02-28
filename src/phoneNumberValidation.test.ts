@@ -107,4 +107,19 @@ describe("isPhoneNumberValidForRegion", () => {
     const result = isPhoneNumberValidForRegion({ phoneNumber: "3123456", regionCode: "BE" });
     expect(result).to.be.false;
   });
+
+  it("should return true for a valid UAE landline phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "44556600", regionCode: "UAE" });
+    expect(result).to.be.true;
+  });
+
+  it.only("should return true for a valid UAE mobile phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "545566000", regionCode: "UAE" });
+    expect(result).to.be.true;
+  });
+
+  it("should return false for an invalid UAE phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "44556600123", regionCode: "UAE" });
+    expect(result).to.be.false;
+  });
 });
