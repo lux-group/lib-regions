@@ -312,6 +312,12 @@ const REGIONS_WITH_ZERO_TRUNK_PREFIX = new Set([
   "ZA",  // South Africa
 ]);
 
+const REGEX_OVERRIDE_FOR_REGION: Record<string, RegExp> = {
+  UAE: /^(?:[2-467-9]\d{7}|5\d{8})$/,
+  AE: /^(?:[2-467-9]\d{7}|5\d{8})$/,
+  TH: /^(?:[2-57]\d{7}|[689]\d{8})$/,
+};
+
 export function isPhoneNumberValidForRegion(
   { phoneNumber, regionCode }: { phoneNumber: string, regionCode: string }) {
 
@@ -328,6 +334,11 @@ export function isPhoneNumberValidForRegion(
 
     if (REGIONS_WITH_ZERO_TRUNK_PREFIX.has(regionCode) && phoneNumber.startsWith("0")) {
       return false;
+    }
+
+    // If the lib isn't good enough for some reason, override it with our own regex
+    if (REGEX_OVERRIDE_FOR_REGION[regionCode]) {
+      return REGEX_OVERRIDE_FOR_REGION[regionCode].test(phoneNumber);
     }
 
     const phoneNumberResult = phone(phoneNumber, {
