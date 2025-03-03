@@ -43,7 +43,7 @@ const zeroDecimalCurrencies = [
 ];
 
 // Custom order of countries that are more important to LE, showing it before other countries on CP and admin
-const REGIONS_START_ORDER = ["AU", "US", "GB", "NZ", "SG", "HK", "TW"];
+const REGIONS_START_ORDER = ["AU", "US", "GB", "NZ", "SG", "HK", "TW", "ZA", "QA", "MY"];
 
 export function getPriorityPhoneNumbers(brand?: string) {
   return priorityPhoneNumbers[brand || LUXURY_ESCAPES];
