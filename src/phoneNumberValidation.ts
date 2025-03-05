@@ -271,6 +271,10 @@ export const REGIONS_COUNTRY_CODES = {
     countryName: "South Africa",
     countryCode: "27",
   },
+  FJ: {
+    countryName: "Fiji",
+    countryCode: "679",
+  },
 };
 
 const REGIONS_WITH_ZERO_TRUNK_PREFIX = new Set([
@@ -316,6 +320,7 @@ const REGEX_OVERRIDE_FOR_REGION: Record<string, RegExp> = {
   UAE: /^(?:[2-467-9]\d{7}|5\d{8})$/,
   AE: /^(?:[2-467-9]\d{7}|5\d{8})$/,
   TH: /^(?:[2-57]\d{7}|[689]\d{8})$/,
+  FJ: /^[36789]\d{6}$/,
 };
 
 export function isPhoneNumberValidForRegion(

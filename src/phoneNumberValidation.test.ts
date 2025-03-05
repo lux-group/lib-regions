@@ -137,4 +137,20 @@ describe("isPhoneNumberValidForRegion", () => {
     const result = isPhoneNumberValidForRegion({ phoneNumber: "21808001", regionCode: "TH" });
     expect(result).to.be.true;
   });
+
+  it("should return true for a valid FJ landline phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "6528725", regionCode: "FJ" });
+    expect(result).to.be.true;
+  });
+
+  it("should return true for a valid FJ mobile phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "7123456", regionCode: "FJ" });
+    expect(result).to.be.true;
+  });
+
+  it("should return false for an invalid FJ phone number", () => {
+    const result = isPhoneNumberValidForRegion({ phoneNumber: "367891234", regionCode: "FJ" });
+    expect(result).to.be.false;
+  });
+
 });
