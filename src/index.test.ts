@@ -255,7 +255,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
   it("should return an array of payment methods", function () {
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "scoopontravel")
-    ).to.deep.equal(["applepay", "stripe", "braintree", "stripe_3ds", "giftcard", "stripe_custom_payto", "stripe_payment_element_card", "googlepay"]);
+    ).to.deep.equal(["applepay", "stripe", "braintree", "stripe_3ds", "giftcard", "stripe_custom_payto", "stripe_payment_element_card", "googlepay", "paypal"]);
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "kogantravel")
     ).to.deep.equal(["stripe", "braintree", "stripe_3ds", "giftcard", "stripe_payment_element_card"]);
@@ -282,6 +282,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "secure_payment",
       "azupay_pay_id",
       "le_points",
+      "paypal",
     ]);
   });
 
@@ -299,6 +300,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "atome_bp",
       "stripe_payment_element_card",
       "stripe_payment_element_paynow",
+      "paypal",
     ]);
   });
   it("should return an empty array of payment methods when brand doesn't have sellected currency", function () {
@@ -331,6 +333,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_3ds_v2",
       "stripe_payment_element_card",
       "stripe_payment_element_klarna",
+      "paypal",
     ]);
   });
 
@@ -347,6 +350,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "stripe_3ds",
       "stripe_payment_element_card",
       "stripe_payment_element_klarna",
+      "paypal",
     ]);
   });
 
@@ -361,6 +365,7 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "googlepay",
       "stripe_3ds",
       "stripe_payment_element_card",
+      "paypal",
     ]);
   });
 });
