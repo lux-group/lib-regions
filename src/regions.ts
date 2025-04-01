@@ -13,18 +13,7 @@ interface OfferUrgencyTag {
   };
 }
 
-type ContactType = 
-  "general" | 
-  "highValue" | 
-  "cruises" | 
-  "tours" | 
-  "ultralux" | 
-  "supportAssistant" | 
-  "supportAssistantSalesFlow" |
-  "luxPlus" | 
-  "midValue" |
-  "cancellationRetention" |
-  "luxLoyalty";
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue" | "cancellationRetention" | "luxLoyalty";
 
 interface PhoneNumber {
   humanReadable: string;
