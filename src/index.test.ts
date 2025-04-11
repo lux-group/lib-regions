@@ -226,6 +226,7 @@ describe("getCurrencyCodes()", function () {
       "CAD",
       "CNY",
       "EUR",
+      "FJD",
       "HKD",
       "INR",
       "IDR",
