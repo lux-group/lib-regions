@@ -233,6 +233,12 @@ export const currencies: BrandCurrencies = {
         "stripe_payment_element_klarna",
       ],
     },
+    FJD: {
+      paymentMethods: [
+        "le_credit",
+        "stripe",
+      ],
+    },
     HKD: {
       paymentMethods: [
         "le_credit",
@@ -515,20 +521,20 @@ export const currencies: BrandCurrencies = {
     },
   },
   newwhitelabel: {
-      AUD: {
-        paymentMethods: [
-          "le_credit",
-          "stripe",
-          "braintree",
-          "qantas",
-          "giftcard",
-          "bridgerpay",
-          "applepay",
-          "googlepay",
-          "afterpay_bp",
-          "stripe_3ds",
-          "stripe_payment_element_card",
-        ],
-      },
+    AUD: {
+      paymentMethods: [
+        "le_credit",
+        "stripe",
+        "braintree",
+        "qantas",
+        "giftcard",
+        "bridgerpay",
+        "applepay",
+        "googlepay",
+        "afterpay_bp",
+        "stripe_3ds",
+        "stripe_payment_element_card",
+      ],
+    },
   },
 };
