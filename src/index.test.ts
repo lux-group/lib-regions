@@ -300,9 +300,10 @@ describe("getPaymentMethodsByCurrencyCode()", function () {
       "atome_bp",
       "stripe_payment_element_card",
       "stripe_payment_element_paynow",
+      "stripe_payment_element_grabpay",
     ]);
   });
-  it("should return an empty array of payment methods when brand doesn't have sellected currency", function () {
+  it("should return an empty array of payment methods when brand doesn't have selected currency", function () {
     expect(
       regionModule.getPaymentMethodsByCurrencyCode("AUD", "treatmetravel")
     ).to.deep.equal([]);
