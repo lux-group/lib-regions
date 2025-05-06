@@ -328,6 +328,7 @@ export const currencies: BrandCurrencies = {
         "stripe_3ds",
         "atome_bp",
         "stripe_payment_element_card",
+        "stripe_payment_element_grabpay",
       ],
     },
     NZD: {
