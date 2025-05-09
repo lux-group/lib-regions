@@ -27,7 +27,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        "paypal",
         "stripe_3ds",
         "giftcard",
         "stripe_payment_element_card",
@@ -40,7 +40,7 @@ export const currencies: BrandCurrencies = {
     AUD: {
       paymentMethods: [
         "stripe",
-        "braintree",
+        "paypal",
         "stripe_3ds",
         "giftcard",
         "stripe_payment_element_card",
@@ -96,7 +96,7 @@ export const currencies: BrandCurrencies = {
       paymentMethods: [
         "applepay",
         "stripe",
-        "braintree",
+        "paypal",
         "stripe_3ds",
         "giftcard",
         "stripe_custom_payto",
@@ -175,7 +175,6 @@ export const currencies: BrandCurrencies = {
         "le_credit",
         "stripe",
         "deposit_stripe",
-        "braintree",
         "qantas",
         "giftcard",
         "bridgerpay",
@@ -521,7 +520,7 @@ export const currencies: BrandCurrencies = {
         paymentMethods: [
           "le_credit",
           "stripe",
-          "braintree",
+          "paypal",
           "qantas",
           "giftcard",
           "bridgerpay",
