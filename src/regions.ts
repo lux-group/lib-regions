@@ -1967,7 +1967,7 @@ export const regions: BrandRegions = {
             number: "+442037638046",
           },
           default: "local",
-        }
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
