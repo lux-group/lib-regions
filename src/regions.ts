@@ -13,7 +13,7 @@ interface OfferUrgencyTag {
   };
 }
 
-type ContactType = "general" | "highValue" | "cruises" | "tours" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue" | "cancellationRetention" | "luxLoyalty";
+type ContactType = "general" | "highValue" | "cruises" | "tours" | "toursPriority" | "ultralux" | "supportAssistant" | "supportAssistantSalesFlow" | "luxPlus" | "midValue" | "cancellationRetention" | "luxLoyalty";
 
 interface PhoneNumber {
   humanReadable: string;
@@ -193,6 +193,18 @@ export const regions: BrandRegions = {
           local: {
             humanReadable: "1300 670 243",
             number: "1300670243",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "toursPriority",
+          local: {
+            humanReadable: "1300 438 140",
+            number: "1300438140",
           },
           international: {
             humanReadable: "+61 3 7032 3381",
@@ -1257,6 +1269,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "toursPriority",
+          local: {
+            humanReadable: "0800 234 011",
+            number: "0800234011",
+          },
+          international: {
+            humanReadable: "+61 3 7032 3381",
+            number: "+61370323381",
+          },
+          default: "local",
+        },
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 50,
@@ -1932,6 +1956,18 @@ export const regions: BrandRegions = {
           },
           default: "local",
         },
+        {
+          type: "toursPriority",
+          local: {
+            humanReadable: "0808 189 3215",
+            number: "08081893215",
+          },
+          international: {
+            humanReadable: "+44 20 3763 8046",
+            number: "+442037638046",
+          },
+          default: "local",
+        }
       ],
       mailingAddress: DEFAULT_MAILING_ADDRESS,
       referralAmount: 25,
@@ -2022,6 +2058,18 @@ export const regions: BrandRegions = {
           international: {
             humanReadable: "+61 3 7032 3381",
             number: "+61370323381",
+          },
+          default: "local",
+        },
+        {
+          type: "toursPriority",
+          local: {
+            humanReadable: "888 434 3635",
+            number: "8884343635",
+          },
+          international: {
+            humanReadable: "+1201 977 8523",
+            number: "+12019778523",
           },
           default: "local",
         },
